@@ -1,0 +1,106 @@
+digraph { rankdir=TB ;1->12;1->15;3->10;14->13;14->7;13->2;13->4;13->13;2->8;5->2;8->8;8->5;8->13;11->7;7->10;4->10;12->13;subgraph cluster_bb1 {
+	node[style=filled];
+	bb1;
+	color=blue;
+}
+subgraph cluster_bb12 {
+	node[style=filled];
+	bb15;bb12;
+	color=blue;
+}
+subgraph cluster_bb13 {
+	node[style=filled];
+	bb13;
+	color=blue;
+}
+subgraph cluster_bb2 {
+	node[style=filled];
+	bb4;bb2;
+	color=blue;
+}
+subgraph cluster_bb8 {
+	node[style=filled];
+	bb8;
+	color=blue;
+}
+subgraph cluster_bb10 {
+	node[style=filled];
+	bb10;
+	color=blue;
+}
+subgraph cluster_bb5 {
+	node[style=filled];
+	bb5;
+	color=blue;
+}
+bb1->bb12;bb1->bb15;bb12->bb13;bb13->bb2;bb13->bb4;bb2->bb8;bb4->bb10;bb8->bb5;bb1 [label="1 [1]"];bb12 [label="12 [2]"];bb15 [label="15 [3]"];bb13 [label="13 [4]"];bb2 [label="2 [5]"];bb4 [label="4 [6]"];bb8 [label="8 [7]"];bb10 [label="10 [8]"];bb5 [label="5 [9]"];bb13->bb13[style=dashed;constraint=false];bb8->bb8[style=dashed;constraint=false];bb8->bb13[style=dashed;constraint=false];bb5->bb2[style=dashed;constraint=false];subgraph cluster_bp1 {
+	node[style=filled];
+	bp1;
+	color=blue;
+}
+subgraph cluster_bp12 {
+	node[style=filled];
+	bp15;bp12;
+	color=blue;
+}
+subgraph cluster_bp13 {
+	node[style=filled];
+	bp13;
+	color=blue;
+}
+subgraph cluster_bp2 {
+	node[style=filled];
+	bp4;bp2;
+	color=blue;
+}
+subgraph cluster_bp8 {
+	node[style=filled];
+	bp8;
+	color=blue;
+}
+subgraph cluster_bp10 {
+	node[style=filled];
+	bp10;
+	color=blue;
+}
+subgraph cluster_bp5 {
+	node[style=filled];
+	bp5;
+	color=blue;
+}
+bp1->bp12;bp1->bp15;bp12->bp13;bp13->bp2;bp13->bp4;bp2->bp8;bp4->bp10;bp8->bp5;bp1 [label="1 [1]"];bp12 [label="12 [2]"];bp15 [label="15 [3]"];bp13 [label="13 [4]"];bp2 [label="2 [5]"];bp4 [label="4 [6]"];bp8 [label="8 [7]"];bp10 [label="10 [8]"];bp5 [label="5 [9]"];bp13->bp13[style=dashed;constraint=false];bp8->bp8[style=dashed;constraint=false];bp8->bp13[style=dashed;constraint=false];bp5->bp2[style=dashed;constraint=false];subgraph cluster_b1 {
+	node[style=filled];
+	b1;
+	color=blue;
+}
+subgraph cluster_b12 {
+	node[style=filled];
+	b15;b12;
+	color=blue;
+}
+subgraph cluster_b13 {
+	node[style=filled];
+	b13;
+	color=blue;
+}
+subgraph cluster_b2 {
+	node[style=filled];
+	b4;b2;
+	color=blue;
+}
+subgraph cluster_b8 {
+	node[style=filled];
+	b8;
+	color=blue;
+}
+subgraph cluster_b10 {
+	node[style=filled];
+	b10;
+	color=blue;
+}
+subgraph cluster_b5 {
+	node[style=filled];
+	b5;
+	color=blue;
+}
+b1->b12;b1->b15;b12->b13;b13->b2;b13->b4;b2->b8;b4->b10;b8->b5;b1 [label="1 [1]"];b12 [label="12 [2]"];b15 [label="15 [3]"];b13 [label="13 [4]"];b2 [label="2 [5]"];b4 [label="4 [6]"];b8 [label="8 [7]"];b10 [label="10 [8]"];b5 [label="5 [9]"];b13->b13[style=dashed;constraint=false];b8->b8[style=dashed;constraint=false];b8->b13[style=dashed;constraint=false];b5->b2[style=dashed;constraint=false];}
