@@ -1,0 +1,30 @@
+{
+ "options": [
+  [
+   "gmp:disable_assembly",
+   "True"
+  ],
+  [
+   "gmp:enable_cxx",
+   "True"
+  ],
+  [
+   "gmp:enable_fat",
+   "False"
+  ],
+  [
+   "gmp:run_checks",
+   "False"
+  ],
+  [
+   "gmp:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
