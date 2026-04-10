@@ -38,7 +38,7 @@ The central application domain is static and dynamic program analysis of binarie
 | `test.py` | Test and benchmarking harness: runs all paper algorithm experiments and timing benchmarks |
 | `setup.py` | Cython build configuration |
 | `CFGenum.ipynb` | Jupyter notebook: CFG enumeration and analysis |
-| `confflow.ipynb` | Jupyter notebook: confluence/flow experiments |
+| `confflow.ipynb` | Jupyter notebook: control-flow experiments |
 | `cfgs/` | SATLIB benchmark instances (uf20-91 random 3-SAT, 1000 instances); auto-downloaded by `sat.py` |
 | `results/` | Generated output: Graphviz DOT/SVG/TeX files, timing and paper experiment text outputs |
 
