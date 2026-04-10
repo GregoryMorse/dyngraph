@@ -1,5 +1,0 @@
-[requires]
-gmp/6.2.1
-
-[generators]
-cmake
