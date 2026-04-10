@@ -1,0 +1,983 @@
+graph: {
+title: "Graph of .text:000000000001B9E0...text:000000000001C9C1"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_1B9E031:
+endbr64
+push    r15
+push    r14
+push    r13
+push    r12
+mov     r12d, 180h
+push    rbp
+mov     ebp, 1A4h
+push    rbx
+mov     rbx, rdi
+mov     edi, 54h ; 'T'
+sub     rsp, 88h
+mov     rax, fs:28h
+mov     [rsp+0B8h+var_40], rax
+xor     eax, eax
+call    sub_CCF0
+mov     edx, 1
+test    eax, eax
+cmovle  eax, edx
+lea     rdx, unk_12FC80
+mov     byte ptr [rdx], 20h ; ' '
+lea     rdx, unk_130FB0
+lea     ecx, ds:0[rax*8]
+lea     eax, [rax+rax*2]
+shl     eax, 2
+mov     [rdx], ecx
+lea     rdx, unk_1717D8
+mov     [rdx], eax
+lea     rax, unk_12FCA8
+mov     qword ptr [rax], 7530h
+lea     rax, unk_12FCD0
+mov     qword ptr [rax], 708h
+lea     rax, unk_12FC98
+mov     qword ptr [rax], 15F90h
+lea     rax, unk_12FCC8
+mov     qword ptr [rax], 927C0h
+lea     rax, unk_12FD38
+mov     dword ptr [rax], 20h ; ' '
+call    sub_C830
+lea     r13, unk_1716F0
+mov     edx, r12d
+cmp     eax, [r13+0]
+lea     rax, unk_171720
+cmovnz  edx, ebp
+mov     [rax], edx
+call    sub_C830
+cmp     eax, [r13+0]
+lea     rax, unk_13077C
+lea     rdi, aMailnull; \"mailnull\"
+cmovz   ebp, r12d
+mov     [rax], ebp
+call    sub_1B920
+test    rax, rax
+jz      loc_1C7BA" vertical_order: 0 }
+node: { title: "1" label: "mov     edx, [rax+10h]
+test    edx, edx
+jz      loc_1C7BA" }
+node: { title: "2" label: "lea     rbp, unk_12E578
+lea     r12, unk_171970
+mov     rdi, [rax]
+mov     [rbp+0], edx
+mov     edx, [rax+14h]
+mov     [r12], edx
+call    sub_8DBE0
+lea     rdx, unk_12E280
+mov     [rdx], rax" }
+node: { title: "3" label: "lea     rax, unk_130688
+mov     dword ptr [rax], 0
+lea     rax, unk_17C640
+cmp     byte ptr [rax+25h], 3
+jbe     short loc_1BB40" }
+node: { title: "4" label: "lea     rax, unk_12FCC4
+movzx   eax, byte ptr [rax]
+test    al, al
+jz      loc_1C819" }
+node: { title: "5" label: "lea     rax, unk_171058
+mov     rsi, rbx
+mov     edi, 62h ; 'b'
+mov     ebp, 70h ; 'p'
+mov     dword ptr [rax], 0Ah
+lea     rax, unk_171060
+mov     dword ptr [rax], 19h
+call    sub_8E040
+mov     [rbx+124h], bp
+mov     qword ptr [rbx+160h], 0FFFFFFFFFFFFFFFFh
+mov     qword ptr [rbx+170h], 0FFFFFFFFFFFFFFFFh
+call    sub_8F3E0
+xor     esi, esi
+xor     edi, edi
+mov     [rbx+10h], rax
+lea     rax, unk_12E5B9
+mov     byte ptr [rax], 0
+lea     rax, unk_12E570
+mov     dword ptr [rax], 1
+lea     rax, unk_12E290
+mov     qword ptr [rax], 12Ch
+lea     rax, unk_131008
+mov     dword ptr [rax], 9
+lea     rax, unk_12E3A4
+mov     dword ptr [rax], 0FFFFFFFFh
+call    sub_6A6C0
+lea     rax, unk_12FD48
+pxor    xmm0, xmm0
+lea     rdx, unk_171820
+mov     qword ptr [rax], 0
+lea     rax, unk_171730
+mov     byte ptr [rax], 1
+lea     rax, unk_171748
+mov     byte ptr [rax], 1
+lea     rax, unk_12E608
+mov     dword ptr [rax], 2
+lea     rax, unk_12E5C0
+movups  xmmword ptr [rax], xmm0
+movups  xmmword ptr [rax+10h], xmm0
+lea     rax, unk_1717C8
+mov     dword ptr [rax], 3
+lea     rax, [rdx+0A0h]
+add     rdx, 0E0h
+nop     dword ptr [rax]" }
+node: { title: "6" label: "mov     qword ptr [rax], 69780h
+add     rax, 8
+mov     qword ptr [rax+38h], 0
+cmp     rdx, rax
+jnz     short loc_1BC40" }
+node: { title: "7" label: "lea     rax, unk_12E610
+lea     rcx, aEtcMailService; \"/etc/mail/service.switch\"
+lea     rdi, aVarRunSendmail; \"/var/run/sendmail/mta/sendmail.pid\"
+mov     [rax], rcx
+lea     rax, unk_1716F8
+lea     rcx, aEtcHosts; \"/etc/hosts\"
+mov     qword ptr [rax], 0Ah
+lea     rax, unk_12FCF8
+mov     [rax], rcx
+call    sub_8DBE0
+lea     rdx, unk_12E658
+lea     rcx, asc_A730A; \"@,;:\\\\()[].'\"
+lea     rdi, aExternalGssapi; \"EXTERNAL GSSAPI KERBEROS_V4 DIGEST-MD5 \"...
+mov     [rdx], rax
+lea     rax, unk_12FA48
+mov     [rax], rcx
+lea     rax, unk_171768
+lea     rcx, aPostmaster; \"postmaster\"
+mov     qword ptr [rax], 708h
+lea     rax, unk_130FB4
+mov     dword ptr [rax], 32h ; '2'
+lea     rax, unk_171044
+mov     dword ptr [rax], 0Ah
+lea     rax, unk_12E5E0
+mov     dword ptr [rax], 0Ah
+lea     rax, unk_171041
+mov     byte ptr [rax], 1
+lea     rax, unk_12E560
+mov     byte ptr [rax], 1
+lea     rax, unk_12FC88
+mov     dword ptr [rax], 1
+lea     rax, unk_1717D0
+mov     [rax], rcx
+lea     rax, unk_12E3A0
+mov     dword ptr [rax], 8000h
+lea     rax, unk_12FD10
+mov     dword ptr [rax], 800h
+lea     rax, unk_130FD8
+mov     dword ptr [rax], 400h
+lea     rax, unk_130768
+mov     dword ptr [rax], 0
+lea     rax, unk_12E564
+mov     dword ptr [rax], 1
+lea     rax, unk_171770
+mov     dword ptr [rax], 14h
+call    sub_8DBE0
+lea     rdx, unk_12E568
+lea     rbx, unk_1716C0
+mov     [rdx], rax
+lea     rax, unk_12E598
+cmp     qword ptr [rbx], 0
+mov     qword ptr [rax], 0
+lea     rax, unk_171984
+mov     dword ptr [rax], 7FFFFFFFh
+lea     rax, unk_171788
+mov     qword ptr [rax], 407F5Dh
+jz      loc_1C8AA" }
+node: { title: "8" label: "mov     edi, 0Ah
+xor     edx, edx
+mov     esi, 1
+call    sub_CBC0
+mov     edi, eax
+lea     rax, unk_12E640
+test    edi, edi
+jns     loc_1C84B" }
+node: { title: "9" label: "mov     byte ptr [rax], 2" }
+node: { title: "10" label: "lea     rax, unk_171030
+mov     qword ptr [rax], 0
+lea     rax, unk_12FA60
+lea     rdi, [rax+8]
+mov     qword ptr [rax], 0
+and     rdi, 0FFFFFFFFFFFFFFF8h
+mov     qword ptr [rax+68h], 0
+sub     rax, rdi
+lea     ecx, [rax+70h]
+xor     eax, eax
+shr     ecx, 3
+rep stosq
+lea     rax, unk_12E670
+mov     qword ptr [rax], 1000h
+lea     rax, unk_12E620
+mov     qword ptr [rax], 1000h
+lea     rax, unk_171080
+lea     rdx, [rax+640h]
+nop     dword ptr [rax]" }
+node: { title: "11" label: "mov     qword ptr [rax], 0
+add     rax, 8
+cmp     rdx, rax
+jnz     short loc_1BE40" }
+node: { title: "12" label: "lea     rax, unk_12E2C0
+lea     rdx, [rsp+0B8h+var_AC]
+lea     rsi, [rsp+0B8h+var_B0]
+lea     rdi, [rsp+0B8h+var_B4]
+mov     qword ptr [rax], 0
+lea     rax, unk_171020
+mov     qword ptr [rax], 2A30h
+lea     rax, unk_1717EC
+mov     byte ptr [rax], 1
+lea     rax, unk_17196C
+mov     dword ptr [rax], 3Ch ; '<'
+call    sub_C910
+mov     ebx, [rsp+0B8h+var_B4]
+mov     ebp, [rsp+0B8h+var_B0]
+cmp     ebx, 5
+jnz     short loc_1BEA9" }
+node: { title: "13" label: "cmp     ebp, 3
+jz      short loc_1BEE3" }
+node: { title: "14" label: "call    sub_D4F0
+sub     rsp, 8
+mov     r8d, ebx
+mov     r9d, ebp
+mov     dword ptr [rax], 0
+mov     eax, [rsp+0C0h+var_AC]
+mov     ecx, 1Ch
+mov     edx, 3
+mov     esi, 5
+lea     rdi, aBerkeleyDbVers; \"Berkeley DB version mismatch: compiled \"...
+push    rax
+xor     eax, eax
+call    sub_370E0
+pop     r11
+pop     rbx" }
+node: { title: "15" label: "mov     edx, 1
+mov     esi, 5
+xor     r14d, r14d
+lea     rdi, aHash; \"hash\"
+lea     r15, aDb; \".db\"
+call    sub_83110
+lea     r12, sub_3D880
+lea     r13, loc_40560
+lea     rcx, aHash; \"hash\"
+lea     rbp, sub_3FC50
+lea     rbx, sub_40220
+mov     [rax+18h], rcx
+mov     ecx, 5
+lea     rdx, sub_3FBE0
+mov     [rax+20h], r15
+mov     esi, 5
+lea     rdi, aBtree; \"btree\"
+mov     [rax+28h], cx
+mov     [rax+48h], rdx
+mov     edx, 1
+mov     [rax+50h], r13
+mov     [rax+38h], rbp
+mov     [rax+40h], rbx
+mov     [rax+30h], r12
+call    sub_83110
+lea     rdx, loc_3FB70
+lea     rcx, aBtree; \"btree\"
+mov     esi, 5
+mov     [rax+18h], rcx
+lea     rdi, aAliasesNis+8; \"nis\"
+mov     [rax+20h], r15
+mov     [rax+28h], si
+mov     esi, 5
+mov     [rax+48h], rdx
+mov     edx, 1
+mov     [rax+50h], r13
+mov     [rax+38h], rbp
+mov     [rax+40h], rbx
+mov     [rax+30h], r12
+call    sub_83110
+lea     rdx, loc_406C0
+lea     rbx, sub_3C7E0
+lea     rcx, aAliasesNis+8; \"nis\"
+lea     rbp, sub_3C800
+mov     edi, 1
+mov     [rax+18h], rcx
+mov     esi, 5
+mov     [rax+48h], rdx
+lea     rdx, loc_408F0
+mov     [rax+28h], di
+lea     rdi, aNisplus; \"nisplus\"
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+mov     r8d, 1
+mov     esi, 5
+lea     rdx, sub_41060
+lea     rcx, aNisplus; \"nisplus\"
+mov     [rax+28h], r8w
+lea     rdi, aLdap; \"ldap\"
+mov     [rax+48h], rdx
+lea     rdx, loc_410D0
+mov     [rax+18h], rcx
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+mov     r9d, 11h
+mov     esi, 5
+lea     rdx, sub_41E90
+lea     rcx, aLdap; \"ldap\"
+mov     [rax+28h], r9w
+lea     rdi, aDns; \"dns\"
+mov     [rax+30h], rdx
+lea     rdx, loc_415B0
+mov     [rax+18h], rcx
+mov     [rax+48h], rdx
+lea     rdx, sub_417F0
+mov     qword ptr [rax+20h], 0
+mov     [rax+50h], rdx
+lea     rdx, loc_418E0
+mov     [rax+40h], rbp
+mov     [rax+38h], rdx
+mov     edx, 1
+call    sub_83110
+lea     rdx, loc_3F0E0
+xor     r10d, r10d
+lea     rcx, aDns; \"dns\"
+mov     [rax+18h], rcx
+mov     esi, 5
+lea     rdi, aBestmx; \"bestmx\"
+mov     [rax+30h], rdx
+lea     rdx, loc_3F080
+mov     [rax+28h], r10w
+mov     [rax+48h], rdx
+lea     rdx, loc_3F520
+mov     qword ptr [rax+20h], 0
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+mov     r11d, 8
+lea     r13, sub_3C7D0
+lea     rdx, loc_321A0
+lea     rcx, aBestmx; \"bestmx\"
+mov     [rax+28h], r11w
+mov     esi, 5
+lea     rdi, aHost; \"host\"
+mov     [rax+18h], rcx
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, sub_20A70
+lea     rcx, aHost; \"host\"
+mov     esi, 5
+mov     [rax+18h], rcx
+lea     rdi, aText; \"text\"
+mov     [rax+30h], rdx
+lea     rdx, loc_21760
+mov     [rax+28h], r14w
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+mov     edx, 1
+lea     rcx, aText; \"text\"
+mov     esi, 5
+mov     [rax+28h], dx
+lea     rdx, loc_43780
+lea     rdi, aStab; \"stab\"
+mov     [rax+18h], rcx
+mov     [rax+48h], rdx
+lea     rdx, loc_43A90
+mov     qword ptr [rax+20h], 0
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_43E30
+lea     rcx, aStab; \"stab\"
+mov     esi, 5
+mov     [rax+18h], rcx
+mov     ecx, 3
+lea     rdi, aImplicit; \"implicit\"
+mov     [rax+48h], rdx
+lea     rdx, loc_43D40
+mov     [rax+28h], cx
+mov     [rax+38h], rdx
+lea     rdx, loc_43DF0
+mov     qword ptr [rax+20h], 0
+mov     [rax+40h], rdx
+mov     edx, 1
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+call    sub_83110
+lea     rdx, loc_44070
+lea     rsi, aImplicit; \"implicit\"
+lea     rdi, aUser; \"user\"
+mov     [rax+18h], rsi
+mov     esi, 7
+mov     [rax+48h], rdx
+lea     rdx, loc_44130
+mov     [rax+28h], si
+mov     esi, 5
+mov     [rax+50h], rdx
+lea     rdx, loc_43F70
+mov     qword ptr [rax+20h], 0
+mov     [rax+38h], rdx
+lea     rdx, loc_43FF0
+mov     [rax+30h], r12
+mov     [rax+40h], rdx
+mov     edx, 1
+call    sub_83110
+mov     edi, 8
+mov     esi, 5
+lea     rdx, loc_441A0
+lea     rcx, aUser; \"user\"
+mov     [rax+28h], di
+lea     rdi, aDequote; \"dequote\"
+mov     [rax+48h], rdx
+lea     rdx, loc_44310
+mov     [rax+18h], rcx
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     r14, loc_58F40
+xor     r8d, r8d
+lea     rdx, loc_59070
+lea     rsi, aDequote; \"dequote\"
+mov     [rax+28h], r8w
+lea     rdi, aRegex; \"regex\"
+mov     [rax+18h], rsi
+mov     esi, 5
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r14
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_451A0
+xor     r9d, r9d
+lea     rcx, aRegex; \"regex\"
+mov     [rax+18h], rcx
+mov     esi, 5
+lea     rdi, aUserdb; \"userdb\"
+mov     [rax+30h], rdx
+lea     rdx, loc_45680
+mov     [rax+28h], r9w
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_887F0
+xor     r10d, r10d
+lea     rsi, aUserdb; \"userdb\"
+mov     [rax+28h], r10w
+lea     rdi, aProgram; \"program\"
+mov     [rax+18h], rsi
+mov     esi, 5
+mov     [rax+20h], r15
+mov     r15d, 1
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     [rax+30h], r12
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+mov     r11d, 1
+mov     esi, 5
+lea     rdx, loc_445F0
+lea     rcx, aProgram; \"program\"
+mov     [rax+28h], r11w
+lea     rdi, aSequence; \"sequence\"
+mov     [rax+18h], rcx
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_44AB0
+lea     rcx, loc_44FF0
+lea     rsi, aSequence; \"sequence\"
+mov     [rax+28h], r15w
+lea     r15, loc_44E80
+lea     rdi, aEtcMailService+12h; \"switch\"
+mov     [rax+18h], rsi
+mov     esi, 5
+mov     [rax+30h], rdx
+mov     edx, 1
+mov     [rax+40h], rcx
+mov     qword ptr [rax+20h], 0
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+38h], r15
+call    sub_83110
+mov     edx, 1
+lea     rcx, loc_44FF0
+lea     rsi, aEtcMailService+12h; \"switch\"
+mov     [rax+28h], dx
+lea     rdx, loc_44C80
+lea     rdi, aNull_0; \"null\"
+mov     [rax+18h], rsi
+mov     esi, 5
+mov     [rax+48h], rdx
+mov     edx, 1
+mov     [rax+40h], rcx
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+50h], rbx
+mov     [rax+38h], r15
+call    sub_83110
+lea     rdx, sub_3C7F0
+mov     ecx, 9
+lea     rsi, aNull_0; \"null\"
+mov     [rax+18h], rsi
+lea     rdi, aSyslog; \"syslog\"
+mov     esi, 5
+mov     [rax+28h], cx
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_433E0
+xor     esi, esi
+lea     rcx, aSyslog; \"syslog\"
+mov     [rax+18h], rcx
+lea     rdi, aMacro; \"macro\"
+mov     [rax+30h], rdx
+lea     rdx, loc_436B0
+mov     [rax+28h], si
+mov     esi, 5
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_45090
+xor     edi, edi
+lea     rsi, aMacro; \"macro\"
+mov     [rax+18h], rsi
+mov     esi, 5
+mov     [rax+28h], di
+lea     rdi, aArith; \"arith\"
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r14
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_45A40
+xor     r8d, r8d
+lea     rcx, aArith; \"arith\"
+mov     [rax+18h], rcx
+mov     esi, 5
+lea     rdi, aArpa; \"arpa\"
+mov     [rax+28h], r8w
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r14
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_45D00
+xor     r9d, r9d
+lea     rsi, aArpa; \"arpa\"
+mov     [rax+18h], rsi
+lea     rdi, aSocket_0; \"socket\"
+mov     esi, 5
+mov     [rax+38h], rdx
+mov     edx, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+28h], r9w
+mov     [rax+30h], r14
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+40h], rbp
+call    sub_83110
+lea     rdx, loc_45FC0
+lea     rcx, aSocket_0; \"socket\"
+mov     r10d, 1
+mov     qword ptr [rax+20h], 0
+mov     [rax+48h], rdx
+lea     rdx, sub_469F0
+mov     [rax+18h], rcx
+mov     [rax+50h], rdx
+lea     rdx, loc_46B40
+mov     [rax+28h], r10w
+mov     [rax+30h], r12
+mov     [rax+38h], rdx
+mov     [rax+40h], rbp
+lea     rax, unk_17C640
+cmp     byte ptr [rax+26h], 1
+jbe     short loc_1C706" }
+node: { title: "16" label: "lea     rax, unk_12FCC4
+movzx   eax, byte ptr [rax]
+test    al, al
+jz      loc_1C858" }
+node: { title: "17" label: "lea     rbp, [rsp+0B8h+var_A8]
+lea     rax, unk_12E650
+mov     edx, 64h ; 'd'
+lea     rsi, aMqueuePVarSpoo; \"mqueue, P=/var/spool/mqueue\"
+mov     rdi, rbp
+mov     dword ptr [rax], 1
+call    sub_960E0
+xor     esi, esi
+mov     rdi, rbp
+call    sub_662C0
+mov     edx, 64h ; 'd'
+lea     rsi, unk_A7F18
+mov     rdi, rbp
+call    sub_960E0
+mov     rdi, rbp
+call    sub_699F0
+mov     edx, 64h ; 'd'
+lea     rsi, unk_A7F58
+mov     rdi, rbp
+call    sub_960E0
+mov     rdi, rbp
+call    sub_699F0
+mov     edx, 64h ; 'd'
+lea     rsi, unk_A7FA0
+mov     rdi, rbp
+call    sub_960E0
+mov     rdi, rbp
+call    sub_699F0
+call    sub_559E0
+call    sub_38600
+mov     rax, [rsp+0B8h+var_40]
+xor     rax, fs:28h
+jnz     loc_1C8B7" }
+node: { title: "18" label: "add     rsp, 88h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+pop     r14
+pop     r15
+retn" }
+node: { title: "19" label: "lea     rdi, aSendmail; \"sendmail\"
+call    sub_1B920
+test    rax, rax
+jz      short loc_1C7D6" }
+node: { title: "20" label: "mov     edx, [rax+10h]
+test    edx, edx
+jnz     loc_1BAEA" }
+node: { title: "21" label: "lea     rdi, aDaemon; \"daemon\"
+call    sub_1B920
+test    rax, rax
+jz      short loc_1C7F2" }
+node: { title: "22" label: "mov     edx, [rax+10h]
+test    edx, edx
+jnz     loc_1BAEA" }
+node: { title: "23" label: "lea     rbp, unk_12E578
+lea     r12, unk_171970
+mov     dword ptr [rbp+0], 1
+mov     dword ptr [r12], 1
+call    sub_1B940
+jmp     loc_1BB14" }
+node: { title: "24" label: "mov     ecx, [r12]
+lea     rax, unk_12E280
+lea     rdi, aSetdefaultsDef; \"setdefaults: DefUser=%s, DefUid=%ld, De\"...
+mov     edx, [rbp+0]
+mov     rsi, [rax]
+lea     rax, a11; \"<1:1>\"
+test    rsi, rsi
+cmovz   rsi, rax
+xor     eax, eax
+call    sub_93590
+jmp     loc_1BB40" }
+node: { title: "25" label: "mov     byte ptr [rax], 0Ah
+call    sub_C730
+jmp     loc_1BDD9" }
+node: { title: "26" label: "mov     edx, 1
+mov     esi, 5
+lea     rdi, aBogus; \"bogus\"
+call    sub_83110
+mov     edx, 9
+lea     rsi, aBogus; \"bogus\"
+mov     [rax+28h], dx
+lea     rdx, sub_3C810
+mov     [rax+18h], rsi
+mov     qword ptr [rax+20h], 0
+mov     [rax+30h], r12
+mov     [rax+48h], r13
+mov     [rax+50h], rbx
+mov     [rax+38h], rdx
+mov     [rax+40h], rbp
+jmp     loc_1C706" }
+node: { title: "27" label: "call    sub_D150
+mov     [rbx], rax
+jmp     loc_1BDB4" }
+node: { title: "28" label: "call    sub_C890
+nop     dword ptr [rax+00h]" }
+node: { title: "29" label: "58sub_1C8C031:
+endbr64
+mov     rax, cs:qword_D9DA0
+test    rax, rax
+jz      short loc_1C8D8" }
+node: { title: "30" label: "retn" }
+node: { title: "31" label: "push    rbp
+call    sub_CDE0
+mov     cs:qword_D9DA0, rax
+test    rax, rax
+jz      loc_1C9A0" }
+node: { title: "32" label: "lea     rdx, unk_1716F0
+cmp     byte ptr [rax], 0
+mov     ebp, [rdx]
+jnz     short loc_1C970" }
+node: { title: "33" label: "mov     edi, ebp
+call    sub_1B930
+test    rax, rax
+jz      loc_1C990" }
+node: { title: "34" label: "mov     rbp, [rax]
+mov     cs:qword_D9DA0, rbp" }
+node: { title: "35" label: "test    rbp, rbp
+jz      short loc_1C950" }
+node: { title: "36" label: "cmp     byte ptr [rbp+0], 0
+jz      short loc_1C950" }
+node: { title: "37" label: "lea     rsi, asc_A7399; \",;:/|\\\"\\\\\"
+mov     rdi, rbp
+call    sub_CD30
+test    rax, rax
+jz      short loc_1C9B0" }
+node: { title: "38" label: "mov     rdi, rbp
+xor     esi, esi
+call    sub_8D4E0
+pop     rbp
+mov     cs:qword_D9DA0, rax
+retn" }
+node: { title: "39" label: "xor     eax, eax
+lea     rdi, a554530WhoAreYo; \"554 5.3.0 Who are you?\"
+call    sub_370E0
+lea     rax, aPostmaster; \"postmaster\"
+pop     rbp
+mov     cs:qword_D9DA0, rax
+retn" }
+node: { title: "40" label: "mov     rdi, rax
+call    sub_1B920
+test    rax, rax
+jz      loc_1C8FC" }
+node: { title: "41" label: "test    ebp, ebp
+jz      short loc_1C990" }
+node: { title: "42" label: "cmp     [rax+10h], ebp
+jnz     loc_1C8FC" }
+node: { title: "43" label: "xchg    ax, ax" }
+node: { title: "44" label: "mov     rbp, cs:qword_D9DA0
+jmp     loc_1C916" }
+node: { title: "45" label: "lea     rax, unk_1716F0
+mov     ebp, [rax]
+jmp     loc_1C8FC" }
+node: { title: "46" label: "mov     rdi, rbp
+call    sub_96030
+pop     rbp
+mov     cs:qword_D9DA0, rax
+retn" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "19" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "19" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "5" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "24" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "6" }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "6" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "27" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "9" label: "false" color: red }
+edge: { sourcename: "8" targetname: "25" label: "true" color: darkgreen }
+// node 9
+edge: { sourcename: "9" targetname: "10" }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "11" label: "true" color: darkgreen }
+// node 12
+edge: { sourcename: "12" targetname: "13" label: "false" color: red }
+edge: { sourcename: "12" targetname: "14" label: "true" color: darkgreen }
+// node 13
+edge: { sourcename: "13" targetname: "14" label: "false" color: red }
+edge: { sourcename: "13" targetname: "15" label: "true" color: darkgreen }
+// node 14
+edge: { sourcename: "14" targetname: "15" }
+// node 15
+edge: { sourcename: "15" targetname: "16" label: "false" color: red }
+edge: { sourcename: "15" targetname: "17" label: "true" color: darkgreen }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "26" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" label: "false" color: red }
+edge: { sourcename: "17" targetname: "28" label: "true" color: darkgreen }
+// node 18
+// node 19
+edge: { sourcename: "19" targetname: "20" label: "false" color: red }
+edge: { sourcename: "19" targetname: "21" label: "true" color: darkgreen }
+// node 20
+edge: { sourcename: "20" targetname: "2" label: "true" color: darkgreen }
+edge: { sourcename: "20" targetname: "21" label: "false" color: red }
+// node 21
+edge: { sourcename: "21" targetname: "22" label: "false" color: red }
+edge: { sourcename: "21" targetname: "23" label: "true" color: darkgreen }
+// node 22
+edge: { sourcename: "22" targetname: "2" label: "true" color: darkgreen }
+edge: { sourcename: "22" targetname: "23" label: "false" color: red }
+// node 23
+edge: { sourcename: "23" targetname: "3" }
+// node 24
+edge: { sourcename: "24" targetname: "5" }
+// node 25
+edge: { sourcename: "25" targetname: "10" }
+// node 26
+edge: { sourcename: "26" targetname: "17" }
+// node 27
+edge: { sourcename: "27" targetname: "8" }
+// node 28
+edge: { sourcename: "28" targetname: "29" }
+// node 29
+edge: { sourcename: "29" targetname: "30" label: "false" color: red }
+edge: { sourcename: "29" targetname: "31" label: "true" color: darkgreen }
+// node 30
+// node 31
+edge: { sourcename: "31" targetname: "32" label: "false" color: red }
+edge: { sourcename: "31" targetname: "45" label: "true" color: darkgreen }
+// node 32
+edge: { sourcename: "32" targetname: "33" label: "false" color: red }
+edge: { sourcename: "32" targetname: "40" label: "true" color: darkgreen }
+// node 33
+edge: { sourcename: "33" targetname: "34" label: "false" color: red }
+edge: { sourcename: "33" targetname: "44" label: "true" color: darkgreen }
+// node 34
+edge: { sourcename: "34" targetname: "35" }
+// node 35
+edge: { sourcename: "35" targetname: "36" label: "false" color: red }
+edge: { sourcename: "35" targetname: "39" label: "true" color: darkgreen }
+// node 36
+edge: { sourcename: "36" targetname: "37" label: "false" color: red }
+edge: { sourcename: "36" targetname: "39" label: "true" color: darkgreen }
+// node 37
+edge: { sourcename: "37" targetname: "38" label: "false" color: red }
+edge: { sourcename: "37" targetname: "46" label: "true" color: darkgreen }
+// node 38
+// node 39
+// node 40
+edge: { sourcename: "40" targetname: "33" label: "true" color: darkgreen }
+edge: { sourcename: "40" targetname: "41" label: "false" color: red }
+// node 41
+edge: { sourcename: "41" targetname: "42" label: "false" color: red }
+edge: { sourcename: "41" targetname: "44" label: "true" color: darkgreen }
+// node 42
+edge: { sourcename: "42" targetname: "33" label: "true" color: darkgreen }
+edge: { sourcename: "42" targetname: "43" label: "false" color: red }
+// node 43
+edge: { sourcename: "43" targetname: "44" }
+// node 44
+edge: { sourcename: "44" targetname: "35" }
+// node 45
+edge: { sourcename: "45" targetname: "33" }
+// node 46
+}

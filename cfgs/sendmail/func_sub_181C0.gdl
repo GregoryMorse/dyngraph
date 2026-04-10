@@ -1,0 +1,153 @@
+graph: {
+title: "Graph of .text:00000000000181C0...text:000000000001832C"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_181C031:
+endbr64
+push    r13
+mov     r13, rdi
+push    r12
+mov     r12d, esi
+push    rbp
+mov     rbp, rdx
+push    rbx
+mov     rbx, rcx
+mov     ecx, 1Bh
+sub     rsp, 118h
+mov     rax, fs:28h
+mov     [rsp+138h+var_30], rax
+xor     eax, eax
+lea     rdi, [rsp+138h+var_110]
+rep stosq
+lea     rax, aSmFile; \"sm_file\"
+xor     edi, edi
+mov     [rsp+138h+var_90], 0FFFFFFFFh
+mov     [rsp+138h+var_118], rax
+mov     eax, 0FFFFFFFFh
+mov     [rsp+138h+var_F8], ax
+lea     rax, loc_180E0
+mov     [rsp+138h+var_C8], rax
+lea     rax, loc_17F60
+mov     [rsp+138h+var_C0], rax
+lea     rax, loc_18160
+mov     [rsp+138h+var_B8], rax
+lea     rax, loc_17D60
+mov     [rsp+138h+var_B0], rax
+lea     rax, loc_17B20
+mov     [rsp+138h+var_A8], rax
+lea     rax, loc_18330
+mov     [rsp+138h+var_A0], rax
+lea     rax, loc_17AE0
+mov     [rsp+138h+var_98], rax
+lea     rax, aSendmailbuffer; \"SendmailBufferedFile\"
+mov     [rsp+138h+var_88], rax
+call    sub_D490
+mov     esi, eax
+mov     edi, eax
+not     esi
+and     r12d, esi
+call    sub_D490
+xor     r8d, r8d
+mov     rdx, rsp
+lea     rdi, [rsp+138h+var_118]
+mov     ecx, 1
+mov     esi, 0FFFFFFFEh
+mov     [rsp+138h+var_120], rbx
+mov     [rsp+138h+var_138], r13
+mov     [rsp+138h+var_130], r12d
+mov     [rsp+138h+var_128], rbp
+call    sub_97710
+mov     rbx, [rsp+138h+var_30]
+xor     rbx, fs:28h
+jnz     short loc_182F3" vertical_order: 0 }
+node: { title: "1" label: "add     rsp, 118h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+retn" }
+node: { title: "2" label: "call    sub_C890
+nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "3" label: "58sub_1830031:
+endbr64
+push    rbp
+mov     esi, 0FFFFFFFEh
+mov     rbp, rdi
+call    sub_96BC0
+mov     rdi, rbp
+xor     ecx, ecx
+xor     edx, edx
+and     qword ptr [rbp+18h], 0FFFFFFFFFFFFFE7Fh
+mov     esi, 0FFFFFFFEh
+pop     rbp
+jmp     sub_97F60" }
+node: { title: "4" label: "sub_97F60" color: red }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+// node 4
+}

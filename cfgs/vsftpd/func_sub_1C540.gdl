@@ -1,0 +1,142 @@
+graph: {
+title: "Graph of .text:000000000001C540...text:000000000001C659"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_1C54031:
+mov     rax, cs:qword_2C7A8
+push    r12
+mov     r12d, esi
+push    rbp
+mov     ebp, edx
+push    rbx
+mov     ebx, edi
+cmp     rax, 63h
+ja      short loc_1C5A0" vertical_order: 0 }
+node: { title: "1" label: "lea     rdx, unk_2C2C0
+lea     rcx, unk_2C120
+add     cs:qword_2C7A0, 1
+mov     [rdx+rax*4], r12d
+lea     rdx, unk_2C460
+mov     dword ptr [rdx+rax*4], 0
+lea     rdx, [rax+1]
+mov     cs:qword_2C7A8, rdx
+lea     rdx, unk_2C600
+mov     [rcx+rax*4], ebp
+mov     [rdx+rax*4], ebx
+pop     rbx
+pop     rbp
+pop     r12
+retn" }
+node: { title: "2" label: "lea     rdi, aOutOfSyscallSp; \"out of syscall space\"
+call    sub_83D0" }
+node: { title: "3" label: "mov     rax, cs:qword_2C7A8
+jmp     short loc_1C558" }
+node: { title: "4" label: "58sub_1C5C031:
+push    r13
+mov     r13d, esi
+push    r12
+mov     r12d, edx
+push    rbp
+mov     ebp, ecx
+push    rbx
+mov     ebx, edi
+sub     rsp, 18h
+mov     rax, cs:qword_2C7A8
+cmp     rax, 63h
+ja      short loc_1C648" }
+node: { title: "5" label: "lea     rdx, unk_2C2C0
+lea     rcx, unk_2C120
+add     cs:qword_2C798, 1
+mov     [rdx+rax*4], r13d
+lea     rdx, unk_2BF80
+mov     [rdx+rax*4], ebp
+lea     rdx, unk_2BDE0
+mov     [rdx+rax*4], r8d
+lea     rdx, unk_2C460
+mov     dword ptr [rdx+rax*4], 0
+lea     rdx, [rax+1]
+mov     cs:qword_2C7A8, rdx
+lea     rdx, unk_2C600
+mov     [rcx+rax*4], r12d
+mov     [rdx+rax*4], ebx
+add     rsp, 18h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+retn" }
+node: { title: "6" label: "lea     rdi, aOutOfSyscallSp; \"out of syscall space\"
+mov     [rsp+38h+var_2C], r8d
+call    sub_83D0" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+// node 2
+// node 3
+edge: { sourcename: "3" targetname: "1" }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "6" label: "true" color: darkgreen }
+// node 5
+// node 6
+}

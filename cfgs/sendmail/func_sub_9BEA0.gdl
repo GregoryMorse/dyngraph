@@ -1,0 +1,4654 @@
+graph: {
+title: "Graph of .text:000000000009BEA0...text:000000000009F014"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_9BEA031:
+endbr64
+push    r15
+push    r14
+push    r13
+push    r12
+push    rbp
+push    rbx
+sub     rsp, 1000h
+or      [rsp+1030h+var_1030], 0
+sub     rsp, 278h
+mov     [rsp+12A8h+var_1278], rdi
+mov     [rsp+12A8h+var_1270], esi
+mov     [rsp+12A8h+var_1248], rdx
+mov     [rsp+12A8h+var_1288], rcx
+mov     rax, fs:28h
+mov     [rsp+12A8h+var_40], rax
+xor     eax, eax
+mov     rax, [rdi+18h]
+test    al, 20h
+jz      loc_9C218" vertical_order: 0 }
+node: { title: "1" label: "cmp     qword ptr [rdi+28h], 0
+jz      loc_9C218" }
+node: { title: "2" label: "mov     rdx, rax
+and     edx, 64h
+cmp     rdx, 24h
+jz      loc_9C241" }
+node: { title: "3" label: "mov     rax, [rsp+12A8h+var_1288]
+lea     r10, [rsp+12A8h+var_11F8]
+mov     r12, [rsp+12A8h+var_1248]
+mov     [rsp+12A8h+var_1230], 0
+mov     rbx, r10
+movdqu  xmm1, xmmword ptr [rax]
+movups  [rsp+12A8h+var_1210], xmm1
+mov     rax, [rax+10h]
+mov     [rsp+12A8h+var_1290], r10
+mov     [rsp+12A8h+var_1200], rax
+lea     rax, a0123456789abcd; \"0123456789abcdef\"
+mov     [rsp+12A8h+var_1228], r10
+mov     [rsp+12A8h+var_1220], 0
+mov     [rsp+12A8h+var_126C], 1
+mov     [rsp+12A8h+var_1250], rax
+mov     [rsp+12A8h+var_127C], 0
+movaps  [rsp+12A8h+var_12A8], xmm1" }
+node: { title: "4" label: "movsx   r13d, byte ptr [r12]
+test    r13d, r13d
+jz      loc_9C18A" }
+node: { title: "5" label: "mov     rbp, r12
+jmp     short loc_9BFA2" }
+node: { title: "6" label: "movsx   r13d, byte ptr [rbp+1]
+add     rbp, 1
+test    r13d, r13d
+jz      loc_9C390" }
+node: { title: "7" label: "cmp     r13d, 25h ; '%'
+jnz     short loc_9BF90" }
+node: { title: "8" label: "mov     rax, rbp
+sub     rax, r12
+mov     r14d, eax
+test    eax, eax
+jnz     loc_9D408" }
+node: { title: "9" label: "mov     [rsp+12A8h+var_1231], 0
+xor     ecx, ecx
+movsx   r9d, byte ptr [rbp+1]
+lea     r12, [rbp+1]
+mov     dword ptr [rsp+12A8h+var_12A8], 0
+mov     r10d, 0FFFFFFFFh
+mov     r14d, ecx
+mov     r15d, r10d" }
+node: { title: "10" label: "add     r12, 1" }
+node: { title: "11" label: "lea     eax, [r9-20h]
+cmp     eax, 58h ; 'X'
+ja      short loc_9C040" }
+node: { title: "12" label: "lea     rdi, unk_BF2CC
+movsxd  rax, dword ptr [rdi+rax*4]
+add     rax, rdi
+jmp     rax" }
+node: { title: "13" label: "xor     ebp, ebp
+lea     eax, [r9-30h]" }
+node: { title: "14" label: "mov     r13, r12
+movsx   r9d, byte ptr [r12]
+lea     edx, [rbp+rbp*4+0]
+add     r12, 1
+lea     ebp, [rax+rdx*2]
+lea     eax, [r9-30h]
+cmp     eax, 9
+jbe     short loc_9C006" }
+node: { title: "15" label: "cmp     r9d, 24h ; '$'
+jz      loc_9DBDE" }
+node: { title: "16" label: "lea     eax, [r9-20h]
+mov     dword ptr [rsp+12A8h+var_12A8], ebp
+cmp     eax, 58h ; 'X'
+jbe     short loc_9BFE9" }
+node: { title: "17" label: "nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "18" label: "mov     ecx, r14d
+test    r9d, r9d
+jz      loc_9C18A" }
+node: { title: "19" label: "mov     [rsp+12A8h+var_1231], 0
+mov     ebp, 1
+mov     r14d, 1
+lea     r15, [rsp+12A8h+var_1078]
+mov     [rsp+12A8h+var_1078], r9b" }
+node: { title: "20" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     r13d, ecx
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+xor     r10d, r10d
+and     r13d, 84h
+lea     edi, [rdx+1]
+mov     esi, edi" }
+node: { title: "21" label: "mov     r8d, ecx
+lea     r11d, [rbp+2]
+and     r8d, 2
+cmovnz  ebp, r11d
+test    r13d, r13d
+jnz     loc_9CB6A" }
+node: { title: "22" label: "mov     r13d, dword ptr [rsp+12A8h+var_12A8]
+sub     r13d, ebp
+test    r13d, r13d
+jg      loc_9CA52" }
+node: { title: "23" label: "cmp     [rsp+12A8h+var_1231], 0
+jz      loc_9CB60" }
+node: { title: "24" label: "xor     r13d, r13d" }
+node: { title: "25" label: "lea     rdx, [rsp+12A8h+var_1231]
+add     eax, 1
+mov     qword ptr [rbx+8], 1
+mov     [rbx], rdx
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], esi
+cmp     esi, 7
+jg      loc_9D050" }
+node: { title: "26" label: "lea     rdi, [rbx+20h]
+mov     edx, esi
+add     rbx, 10h
+add     esi, 1" }
+node: { title: "27" label: "cmp     r13d, 80h
+jz      loc_9CBD0" }
+node: { title: "28" label: "sub     r10d, r14d
+test    r10d, r10d
+jg      loc_9CD00" }
+node: { title: "29" label: "movsxd  rdx, r14d
+add     r14d, eax
+mov     [rbx], r15
+mov     [rbx+8], rdx
+mov     dword ptr [rsp+12A8h+var_1220+4], r14d
+mov     dword ptr [rsp+12A8h+var_1220], esi
+cmp     esi, 7
+jle     loc_9CF23" }
+node: { title: "30" label: "test    r14d, r14d
+jnz     loc_9CEF0" }
+node: { title: "31" label: "mov     dword ptr [rsp+12A8h+var_1220], 0
+and     ecx, 4
+jz      short loc_9C160" }
+node: { title: "32" label: "mov     r13d, dword ptr [rsp+12A8h+var_12A8]
+sub     r13d, ebp
+test    r13d, r13d
+jg      loc_9D100" }
+node: { title: "33" label: "mov     eax, dword ptr [rsp+12A8h+var_12A8]
+cmp     eax, ebp
+cmovge  ebp, eax
+add     [rsp+12A8h+var_127C], ebp" }
+node: { title: "34" label: "movsx   r13d, byte ptr [r12]
+mov     rbx, [rsp+12A8h+var_1290]
+mov     dword ptr [rsp+12A8h+var_1220], 0
+test    r13d, r13d
+jnz     loc_9BF8B" }
+node: { title: "35" label: "mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+test    eax, eax
+jnz     loc_9DB38" }
+node: { title: "36" label: "mov     dword ptr [rsp+12A8h+var_1220], 0
+nop     dword ptr [rax+00h]" }
+node: { title: "37" label: "mov     rdi, [rsp+12A8h+var_1230]
+test    rdi, rdi
+jz      short loc_9C1D0" }
+node: { title: "38" label: "lea     rax, [rsp+12A8h+var_1178]
+cmp     rdi, rax
+jz      short loc_9C1D0" }
+node: { title: "39" label: "mov     edx, 312h
+lea     rsi, unk_BF0F5
+call    sub_95260" }
+node: { title: "40" label: "mov     rax, [rsp+12A8h+var_1278]
+test    byte ptr [rax+19h], 1
+mov     eax, 0FFFFFFFFh
+cmovz   eax, [rsp+12A8h+var_127C]
+mov     [rsp+12A8h+var_127C], eax" }
+node: { title: "41" label: "mov     rax, [rsp+12A8h+var_40]
+xor     rax, fs:28h
+jnz     loc_9DD2C" }
+node: { title: "42" label: "mov     eax, [rsp+12A8h+var_127C]
+add     rsp, 1278h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+pop     r14
+pop     r15
+retn" }
+node: { title: "43" label: "mov     rbx, [rsp+12A8h+var_1278]
+mov     rdi, rbx
+call    sub_9F220
+test    eax, eax
+jnz     loc_9DBF8" }
+node: { title: "44" label: "mov     rax, [rbx+18h]
+mov     rdx, rax
+and     edx, 64h
+cmp     rdx, 24h
+jnz     loc_9BF0E" }
+node: { title: "45" label: "mov     rbx, [rsp+12A8h+var_1278]
+movzx   edx, word ptr [rbx+20h]
+test    dx, dx
+js      loc_9BF0E" }
+node: { title: "46" label: "and     rax, 0FFFFFFFFFFFFFFFBh
+lea     rcx, aSmFile; \"sm_file\"
+mov     [rsp+12A8h+var_1158], dx
+lea     rbp, [rsp+12A8h+var_1178]
+mov     [rsp+12A8h+var_1160], rax
+mov     rax, [rbx+40h]
+mov     esi, 0FFFFFFFFh
+mov     rdi, rbp
+mov     [rsp+12A8h+var_1178], rcx
+mov     rdx, [rsp+12A8h+var_1248]
+mov     [rsp+12A8h+var_1138], rax
+mov     rax, [rbx+68h]
+mov     rcx, [rsp+12A8h+var_1288]
+mov     [rsp+12A8h+var_1128], 0
+mov     [rsp+12A8h+var_1110], rax
+mov     eax, 0FFFFFFFFh
+mov     [rsp+12A8h+var_10F0], rax
+lea     rax, aSmBprintfFake; \"sm_bprintf:fake\"
+mov     [rsp+12A8h+var_10E8], rax
+lea     rax, [rsp+12A8h+var_1048]
+mov     [rsp+12A8h+var_1120], 0
+mov     [rsp+12A8h+var_1118], 0
+mov     [rsp+12A8h+var_1108], 0
+mov     [rsp+12A8h+var_1100], 0
+mov     [rsp+12A8h+var_10F8], 0
+mov     [rsp+12A8h+var_1170], rax
+mov     [rsp+12A8h+var_1150], rax
+mov     [rsp+12A8h+var_1164], 1000h
+mov     [rsp+12A8h+var_1148], 1000h
+mov     [rsp+12A8h+var_1140], 0
+call    sub_9BEA0
+mov     [rsp+12A8h+var_127C], eax
+mov     ebx, eax
+test    eax, eax
+js      short loc_9C36F" }
+node: { title: "47" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbp
+call    sub_96BC0
+test    eax, eax
+mov     eax, 0FFFFFFFFh
+cmovz   eax, ebx
+mov     [rsp+12A8h+var_127C], eax" }
+node: { title: "48" label: "test    byte ptr [rsp+12A8h+var_1160+1], 1
+jz      loc_9C1E7" }
+node: { title: "49" label: "mov     rax, [rsp+12A8h+var_1278]
+or      qword ptr [rax+18h], 100h
+jmp     loc_9C1E7" }
+node: { title: "50" label: "mov     rax, rbp
+sub     rax, r12
+mov     r14d, eax
+test    eax, eax
+jz      loc_9C18A" }
+node: { title: "51" label: "movsxd  rax, r14d
+mov     edx, dword ptr [rsp+12A8h+var_1220+4]
+mov     [rbx], r12
+add     rbx, 10h
+mov     [rbx-8], rax
+mov     eax, dword ptr [rsp+12A8h+var_1220]
+add     edx, r14d
+add     eax, 1
+mov     dword ptr [rsp+12A8h+var_1220+4], edx
+mov     dword ptr [rsp+12A8h+var_1220], eax
+cmp     eax, 7
+jle     short loc_9C3EA" }
+node: { title: "52" label: "test    edx, edx
+jnz     short loc_9C400" }
+node: { title: "53" label: "mov     dword ptr [rsp+12A8h+var_1220], 0
+mov     rbx, [rsp+12A8h+var_1290]" }
+node: { title: "54" label: "add     [rsp+12A8h+var_127C], r14d
+test    r13d, r13d
+jnz     loc_9BFB9" }
+node: { title: "55" label: "jmp     loc_9C18A" }
+node: { title: "56" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "57" label: "mov     rbx, [rsp+12A8h+var_1290]
+jmp     short loc_9C3EA" }
+node: { title: "58" label: "mov     rax, [rsp+12A8h+var_1230]
+mov     ecx, r14d
+mov     r10d, r15d
+test    rax, rax
+jz      short loc_9C44A" }
+node: { title: "59" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "60" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     eax, [rsi+4]
+cmp     eax, 0AFh
+ja      loc_9D498" }
+node: { title: "61" label: "mov     edx, eax
+add     eax, 10h
+add     rdx, [rsi+10h]
+mov     [rsi+4], eax" }
+node: { title: "62" label: "movsd   xmm0, qword ptr [rdx]
+movzx   edx, [rsp+12A8h+var_1231]
+mov     [rsp+12A8h+var_1088], 25h ; '%'
+lea     rax, [rsp+12A8h+var_1087]
+test    dl, dl
+jz      short loc_9C495" }
+node: { title: "63" label: "mov     [rsp+12A8h+var_1087], dl
+lea     rax, [rsp+12A8h+var_1086]" }
+node: { title: "64" label: "lea     rdx, [rax+1]
+test    cl, 1
+jz      short loc_9C4AB" }
+node: { title: "65" label: "lea     rsi, [rax+2]
+mov     byte ptr [rax], 23h ; '#'
+mov     rax, rdx
+mov     rdx, rsi" }
+node: { title: "66" label: "test    cl, 4
+jz      short loc_9C4BA" }
+node: { title: "67" label: "mov     byte ptr [rax], 2Dh ; '-'
+mov     rax, rdx
+add     rdx, 1" }
+node: { title: "68" label: "and     ecx, 80h
+jz      short loc_9C4C8" }
+node: { title: "69" label: "mov     byte ptr [rax], 30h ; '0'
+mov     rax, rdx" }
+node: { title: "70" label: "mov     ecx, dword ptr [rsp+12A8h+var_12A8]
+mov     edx, 78h ; 'x'
+mov     byte ptr [rax], 2Ah ; '*'
+cmp     ecx, 78h ; 'x'
+mov     r8d, ecx
+cmovg   r8d, edx
+cmp     r10d, 0FFFFFFFFh
+jz      loc_9D73A" }
+node: { title: "71" label: "mov     ecx, 2A2Eh
+cmp     r10d, 78h ; 'x'
+mov     [rax+3], r9b
+mov     esi, 1
+mov     [rax+1], cx
+cmovle  edx, r10d
+lea     rbp, [rsp+12A8h+var_1048]
+lea     rcx, [rsp+12A8h+var_1088]
+mov     byte ptr [rax+4], 0
+mov     rdi, rbp
+mov     eax, 1
+mov     r9d, edx
+mov     edx, 96h
+call    sub_D800" }
+node: { title: "72" label: "mov     rdx, rbp" }
+node: { title: "73" label: "mov     ecx, [rdx]
+add     rdx, 4
+lea     eax, [rcx-1010101h]
+not     ecx
+and     eax, ecx
+and     eax, 80808080h
+jz      short loc_9C52D" }
+node: { title: "74" label: "mov     ecx, eax
+mov     [rbx], rbp
+shr     ecx, 10h
+test    eax, 8080h
+cmovz   eax, ecx
+lea     rcx, [rdx+2]
+cmovz   rdx, rcx
+mov     ecx, eax
+add     cl, al
+mov     eax, dword ptr [rsp+12A8h+var_1220]
+sbb     rdx, 3
+sub     rdx, rbp
+add     eax, 1
+mov     [rbx+8], rdx
+add     edx, dword ptr [rsp+12A8h+var_1220+4]
+mov     dword ptr [rsp+12A8h+var_1220+4], edx
+mov     dword ptr [rsp+12A8h+var_1220], eax
+cmp     eax, 7
+jle     short loc_9C5B8" }
+node: { title: "75" label: "test    edx, edx
+jz      short loc_9C5DA" }
+node: { title: "76" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "77" label: "mov     edx, dword ptr [rsp+12A8h+var_1220+4]" }
+node: { title: "78" label: "test    edx, edx
+jz      short loc_9C5DA" }
+node: { title: "79" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "80" label: "add     [rsp+12A8h+var_126C], 1
+mov     rbx, [rsp+12A8h+var_1290]
+mov     dword ptr [rsp+12A8h+var_1220], 0
+jmp     loc_9BF7D" }
+node: { title: "81" label: "mov     ecx, r14d
+mov     r10d, r15d
+test    cl, 20h
+jnz     loc_9C7BA" }
+node: { title: "82" label: "mov     rax, [rsp+12A8h+var_1230]
+test    cl, 10h
+jnz     loc_9D477" }
+node: { title: "83" label: "test    cl, 40h
+jz      loc_9D938" }
+node: { title: "84" label: "test    rax, rax
+jz      short loc_9C631" }
+node: { title: "85" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "86" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rsi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DB04" }
+node: { title: "87" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rsi+10h]
+mov     [rsi], edx" }
+node: { title: "88" label: "movsx   rsi, word ptr [rax]
+mov     rax, rsi
+jmp     loc_9C7DB" }
+node: { title: "89" label: "mov     rax, [rsp+12A8h+var_1230]
+mov     ecx, r14d
+test    rax, rax
+jz      short loc_9C67C" }
+node: { title: "90" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "91" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D581" }
+node: { title: "92" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "93" label: "mov     eax, [rdx]
+mov     ebp, 1
+mov     [rsp+12A8h+var_1231], 0
+mov     r14d, 1
+lea     r15, [rsp+12A8h+var_1078]
+mov     [rsp+12A8h+var_1078], al
+jmp     loc_9C06C" }
+node: { title: "94" label: "mov     ecx, r14d
+mov     r10d, r15d
+or      ecx, 10h" }
+node: { title: "95" label: "test    cl, 20h
+jz      loc_9D2CB" }
+node: { title: "96" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+jbe     loc_9D571" }
+node: { title: "97" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9D310" }
+node: { title: "98" label: "mov     rax, [rsp+12A8h+var_1230]
+mov     ecx, r14d
+mov     r10d, r15d
+test    rax, rax
+jz      short loc_9C71C" }
+node: { title: "99" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "100" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D597" }
+node: { title: "101" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "102" label: "mov     r15, [rdx]
+lea     rax, aNull; \"(null)\"
+test    r15, r15
+cmovz   r15, rax
+cmp     r10d, 0FFFFFFFFh
+jz      loc_9D76E" }
+node: { title: "103" label: "movsxd  rdx, r10d
+xor     esi, esi
+mov     rdi, r15
+mov     dword ptr [rsp+12A8h+var_1260], ecx
+mov     dword ptr [rsp+12A8h+var_1268], r9d
+mov     [rsp+12A8h+var_1258], r10d
+call    sub_CB10
+mov     r10d, [rsp+12A8h+var_1258]
+mov     r9d, dword ptr [rsp+12A8h+var_1268]
+test    rax, rax
+mov     ecx, dword ptr [rsp+12A8h+var_1260]
+mov     r14d, r10d
+jz      short loc_9C792" }
+node: { title: "104" label: "sub     rax, r15
+cmp     r10d, eax
+cmovge  r14d, eax" }
+node: { title: "105" label: "test    r14d, r14d
+mov     ebp, 0
+mov     [rsp+12A8h+var_1231], 0
+cmovns  ebp, r14d
+jmp     loc_9C06C" }
+node: { title: "106" label: "mov     ecx, r14d
+mov     r10d, r15d
+or      ecx, 10h
+test    cl, 20h
+jz      loc_9C603" }
+node: { title: "107" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D3F2" }
+node: { title: "108" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "109" label: "mov     rax, [rdx]
+mov     rsi, rax" }
+node: { title: "110" label: "test    rax, rax
+js      loc_9D38E" }
+node: { title: "111" label: "movzx   r8d, [rsp+12A8h+var_1231]
+mov     eax, 1
+cmp     r10d, 0FFFFFFFFh
+jnz     loc_9C9E3" }
+node: { title: "112" label: "lea     r14, [rsp+12A8h+var_1050]
+mov     r11, 0CCCCCCCCCCCCCCCDh
+mov     rdi, r14
+cmp     rsi, 9
+jbe     short loc_9C847" }
+node: { title: "113" label: "nop     dword ptr [rax+00h]" }
+node: { title: "114" label: "mov     rax, rsi
+mov     r15, rsi
+sub     rdi, 1
+mul     r11
+shr     rdx, 3
+lea     rax, [rdx+rdx*4]
+add     rax, rax
+sub     r15, rax
+mov     rax, r15
+add     eax, 30h ; '0'
+mov     [rdi], al
+mov     rax, rsi
+mov     rsi, rdx
+cmp     rax, 63h
+ja      short loc_9C818" }
+node: { title: "115" label: "add     esi, 30h ; '0'
+lea     r15, [rdi-1]
+mov     [rdi-1], sil" }
+node: { title: "116" label: "sub     r14d, r15d
+jmp     loc_9CA06" }
+node: { title: "117" label: "movsx   r9d, byte ptr [r12]
+or      r14b, 80h
+jmp     loc_9BFDC" }
+node: { title: "118" label: "movsx   r9d, byte ptr [r12]
+lea     rdx, [r12+1]
+cmp     r9d, 2Ah ; '*'
+jz      loc_9DC10" }
+node: { title: "119" label: "lea     eax, [r9-30h]
+mov     r12, rdx
+xor     ebp, ebp
+cmp     eax, 9
+ja      short loc_9C8A9" }
+node: { title: "120" label: "nop     word ptr [rax+rax+00h]" }
+node: { title: "121" label: "movsx   r9d, byte ptr [r12]
+lea     edx, [rbp+rbp*4+0]
+add     r12, 1
+lea     ebp, [rax+rdx*2]
+lea     eax, [r9-30h]
+cmp     eax, 9
+jbe     short loc_9C890" }
+node: { title: "122" label: "cmp     r9d, 24h ; '$'
+jz      loc_9DCDA" }
+node: { title: "123" label: "mov     r15d, ebp
+jmp     loc_9BFE0" }
+node: { title: "124" label: "movsx   r9d, byte ptr [r12]" }
+node: { title: "125" label: "or      r14d, 4
+jmp     loc_9BFDC" }
+node: { title: "126" label: "mov     [rsp+12A8h+var_1231], 2Bh ; '+'
+movsx   r9d, byte ptr [r12]
+jmp     loc_9BFDC" }
+node: { title: "127" label: "movsx   eax, byte ptr [r12]
+mov     r13, r12
+xor     ebp, ebp
+mov     edx, eax
+sub     eax, 30h ; '0'
+cmp     eax, 9
+ja      short loc_9C90A" }
+node: { title: "128" label: "nop     dword ptr [rax+00h]" }
+node: { title: "129" label: "lea     edx, [rbp+rbp*4+0]
+add     r13, 1
+lea     ebp, [rax+rdx*2]
+movsx   eax, byte ptr [r13+0]
+mov     edx, eax
+sub     eax, 30h ; '0'
+cmp     eax, 9
+jbe     short loc_9C8F0" }
+node: { title: "130" label: "mov     rax, [rsp+12A8h+var_1230]
+cmp     dl, 24h ; '$'
+jz      loc_9D7A3" }
+node: { title: "131" label: "test    rax, rax
+jz      short loc_9C92F" }
+node: { title: "132" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "133" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rcx]
+cmp     eax, 2Fh ; '/'
+jbe     loc_9D602" }
+node: { title: "134" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rdx, [rcx+8]
+lea     rax, [rdx+8]
+mov     [rcx+8], rax" }
+node: { title: "135" label: "mov     eax, [rdx]
+mov     dword ptr [rsp+12A8h+var_12A8], eax" }
+node: { title: "136" label: "mov     eax, dword ptr [rsp+12A8h+var_12A8]
+movsx   r9d, byte ptr [r12]
+test    eax, eax
+jns     loc_9BFDC" }
+node: { title: "137" label: "neg     eax
+mov     dword ptr [rsp+12A8h+var_12A8], eax
+jmp     loc_9C8C0" }
+node: { title: "138" label: "movsx   r9d, byte ptr [r12]
+or      r14d, 1
+jmp     loc_9BFDC" }
+node: { title: "139" label: "cmp     [rsp+12A8h+var_1231], 0
+movsx   r9d, byte ptr [r12]
+jnz     loc_9BFDC" }
+node: { title: "140" label: "mov     [rsp+12A8h+var_1231], 20h ; ' '
+jmp     loc_9BFDC" }
+node: { title: "141" label: "mov     ecx, r14d
+mov     r10d, r15d
+or      ecx, 10h" }
+node: { title: "142" label: "test    cl, 20h
+jz      loc_9D31A" }
+node: { title: "143" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D545" }
+node: { title: "144" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "145" label: "mov     rsi, [rdx]
+mov     eax, 1" }
+node: { title: "146" label: "mov     [rsp+12A8h+var_1231], 0
+xor     r8d, r8d" }
+node: { title: "147" label: "cmp     r10d, 0FFFFFFFFh
+jz      loc_9CF70" }
+node: { title: "148" label: "and     cl, 7Fh
+test    rsi, rsi
+jnz     loc_9CF70" }
+node: { title: "149" label: "test    r10d, r10d
+jnz     loc_9CF70" }
+node: { title: "150" label: "xor     r10d, r10d
+xor     r14d, r14d
+lea     r15, [rsp+12A8h+var_1050]" }
+node: { title: "151" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+cmp     r10d, r14d
+mov     ebp, r14d
+mov     r13d, ecx
+cmovge  ebp, r10d
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+and     r13d, 84h
+lea     edi, [rdx+1]
+mov     esi, edi
+test    r8b, r8b
+jz      loc_9C08C" }
+node: { title: "152" label: "add     ebp, 1
+test    r13d, r13d
+jnz     loc_9C0C2" }
+node: { title: "153" label: "mov     r13d, dword ptr [rsp+12A8h+var_12A8]
+sub     r13d, ebp
+test    r13d, r13d
+jle     loc_9C0B4" }
+node: { title: "154" label: "cmp     r13d, 10h
+jle     loc_9DB30" }
+node: { title: "155" label: "lea     rsi, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ebp
+mov     ebp, r13d
+mov     r13d, [rsp+12A8h+var_1270]
+mov     [rsp+12A8h+var_1268], r12
+mov     r12, [rsp+12A8h+var_1278]
+mov     [rsp+12A8h+var_1254], ecx
+mov     rcx, rbx
+mov     rbx, rsi
+mov     [rsp+12A8h+var_123C], r14d
+mov     r14, [rsp+12A8h+var_1290]
+mov     dword ptr [rsp+12A8h+var_1260], r9d
+mov     [rsp+12A8h+var_1240], r10d
+jmp     short loc_9CAB5" }
+node: { title: "156" label: "lea     r11d, [rdx+2]
+add     rcx, 10h
+mov     edx, edi" }
+node: { title: "157" label: "sub     ebp, 10h
+cmp     ebp, 10h
+jle     short loc_9CAF8" }
+node: { title: "158" label: "lea     edi, [rdx+1]" }
+node: { title: "159" label: "lea     rsi, unk_D47F0
+add     eax, 10h
+mov     qword ptr [rcx+8], 10h
+mov     [rcx], rsi
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], edi
+cmp     edi, 7
+jle     short loc_9CAA0" }
+node: { title: "160" label: "test    eax, eax
+jnz     loc_9D0D0" }
+node: { title: "161" label: "sub     ebp, 10h
+xor     edx, edx
+mov     r11d, 1
+mov     rcx, r14
+cmp     ebp, 10h
+jg      short loc_9CAB2" }
+node: { title: "162" label: "mov     r13d, ebp
+mov     rbx, rcx
+mov     ebp, [rsp+12A8h+var_1258]
+mov     r12, [rsp+12A8h+var_1268]
+mov     r9d, dword ptr [rsp+12A8h+var_1260]
+mov     ecx, [rsp+12A8h+var_1254]
+mov     r10d, [rsp+12A8h+var_1240]
+mov     r14d, [rsp+12A8h+var_123C]" }
+node: { title: "163" label: "lea     rsi, unk_D47F0
+movsxd  rdx, r13d
+add     eax, r13d
+mov     dword ptr [rsp+12A8h+var_1220], r11d
+mov     [rbx], rsi
+mov     [rbx+8], rdx
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+cmp     r11d, 7
+jg      loc_9D36A" }
+node: { title: "164" label: "add     rbx, 10h
+cmp     [rsp+12A8h+var_1231], 0
+lea     esi, [r11+1]
+mov     edx, r11d
+jnz     loc_9C0BF" }
+node: { title: "165" label: "nop     dword ptr [rax]" }
+node: { title: "166" label: "mov     r8d, ecx
+xor     r13d, r13d
+and     r8d, 2" }
+node: { title: "167" label: "lea     rdi, [rbx+10h]
+test    r8d, r8d
+jz      loc_9C0F9" }
+node: { title: "168" label: "lea     rdx, [rsp+12A8h+var_108A]
+add     eax, 2
+mov     [rsp+12A8h+var_108A], 30h ; '0'
+mov     [rsp+12A8h+var_1089], r9b
+mov     [rbx], rdx
+mov     qword ptr [rbx+8], 2
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], esi
+cmp     esi, 7
+jg      loc_9D270" }
+node: { title: "169" label: "lea     r8, [rbx+20h]
+mov     edx, esi
+mov     rbx, rdi
+add     esi, 1
+mov     rdi, r8
+cmp     r13d, 80h
+jnz     loc_9C106" }
+node: { title: "170" label: "mov     r9d, dword ptr [rsp+12A8h+var_12A8]
+sub     r9d, ebp
+test    r9d, r9d
+jle     loc_9C106" }
+node: { title: "171" label: "cmp     r9d, 10h
+jle     loc_9DBA0" }
+node: { title: "172" label: "lea     r8, unk_D47E0
+mov     [rsp+12A8h+var_1258], ebp
+mov     rsi, rbx
+mov     rbp, [rsp+12A8h+var_1278]
+mov     [rsp+12A8h+var_1268], r12
+lea     r13, [rsp+12A8h+var_1228]
+mov     r12d, [rsp+12A8h+var_1270]
+mov     ebx, r9d
+mov     [rsp+12A8h+var_1260], r15
+mov     r15, [rsp+12A8h+var_1290]
+mov     [rsp+12A8h+var_123C], r14d
+mov     r14, r8
+mov     [rsp+12A8h+var_1254], ecx
+mov     [rsp+12A8h+var_1240], r10d
+jmp     short loc_9CC42" }
+node: { title: "173" label: "lea     r11d, [rdx+2]
+add     rsi, 10h
+mov     edx, ecx" }
+node: { title: "174" label: "sub     ebx, 10h
+cmp     ebx, 10h
+jle     short loc_9CC81" }
+node: { title: "175" label: "add     eax, 10h
+lea     ecx, [rdx+1]
+mov     [rsi], r14
+mov     qword ptr [rsi+8], 10h
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], ecx
+cmp     ecx, 7
+jle     short loc_9CC30" }
+node: { title: "176" label: "test    eax, eax
+jnz     loc_9D020" }
+node: { title: "177" label: "sub     ebx, 10h
+xor     edx, edx
+mov     r11d, 1
+mov     rsi, r15
+cmp     ebx, 10h
+jg      short loc_9CC42" }
+node: { title: "178" label: "mov     r8, r14
+mov     ebp, [rsp+12A8h+var_1258]
+mov     r12, [rsp+12A8h+var_1268]
+mov     r9d, ebx
+mov     r15, [rsp+12A8h+var_1260]
+mov     ecx, [rsp+12A8h+var_1254]
+mov     rbx, rsi
+lea     r13, [rsi+10h]
+mov     r10d, [rsp+12A8h+var_1240]
+mov     r14d, [rsp+12A8h+var_123C]" }
+node: { title: "179" label: "movsxd  rdx, r9d
+add     eax, r9d
+mov     [rbx], r8
+mov     [rbx+8], rdx
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], r11d
+cmp     r11d, 7
+jle     loc_9D413" }
+node: { title: "180" label: "test    eax, eax
+jnz     loc_9D7E6" }
+node: { title: "181" label: "sub     r10d, r14d
+mov     rbx, [rsp+12A8h+var_1290]
+xor     edx, edx
+mov     esi, 1
+lea     rdi, [rsp+12A8h+var_11E8]
+test    r10d, r10d
+jle     loc_9C112" }
+node: { title: "182" label: "nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "183" label: "cmp     r10d, 10h
+jle     loc_9DA04" }
+node: { title: "184" label: "lea     r8, unk_D47E0
+mov     [rsp+12A8h+var_1258], ebp
+mov     rdi, rbx
+mov     rbp, [rsp+12A8h+var_1278]
+mov     [rsp+12A8h+var_1268], r12
+lea     r13, [rsp+12A8h+var_1228]
+mov     r12d, [rsp+12A8h+var_1270]
+mov     ebx, r10d
+mov     [rsp+12A8h+var_1260], r15
+mov     r15, [rsp+12A8h+var_1290]
+mov     [rsp+12A8h+var_1240], r14d
+mov     r14, r8
+mov     [rsp+12A8h+var_1254], ecx
+jmp     short loc_9CD61" }
+node: { title: "185" label: "lea     esi, [rdx+2]
+add     rdi, 10h
+mov     edx, ecx" }
+node: { title: "186" label: "sub     ebx, 10h
+cmp     ebx, 10h
+jle     short loc_9CD9F" }
+node: { title: "187" label: "add     eax, 10h
+lea     ecx, [rdx+1]
+mov     [rdi], r14
+mov     qword ptr [rdi+8], 10h
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], ecx
+cmp     ecx, 7
+jle     short loc_9CD50" }
+node: { title: "188" label: "test    eax, eax
+jnz     loc_9CFF0" }
+node: { title: "189" label: "sub     ebx, 10h
+xor     edx, edx
+mov     esi, 1
+mov     rdi, r15
+cmp     ebx, 10h
+jg      short loc_9CD61" }
+node: { title: "190" label: "mov     r8, r14
+mov     ebp, [rsp+12A8h+var_1258]
+mov     r12, [rsp+12A8h+var_1268]
+mov     r10d, ebx
+mov     r15, [rsp+12A8h+var_1260]
+mov     ecx, [rsp+12A8h+var_1254]
+mov     rbx, rdi
+lea     rdx, [rdi+10h]
+mov     r14d, [rsp+12A8h+var_1240]" }
+node: { title: "191" label: "movsxd  rdi, r10d
+add     eax, r10d
+mov     [rbx], r8
+mov     [rbx+8], rdi
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], esi
+cmp     esi, 7
+jg      loc_9D230" }
+node: { title: "192" label: "add     esi, 1
+lea     rdi, [rdx+10h]
+mov     rbx, rdx
+jmp     loc_9C112" }
+node: { title: "193" label: "movsx   r9d, byte ptr [r12]
+cmp     r9b, 6Ch ; 'l'
+jz      loc_9D790" }
+node: { title: "194" label: "or      r14d, 10h
+jmp     loc_9BFDC" }
+node: { title: "195" label: "movsx   r9d, byte ptr [r12]
+or      r14d, 40h
+jmp     loc_9BFDC" }
+node: { title: "196" label: "movsx   r9d, byte ptr [r12]
+or      r14d, 20h
+jmp     loc_9BFDC" }
+node: { title: "197" label: "mov     rax, [rsp+12A8h+var_1230]
+mov     ecx, r14d
+mov     r10d, r15d
+test    rax, rax
+jz      short loc_9CE4C" }
+node: { title: "198" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "199" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D55B" }
+node: { title: "200" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "201" label: "lea     rax, a0123456789abcd; \"0123456789abcdef\"
+mov     rsi, [rdx]
+or      ecx, 2
+mov     r9d, 78h ; 'x'
+mov     [rsp+12A8h+var_1250], rax
+mov     eax, 2
+jmp     loc_9C9D1" }
+node: { title: "202" label: "mov     rax, [rsp+12A8h+var_1230]
+mov     ecx, r14d
+test    r14b, 20h
+jz      loc_9D426" }
+node: { title: "203" label: "test    rax, rax
+jz      short loc_9CEB7" }
+node: { title: "204" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "205" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rcx]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D89F" }
+node: { title: "206" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rcx+10h]
+mov     [rcx], eax" }
+node: { title: "207" label: "mov     rax, [rdx]
+movsxd  rdx, [rsp+12A8h+var_127C]
+mov     [rax], rdx
+jmp     loc_9BF7D" }
+node: { title: "208" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ecx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "209" label: "mov     r14d, dword ptr [rsp+12A8h+var_1220+4]
+mov     rdi, [rsp+12A8h+var_1290]
+mov     ecx, [rsp+12A8h+var_1258]" }
+node: { title: "210" label: "and     ecx, 4
+jz      short loc_9CF38" }
+node: { title: "211" label: "mov     r13d, dword ptr [rsp+12A8h+var_12A8]
+sub     r13d, ebp
+test    r13d, r13d
+jg      loc_9D105" }
+node: { title: "212" label: "mov     eax, dword ptr [rsp+12A8h+var_12A8]
+cmp     eax, ebp
+cmovge  ebp, eax
+add     [rsp+12A8h+var_127C], ebp
+test    r14d, r14d
+jz      loc_9C16C" }
+node: { title: "213" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jz      loc_9C16C" }
+node: { title: "214" label: "jmp     loc_9C1A8" }
+node: { title: "215" label: "cmp     eax, 1
+jz      loc_9C7F9" }
+node: { title: "216" label: "lea     r14, [rsp+12A8h+var_1050]
+mov     r15, r14
+cmp     eax, 2
+jnz     short loc_9CFB0" }
+node: { title: "217" label: "mov     rdx, [rsp+12A8h+var_1250]
+xchg    ax, ax" }
+node: { title: "218" label: "mov     rax, rsi
+sub     r15, 1
+and     eax, 0Fh
+shr     rsi, 4
+movzx   eax, byte ptr [rdx+rax]
+mov     [r15], al
+jnz     short loc_9CF90" }
+node: { title: "219" label: "sub     r14d, r15d
+jmp     loc_9CA06" }
+node: { title: "220" label: "mov     eax, esi
+mov     rdx, r15
+sub     r15, 1
+and     eax, 7
+add     eax, 30h ; '0'
+shr     rsi, 3
+mov     [r15], al
+jnz     short loc_9CFB0" }
+node: { title: "221" label: "cmp     al, 30h ; '0'
+jz      loc_9C852" }
+node: { title: "222" label: "test    cl, 1
+jz      loc_9C852" }
+node: { title: "223" label: "sub     rdx, 2
+mov     byte ptr [r15-1], 30h ; '0'
+sub     r14d, edx
+mov     r15, rdx
+jmp     loc_9CA06" }
+node: { title: "224" label: "mov     rdx, r13
+mov     esi, r12d
+mov     rdi, rbp
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "225" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rdi, r15
+lea     esi, [rdx+1]
+jmp     loc_9CD59" }
+node: { title: "226" label: "mov     rdx, r13
+mov     esi, r12d
+mov     rdi, rbp
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "227" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rsi, r15
+lea     r11d, [rdx+1]
+jmp     loc_9CC3A" }
+node: { title: "228" label: "test    eax, eax
+jz      short loc_9D0B0" }
+node: { title: "229" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+mov     dword ptr [rsp+12A8h+var_1268], r10d
+lea     rdx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ecx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "230" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     ecx, [rsp+12A8h+var_1258]
+lea     rdi, [rsp+12A8h+var_11E8]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rbx, [rsp+12A8h+var_1290]
+mov     r10d, dword ptr [rsp+12A8h+var_1268]
+lea     esi, [rdx+1]
+jmp     loc_9C0F9" }
+node: { title: "231" label: "mov     rbx, [rsp+12A8h+var_1290]
+xor     edx, edx
+mov     esi, 1
+lea     rdi, [rsp+12A8h+var_11E8]
+jmp     loc_9C0F9" }
+node: { title: "232" label: "mov     rdx, rbx
+mov     esi, r13d
+mov     rdi, r12
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "233" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rcx, r14
+lea     r11d, [rdx+1]
+jmp     loc_9CAAA" }
+node: { title: "234" label: "mov     rdi, [rsp+12A8h+var_1290]" }
+node: { title: "235" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+cmp     r13d, 10h
+jle     loc_9DB98" }
+node: { title: "236" label: "lea     rbx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ebp
+mov     eax, r14d
+mov     ebp, [rsp+12A8h+var_1270]
+mov     r14, r12
+mov     r15, [rsp+12A8h+var_1290]
+mov     r12, rbx
+mov     rbx, [rsp+12A8h+var_1278]
+jmp     short loc_9D153" }
+node: { title: "237" label: "lea     ecx, [rdx+2]
+add     rdi, 10h
+mov     edx, esi" }
+node: { title: "238" label: "sub     r13d, 10h
+cmp     r13d, 10h
+jle     short loc_9D196" }
+node: { title: "239" label: "lea     rsi, unk_D47F0
+add     eax, 10h
+mov     qword ptr [rdi+8], 10h
+mov     [rdi], rsi
+lea     esi, [rdx+1]
+mov     dword ptr [rsp+12A8h+var_1220+4], eax
+mov     dword ptr [rsp+12A8h+var_1220], esi
+cmp     esi, 7
+jle     short loc_9D140" }
+node: { title: "240" label: "test    eax, eax
+jnz     short loc_9D200" }
+node: { title: "241" label: "sub     r13d, 10h
+xor     edx, edx
+mov     ecx, 1
+mov     rdi, r15
+cmp     r13d, 10h
+jg      short loc_9D153" }
+node: { title: "242" label: "mov     ebp, [rsp+12A8h+var_1258]
+mov     r12, r14
+mov     r14d, eax" }
+node: { title: "243" label: "lea     rax, unk_D47F0
+add     r14d, r13d
+mov     dword ptr [rsp+12A8h+var_1220], ecx
+mov     [rdi], rax
+movsxd  rax, r13d
+mov     [rdi+8], rax
+mov     dword ptr [rsp+12A8h+var_1220+4], r14d
+cmp     ecx, 7
+jle     loc_9CF38" }
+node: { title: "244" label: "test    r14d, r14d
+jz      loc_9C160" }
+node: { title: "245" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "246" label: "mov     r14d, dword ptr [rsp+12A8h+var_1220+4]
+jmp     loc_9CF38" }
+node: { title: "247" label: "mov     rdx, r12
+mov     esi, ebp
+mov     rdi, rbx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "248" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rdi, r15
+lea     ecx, [rdx+1]
+jmp     loc_9D149" }
+node: { title: "249" label: "test    eax, eax
+jnz     loc_9D3A9" }
+node: { title: "250" label: "movsxd  rax, r14d
+mov     [rsp+12A8h+var_11F8], r15
+lea     rdi, [rsp+12A8h+var_11E8]
+mov     [rsp+12A8h+var_11F0], rax
+mov     dword ptr [rsp+12A8h+var_1220+4], r14d
+mov     dword ptr [rsp+12A8h+var_1220], 1
+jmp     loc_9CF23" }
+node: { title: "251" label: "test    eax, eax
+jz      loc_9D0B0" }
+node: { title: "252" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+mov     dword ptr [rsp+12A8h+var_1268], r10d
+lea     rdx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ecx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "253" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+lea     rdi, [rsp+12A8h+var_11E8]
+mov     rbx, [rsp+12A8h+var_1290]
+mov     r10d, dword ptr [rsp+12A8h+var_1268]
+mov     ecx, [rsp+12A8h+var_1258]
+lea     esi, [rdx+1]
+jmp     loc_9C0F9" }
+node: { title: "254" label: "mov     rax, [rsp+12A8h+var_1230]
+test    cl, 10h
+jz      loc_9D4FB" }
+node: { title: "255" label: "test    rax, rax
+jz      short loc_9D2F0" }
+node: { title: "256" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "257" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rdi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D839" }
+node: { title: "258" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rdi+10h]
+mov     [rdi], eax" }
+node: { title: "259" label: "mov     rsi, [rdx]
+xor     eax, eax
+jmp     loc_9C9D1" }
+node: { title: "260" label: "mov     rax, [rsp+12A8h+var_1230]
+test    cl, 10h
+jz      loc_9D4AE" }
+node: { title: "261" label: "test    rax, rax
+jz      short loc_9D33F" }
+node: { title: "262" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "263" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+jbe     loc_9C9BE" }
+node: { title: "264" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9C9C9" }
+node: { title: "265" label: "test    eax, eax
+jnz     loc_9D5AD" }
+node: { title: "266" label: "cmp     [rsp+12A8h+var_1231], 0
+jnz     loc_9D9D4" }
+node: { title: "267" label: "mov     rbx, [rsp+12A8h+var_1290]
+xor     edx, edx
+mov     esi, 1
+jmp     loc_9CB60" }
+node: { title: "268" label: "neg     rax
+mov     [rsp+12A8h+var_1231], 2Dh ; '-'
+mov     r8d, 2Dh ; '-'
+mov     rsi, rax
+mov     eax, 1
+jmp     loc_9C9D9" }
+node: { title: "269" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ecx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "270" label: "mov     ebx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+lea     rdi, [rsp+12A8h+var_11E8]
+mov     ecx, [rsp+12A8h+var_1258]
+lea     esi, [rbx+1]
+mov     rbx, [rsp+12A8h+var_1290]
+jmp     loc_9C112" }
+node: { title: "271" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9C7D5" }
+node: { title: "272" label: "mov     r13d, 1
+jmp     loc_9C3A1" }
+node: { title: "273" label: "lea     esi, [r11+1]
+lea     rdi, [r13+10h]
+mov     edx, r11d
+mov     rbx, r13
+jmp     loc_9C106" }
+node: { title: "274" label: "test    r14b, 10h
+jz      loc_9D84F" }
+node: { title: "275" label: "test    rax, rax
+jz      short loc_9D447" }
+node: { title: "276" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "277" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rcx]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DB1A" }
+node: { title: "278" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rcx+10h]
+mov     [rcx], edx" }
+node: { title: "279" label: "mov     rax, [rax]
+movsxd  rdx, [rsp+12A8h+var_127C]
+mov     [rax], rdx
+jmp     loc_9BF7D" }
+node: { title: "280" label: "test    rax, rax
+jz      short loc_9D48E" }
+node: { title: "281" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "282" label: "add     [rsp+12A8h+var_126C], 1
+jmp     loc_9C7BA" }
+node: { title: "283" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9C469" }
+node: { title: "284" label: "test    cl, 40h
+jz      loc_9D8F5" }
+node: { title: "285" label: "test    rax, rax
+jz      short loc_9D4CE" }
+node: { title: "286" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "287" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rsi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DAEE" }
+node: { title: "288" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rsi+10h]
+mov     [rsi], edx" }
+node: { title: "289" label: "movzx   esi, word ptr [rax]
+mov     eax, 1
+jmp     loc_9C9D1" }
+node: { title: "290" label: "test    cl, 40h
+jz      loc_9D8B5" }
+node: { title: "291" label: "test    rax, rax
+jz      short loc_9D51B" }
+node: { title: "292" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "293" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rdi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DAD8" }
+node: { title: "294" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "295" label: "movzx   esi, word ptr [rax]
+xor     eax, eax
+jmp     loc_9C9D1" }
+node: { title: "296" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9C9C9" }
+node: { title: "297" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9CE6C" }
+node: { title: "298" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax
+jmp     loc_9D310" }
+node: { title: "299" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9C69C" }
+node: { title: "300" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9C73C" }
+node: { title: "301" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+mov     dword ptr [rsp+12A8h+var_1260], r10d
+lea     rdx, [rsp+12A8h+var_1228]
+mov     dword ptr [rsp+12A8h+var_1268], ecx
+mov     [rsp+12A8h+var_1258], r9d
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "302" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+mov     rbx, [rsp+12A8h+var_1290]
+mov     r10d, dword ptr [rsp+12A8h+var_1260]
+mov     ecx, dword ptr [rsp+12A8h+var_1268]
+mov     r9d, [rsp+12A8h+var_1258]
+lea     esi, [rdx+1]
+jmp     loc_9C0B4" }
+node: { title: "303" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rcx+10h]
+mov     [rcx], eax
+jmp     loc_9C955" }
+node: { title: "304" label: "endbr64
+lea     rax, a0123456789abcd; \"0123456789abcdef\"
+mov     ecx, r14d
+mov     r10d, r15d
+mov     [rsp+12A8h+var_1250], rax
+test    cl, 20h
+jz      short loc_9D696" }
+node: { title: "305" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     eax, [rsi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D724" }
+node: { title: "306" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rsi+10h]
+mov     [rsi], eax" }
+node: { title: "307" label: "mov     rsi, [rdx]" }
+node: { title: "308" label: "mov     eax, 2
+test    cl, 1
+jz      loc_9C9D1" }
+node: { title: "309" label: "mov     edx, ecx
+or      ecx, 2
+test    rsi, rsi
+cmovz   ecx, edx
+jmp     loc_9C9D1" }
+node: { title: "310" label: "mov     ecx, r14d
+mov     r10d, r15d
+jmp     loc_9C6CB" }
+node: { title: "311" label: "mov     ecx, r14d
+mov     r10d, r15d
+jmp     loc_9C9A5" }
+node: { title: "312" label: "lea     rax, a0123456789abcd_2; \"0123456789ABCDEF\"
+mov     ecx, r14d
+mov     r10d, r15d
+mov     [rsp+12A8h+var_1250], rax
+test    cl, 20h
+jnz     short loc_9D62D" }
+node: { title: "313" label: "mov     rax, [rsp+12A8h+var_1230]
+test    cl, 10h
+jz      short loc_9D6DC" }
+node: { title: "314" label: "test    rax, rax
+jz      short loc_9D6B7" }
+node: { title: "315" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "316" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     eax, [rdi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9D9BE" }
+node: { title: "317" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rdi+10h]
+mov     [rdi], eax
+jmp     loc_9D648" }
+node: { title: "318" label: "test    cl, 40h
+jz      loc_9D97A" }
+node: { title: "319" label: "test    rax, rax
+jz      short loc_9D6FC" }
+node: { title: "320" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "321" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rdi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DAC2" }
+node: { title: "322" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "323" label: "movzx   esi, word ptr [rax]
+jmp     loc_9D64B" }
+node: { title: "324" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9D648" }
+node: { title: "325" label: "mov     [rax+1], r9b
+lea     rbp, [rsp+12A8h+var_1048]
+lea     rcx, [rsp+12A8h+var_1088]
+mov     edx, 96h
+mov     byte ptr [rax+2], 0
+mov     esi, 1
+mov     rdi, rbp
+mov     eax, 1
+call    sub_D800
+jmp     loc_9C52A" }
+node: { title: "326" label: "mov     rdi, r15
+mov     dword ptr [rsp+12A8h+var_1268], ecx
+mov     [rsp+12A8h+var_1258], r9d
+call    sub_CA60
+mov     ecx, dword ptr [rsp+12A8h+var_1268]
+mov     r9d, [rsp+12A8h+var_1258]
+mov     r14d, eax
+jmp     loc_9C792" }
+node: { title: "327" label: "movsx   r9d, byte ptr [r12+1]
+or      r14d, 20h
+add     r12, 1
+jmp     loc_9BFDC" }
+node: { title: "328" label: "test    rax, rax
+jz      loc_9DB5B" }
+node: { title: "329" label: "movsxd  rbp, ebp
+lea     rdx, [rbp+rbp*2+0]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "330" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     eax, [rcx]
+cmp     eax, 2Fh ; '/'
+ja      loc_9DA13" }
+node: { title: "331" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rcx+10h]
+mov     [rcx], eax" }
+node: { title: "332" label: "mov     eax, [rdx]
+lea     r12, [r13+1]
+mov     dword ptr [rsp+12A8h+var_12A8], eax
+jmp     loc_9C95A" }
+node: { title: "333" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+mov     dword ptr [rsp+12A8h+var_1268], r10d
+lea     rdx, [rsp+12A8h+var_1228]
+mov     [rsp+12A8h+var_1258], ecx
+call    sub_9BE80
+test    eax, eax
+jnz     loc_9C1A8" }
+node: { title: "334" label: "mov     edx, dword ptr [rsp+12A8h+var_1220]
+mov     eax, dword ptr [rsp+12A8h+var_1220+4]
+lea     rdi, [rsp+12A8h+var_11E8]
+mov     rbx, [rsp+12A8h+var_1290]
+mov     r10d, dword ptr [rsp+12A8h+var_1268]
+mov     ecx, [rsp+12A8h+var_1258]
+lea     esi, [rdx+1]
+jmp     loc_9C106" }
+node: { title: "335" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9D310" }
+node: { title: "336" label: "and     ecx, 40h
+jz      loc_9DA7D" }
+node: { title: "337" label: "test    rax, rax
+jz      short loc_9D86F" }
+node: { title: "338" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "339" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rcx]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DBB2" }
+node: { title: "340" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rcx+10h]
+mov     [rcx], edx" }
+node: { title: "341" label: "mov     rax, [rax]
+movzx   ecx, word ptr [rsp+12A8h+var_127C]
+mov     [rax], cx
+jmp     loc_9BF7D" }
+node: { title: "342" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rdx, [rcx+8]
+lea     rax, [rdx+8]
+mov     [rcx+8], rax
+jmp     loc_9CED7" }
+node: { title: "343" label: "test    rax, rax
+jz      short loc_9D8CC" }
+node: { title: "344" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "345" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rsi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DA67" }
+node: { title: "346" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rsi+10h]
+mov     [rsi], edx" }
+node: { title: "347" label: "mov     esi, [rax]
+xor     eax, eax
+jmp     loc_9C9D1" }
+node: { title: "348" label: "test    rax, rax
+jz      short loc_9D90C" }
+node: { title: "349" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "350" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rdi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DA51" }
+node: { title: "351" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "352" label: "mov     esi, [rax]
+mov     eax, 1
+jmp     loc_9C9D1" }
+node: { title: "353" label: "test    rax, rax
+jz      short loc_9D94F" }
+node: { title: "354" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "355" label: "mov     rdi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rdi]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DA3B" }
+node: { title: "356" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "357" label: "movsxd  rsi, dword ptr [rax]
+mov     rax, rsi
+jmp     loc_9C7DB" }
+node: { title: "358" label: "test    rax, rax
+jz      short loc_9D991" }
+node: { title: "359" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "360" label: "mov     rsi, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rsi]
+cmp     edx, 2Fh ; '/'
+jbe     loc_9DA29" }
+node: { title: "361" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rax, [rsi+8]
+lea     rdx, [rax+8]
+mov     [rsi+8], rdx
+mov     esi, [rax]
+jmp     loc_9D64B" }
+node: { title: "362" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rdx, [rsi+8]
+lea     rax, [rdx+8]
+mov     [rsi+8], rax
+jmp     loc_9D648" }
+node: { title: "363" label: "lea     rax, [rsp+12A8h+var_1231]
+mov     rbx, [rsp+12A8h+var_1290]
+xor     r13d, r13d
+mov     esi, 1
+mov     [rsp+12A8h+var_11F8], rax
+mov     eax, 1
+mov     [rsp+12A8h+var_11F0], 1
+jmp     loc_9C0EC" }
+node: { title: "364" label: "mov     rdx, rdi
+lea     r8, unk_D47E0
+jmp     loc_9CDC3" }
+node: { title: "365" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rdx, [rcx+8]
+lea     rax, [rdx+8]
+mov     [rcx+8], rax
+jmp     loc_9D7D8" }
+node: { title: "366" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rsi+10h]
+mov     [rsi], edx
+mov     esi, [rax]
+jmp     loc_9D64B" }
+node: { title: "367" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rax, [rdi+8]
+lea     rdx, [rax+8]
+mov     [rdi+8], rdx
+jmp     loc_9D96F" }
+node: { title: "368" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rax, [rdi+8]
+lea     rdx, [rax+8]
+mov     [rdi+8], rdx
+jmp     loc_9D92C" }
+node: { title: "369" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rax, [rsi+8]
+lea     rdx, [rax+8]
+mov     [rsi+8], rdx
+jmp     loc_9D8EC" }
+node: { title: "370" label: "test    rax, rax
+jz      short loc_9DA94" }
+node: { title: "371" label: "movsxd  rdx, [rsp+12A8h+var_126C]
+lea     rdx, [rdx+rdx*2]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "372" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     edx, [rcx]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DBC8" }
+node: { title: "373" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rcx+10h]
+mov     [rcx], edx" }
+node: { title: "374" label: "mov     rax, [rax]
+mov     ecx, [rsp+12A8h+var_127C]
+mov     [rax], ecx
+jmp     loc_9BF7D" }
+node: { title: "375" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rax, [rdi+8]
+lea     rdx, [rax+8]
+mov     [rdi+8], rdx
+jmp     loc_9D71C" }
+node: { title: "376" label: "mov     rdi, [rsp+12A8h+var_1288]
+mov     rax, [rdi+8]
+lea     rdx, [rax+8]
+mov     [rdi+8], rdx
+jmp     loc_9D53B" }
+node: { title: "377" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rax, [rsi+8]
+lea     rdx, [rax+8]
+mov     [rsi+8], rdx
+jmp     loc_9D4EE" }
+node: { title: "378" label: "mov     rsi, [rsp+12A8h+var_1288]
+mov     rax, [rsi+8]
+lea     rdx, [rax+8]
+mov     [rsi+8], rdx
+jmp     loc_9C651" }
+node: { title: "379" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rax, [rcx+8]
+lea     rdx, [rax+8]
+mov     [rcx+8], rdx
+jmp     loc_9D467" }
+node: { title: "380" label: "mov     r11d, edi
+jmp     loc_9CB1A" }
+node: { title: "381" label: "mov     esi, [rsp+12A8h+var_1270]
+mov     rdi, [rsp+12A8h+var_1278]
+lea     rdx, [rsp+12A8h+var_1228]
+call    sub_9BE80
+test    eax, eax
+jz      loc_9C199" }
+node: { title: "382" label: "jmp     loc_9C1A8" }
+node: { title: "383" label: "mov     rdi, [rsp+12A8h+var_1248]
+lea     rax, [rsp+12A8h+var_1178]
+lea     rdx, [rsp+12A8h+var_1230]
+lea     rsi, [rsp+12A8h+var_1210]
+mov     [rsp+12A8h+var_1230], rax
+call    sub_9B690
+mov     rax, [rsp+12A8h+var_1230]
+test    rax, rax
+jz      loc_9D7BD" }
+node: { title: "384" label: "jmp     loc_9D7AC" }
+node: { title: "385" label: "lea     ecx, [rdx+1]
+jmp     loc_9D1A0" }
+node: { title: "386" label: "mov     r13, rdi
+mov     r11d, esi
+lea     r8, unk_D47E0
+jmp     loc_9CCAA" }
+node: { title: "387" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rax, [rcx+8]
+lea     rdx, [rax+8]
+mov     [rcx+8], rdx
+jmp     loc_9D88F" }
+node: { title: "388" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rax, [rcx+8]
+lea     rdx, [rax+8]
+mov     [rcx+8], rdx
+jmp     loc_9DAB4" }
+node: { title: "389" label: "cmp     [rsp+12A8h+var_1230], 0
+jz      loc_9DD31" }
+node: { title: "390" label: "mov     [rsp+12A8h+var_126C], ebp
+movsx   r9d, byte ptr [r13+1]
+jmp     loc_9BFDC" }
+node: { title: "391" label: "call    sub_D4F0
+mov     [rsp+12A8h+var_127C], 0FFFFFFFFh
+mov     dword ptr [rax], 9
+jmp     loc_9C1E7" }
+node: { title: "392" label: "movsx   eax, byte ptr [r12+1]
+xor     ebp, ebp
+mov     r12, rdx
+mov     esi, eax
+sub     eax, 30h ; '0'
+cmp     eax, 9
+ja      short loc_9DC3F" }
+node: { title: "393" label: "lea     ecx, [rbp+rbp*4+0]
+add     r12, 1
+lea     ebp, [rax+rcx*2]
+movsx   eax, byte ptr [r12]
+mov     esi, eax
+sub     eax, 30h ; '0'
+cmp     eax, 9
+jbe     short loc_9DC25" }
+node: { title: "394" label: "mov     rax, [rsp+12A8h+var_1230]
+cmp     sil, 24h ; '$'
+jz      short loc_9DC9C" }
+node: { title: "395" label: "test    rax, rax
+jz      short loc_9DC61" }
+node: { title: "396" label: "movsxd  rsi, [rsp+12A8h+var_126C]
+lea     rsi, [rsi+rsi*2]
+lea     rax, [rax+rsi*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "397" label: "mov     rcx, [rsp+12A8h+var_1288]
+add     [rsp+12A8h+var_126C], 1
+mov     esi, [rcx]
+cmp     esi, 2Fh ; '/'
+ja      short loc_9DCF0" }
+node: { title: "398" label: "mov     eax, esi
+add     esi, 8
+add     rax, [rcx+10h]
+mov     [rcx], esi" }
+node: { title: "399" label: "mov     r10d, [rax]
+mov     r12, rdx" }
+node: { title: "400" label: "test    r10d, r10d
+mov     eax, 0FFFFFFFFh
+movsx   r9d, byte ptr [r12]
+cmovns  eax, r10d
+mov     r15d, eax
+jmp     loc_9BFDC" }
+node: { title: "401" label: "test    rax, rax
+jz      loc_9DD70" }
+node: { title: "402" label: "movsxd  rbp, ebp
+lea     rdx, [rbp+rbp*2+0]
+lea     rax, [rax+rdx*8]
+mov     [rsp+12A8h+var_1288], rax" }
+node: { title: "403" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     edx, [rcx]
+cmp     edx, 2Fh ; '/'
+ja      loc_9DD5A" }
+node: { title: "404" label: "mov     eax, edx
+add     edx, 8
+add     rax, [rcx+10h]
+mov     [rcx], edx" }
+node: { title: "405" label: "mov     r10d, [rax]
+add     r12, 1
+jmp     short loc_9DC83" }
+node: { title: "406" label: "cmp     [rsp+12A8h+var_1230], 0
+jz      short loc_9DD06" }
+node: { title: "407" label: "mov     [rsp+12A8h+var_126C], ebp
+movsx   r9d, byte ptr [r12]
+jmp     loc_9BFDC" }
+node: { title: "408" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rax, [rcx+8]
+lea     rsi, [rax+8]
+mov     [rcx+8], rsi
+jmp     loc_9DC7D" }
+node: { title: "409" label: "mov     rdi, [rsp+12A8h+var_1248]
+lea     rax, [rsp+12A8h+var_1178]
+lea     rdx, [rsp+12A8h+var_1230]
+lea     rsi, [rsp+12A8h+var_1210]
+mov     [rsp+12A8h+var_1230], rax
+call    sub_9B690
+jmp     short loc_9DCE2" }
+node: { title: "410" label: "call    sub_C890" }
+node: { title: "411" label: "mov     rdi, [rsp+12A8h+var_1248]
+lea     rax, [rsp+12A8h+var_1178]
+lea     rdx, [rsp+12A8h+var_1230]
+lea     rsi, [rsp+12A8h+var_1210]
+mov     [rsp+12A8h+var_1230], rax
+call    sub_9B690
+jmp     loc_9DBEA" }
+node: { title: "412" label: "mov     rcx, [rsp+12A8h+var_1288]
+mov     rax, [rcx+8]
+lea     rdx, [rax+8]
+mov     [rcx+8], rdx
+jmp     loc_9DCD1" }
+node: { title: "413" label: "mov     rdi, [rsp+12A8h+var_1248]
+lea     rax, [rsp+12A8h+var_1178]
+lea     rdx, [rsp+12A8h+var_1230]
+lea     rsi, [rsp+12A8h+var_1210]
+mov     [rsp+12A8h+var_1230], rax
+call    sub_9B690
+mov     rax, [rsp+12A8h+var_1230]
+test    rax, rax
+jz      loc_9DCB6" }
+node: { title: "414" label: "jmp     loc_9DCA5" }
+node: { title: "415" label: "endbr64
+push    rax
+pop     rax
+mov     esi, 1
+lea     rdi, unk_12DAC0
+sub     rsp, 8
+call    sub_C8E0
+nop     dword ptr [rax+rax+00h]" }
+node: { title: "416" label: "58sub_9DDD031:
+endbr64
+push    r15
+push    r14
+push    r13
+push    r12
+push    rbp
+push    rbx
+sub     rsp, 3F8h
+mov     [rsp+428h+var_428], rdi
+mov     [rsp+428h+var_410], esi
+mov     [rsp+428h+var_420], rdx
+mov     [rsp+428h+var_408], rcx
+mov     rax, fs:28h
+mov     [rsp+428h+var_40], rax
+xor     eax, eax
+cmp     esi, 0FFFFFFFEh
+jnz     short loc_9DE19" }
+node: { title: "417" label: "mov     eax, [rdi+88h]
+mov     [rsp+428h+var_410], eax" }
+node: { title: "418" label: "mov     r9d, [rsp+428h+var_410]
+test    r9d, r9d
+jz      loc_9EC62" }
+node: { title: "419" label: "cmp     [rsp+428h+var_410], 0FFFFFFFFh
+jnz     loc_9DF68" }
+node: { title: "420" label: "mov     rax, [rsp+428h+var_420]
+movzx   r15d, byte ptr [rax]
+lea     rbp, [rax+1]
+mov     r12, r15
+test    r15d, r15d
+jz      loc_9E1B7" }
+node: { title: "421" label: "xor     r13d, r13d" }
+node: { title: "422" label: "call    sub_C610
+mov     rdi, rbp
+mov     [rsp+428h+var_418], r13
+mov     ecx, r15d
+mov     rbx, rax
+lea     rax, [rsp+428h+var_347]
+xor     ebp, ebp
+xor     r14d, r14d
+mov     [rsp+428h+var_400], 0
+mov     r13, rbx
+mov     rbx, [rsp+428h+var_428]
+mov     r15, rdi
+mov     [rsp+428h+var_40C], 0
+mov     [rsp+428h+var_3F8], rax" }
+node: { title: "423" label: "mov     rsi, [r13+0]
+test    byte ptr [rsi+r12*2+1], 20h
+jnz     short loc_9DF00" }
+node: { title: "424" label: "cmp     ecx, 25h ; '%'
+jz      loc_9DFC0" }
+node: { title: "425" label: "mov     r8d, [rbx+10h]
+test    r8d, r8d
+jle     loc_9E010" }
+node: { title: "426" label: "mov     rax, [rbx+8]
+movzx   edx, byte ptr [rax]
+cmp     edx, ecx
+jz      loc_9DFF0" }
+node: { title: "427" label: "mov     r13, [rsp+428h+var_418]" }
+node: { title: "428" label: "test    r13, r13
+jz      short loc_9DED1" }
+node: { title: "429" label: "mov     rdi, r13
+call    sub_A0240" }
+node: { title: "430" label: "mov     rax, [rsp+428h+var_40]
+xor     rax, fs:28h
+jnz     loc_9F007" }
+node: { title: "431" label: "add     rsp, 3F8h
+mov     eax, r14d
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+pop     r14
+pop     r15
+retn" }
+node: { title: "432" label: "mov     eax, [rbx+10h]
+test    eax, eax
+jle     short loc_9DF31" }
+node: { title: "433" label: "mov     rdx, [rbx+8]
+mov     rax, [r13+0]
+movzx   ecx, byte ptr [rdx]
+test    byte ptr [rax+rcx*2+1], 20h
+jz      short loc_9DF48" }
+node: { title: "434" label: "mov     eax, [rbx+10h]
+add     rdx, 1
+add     ebp, 1
+mov     [rbx+8], rdx
+sub     eax, 1
+mov     [rbx+10h], eax
+test    eax, eax
+jg      short loc_9DF07" }
+node: { title: "435" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+call    sub_99860
+test    eax, eax
+jz      short loc_9DF07" }
+node: { title: "436" label: "nop     word ptr [rax+rax+00h]" }
+node: { title: "437" label: "mov     rax, r15" }
+node: { title: "438" label: "movzx   ecx, byte ptr [rax]
+lea     r15, [rax+1]
+mov     r12, rcx
+test    ecx, ecx
+jnz     loc_9DE8E" }
+node: { title: "439" label: "jmp     loc_9DEBF" }
+node: { title: "440" label: "mov     esi, 1
+lea     rdi, unk_12DAC0
+call    sub_D510
+endbr64
+test    eax, eax
+jnz     loc_9EC62" }
+node: { title: "441" label: "mov     edi, [rsp+428h+var_410]
+xor     edx, edx
+lea     rsi, loc_9DDB0
+call    sub_A01B0
+mov     r13, rax
+mov     rax, [rsp+428h+var_420]
+movzx   r15d, byte ptr [rax]
+lea     rbp, [rax+1]
+mov     r12, r15
+test    r15d, r15d
+jnz     loc_9DE4E" }
+node: { title: "442" label: "xor     r14d, r14d
+jmp     loc_9DEC4" }
+node: { title: "443" label: "movzx   edi, byte ptr [r15]
+xor     r12d, r12d
+xor     edx, edx" }
+node: { title: "444" label: "lea     rax, [r15+1]
+cmp     dil, 78h ; 'x'
+ja      loc_9E060" }
+node: { title: "445" label: "lea     r11, unk_BF440
+movzx   r8d, dil
+movsxd  r8, dword ptr [r11+r8*4]
+add     r8, r11
+jmp     r8" }
+node: { title: "446" label: "add     rax, 1
+sub     dword ptr [rbx+10h], 1
+add     ebp, 1
+mov     [rbx+8], rax
+mov     rax, r15
+jmp     loc_9DF4B" }
+node: { title: "447" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_3E8], ecx
+call    sub_99860
+mov     ecx, [rsp+428h+var_3E8]
+test    eax, eax
+jz      loc_9DEB0" }
+node: { title: "448" label: "endbr64
+mov     r13, [rsp+428h+var_418]
+test    r13, r13
+jz      short loc_9E043" }
+node: { title: "449" label: "mov     rdi, r13
+call    sub_A0240" }
+node: { title: "450" label: "test    r14d, r14d
+jnz     loc_9DED1" }
+node: { title: "451" label: "nop     dword ptr [rax+00h]" }
+node: { title: "452" label: "mov     r14d, 0FFFFFFFFh
+jmp     loc_9DED1" }
+node: { title: "453" label: "test    byte ptr [rsi+rdi*2+1], 1
+jz      short loc_9E06B" }
+node: { title: "454" label: "or      r12d, 1" }
+node: { title: "455" label: "mov     r15, rax
+lea     rax, loc_9F4B0
+mov     [rsp+428h+var_40C], 0Ah
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "456" label: "mov     edi, [rbx+10h]
+test    edi, edi
+jle     loc_9E478" }
+node: { title: "457" label: "test    r12b, 40h
+jz      loc_9E400" }
+node: { title: "458" label: "cmp     r9d, 3
+jz      loc_9E630" }
+node: { title: "459" label: "cmp     r9d, 4
+jz      loc_9E4D0" }
+node: { title: "460" label: "cmp     r9d, 1
+jz      loc_9E870" }
+node: { title: "461" label: "cmp     r9d, 2
+jnz     loc_9E80C" }
+node: { title: "462" label: "test    rdx, rdx
+mov     rax, 0FFFFFFFFFFFFFFFFh
+cmovz   rdx, rax
+and     r12d, 10h
+mov     rax, [rbx+8]
+jz      loc_9EAA8" }
+node: { title: "463" label: "movzx   esi, byte ptr [rax]
+mov     rcx, [r13+0]
+test    byte ptr [rcx+rsi*2+1], 20h
+jnz     loc_9DF48" }
+node: { title: "464" label: "mov     edi, [rbx+10h]
+add     rax, 1
+mov     r12d, 1
+mov     [rbx+8], rax
+lea     ecx, [rdi-1]
+mov     [rbx+10h], ecx
+sub     rdx, 1
+jz      loc_9EE1C" }
+node: { title: "465" label: "test    ecx, ecx
+jle     loc_9EE9C" }
+node: { title: "466" label: "mov     rax, [rbx+8]
+mov     rcx, [r13+0]
+movzx   esi, byte ptr [rax]
+test    byte ptr [rcx+rsi*2+1], 20h
+jnz     short loc_9E158" }
+node: { title: "467" label: "mov     edi, [rbx+10h]
+add     rax, 1
+add     r12d, 1
+mov     [rbx+8], rax
+lea     ecx, [rdi-1]
+mov     [rbx+10h], ecx
+sub     rdx, 1
+jnz     short loc_9E11C" }
+node: { title: "468" label: "nop     dword ptr [rax+00000000h]" }
+node: { title: "469" label: "add     ebp, r12d
+jmp     loc_9DF48" }
+node: { title: "470" label: "lea     rdx, [rdx+rdx*4]
+lea     rdx, [rdi+rdx*2-30h]
+movzx   edi, byte ptr [r15+1]
+mov     r15, rax
+jmp     loc_9DFC9" }
+node: { title: "471" label: "mov     r15, rax
+mov     r9d, 4
+jmp     loc_9E090" }
+node: { title: "472" label: "mov     r15, rax
+lea     rax, loc_9F7C0
+mov     [rsp+428h+var_40C], 10h
+or      r12d, 200h
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "473" label: "xor     r14d, r14d
+jmp     loc_9DED1" }
+node: { title: "474" label: "mov     r15, rax
+lea     rax, loc_9F7C0
+mov     [rsp+428h+var_40C], 0Ah
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "475" label: "movzx   edi, byte ptr [r15+1]
+or      r12d, 4
+mov     r15, rax
+jmp     loc_9DFC9" }
+node: { title: "476" label: "mov     r15, rax
+lea     rax, loc_9F4B0
+mov     [rsp+428h+var_40C], 0
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "477" label: "movzx   edi, byte ptr [r15+1]
+cmp     dil, 6Ch ; 'l'
+jz      loc_9EDBE" }
+node: { title: "478" label: "or      r12d, 1
+mov     r15, rax
+jmp     loc_9DFC9" }
+node: { title: "479" label: "test    r12b, 10h
+jnz     loc_9DF4B" }
+node: { title: "480" label: "mov     rdi, [rsp+428h+var_408]
+mov     edx, [rdi]
+test    r12b, 4
+jz      loc_9EE31" }
+node: { title: "481" label: "cmp     edx, 2Fh ; '/'
+ja      loc_9EF11" }
+node: { title: "482" label: "mov     ecx, edx
+add     edx, 8
+add     rcx, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "483" label: "mov     rdx, [rcx]
+mov     [rdx], bp
+jmp     loc_9DF4B" }
+node: { title: "484" label: "mov     r15, rax
+lea     rax, loc_9F7C0
+mov     [rsp+428h+var_40C], 8
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "485" label: "mov     r15, rax
+lea     rax, loc_9F7C0
+mov     [rsp+428h+var_40C], 10h
+or      r12d, 220h
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "486" label: "movzx   edi, byte ptr [r15+1]
+or      r12d, 8
+mov     r15, rax
+jmp     loc_9DFC9" }
+node: { title: "487" label: "mov     r15, rax
+mov     r9d, 2
+jmp     loc_9E090" }
+node: { title: "488" label: "movzx   edi, byte ptr [r15+1]
+or      r12d, 10h
+mov     r15, rax
+jmp     loc_9DFC9" }
+node: { title: "489" label: "mov     r13, [rsp+428h+var_418]
+test    r13, r13
+jz      loc_9E050" }
+node: { title: "490" label: "mov     rdi, r13
+call    sub_A0240
+jmp     loc_9E050" }
+node: { title: "491" label: "movzx   edi, byte ptr [rax]
+cmp     edi, 5Eh ; '^'
+jz      loc_9EDA6" }
+node: { title: "492" label: "lea     r9, [r15+2]
+xor     esi, esi
+xor     r10d, r10d" }
+node: { title: "493" label: "lea     rax, [rsp+428h+var_348]
+lea     rcx, [rsp+428h+var_248]
+nop     dword ptr [rax+00h]" }
+node: { title: "494" label: "mov     [rax], sil
+add     rax, 1
+cmp     rcx, rax
+jnz     short loc_9E328" }
+node: { title: "495" label: "lea     r15, [r9-1]
+test    edi, edi
+jz      loc_9EBC7" }
+node: { title: "496" label: "mov     eax, 1
+movsxd  rcx, edi
+mov     r15, [rsp+428h+var_3F8]
+mov     r11d, 2Dh ; '-'
+sub     eax, r10d
+xor     r10d, r10d
+mov     [rsp+rcx+428h+var_348], al" }
+node: { title: "497" label: "movzx   esi, byte ptr [r9]
+lea     rcx, [r9+1]
+cmp     sil, 2Dh ; '-'
+jz      loc_9EDD0" }
+node: { title: "498" label: "cmp     sil, 5Dh ; ']'
+jz      loc_9EBC4" }
+node: { title: "499" label: "test    sil, sil
+jz      loc_9ED7A" }
+node: { title: "500" label: "movzx   edi, sil" }
+node: { title: "501" label: "mov     r9, rcx
+movsxd  rcx, edi
+mov     [rsp+rcx+428h+var_348], al
+jmp     short loc_9E360" }
+node: { title: "502" label: "mov     r15, rax
+or      r12d, 1
+lea     rax, loc_9F7C0
+mov     [rsp+428h+var_40C], 8
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "503" label: "mov     r15, rax
+or      r12d, 40h
+xor     r9d, r9d
+jmp     loc_9E090" }
+node: { title: "504" label: "mov     r15, rax
+or      r12d, 1
+lea     rax, loc_9F4B0
+mov     [rsp+428h+var_40C], 0Ah
+mov     r9d, 3
+mov     [rsp+428h+var_400], rax
+jmp     loc_9E090" }
+node: { title: "505" label: "mov     r15, rax
+jmp     loc_9DEA3" }
+node: { title: "506" label: "mov     rcx, [rbx+8]
+mov     rax, [r13+0]
+movzx   esi, byte ptr [rcx]
+test    byte ptr [rax+rsi*2+1], 20h
+jz      loc_9E0A5" }
+node: { title: "507" label: "mov     rax, rbx
+mov     [rsp+428h+var_3E0], rdx
+mov     rbx, r13
+mov     [rsp+428h+var_3D0], r9d
+mov     r13, rax
+jmp     short loc_9E445" }
+node: { title: "508" label: "add     rcx, 1
+mov     [r13+8], rcx" }
+node: { title: "509" label: "movzx   esi, byte ptr [rcx]
+mov     rax, [rbx]
+test    byte ptr [rax+rsi*2+1], 20h
+jz      short loc_9E4B0" }
+node: { title: "510" label: "mov     eax, [r13+10h]
+add     ebp, 1
+sub     eax, 1
+mov     [r13+10h], eax
+test    eax, eax
+jg      short loc_9E430" }
+node: { title: "511" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, r13
+call    sub_99860
+test    eax, eax
+jnz     loc_9E02D" }
+node: { title: "512" label: "mov     rcx, [r13+8]
+jmp     short loc_9E438" }
+node: { title: "513" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_3E4], r9d
+mov     [rsp+428h+var_3F0], rdx
+call    sub_99860
+mov     rdx, [rsp+428h+var_3F0]
+mov     r9d, [rsp+428h+var_3E4]
+test    eax, eax
+jz      loc_9E09B" }
+node: { title: "514" label: "jmp     loc_9E02D" }
+node: { title: "515" label: "mov     rax, r13
+mov     rdx, [rsp+428h+var_3E0]
+mov     r13, rbx
+mov     r9d, [rsp+428h+var_3D0]
+mov     rbx, rax
+jmp     loc_9E0A5" }
+node: { title: "516" label: "lea     rax, [rdx-1]
+mov     r9d, r12d
+lea     rcx, [rsp+428h+var_248]
+cmp     rax, 200h
+mov     eax, 200h
+lea     r12, unk_BF624
+cmovnb  rdx, rax
+or      r9d, 780h
+add     rdx, rcx" }
+node: { title: "517" label: "mov     rdi, [rbx+8]
+movzx   esi, byte ptr [rdi]
+cmp     sil, 45h ; 'E'
+ja      short loc_9E530" }
+node: { title: "518" label: "cmp     sil, 2Ah ; '*'
+jbe     short loc_9E536" }
+node: { title: "519" label: "lea     eax, [rsi-2Bh]
+cmp     al, 1Ah
+ja      short loc_9E536" }
+node: { title: "520" label: "movzx   eax, al
+movsxd  rax, dword ptr [r12+rax*4]
+add     rax, r12
+jmp     rax" }
+node: { title: "521" label: "cmp     sil, 65h ; 'e'
+jz      short loc_9E5AA" }
+node: { title: "522" label: "test    r9d, 100h
+jz      short loc_9E58E" }
+node: { title: "523" label: "test    r9d, 400h
+jnz     loc_9EFCC" }
+node: { title: "524" label: "movzx   edx, byte ptr [rcx-1]
+mov     eax, edx
+and     eax, 0FFFFFFDFh
+cmp     al, 45h ; 'E'
+jnz     loc_9ECBA" }
+node: { title: "525" label: "sub     rcx, 1" }
+node: { title: "526" label: "mov     esi, 0FFFFFFFEh
+mov     rdi, rbx
+mov     [rsp+428h+var_398], rcx
+mov     [rsp+428h+var_390], r9d
+call    sub_9B390
+mov     rcx, [rsp+428h+var_398]
+mov     r9d, [rsp+428h+var_390]" }
+node: { title: "527" label: "test    r9b, 10h
+jz      loc_9EBD6" }
+node: { title: "528" label: "lea     rax, [rsp+428h+var_248]
+sub     rcx, rax
+add     ebp, ecx
+jmp     loc_9DF48" }
+node: { title: "529" label: "mov     eax, r9d
+and     eax, 500h
+cmp     eax, 400h
+jnz     loc_9E536" }
+node: { title: "530" label: "and     r9d, 0FFFFF87Fh
+or      r9d, 180h" }
+node: { title: "531" label: "mov     eax, [rbx+10h]
+add     rcx, 1
+mov     [rcx-1], sil
+sub     eax, 1
+mov     [rbx+10h], eax
+test    eax, eax
+jle     loc_9E928" }
+node: { title: "532" label: "add     rdi, 1
+mov     [rbx+8], rdi" }
+node: { title: "533" label: "cmp     rcx, rdx
+jnz     loc_9E4FF" }
+node: { title: "534" label: "jmp     loc_9E536" }
+node: { title: "535" label: "test    r9d, 200h
+jz      loc_9E536" }
+node: { title: "536" label: "and     r9d, 0FFFFFD7Fh
+jmp     short loc_9E5CB" }
+node: { title: "537" label: "and     r9d, 0FFFFFE7Fh
+jmp     short loc_9E5CB" }
+node: { title: "538" label: "test    r9b, 80h
+jz      loc_9E536" }
+node: { title: "539" label: "and     r9b, 7Fh
+jmp     short loc_9E5CB" }
+node: { title: "540" label: "sub     rdx, 1
+mov     eax, 1FFh
+lea     rcx, [rsp+428h+var_248]
+cmp     rdx, 1FFh
+lea     r8, [rsp+428h+var_247]
+lea     r10, off_BF7E0
+cmova   rdx, rax
+or      r12d, 580h
+lea     r9, [rsp+rdx+428h+var_247]
+lea     rdx, unk_BF690" }
+node: { title: "541" label: "mov     rsi, [rbx+8]
+movzx   edi, byte ptr [rsi]
+lea     eax, [rdi-2Bh]
+cmp     al, 4Dh ; 'M'
+ja      short loc_9E6C8" }
+node: { title: "542" label: "movzx   eax, al
+movsxd  rax, dword ptr [rdx+rax*4]
+add     rax, rdx
+jmp     rax" }
+node: { title: "543" label: "cmp     [rsp+428h+var_40C], 0Ah
+jle     short loc_9E6C8" }
+node: { title: "544" label: "and     r12d, 0FFFFFC7Fh" }
+node: { title: "545" label: "mov     eax, [rbx+10h]
+add     rcx, 1
+mov     [rcx-1], dil
+sub     eax, 1
+mov     [rbx+10h], eax
+test    eax, eax
+jle     loc_9E960" }
+node: { title: "546" label: "add     rsi, 1
+mov     [rbx+8], rsi" }
+node: { title: "547" label: "cmp     rcx, r9
+jnz     short loc_9E671" }
+node: { title: "548" label: "nop     dword ptr [rax+00h]" }
+node: { title: "549" label: "test    r12d, 100h
+jnz     loc_9EF73" }
+node: { title: "550" label: "movzx   eax, byte ptr [rcx-1]
+mov     edx, eax
+and     edx, 0FFFFFFDFh
+cmp     dl, 58h ; 'X'
+jz      loc_9EC39" }
+node: { title: "551" label: "test    r12b, 10h
+jnz     loc_9E598" }
+node: { title: "552" label: "mov     edx, [rsp+428h+var_40C]
+xor     esi, esi
+mov     rax, [rsp+428h+var_400]
+mov     byte ptr [rcx], 0
+mov     [rsp+428h+var_3A0], rcx
+lea     rdi, [rsp+428h+var_248]
+call    rax
+mov     rdi, [rsp+428h+var_408]
+test    r12b, 20h
+mov     rcx, [rsp+428h+var_3A0]
+mov     edx, [rdi]
+jz      loc_9ECF4" }
+node: { title: "553" label: "cmp     edx, 2Fh ; '/'
+ja      loc_9ED2E" }
+node: { title: "554" label: "mov     esi, edx
+add     edx, 8
+add     rsi, [rdi+10h]
+mov     [rdi], edx" }
+node: { title: "555" label: "mov     rdx, [rsi]
+mov     [rdx], rax" }
+node: { title: "556" label: "add     r14d, 1
+jmp     loc_9E598" }
+node: { title: "557" label: "movsxd  rax, [rsp+428h+var_40C]
+and     r12d, 0FFFFFC7Fh
+movsx   eax, word ptr [r10+rax*2]
+mov     [rsp+428h+var_40C], eax
+jmp     loc_9E69E" }
+node: { title: "558" label: "test    r12d, 200h
+jz      loc_9E6C8" }
+node: { title: "559" label: "cmp     rcx, r8
+jnz     loc_9E6C8" }
+node: { title: "560" label: "mov     [rsp+428h+var_40C], 10h
+and     r12d, 0FFFFFDFFh
+jmp     loc_9E69E" }
+node: { title: "561" label: "test    r12b, 80h
+jz      loc_9E6C8" }
+node: { title: "562" label: "and     r12b, 7Fh
+jmp     loc_9E69E" }
+node: { title: "563" label: "movsxd  rax, [rsp+428h+var_40C]
+movsx   eax, word ptr [r10+rax*2]
+mov     [rsp+428h+var_40C], eax
+cmp     eax, 8
+jg      loc_9E697" }
+node: { title: "564" label: "jmp     loc_9E6C8" }
+node: { title: "565" label: "mov     eax, [rsp+428h+var_40C]
+test    eax, eax
+jnz     short loc_9E7E7" }
+node: { title: "566" label: "mov     [rsp+428h+var_40C], 8
+or      r12d, 200h" }
+node: { title: "567" label: "mov     eax, r12d
+mov     r11d, r12d
+and     eax, 0FFFFFA7Fh
+and     r11d, 0FFFFFC7Fh
+and     r12d, 400h
+cmovz   eax, r11d
+mov     r12d, eax
+jmp     loc_9E69E" }
+node: { title: "568" label: "test    rdx, rdx
+mov     ecx, 1
+cmovnz  rcx, rdx
+and     r12d, 10h
+mov     r9, rcx
+jnz     loc_9EB50" }
+node: { title: "569" label: "mov     rdi, [rsp+428h+var_408]
+mov     eax, [rdi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9EC78" }
+node: { title: "570" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rdi+10h]
+mov     [rdi], eax" }
+node: { title: "571" label: "mov     rdx, [rdx]
+mov     rcx, r9
+mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+call    sub_97CE0
+test    rax, rax
+jz      loc_9E02D" }
+node: { title: "572" label: "add     ebp, eax
+add     r14d, 1
+mov     rax, r15
+jmp     loc_9DF4B" }
+node: { title: "573" label: "test    rdx, rdx
+mov     rax, 0FFFFFFFFFFFFFFFFh
+mov     rsi, [rbx+8]
+cmovz   rdx, rax
+and     r12d, 10h
+jz      loc_9E9B0" }
+node: { title: "574" label: "movzx   eax, byte ptr [rsi]
+cmp     [rsp+rax+428h+var_348], 0
+jz      loc_9DEBF" }
+node: { title: "575" label: "mov     eax, [rbx+10h]
+add     rsi, 1
+mov     [rbx+8], rsi
+sub     eax, 1
+sub     rdx, 1
+mov     [rbx+10h], eax
+mov     r12, rdx
+jz      short loc_9E91A" }
+node: { title: "576" label: "mov     [rsp+428h+var_388], ebp
+mov     ebp, r9d
+jmp     short loc_9E8F3" }
+node: { title: "577" label: "mov     rdx, [rbx+8]
+movzx   eax, byte ptr [rdx]
+cmp     [rsp+rax+428h+var_348], 0
+jz      short loc_9E910" }
+node: { title: "578" label: "mov     eax, [rbx+10h]
+add     rdx, 1
+add     ebp, 1
+mov     [rbx+8], rdx
+sub     eax, 1
+mov     [rbx+10h], eax
+sub     r12, 1
+jz      short loc_9E910" }
+node: { title: "579" label: "test    eax, eax
+jg      short loc_9E8C8" }
+node: { title: "580" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+call    sub_99860
+test    eax, eax
+jz      short loc_9E8C8" }
+node: { title: "581" label: "nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "582" label: "mov     r9d, ebp
+mov     ebp, [rsp+428h+var_388]" }
+node: { title: "583" label: "add     ebp, r9d
+mov     rax, r15
+jmp     loc_9DF4B" }
+node: { title: "584" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_3C8], rdx
+mov     [rsp+428h+var_3CC], r9d
+mov     [rsp+428h+var_3D8], rcx
+call    sub_99860
+mov     rcx, [rsp+428h+var_3D8]
+mov     r9d, [rsp+428h+var_3CC]
+test    eax, eax
+mov     rdx, [rsp+428h+var_3C8]
+jz      loc_9E5EC" }
+node: { title: "585" label: "jmp     loc_9E536" }
+node: { title: "586" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_3B0], r8
+mov     [rsp+428h+var_3B8], r9
+mov     [rsp+428h+var_3C0], rcx
+call    sub_99860
+mov     rcx, [rsp+428h+var_3C0]
+mov     r9, [rsp+428h+var_3B8]
+lea     rdx, unk_BF690
+test    eax, eax
+mov     r8, [rsp+428h+var_3B0]
+lea     r10, off_BF7E0
+jz      loc_9E6BF" }
+node: { title: "587" label: "jmp     loc_9E6C8" }
+node: { title: "588" label: "mov     rdi, [rsp+428h+var_408]
+mov     eax, [rdi]
+cmp     eax, 2Fh ; '/'
+ja      loc_9ECA4" }
+node: { title: "589" label: "mov     ecx, eax
+add     eax, 8
+add     rcx, [rdi+10h]
+mov     [rdi], eax" }
+node: { title: "590" label: "movzx   eax, byte ptr [rsi]
+mov     rdi, [rcx]
+cmp     [rsp+rax+428h+var_348], 0
+mov     [rsp+428h+var_3A8], rdi
+jz      loc_9DEBF" }
+node: { title: "591" label: "lea     rax, [rsi+1]
+sub     dword ptr [rbx+10h], 1
+lea     r12, [rdi+1]
+mov     [rbx+8], rax
+movzx   eax, byte ptr [rsi]
+mov     [rdi], al
+cmp     rdx, 1
+jz      short loc_9EA80" }
+node: { title: "592" label: "add     rdx, rdi
+mov     [rsp+428h+var_38C], ebp
+mov     rbp, rdx
+jmp     short loc_9EA4E" }
+node: { title: "593" label: "mov     rax, [rbx+8]
+movzx   ecx, byte ptr [rax]
+cmp     [rsp+rcx+428h+var_348], 0
+jz      loc_9EBB8" }
+node: { title: "594" label: "lea     rcx, [rax+1]
+sub     dword ptr [rbx+10h], 1
+add     r12, 1
+mov     [rbx+8], rcx
+movzx   eax, byte ptr [rax]
+mov     [r12-1], al
+cmp     r12, rbp
+jz      loc_9EBB8" }
+node: { title: "595" label: "mov     esi, [rbx+10h]
+test    esi, esi
+jg      short loc_9EA18" }
+node: { title: "596" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+call    sub_99860
+test    eax, eax
+jz      short loc_9EA18" }
+node: { title: "597" label: "mov     ebp, [rsp+428h+var_38C]
+cmp     [rsp+428h+var_3A8], r12
+jz      loc_9E02D" }
+node: { title: "598" label: "nop     dword ptr [rax+rax+00h]" }
+node: { title: "599" label: "mov     rax, r12
+sub     rax, [rsp+428h+var_3A8]
+mov     r9d, eax
+test    eax, eax
+jz      loc_9DEBF" }
+node: { title: "600" label: "mov     byte ptr [r12], 0
+add     r14d, 1
+jmp     loc_9E91A" }
+node: { title: "601" label: "mov     rdi, [rsp+428h+var_408]
+mov     ecx, [rdi]
+cmp     ecx, 2Fh ; '/'
+ja      loc_9EC8E" }
+node: { title: "602" label: "mov     esi, ecx
+add     ecx, 8
+add     rsi, [rdi+10h]
+mov     [rdi], ecx" }
+node: { title: "603" label: "mov     r12, [rsi]
+movzx   edi, byte ptr [rax]
+xor     ecx, ecx
+mov     rsi, [r13+0]
+test    byte ptr [rsi+rdi*2+1], 20h
+jnz     short loc_9EB3D" }
+node: { title: "604" label: "lea     rcx, [rax+1]
+sub     dword ptr [rbx+10h], 1
+lea     r9, [r12+1]
+mov     [rbx+8], rcx
+movzx   eax, byte ptr [rax]
+mov     [r12], al
+cmp     rdx, 1
+jz      loc_9EE24" }
+node: { title: "605" label: "add     rdx, r12" }
+node: { title: "606" label: "mov     ecx, [rbx+10h]
+test    ecx, ecx
+jle     loc_9EE62" }
+node: { title: "607" label: "mov     rax, [rbx+8]
+mov     rcx, [r13+0]
+movzx   esi, byte ptr [rax]
+test    byte ptr [rcx+rsi*2+1], 20h
+jnz     short loc_9EB34" }
+node: { title: "608" label: "lea     rcx, [rax+1]
+sub     dword ptr [rbx+10h], 1
+add     r9, 1
+mov     [rbx+8], rcx
+movzx   eax, byte ptr [rax]
+mov     [r9-1], al
+cmp     r9, rdx
+jnz     short loc_9EAFB" }
+node: { title: "609" label: "mov     ecx, r9d
+sub     ecx, r12d
+mov     r12, r9" }
+node: { title: "610" label: "mov     byte ptr [r12], 0
+add     ebp, ecx
+add     r14d, 1
+mov     rax, r15
+jmp     loc_9DF4B" }
+node: { title: "611" label: "mov     [rsp+428h+var_384], ebp
+xor     r12d, r12d
+mov     rbp, rcx
+jmp     short loc_9EB82" }
+node: { title: "612" label: "add     r12, rax
+sub     rbp, rax
+add     rax, rcx
+mov     esi, 0FFFFFFFFh
+mov     [rbx+8], rax
+mov     rdi, rbx
+call    sub_99860
+test    eax, eax
+jnz     loc_9ED44" }
+node: { title: "613" label: "movsxd  rax, dword ptr [rbx+10h]
+mov     rcx, [rbx+8]
+mov     rdx, rax
+cmp     rax, rbp
+jb      short loc_9EB60" }
+node: { title: "614" label: "mov     r9, rbp
+mov     ebp, [rsp+428h+var_384]
+sub     edx, r9d
+add     rcx, r9
+add     r12, r9
+mov     [rbx+10h], edx
+mov     [rbx+8], rcx
+jmp     loc_9E158" }
+node: { title: "615" label: "mov     ebp, [rsp+428h+var_38C]
+jmp     loc_9EA80" }
+node: { title: "616" label: "mov     r15, rcx" }
+node: { title: "617" label: "or      r12d, 40h
+mov     r9d, 1
+jmp     loc_9E090" }
+node: { title: "618" label: "mov     byte ptr [rcx], 0
+lea     rdi, [rsp+428h+var_248]
+xor     esi, esi
+mov     [rsp+428h+var_370], r9d
+mov     [rsp+428h+var_378], rcx
+call    sub_D880
+mov     r9d, [rsp+428h+var_370]
+mov     rdi, [rsp+428h+var_408]
+mov     rcx, [rsp+428h+var_378]
+and     r9d, 1
+mov     eax, [rdi]
+jz      loc_9ED82" }
+node: { title: "619" label: "cmp     eax, 2Fh ; '/'
+ja      loc_9EEC6" }
+node: { title: "620" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rdi+10h]
+mov     [rdi], eax" }
+node: { title: "621" label: "mov     rax, [rdx]
+movsd   qword ptr [rax], xmm0
+jmp     loc_9E744" }
+node: { title: "622" label: "sub     rcx, 1
+movzx   edx, al
+mov     esi, 0FFFFFFFEh
+mov     rdi, rbx
+mov     [rsp+428h+var_380], rcx
+call    sub_9B390
+mov     rcx, [rsp+428h+var_380]
+jmp     loc_9E6E7" }
+node: { title: "623" label: "call    sub_D4F0
+mov     r14d, 0FFFFFFFFh
+mov     dword ptr [rax], 0Bh
+jmp     loc_9DED1" }
+node: { title: "624" label: "mov     rdi, [rsp+428h+var_408]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9E840" }
+node: { title: "625" label: "mov     rdi, [rsp+428h+var_408]
+mov     rsi, [rdi+8]
+lea     rcx, [rsi+8]
+mov     [rdi+8], rcx
+jmp     loc_9EAC3" }
+node: { title: "626" label: "mov     rdi, [rsp+428h+var_408]
+mov     rcx, [rdi+8]
+lea     rax, [rcx+8]
+mov     [rdi+8], rax
+jmp     loc_9E9CB" }
+node: { title: "627" label: "mov     esi, 0FFFFFFFEh
+mov     rdi, rbx
+mov     [rsp+428h+var_368], rcx
+mov     [rsp+428h+var_36C], r9d
+call    sub_9B390
+mov     rcx, [rsp+428h+var_368]
+mov     r9d, [rsp+428h+var_36C]
+movzx   edx, byte ptr [rcx-2]
+sub     rcx, 2
+jmp     loc_9E561" }
+node: { title: "628" label: "test    r12b, 8
+jnz     short loc_9ED60" }
+node: { title: "629" label: "test    r12b, 1
+jnz     short loc_9ED60" }
+node: { title: "630" label: "and     r12d, 4
+jz      loc_9EF27" }
+node: { title: "631" label: "cmp     edx, 2Fh ; '/'
+ja      loc_9EFA0" }
+node: { title: "632" label: "mov     rdi, [rsp+428h+var_408]
+mov     esi, edx
+add     edx, 8
+mov     [rdi], edx
+add     rsi, [rdi+10h]" }
+node: { title: "633" label: "mov     rdx, [rsi]
+mov     [rdx], ax
+jmp     loc_9E744" }
+node: { title: "634" label: "mov     rdi, [rsp+428h+var_408]
+mov     rsi, [rdi+8]
+lea     rdx, [rsi+8]
+mov     [rdi+8], rdx
+jmp     loc_9E73E" }
+node: { title: "635" label: "mov     ebp, [rsp+428h+var_384]
+test    r12, r12
+jnz     loc_9E158" }
+node: { title: "636" label: "jmp     loc_9E02D" }
+node: { title: "637" label: "cmp     edx, 2Fh ; '/'
+ja      short loc_9ED2E" }
+node: { title: "638" label: "mov     rdi, [rsp+428h+var_408]
+mov     esi, edx
+add     edx, 8
+mov     [rdi], edx
+add     rsi, [rdi+10h]
+jmp     loc_9E73E" }
+node: { title: "639" label: "mov     r15, r9
+jmp     loc_9EBC7" }
+node: { title: "640" label: "cmp     eax, 2Fh ; '/'
+ja      loc_9EEDC" }
+node: { title: "641" label: "mov     edx, eax
+add     eax, 8
+add     rdx, [rdi+10h]
+mov     [rdi], eax" }
+node: { title: "642" label: "mov     rax, [rdx]
+cvtsd2ss xmm0, xmm0
+movss   dword ptr [rax], xmm0
+jmp     loc_9E744" }
+node: { title: "643" label: "movzx   edi, byte ptr [rax+1]
+lea     r9, [rax+2]
+mov     esi, 1
+mov     r10d, 1
+jmp     loc_9E314" }
+node: { title: "644" label: "movzx   edi, byte ptr [r15+2]
+or      r12d, 8
+add     r15, 2
+jmp     loc_9DFC9" }
+node: { title: "645" label: "movzx   esi, byte ptr [r9+1]
+mov     r8d, esi
+cmp     sil, 5Dh ; ']'
+jz      loc_9F00C" }
+node: { title: "646" label: "cmp     esi, edi
+jl      loc_9F00C" }
+node: { title: "647" label: "add     r9, 2
+movsxd  rcx, edi
+nop     dword ptr [rax+00000000h]" }
+node: { title: "648" label: "mov     [r15+rcx], al
+add     rcx, 1
+cmp     esi, ecx
+jg      short loc_9EDF8" }
+node: { title: "649" label: "movzx   ecx, r8b
+sub     ecx, edi
+sub     ecx, 1
+cmp     esi, edi
+cmovle  ecx, r10d
+lea     edi, [rdi+rcx+1]
+jmp     loc_9E360" }
+node: { title: "650" label: "add     ebp, 1
+jmp     loc_9DF48" }
+node: { title: "651" label: "mov     r12, r9
+mov     ecx, 1
+jmp     loc_9EB3D" }
+node: { title: "652" label: "and     r12d, 1
+jz      loc_9EEF2" }
+node: { title: "653" label: "cmp     edx, 2Fh ; '/'
+ja      loc_9EF4A" }
+node: { title: "654" label: "mov     rdi, [rsp+428h+var_408]
+mov     ecx, edx
+add     edx, 8
+mov     [rdi], edx
+add     rcx, [rdi+10h]" }
+node: { title: "655" label: "mov     rdx, [rcx]
+movsxd  rcx, ebp
+mov     [rdx], rcx
+jmp     loc_9DF4B" }
+node: { title: "656" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_350], rdx
+mov     [rsp+428h+var_358], r9
+call    sub_99860
+mov     r9, [rsp+428h+var_358]
+mov     rdx, [rsp+428h+var_350]
+test    eax, eax
+jz      loc_9EB06" }
+node: { title: "657" label: "jmp     loc_9EB34" }
+node: { title: "658" label: "mov     esi, 0FFFFFFFFh
+mov     rdi, rbx
+mov     [rsp+428h+var_360], rdx
+call    sub_99860
+mov     rdx, [rsp+428h+var_360]
+test    eax, eax
+jz      loc_9E124" }
+node: { title: "659" label: "jmp     loc_9E158" }
+node: { title: "660" label: "mov     rdi, [rsp+428h+var_408]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9EC2D" }
+node: { title: "661" label: "mov     rdi, [rsp+428h+var_408]
+mov     rdx, [rdi+8]
+lea     rax, [rdx+8]
+mov     [rdi+8], rax
+jmp     loc_9ED96" }
+node: { title: "662" label: "cmp     edx, 2Fh ; '/'
+ja      short loc_9EF60" }
+node: { title: "663" label: "mov     rdi, [rsp+428h+var_408]
+mov     ecx, edx
+add     edx, 8
+mov     [rdi], edx
+add     rcx, [rdi+10h]" }
+node: { title: "664" label: "mov     rdx, [rcx]
+mov     [rdx], ebp
+jmp     loc_9DF4B" }
+node: { title: "665" label: "mov     rdi, [rsp+428h+var_408]
+mov     rcx, [rdi+8]
+lea     rdx, [rcx+8]
+mov     [rdi+8], rdx
+jmp     loc_9E25E" }
+node: { title: "666" label: "cmp     edx, 2Fh ; '/'
+ja      loc_9EFB6" }
+node: { title: "667" label: "mov     rdi, [rsp+428h+var_408]
+mov     esi, edx
+add     edx, 8
+mov     [rdi], edx
+add     rsi, [rdi+10h]" }
+node: { title: "668" label: "mov     rdx, [rsi]
+mov     [rdx], eax
+jmp     loc_9E744" }
+node: { title: "669" label: "mov     rdi, [rsp+428h+var_408]
+mov     rcx, [rdi+8]
+lea     rdx, [rcx+8]
+mov     [rdi+8], rdx
+jmp     loc_9EE54" }
+node: { title: "670" label: "mov     rdi, [rsp+428h+var_408]
+mov     rcx, [rdi+8]
+lea     rdx, [rcx+8]
+mov     [rdi+8], rdx
+jmp     short loc_9EF07" }
+node: { title: "671" label: "lea     rax, [rsp+428h+var_248]
+mov     r13, [rsp+428h+var_418]
+cmp     rcx, rax
+jbe     loc_9DEC4" }
+node: { title: "672" label: "movzx   edx, byte ptr [rcx-1]
+mov     rdi, [rsp+428h+var_428]
+mov     esi, 0FFFFFFFEh
+call    sub_9B390
+jmp     loc_9DEC4" }
+node: { title: "673" label: "mov     rdi, [rsp+428h+var_408]
+mov     rsi, [rdi+8]
+lea     rdx, [rsi+8]
+mov     [rdi+8], rdx
+jmp     loc_9ED23" }
+node: { title: "674" label: "mov     rdi, [rsp+428h+var_408]
+mov     rsi, [rdi+8]
+lea     rdx, [rsi+8]
+mov     [rdi+8], rdx
+jmp     loc_9EF40" }
+node: { title: "675" label: "mov     r13, [rsp+428h+var_418]
+mov     r12, [rsp+428h+var_428]
+lea     rbx, [rsp+428h+var_248]
+mov     rbp, rcx
+jmp     short loc_9EFFD" }
+node: { title: "676" label: "movzx   edx, byte ptr [rbp-1]
+mov     esi, 0FFFFFFFEh
+mov     rdi, r12
+sub     rbp, 1
+call    sub_9B390" }
+node: { title: "677" label: "cmp     rbp, rbx
+ja      short loc_9EFE8" }
+node: { title: "678" label: "jmp     loc_9DEC4" }
+node: { title: "679" label: "call    sub_C890" }
+node: { title: "680" label: "mov     edi, r11d
+jmp     loc_9E389" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "43" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "43" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "45" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "35" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "7" }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "50" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "6" label: "true" color: darkgreen }
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+// node 8
+edge: { sourcename: "8" targetname: "9" label: "false" color: red }
+edge: { sourcename: "8" targetname: "272" label: "true" color: darkgreen }
+// node 9
+edge: { sourcename: "9" targetname: "10" }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "18" label: "true" color: darkgreen }
+// node 12
+// node 13
+edge: { sourcename: "13" targetname: "14" }
+// node 14
+edge: { sourcename: "14" targetname: "15" label: "false" color: red }
+edge: { sourcename: "14" targetname: "14" label: "true" color: darkgreen }
+// node 15
+edge: { sourcename: "15" targetname: "16" label: "false" color: red }
+edge: { sourcename: "15" targetname: "389" label: "true" color: darkgreen }
+// node 16
+edge: { sourcename: "16" targetname: "12" label: "true" color: darkgreen }
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+edge: { sourcename: "18" targetname: "19" label: "false" color: red }
+edge: { sourcename: "18" targetname: "35" label: "true" color: darkgreen }
+// node 19
+edge: { sourcename: "19" targetname: "20" }
+// node 20
+edge: { sourcename: "20" targetname: "21" }
+// node 21
+edge: { sourcename: "21" targetname: "22" label: "false" color: red }
+edge: { sourcename: "21" targetname: "167" label: "true" color: darkgreen }
+// node 22
+edge: { sourcename: "22" targetname: "23" label: "false" color: red }
+edge: { sourcename: "22" targetname: "154" label: "true" color: darkgreen }
+// node 23
+edge: { sourcename: "23" targetname: "24" label: "false" color: red }
+edge: { sourcename: "23" targetname: "166" label: "true" color: darkgreen }
+// node 24
+edge: { sourcename: "24" targetname: "25" }
+// node 25
+edge: { sourcename: "25" targetname: "26" label: "false" color: red }
+edge: { sourcename: "25" targetname: "228" label: "true" color: darkgreen }
+// node 26
+edge: { sourcename: "26" targetname: "27" }
+// node 27
+edge: { sourcename: "27" targetname: "28" label: "false" color: red }
+edge: { sourcename: "27" targetname: "170" label: "true" color: darkgreen }
+// node 28
+edge: { sourcename: "28" targetname: "29" label: "false" color: red }
+edge: { sourcename: "28" targetname: "183" label: "true" color: darkgreen }
+// node 29
+edge: { sourcename: "29" targetname: "30" label: "false" color: red }
+edge: { sourcename: "29" targetname: "210" label: "true" color: darkgreen }
+// node 30
+edge: { sourcename: "30" targetname: "31" label: "false" color: red }
+edge: { sourcename: "30" targetname: "208" label: "true" color: darkgreen }
+// node 31
+edge: { sourcename: "31" targetname: "32" label: "false" color: red }
+edge: { sourcename: "31" targetname: "33" label: "true" color: darkgreen }
+// node 32
+edge: { sourcename: "32" targetname: "33" label: "false" color: red }
+edge: { sourcename: "32" targetname: "234" label: "true" color: darkgreen }
+// node 33
+edge: { sourcename: "33" targetname: "34" }
+// node 34
+edge: { sourcename: "34" targetname: "5" label: "true" color: darkgreen }
+edge: { sourcename: "34" targetname: "35" label: "false" color: red }
+// node 35
+edge: { sourcename: "35" targetname: "36" label: "false" color: red }
+edge: { sourcename: "35" targetname: "381" label: "true" color: darkgreen }
+// node 36
+edge: { sourcename: "36" targetname: "37" }
+// node 37
+edge: { sourcename: "37" targetname: "38" label: "false" color: red }
+edge: { sourcename: "37" targetname: "40" label: "true" color: darkgreen }
+// node 38
+edge: { sourcename: "38" targetname: "39" label: "false" color: red }
+edge: { sourcename: "38" targetname: "40" label: "true" color: darkgreen }
+// node 39
+edge: { sourcename: "39" targetname: "40" }
+// node 40
+edge: { sourcename: "40" targetname: "41" }
+// node 41
+edge: { sourcename: "41" targetname: "42" label: "false" color: red }
+edge: { sourcename: "41" targetname: "410" label: "true" color: darkgreen }
+// node 42
+// node 43
+edge: { sourcename: "43" targetname: "44" label: "false" color: red }
+edge: { sourcename: "43" targetname: "391" label: "true" color: darkgreen }
+// node 44
+edge: { sourcename: "44" targetname: "3" label: "true" color: darkgreen }
+edge: { sourcename: "44" targetname: "45" label: "false" color: red }
+// node 45
+edge: { sourcename: "45" targetname: "3" label: "true" color: darkgreen }
+edge: { sourcename: "45" targetname: "46" label: "false" color: red }
+// node 46
+edge: { sourcename: "46" targetname: "47" label: "false" color: red }
+edge: { sourcename: "46" targetname: "48" label: "true" color: darkgreen }
+// node 47
+edge: { sourcename: "47" targetname: "48" }
+// node 48
+edge: { sourcename: "48" targetname: "41" label: "true" color: darkgreen }
+edge: { sourcename: "48" targetname: "49" label: "false" color: red }
+// node 49
+edge: { sourcename: "49" targetname: "41" }
+// node 50
+edge: { sourcename: "50" targetname: "35" label: "true" color: darkgreen }
+edge: { sourcename: "50" targetname: "51" label: "false" color: red }
+// node 51
+edge: { sourcename: "51" targetname: "52" label: "false" color: red }
+edge: { sourcename: "51" targetname: "54" label: "true" color: darkgreen }
+// node 52
+edge: { sourcename: "52" targetname: "53" label: "false" color: red }
+edge: { sourcename: "52" targetname: "56" label: "true" color: darkgreen }
+// node 53
+edge: { sourcename: "53" targetname: "54" }
+// node 54
+edge: { sourcename: "54" targetname: "9" label: "true" color: darkgreen }
+edge: { sourcename: "54" targetname: "55" label: "false" color: red }
+// node 55
+edge: { sourcename: "55" targetname: "35" }
+// node 56
+edge: { sourcename: "56" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "56" targetname: "57" label: "false" color: red }
+// node 57
+edge: { sourcename: "57" targetname: "54" }
+// node 58
+edge: { sourcename: "58" targetname: "59" label: "false" color: red }
+edge: { sourcename: "58" targetname: "60" label: "true" color: darkgreen }
+// node 59
+edge: { sourcename: "59" targetname: "60" }
+// node 60
+edge: { sourcename: "60" targetname: "61" label: "false" color: red }
+edge: { sourcename: "60" targetname: "283" label: "true" color: darkgreen }
+// node 61
+edge: { sourcename: "61" targetname: "62" }
+// node 62
+edge: { sourcename: "62" targetname: "63" label: "false" color: red }
+edge: { sourcename: "62" targetname: "64" label: "true" color: darkgreen }
+// node 63
+edge: { sourcename: "63" targetname: "64" }
+// node 64
+edge: { sourcename: "64" targetname: "65" label: "false" color: red }
+edge: { sourcename: "64" targetname: "66" label: "true" color: darkgreen }
+// node 65
+edge: { sourcename: "65" targetname: "66" }
+// node 66
+edge: { sourcename: "66" targetname: "67" label: "false" color: red }
+edge: { sourcename: "66" targetname: "68" label: "true" color: darkgreen }
+// node 67
+edge: { sourcename: "67" targetname: "68" }
+// node 68
+edge: { sourcename: "68" targetname: "69" label: "false" color: red }
+edge: { sourcename: "68" targetname: "70" label: "true" color: darkgreen }
+// node 69
+edge: { sourcename: "69" targetname: "70" }
+// node 70
+edge: { sourcename: "70" targetname: "71" label: "false" color: red }
+edge: { sourcename: "70" targetname: "325" label: "true" color: darkgreen }
+// node 71
+edge: { sourcename: "71" targetname: "72" }
+// node 72
+edge: { sourcename: "72" targetname: "73" }
+// node 73
+edge: { sourcename: "73" targetname: "74" label: "false" color: red }
+edge: { sourcename: "73" targetname: "73" label: "true" color: darkgreen }
+// node 74
+edge: { sourcename: "74" targetname: "75" label: "false" color: red }
+edge: { sourcename: "74" targetname: "78" label: "true" color: darkgreen }
+// node 75
+edge: { sourcename: "75" targetname: "76" label: "false" color: red }
+edge: { sourcename: "75" targetname: "80" label: "true" color: darkgreen }
+// node 76
+edge: { sourcename: "76" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "76" targetname: "77" label: "false" color: red }
+// node 77
+edge: { sourcename: "77" targetname: "78" }
+// node 78
+edge: { sourcename: "78" targetname: "79" label: "false" color: red }
+edge: { sourcename: "78" targetname: "80" label: "true" color: darkgreen }
+// node 79
+edge: { sourcename: "79" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "79" targetname: "80" label: "false" color: red }
+// node 80
+edge: { sourcename: "80" targetname: "4" }
+// node 81
+edge: { sourcename: "81" targetname: "82" label: "false" color: red }
+edge: { sourcename: "81" targetname: "107" label: "true" color: darkgreen }
+// node 82
+edge: { sourcename: "82" targetname: "83" label: "false" color: red }
+edge: { sourcename: "82" targetname: "280" label: "true" color: darkgreen }
+// node 83
+edge: { sourcename: "83" targetname: "84" label: "false" color: red }
+edge: { sourcename: "83" targetname: "353" label: "true" color: darkgreen }
+// node 84
+edge: { sourcename: "84" targetname: "85" label: "false" color: red }
+edge: { sourcename: "84" targetname: "86" label: "true" color: darkgreen }
+// node 85
+edge: { sourcename: "85" targetname: "86" }
+// node 86
+edge: { sourcename: "86" targetname: "87" label: "false" color: red }
+edge: { sourcename: "86" targetname: "378" label: "true" color: darkgreen }
+// node 87
+edge: { sourcename: "87" targetname: "88" }
+// node 88
+edge: { sourcename: "88" targetname: "110" }
+// node 89
+edge: { sourcename: "89" targetname: "90" label: "false" color: red }
+edge: { sourcename: "89" targetname: "91" label: "true" color: darkgreen }
+// node 90
+edge: { sourcename: "90" targetname: "91" }
+// node 91
+edge: { sourcename: "91" targetname: "92" label: "false" color: red }
+edge: { sourcename: "91" targetname: "299" label: "true" color: darkgreen }
+// node 92
+edge: { sourcename: "92" targetname: "93" }
+// node 93
+edge: { sourcename: "93" targetname: "20" }
+// node 94
+edge: { sourcename: "94" targetname: "95" }
+// node 95
+edge: { sourcename: "95" targetname: "96" label: "false" color: red }
+edge: { sourcename: "95" targetname: "254" label: "true" color: darkgreen }
+// node 96
+edge: { sourcename: "96" targetname: "97" label: "false" color: red }
+edge: { sourcename: "96" targetname: "298" label: "true" color: darkgreen }
+// node 97
+edge: { sourcename: "97" targetname: "259" }
+// node 98
+edge: { sourcename: "98" targetname: "99" label: "false" color: red }
+edge: { sourcename: "98" targetname: "100" label: "true" color: darkgreen }
+// node 99
+edge: { sourcename: "99" targetname: "100" }
+// node 100
+edge: { sourcename: "100" targetname: "101" label: "false" color: red }
+edge: { sourcename: "100" targetname: "300" label: "true" color: darkgreen }
+// node 101
+edge: { sourcename: "101" targetname: "102" }
+// node 102
+edge: { sourcename: "102" targetname: "103" label: "false" color: red }
+edge: { sourcename: "102" targetname: "326" label: "true" color: darkgreen }
+// node 103
+edge: { sourcename: "103" targetname: "104" label: "false" color: red }
+edge: { sourcename: "103" targetname: "105" label: "true" color: darkgreen }
+// node 104
+edge: { sourcename: "104" targetname: "105" }
+// node 105
+edge: { sourcename: "105" targetname: "20" }
+// node 106
+edge: { sourcename: "106" targetname: "82" label: "true" color: darkgreen }
+edge: { sourcename: "106" targetname: "107" label: "false" color: red }
+// node 107
+edge: { sourcename: "107" targetname: "108" label: "false" color: red }
+edge: { sourcename: "107" targetname: "271" label: "true" color: darkgreen }
+// node 108
+edge: { sourcename: "108" targetname: "109" }
+// node 109
+edge: { sourcename: "109" targetname: "110" }
+// node 110
+edge: { sourcename: "110" targetname: "111" label: "false" color: red }
+edge: { sourcename: "110" targetname: "268" label: "true" color: darkgreen }
+// node 111
+edge: { sourcename: "111" targetname: "112" label: "false" color: red }
+edge: { sourcename: "111" targetname: "148" label: "true" color: darkgreen }
+// node 112
+edge: { sourcename: "112" targetname: "113" label: "false" color: red }
+edge: { sourcename: "112" targetname: "115" label: "true" color: darkgreen }
+// node 113
+edge: { sourcename: "113" targetname: "114" }
+// node 114
+edge: { sourcename: "114" targetname: "115" label: "false" color: red }
+edge: { sourcename: "114" targetname: "114" label: "true" color: darkgreen }
+// node 115
+edge: { sourcename: "115" targetname: "116" }
+// node 116
+edge: { sourcename: "116" targetname: "151" }
+// node 117
+edge: { sourcename: "117" targetname: "10" }
+// node 118
+edge: { sourcename: "118" targetname: "119" label: "false" color: red }
+edge: { sourcename: "118" targetname: "392" label: "true" color: darkgreen }
+// node 119
+edge: { sourcename: "119" targetname: "120" label: "false" color: red }
+edge: { sourcename: "119" targetname: "122" label: "true" color: darkgreen }
+// node 120
+edge: { sourcename: "120" targetname: "121" }
+// node 121
+edge: { sourcename: "121" targetname: "122" label: "false" color: red }
+edge: { sourcename: "121" targetname: "121" label: "true" color: darkgreen }
+// node 122
+edge: { sourcename: "122" targetname: "123" label: "false" color: red }
+edge: { sourcename: "122" targetname: "406" label: "true" color: darkgreen }
+// node 123
+edge: { sourcename: "123" targetname: "11" }
+// node 124
+edge: { sourcename: "124" targetname: "125" }
+// node 125
+edge: { sourcename: "125" targetname: "10" }
+// node 126
+edge: { sourcename: "126" targetname: "10" }
+// node 127
+edge: { sourcename: "127" targetname: "128" label: "false" color: red }
+edge: { sourcename: "127" targetname: "130" label: "true" color: darkgreen }
+// node 128
+edge: { sourcename: "128" targetname: "129" }
+// node 129
+edge: { sourcename: "129" targetname: "130" label: "false" color: red }
+edge: { sourcename: "129" targetname: "129" label: "true" color: darkgreen }
+// node 130
+edge: { sourcename: "130" targetname: "131" label: "false" color: red }
+edge: { sourcename: "130" targetname: "328" label: "true" color: darkgreen }
+// node 131
+edge: { sourcename: "131" targetname: "132" label: "false" color: red }
+edge: { sourcename: "131" targetname: "133" label: "true" color: darkgreen }
+// node 132
+edge: { sourcename: "132" targetname: "133" }
+// node 133
+edge: { sourcename: "133" targetname: "134" label: "false" color: red }
+edge: { sourcename: "133" targetname: "303" label: "true" color: darkgreen }
+// node 134
+edge: { sourcename: "134" targetname: "135" }
+// node 135
+edge: { sourcename: "135" targetname: "136" }
+// node 136
+edge: { sourcename: "136" targetname: "10" label: "true" color: darkgreen }
+edge: { sourcename: "136" targetname: "137" label: "false" color: red }
+// node 137
+edge: { sourcename: "137" targetname: "125" }
+// node 138
+edge: { sourcename: "138" targetname: "10" }
+// node 139
+edge: { sourcename: "139" targetname: "10" label: "true" color: darkgreen }
+edge: { sourcename: "139" targetname: "140" label: "false" color: red }
+// node 140
+edge: { sourcename: "140" targetname: "10" }
+// node 141
+edge: { sourcename: "141" targetname: "142" }
+// node 142
+edge: { sourcename: "142" targetname: "143" label: "false" color: red }
+edge: { sourcename: "142" targetname: "260" label: "true" color: darkgreen }
+// node 143
+edge: { sourcename: "143" targetname: "144" label: "false" color: red }
+edge: { sourcename: "143" targetname: "296" label: "true" color: darkgreen }
+// node 144
+edge: { sourcename: "144" targetname: "145" }
+// node 145
+edge: { sourcename: "145" targetname: "146" }
+// node 146
+edge: { sourcename: "146" targetname: "147" }
+// node 147
+edge: { sourcename: "147" targetname: "148" label: "false" color: red }
+edge: { sourcename: "147" targetname: "215" label: "true" color: darkgreen }
+// node 148
+edge: { sourcename: "148" targetname: "149" label: "false" color: red }
+edge: { sourcename: "148" targetname: "215" label: "true" color: darkgreen }
+// node 149
+edge: { sourcename: "149" targetname: "150" label: "false" color: red }
+edge: { sourcename: "149" targetname: "215" label: "true" color: darkgreen }
+// node 150
+edge: { sourcename: "150" targetname: "151" }
+// node 151
+edge: { sourcename: "151" targetname: "21" label: "true" color: darkgreen }
+edge: { sourcename: "151" targetname: "152" label: "false" color: red }
+// node 152
+edge: { sourcename: "152" targetname: "25" label: "true" color: darkgreen }
+edge: { sourcename: "152" targetname: "153" label: "false" color: red }
+// node 153
+edge: { sourcename: "153" targetname: "23" label: "true" color: darkgreen }
+edge: { sourcename: "153" targetname: "154" label: "false" color: red }
+// node 154
+edge: { sourcename: "154" targetname: "155" label: "false" color: red }
+edge: { sourcename: "154" targetname: "380" label: "true" color: darkgreen }
+// node 155
+edge: { sourcename: "155" targetname: "159" }
+// node 156
+edge: { sourcename: "156" targetname: "157" }
+// node 157
+edge: { sourcename: "157" targetname: "158" label: "false" color: red }
+edge: { sourcename: "157" targetname: "162" label: "true" color: darkgreen }
+// node 158
+edge: { sourcename: "158" targetname: "159" }
+// node 159
+edge: { sourcename: "159" targetname: "156" label: "true" color: darkgreen }
+edge: { sourcename: "159" targetname: "160" label: "false" color: red }
+// node 160
+edge: { sourcename: "160" targetname: "161" label: "false" color: red }
+edge: { sourcename: "160" targetname: "232" label: "true" color: darkgreen }
+// node 161
+edge: { sourcename: "161" targetname: "158" label: "true" color: darkgreen }
+edge: { sourcename: "161" targetname: "162" label: "false" color: red }
+// node 162
+edge: { sourcename: "162" targetname: "163" }
+// node 163
+edge: { sourcename: "163" targetname: "164" label: "false" color: red }
+edge: { sourcename: "163" targetname: "265" label: "true" color: darkgreen }
+// node 164
+edge: { sourcename: "164" targetname: "24" label: "true" color: darkgreen }
+edge: { sourcename: "164" targetname: "165" label: "false" color: red }
+// node 165
+edge: { sourcename: "165" targetname: "166" }
+// node 166
+edge: { sourcename: "166" targetname: "167" }
+// node 167
+edge: { sourcename: "167" targetname: "27" label: "true" color: darkgreen }
+edge: { sourcename: "167" targetname: "168" label: "false" color: red }
+// node 168
+edge: { sourcename: "168" targetname: "169" label: "false" color: red }
+edge: { sourcename: "168" targetname: "251" label: "true" color: darkgreen }
+// node 169
+edge: { sourcename: "169" targetname: "28" label: "true" color: darkgreen }
+edge: { sourcename: "169" targetname: "170" label: "false" color: red }
+// node 170
+edge: { sourcename: "170" targetname: "28" label: "true" color: darkgreen }
+edge: { sourcename: "170" targetname: "171" label: "false" color: red }
+// node 171
+edge: { sourcename: "171" targetname: "172" label: "false" color: red }
+edge: { sourcename: "171" targetname: "386" label: "true" color: darkgreen }
+// node 172
+edge: { sourcename: "172" targetname: "175" }
+// node 173
+edge: { sourcename: "173" targetname: "174" }
+// node 174
+edge: { sourcename: "174" targetname: "175" label: "false" color: red }
+edge: { sourcename: "174" targetname: "178" label: "true" color: darkgreen }
+// node 175
+edge: { sourcename: "175" targetname: "173" label: "true" color: darkgreen }
+edge: { sourcename: "175" targetname: "176" label: "false" color: red }
+// node 176
+edge: { sourcename: "176" targetname: "177" label: "false" color: red }
+edge: { sourcename: "176" targetname: "226" label: "true" color: darkgreen }
+// node 177
+edge: { sourcename: "177" targetname: "175" label: "true" color: darkgreen }
+edge: { sourcename: "177" targetname: "178" label: "false" color: red }
+// node 178
+edge: { sourcename: "178" targetname: "179" }
+// node 179
+edge: { sourcename: "179" targetname: "180" label: "false" color: red }
+edge: { sourcename: "179" targetname: "273" label: "true" color: darkgreen }
+// node 180
+edge: { sourcename: "180" targetname: "181" label: "false" color: red }
+edge: { sourcename: "180" targetname: "333" label: "true" color: darkgreen }
+// node 181
+edge: { sourcename: "181" targetname: "29" label: "true" color: darkgreen }
+edge: { sourcename: "181" targetname: "182" label: "false" color: red }
+// node 182
+edge: { sourcename: "182" targetname: "183" }
+// node 183
+edge: { sourcename: "183" targetname: "184" label: "false" color: red }
+edge: { sourcename: "183" targetname: "364" label: "true" color: darkgreen }
+// node 184
+edge: { sourcename: "184" targetname: "187" }
+// node 185
+edge: { sourcename: "185" targetname: "186" }
+// node 186
+edge: { sourcename: "186" targetname: "187" label: "false" color: red }
+edge: { sourcename: "186" targetname: "190" label: "true" color: darkgreen }
+// node 187
+edge: { sourcename: "187" targetname: "185" label: "true" color: darkgreen }
+edge: { sourcename: "187" targetname: "188" label: "false" color: red }
+// node 188
+edge: { sourcename: "188" targetname: "189" label: "false" color: red }
+edge: { sourcename: "188" targetname: "224" label: "true" color: darkgreen }
+// node 189
+edge: { sourcename: "189" targetname: "187" label: "true" color: darkgreen }
+edge: { sourcename: "189" targetname: "190" label: "false" color: red }
+// node 190
+edge: { sourcename: "190" targetname: "191" }
+// node 191
+edge: { sourcename: "191" targetname: "192" label: "false" color: red }
+edge: { sourcename: "191" targetname: "249" label: "true" color: darkgreen }
+// node 192
+edge: { sourcename: "192" targetname: "29" }
+// node 193
+edge: { sourcename: "193" targetname: "194" label: "false" color: red }
+edge: { sourcename: "193" targetname: "327" label: "true" color: darkgreen }
+// node 194
+edge: { sourcename: "194" targetname: "10" }
+// node 195
+edge: { sourcename: "195" targetname: "10" }
+// node 196
+edge: { sourcename: "196" targetname: "10" }
+// node 197
+edge: { sourcename: "197" targetname: "198" label: "false" color: red }
+edge: { sourcename: "197" targetname: "199" label: "true" color: darkgreen }
+// node 198
+edge: { sourcename: "198" targetname: "199" }
+// node 199
+edge: { sourcename: "199" targetname: "200" label: "false" color: red }
+edge: { sourcename: "199" targetname: "297" label: "true" color: darkgreen }
+// node 200
+edge: { sourcename: "200" targetname: "201" }
+// node 201
+edge: { sourcename: "201" targetname: "146" }
+// node 202
+edge: { sourcename: "202" targetname: "203" label: "false" color: red }
+edge: { sourcename: "202" targetname: "274" label: "true" color: darkgreen }
+// node 203
+edge: { sourcename: "203" targetname: "204" label: "false" color: red }
+edge: { sourcename: "203" targetname: "205" label: "true" color: darkgreen }
+// node 204
+edge: { sourcename: "204" targetname: "205" }
+// node 205
+edge: { sourcename: "205" targetname: "206" label: "false" color: red }
+edge: { sourcename: "205" targetname: "342" label: "true" color: darkgreen }
+// node 206
+edge: { sourcename: "206" targetname: "207" }
+// node 207
+edge: { sourcename: "207" targetname: "4" }
+// node 208
+edge: { sourcename: "208" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "208" targetname: "209" label: "false" color: red }
+// node 209
+edge: { sourcename: "209" targetname: "210" }
+// node 210
+edge: { sourcename: "210" targetname: "211" label: "false" color: red }
+edge: { sourcename: "210" targetname: "212" label: "true" color: darkgreen }
+// node 211
+edge: { sourcename: "211" targetname: "212" label: "false" color: red }
+edge: { sourcename: "211" targetname: "235" label: "true" color: darkgreen }
+// node 212
+edge: { sourcename: "212" targetname: "34" label: "true" color: darkgreen }
+edge: { sourcename: "212" targetname: "213" label: "false" color: red }
+// node 213
+edge: { sourcename: "213" targetname: "34" label: "true" color: darkgreen }
+edge: { sourcename: "213" targetname: "214" label: "false" color: red }
+// node 214
+edge: { sourcename: "214" targetname: "37" }
+// node 215
+edge: { sourcename: "215" targetname: "112" label: "true" color: darkgreen }
+edge: { sourcename: "215" targetname: "216" label: "false" color: red }
+// node 216
+edge: { sourcename: "216" targetname: "217" label: "false" color: red }
+edge: { sourcename: "216" targetname: "220" label: "true" color: darkgreen }
+// node 217
+edge: { sourcename: "217" targetname: "218" }
+// node 218
+edge: { sourcename: "218" targetname: "219" label: "false" color: red }
+edge: { sourcename: "218" targetname: "218" label: "true" color: darkgreen }
+// node 219
+edge: { sourcename: "219" targetname: "151" }
+// node 220
+edge: { sourcename: "220" targetname: "221" label: "false" color: red }
+edge: { sourcename: "220" targetname: "220" label: "true" color: darkgreen }
+// node 221
+edge: { sourcename: "221" targetname: "116" label: "true" color: darkgreen }
+edge: { sourcename: "221" targetname: "222" label: "false" color: red }
+// node 222
+edge: { sourcename: "222" targetname: "116" label: "true" color: darkgreen }
+edge: { sourcename: "222" targetname: "223" label: "false" color: red }
+// node 223
+edge: { sourcename: "223" targetname: "151" }
+// node 224
+edge: { sourcename: "224" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "224" targetname: "225" label: "false" color: red }
+// node 225
+edge: { sourcename: "225" targetname: "186" }
+// node 226
+edge: { sourcename: "226" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "226" targetname: "227" label: "false" color: red }
+// node 227
+edge: { sourcename: "227" targetname: "174" }
+// node 228
+edge: { sourcename: "228" targetname: "229" label: "false" color: red }
+edge: { sourcename: "228" targetname: "231" label: "true" color: darkgreen }
+// node 229
+edge: { sourcename: "229" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "229" targetname: "230" label: "false" color: red }
+// node 230
+edge: { sourcename: "230" targetname: "27" }
+// node 231
+edge: { sourcename: "231" targetname: "27" }
+// node 232
+edge: { sourcename: "232" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "232" targetname: "233" label: "false" color: red }
+// node 233
+edge: { sourcename: "233" targetname: "157" }
+// node 234
+edge: { sourcename: "234" targetname: "235" }
+// node 235
+edge: { sourcename: "235" targetname: "236" label: "false" color: red }
+edge: { sourcename: "235" targetname: "385" label: "true" color: darkgreen }
+// node 236
+edge: { sourcename: "236" targetname: "239" }
+// node 237
+edge: { sourcename: "237" targetname: "238" }
+// node 238
+edge: { sourcename: "238" targetname: "239" label: "false" color: red }
+edge: { sourcename: "238" targetname: "242" label: "true" color: darkgreen }
+// node 239
+edge: { sourcename: "239" targetname: "237" label: "true" color: darkgreen }
+edge: { sourcename: "239" targetname: "240" label: "false" color: red }
+// node 240
+edge: { sourcename: "240" targetname: "241" label: "false" color: red }
+edge: { sourcename: "240" targetname: "247" label: "true" color: darkgreen }
+// node 241
+edge: { sourcename: "241" targetname: "239" label: "true" color: darkgreen }
+edge: { sourcename: "241" targetname: "242" label: "false" color: red }
+// node 242
+edge: { sourcename: "242" targetname: "243" }
+// node 243
+edge: { sourcename: "243" targetname: "212" label: "true" color: darkgreen }
+edge: { sourcename: "243" targetname: "244" label: "false" color: red }
+// node 244
+edge: { sourcename: "244" targetname: "33" label: "true" color: darkgreen }
+edge: { sourcename: "244" targetname: "245" label: "false" color: red }
+// node 245
+edge: { sourcename: "245" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "245" targetname: "246" label: "false" color: red }
+// node 246
+edge: { sourcename: "246" targetname: "212" }
+// node 247
+edge: { sourcename: "247" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "247" targetname: "248" label: "false" color: red }
+// node 248
+edge: { sourcename: "248" targetname: "238" }
+// node 249
+edge: { sourcename: "249" targetname: "250" label: "false" color: red }
+edge: { sourcename: "249" targetname: "269" label: "true" color: darkgreen }
+// node 250
+edge: { sourcename: "250" targetname: "210" }
+// node 251
+edge: { sourcename: "251" targetname: "231" label: "true" color: darkgreen }
+edge: { sourcename: "251" targetname: "252" label: "false" color: red }
+// node 252
+edge: { sourcename: "252" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "252" targetname: "253" label: "false" color: red }
+// node 253
+edge: { sourcename: "253" targetname: "27" }
+// node 254
+edge: { sourcename: "254" targetname: "255" label: "false" color: red }
+edge: { sourcename: "254" targetname: "290" label: "true" color: darkgreen }
+// node 255
+edge: { sourcename: "255" targetname: "256" label: "false" color: red }
+edge: { sourcename: "255" targetname: "257" label: "true" color: darkgreen }
+// node 256
+edge: { sourcename: "256" targetname: "257" }
+// node 257
+edge: { sourcename: "257" targetname: "258" label: "false" color: red }
+edge: { sourcename: "257" targetname: "335" label: "true" color: darkgreen }
+// node 258
+edge: { sourcename: "258" targetname: "259" }
+// node 259
+edge: { sourcename: "259" targetname: "146" }
+// node 260
+edge: { sourcename: "260" targetname: "261" label: "false" color: red }
+edge: { sourcename: "260" targetname: "284" label: "true" color: darkgreen }
+// node 261
+edge: { sourcename: "261" targetname: "262" label: "false" color: red }
+edge: { sourcename: "261" targetname: "263" label: "true" color: darkgreen }
+// node 262
+edge: { sourcename: "262" targetname: "263" }
+// node 263
+edge: { sourcename: "263" targetname: "144" label: "true" color: darkgreen }
+edge: { sourcename: "263" targetname: "264" label: "false" color: red }
+// node 264
+edge: { sourcename: "264" targetname: "145" }
+// node 265
+edge: { sourcename: "265" targetname: "266" label: "false" color: red }
+edge: { sourcename: "265" targetname: "301" label: "true" color: darkgreen }
+// node 266
+edge: { sourcename: "266" targetname: "267" label: "false" color: red }
+edge: { sourcename: "266" targetname: "363" label: "true" color: darkgreen }
+// node 267
+edge: { sourcename: "267" targetname: "166" }
+// node 268
+edge: { sourcename: "268" targetname: "147" }
+// node 269
+edge: { sourcename: "269" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "269" targetname: "270" label: "false" color: red }
+// node 270
+edge: { sourcename: "270" targetname: "29" }
+// node 271
+edge: { sourcename: "271" targetname: "109" }
+// node 272
+edge: { sourcename: "272" targetname: "51" }
+// node 273
+edge: { sourcename: "273" targetname: "28" }
+// node 274
+edge: { sourcename: "274" targetname: "275" label: "false" color: red }
+edge: { sourcename: "274" targetname: "336" label: "true" color: darkgreen }
+// node 275
+edge: { sourcename: "275" targetname: "276" label: "false" color: red }
+edge: { sourcename: "275" targetname: "277" label: "true" color: darkgreen }
+// node 276
+edge: { sourcename: "276" targetname: "277" }
+// node 277
+edge: { sourcename: "277" targetname: "278" label: "false" color: red }
+edge: { sourcename: "277" targetname: "379" label: "true" color: darkgreen }
+// node 278
+edge: { sourcename: "278" targetname: "279" }
+// node 279
+edge: { sourcename: "279" targetname: "4" }
+// node 280
+edge: { sourcename: "280" targetname: "281" label: "false" color: red }
+edge: { sourcename: "280" targetname: "282" label: "true" color: darkgreen }
+// node 281
+edge: { sourcename: "281" targetname: "282" }
+// node 282
+edge: { sourcename: "282" targetname: "107" }
+// node 283
+edge: { sourcename: "283" targetname: "62" }
+// node 284
+edge: { sourcename: "284" targetname: "285" label: "false" color: red }
+edge: { sourcename: "284" targetname: "348" label: "true" color: darkgreen }
+// node 285
+edge: { sourcename: "285" targetname: "286" label: "false" color: red }
+edge: { sourcename: "285" targetname: "287" label: "true" color: darkgreen }
+// node 286
+edge: { sourcename: "286" targetname: "287" }
+// node 287
+edge: { sourcename: "287" targetname: "288" label: "false" color: red }
+edge: { sourcename: "287" targetname: "377" label: "true" color: darkgreen }
+// node 288
+edge: { sourcename: "288" targetname: "289" }
+// node 289
+edge: { sourcename: "289" targetname: "146" }
+// node 290
+edge: { sourcename: "290" targetname: "291" label: "false" color: red }
+edge: { sourcename: "290" targetname: "343" label: "true" color: darkgreen }
+// node 291
+edge: { sourcename: "291" targetname: "292" label: "false" color: red }
+edge: { sourcename: "291" targetname: "293" label: "true" color: darkgreen }
+// node 292
+edge: { sourcename: "292" targetname: "293" }
+// node 293
+edge: { sourcename: "293" targetname: "294" label: "false" color: red }
+edge: { sourcename: "293" targetname: "376" label: "true" color: darkgreen }
+// node 294
+edge: { sourcename: "294" targetname: "295" }
+// node 295
+edge: { sourcename: "295" targetname: "146" }
+// node 296
+edge: { sourcename: "296" targetname: "145" }
+// node 297
+edge: { sourcename: "297" targetname: "201" }
+// node 298
+edge: { sourcename: "298" targetname: "259" }
+// node 299
+edge: { sourcename: "299" targetname: "93" }
+// node 300
+edge: { sourcename: "300" targetname: "102" }
+// node 301
+edge: { sourcename: "301" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "301" targetname: "302" label: "false" color: red }
+// node 302
+edge: { sourcename: "302" targetname: "23" }
+// node 303
+edge: { sourcename: "303" targetname: "135" }
+// node 304
+edge: { sourcename: "304" targetname: "305" label: "false" color: red }
+edge: { sourcename: "304" targetname: "313" label: "true" color: darkgreen }
+// node 305
+edge: { sourcename: "305" targetname: "306" label: "false" color: red }
+edge: { sourcename: "305" targetname: "324" label: "true" color: darkgreen }
+// node 306
+edge: { sourcename: "306" targetname: "307" }
+// node 307
+edge: { sourcename: "307" targetname: "308" }
+// node 308
+edge: { sourcename: "308" targetname: "146" label: "true" color: darkgreen }
+edge: { sourcename: "308" targetname: "309" label: "false" color: red }
+// node 309
+edge: { sourcename: "309" targetname: "146" }
+// node 310
+edge: { sourcename: "310" targetname: "95" }
+// node 311
+edge: { sourcename: "311" targetname: "142" }
+// node 312
+edge: { sourcename: "312" targetname: "305" label: "true" color: darkgreen }
+edge: { sourcename: "312" targetname: "313" label: "false" color: red }
+// node 313
+edge: { sourcename: "313" targetname: "314" label: "false" color: red }
+edge: { sourcename: "313" targetname: "318" label: "true" color: darkgreen }
+// node 314
+edge: { sourcename: "314" targetname: "315" label: "false" color: red }
+edge: { sourcename: "314" targetname: "316" label: "true" color: darkgreen }
+// node 315
+edge: { sourcename: "315" targetname: "316" }
+// node 316
+edge: { sourcename: "316" targetname: "317" label: "false" color: red }
+edge: { sourcename: "316" targetname: "362" label: "true" color: darkgreen }
+// node 317
+edge: { sourcename: "317" targetname: "307" }
+// node 318
+edge: { sourcename: "318" targetname: "319" label: "false" color: red }
+edge: { sourcename: "318" targetname: "358" label: "true" color: darkgreen }
+// node 319
+edge: { sourcename: "319" targetname: "320" label: "false" color: red }
+edge: { sourcename: "319" targetname: "321" label: "true" color: darkgreen }
+// node 320
+edge: { sourcename: "320" targetname: "321" }
+// node 321
+edge: { sourcename: "321" targetname: "322" label: "false" color: red }
+edge: { sourcename: "321" targetname: "375" label: "true" color: darkgreen }
+// node 322
+edge: { sourcename: "322" targetname: "323" }
+// node 323
+edge: { sourcename: "323" targetname: "308" }
+// node 324
+edge: { sourcename: "324" targetname: "307" }
+// node 325
+edge: { sourcename: "325" targetname: "72" }
+// node 326
+edge: { sourcename: "326" targetname: "105" }
+// node 327
+edge: { sourcename: "327" targetname: "10" }
+// node 328
+edge: { sourcename: "328" targetname: "329" label: "false" color: red }
+edge: { sourcename: "328" targetname: "383" label: "true" color: darkgreen }
+// node 329
+edge: { sourcename: "329" targetname: "330" }
+// node 330
+edge: { sourcename: "330" targetname: "331" label: "false" color: red }
+edge: { sourcename: "330" targetname: "365" label: "true" color: darkgreen }
+// node 331
+edge: { sourcename: "331" targetname: "332" }
+// node 332
+edge: { sourcename: "332" targetname: "136" }
+// node 333
+edge: { sourcename: "333" targetname: "37" label: "true" color: darkgreen }
+edge: { sourcename: "333" targetname: "334" label: "false" color: red }
+// node 334
+edge: { sourcename: "334" targetname: "28" }
+// node 335
+edge: { sourcename: "335" targetname: "259" }
+// node 336
+edge: { sourcename: "336" targetname: "337" label: "false" color: red }
+edge: { sourcename: "336" targetname: "370" label: "true" color: darkgreen }
+// node 337
+edge: { sourcename: "337" targetname: "338" label: "false" color: red }
+edge: { sourcename: "337" targetname: "339" label: "true" color: darkgreen }
+// node 338
+edge: { sourcename: "338" targetname: "339" }
+// node 339
+edge: { sourcename: "339" targetname: "340" label: "false" color: red }
+edge: { sourcename: "339" targetname: "387" label: "true" color: darkgreen }
+// node 340
+edge: { sourcename: "340" targetname: "341" }
+// node 341
+edge: { sourcename: "341" targetname: "4" }
+// node 342
+edge: { sourcename: "342" targetname: "207" }
+// node 343
+edge: { sourcename: "343" targetname: "344" label: "false" color: red }
+edge: { sourcename: "343" targetname: "345" label: "true" color: darkgreen }
+// node 344
+edge: { sourcename: "344" targetname: "345" }
+// node 345
+edge: { sourcename: "345" targetname: "346" label: "false" color: red }
+edge: { sourcename: "345" targetname: "369" label: "true" color: darkgreen }
+// node 346
+edge: { sourcename: "346" targetname: "347" }
+// node 347
+edge: { sourcename: "347" targetname: "146" }
+// node 348
+edge: { sourcename: "348" targetname: "349" label: "false" color: red }
+edge: { sourcename: "348" targetname: "350" label: "true" color: darkgreen }
+// node 349
+edge: { sourcename: "349" targetname: "350" }
+// node 350
+edge: { sourcename: "350" targetname: "351" label: "false" color: red }
+edge: { sourcename: "350" targetname: "368" label: "true" color: darkgreen }
+// node 351
+edge: { sourcename: "351" targetname: "352" }
+// node 352
+edge: { sourcename: "352" targetname: "146" }
+// node 353
+edge: { sourcename: "353" targetname: "354" label: "false" color: red }
+edge: { sourcename: "353" targetname: "355" label: "true" color: darkgreen }
+// node 354
+edge: { sourcename: "354" targetname: "355" }
+// node 355
+edge: { sourcename: "355" targetname: "356" label: "false" color: red }
+edge: { sourcename: "355" targetname: "367" label: "true" color: darkgreen }
+// node 356
+edge: { sourcename: "356" targetname: "357" }
+// node 357
+edge: { sourcename: "357" targetname: "110" }
+// node 358
+edge: { sourcename: "358" targetname: "359" label: "false" color: red }
+edge: { sourcename: "358" targetname: "360" label: "true" color: darkgreen }
+// node 359
+edge: { sourcename: "359" targetname: "360" }
+// node 360
+edge: { sourcename: "360" targetname: "361" label: "false" color: red }
+edge: { sourcename: "360" targetname: "366" label: "true" color: darkgreen }
+// node 361
+edge: { sourcename: "361" targetname: "308" }
+// node 362
+edge: { sourcename: "362" targetname: "307" }
+// node 363
+edge: { sourcename: "363" targetname: "26" }
+// node 364
+edge: { sourcename: "364" targetname: "191" }
+// node 365
+edge: { sourcename: "365" targetname: "332" }
+// node 366
+edge: { sourcename: "366" targetname: "308" }
+// node 367
+edge: { sourcename: "367" targetname: "357" }
+// node 368
+edge: { sourcename: "368" targetname: "352" }
+// node 369
+edge: { sourcename: "369" targetname: "347" }
+// node 370
+edge: { sourcename: "370" targetname: "371" label: "false" color: red }
+edge: { sourcename: "370" targetname: "372" label: "true" color: darkgreen }
+// node 371
+edge: { sourcename: "371" targetname: "372" }
+// node 372
+edge: { sourcename: "372" targetname: "373" label: "false" color: red }
+edge: { sourcename: "372" targetname: "388" label: "true" color: darkgreen }
+// node 373
+edge: { sourcename: "373" targetname: "374" }
+// node 374
+edge: { sourcename: "374" targetname: "4" }
+// node 375
+edge: { sourcename: "375" targetname: "323" }
+// node 376
+edge: { sourcename: "376" targetname: "295" }
+// node 377
+edge: { sourcename: "377" targetname: "289" }
+// node 378
+edge: { sourcename: "378" targetname: "88" }
+// node 379
+edge: { sourcename: "379" targetname: "279" }
+// node 380
+edge: { sourcename: "380" targetname: "163" }
+// node 381
+edge: { sourcename: "381" targetname: "36" label: "true" color: darkgreen }
+edge: { sourcename: "381" targetname: "382" label: "false" color: red }
+// node 382
+edge: { sourcename: "382" targetname: "37" }
+// node 383
+edge: { sourcename: "383" targetname: "330" label: "true" color: darkgreen }
+edge: { sourcename: "383" targetname: "384" label: "false" color: red }
+// node 384
+edge: { sourcename: "384" targetname: "329" }
+// node 385
+edge: { sourcename: "385" targetname: "243" }
+// node 386
+edge: { sourcename: "386" targetname: "179" }
+// node 387
+edge: { sourcename: "387" targetname: "341" }
+// node 388
+edge: { sourcename: "388" targetname: "374" }
+// node 389
+edge: { sourcename: "389" targetname: "390" label: "false" color: red }
+edge: { sourcename: "389" targetname: "411" label: "true" color: darkgreen }
+// node 390
+edge: { sourcename: "390" targetname: "10" }
+// node 391
+edge: { sourcename: "391" targetname: "41" }
+// node 392
+edge: { sourcename: "392" targetname: "393" label: "false" color: red }
+edge: { sourcename: "392" targetname: "394" label: "true" color: darkgreen }
+// node 393
+edge: { sourcename: "393" targetname: "394" label: "false" color: red }
+edge: { sourcename: "393" targetname: "393" label: "true" color: darkgreen }
+// node 394
+edge: { sourcename: "394" targetname: "395" label: "false" color: red }
+edge: { sourcename: "394" targetname: "401" label: "true" color: darkgreen }
+// node 395
+edge: { sourcename: "395" targetname: "396" label: "false" color: red }
+edge: { sourcename: "395" targetname: "397" label: "true" color: darkgreen }
+// node 396
+edge: { sourcename: "396" targetname: "397" }
+// node 397
+edge: { sourcename: "397" targetname: "398" label: "false" color: red }
+edge: { sourcename: "397" targetname: "408" label: "true" color: darkgreen }
+// node 398
+edge: { sourcename: "398" targetname: "399" }
+// node 399
+edge: { sourcename: "399" targetname: "400" }
+// node 400
+edge: { sourcename: "400" targetname: "10" }
+// node 401
+edge: { sourcename: "401" targetname: "402" label: "false" color: red }
+edge: { sourcename: "401" targetname: "413" label: "true" color: darkgreen }
+// node 402
+edge: { sourcename: "402" targetname: "403" }
+// node 403
+edge: { sourcename: "403" targetname: "404" label: "false" color: red }
+edge: { sourcename: "403" targetname: "412" label: "true" color: darkgreen }
+// node 404
+edge: { sourcename: "404" targetname: "405" }
+// node 405
+edge: { sourcename: "405" targetname: "400" }
+// node 406
+edge: { sourcename: "406" targetname: "407" label: "false" color: red }
+edge: { sourcename: "406" targetname: "409" label: "true" color: darkgreen }
+// node 407
+edge: { sourcename: "407" targetname: "10" }
+// node 408
+edge: { sourcename: "408" targetname: "399" }
+// node 409
+edge: { sourcename: "409" targetname: "407" }
+// node 410
+edge: { sourcename: "410" targetname: "411" }
+// node 411
+edge: { sourcename: "411" targetname: "390" }
+// node 412
+edge: { sourcename: "412" targetname: "405" }
+// node 413
+edge: { sourcename: "413" targetname: "403" label: "true" color: darkgreen }
+edge: { sourcename: "413" targetname: "414" label: "false" color: red }
+// node 414
+edge: { sourcename: "414" targetname: "402" }
+// node 415
+edge: { sourcename: "415" targetname: "416" }
+// node 416
+edge: { sourcename: "416" targetname: "417" label: "false" color: red }
+edge: { sourcename: "416" targetname: "418" label: "true" color: darkgreen }
+// node 417
+edge: { sourcename: "417" targetname: "418" }
+// node 418
+edge: { sourcename: "418" targetname: "419" label: "false" color: red }
+edge: { sourcename: "418" targetname: "623" label: "true" color: darkgreen }
+// node 419
+edge: { sourcename: "419" targetname: "420" label: "false" color: red }
+edge: { sourcename: "419" targetname: "440" label: "true" color: darkgreen }
+// node 420
+edge: { sourcename: "420" targetname: "421" label: "false" color: red }
+edge: { sourcename: "420" targetname: "473" label: "true" color: darkgreen }
+// node 421
+edge: { sourcename: "421" targetname: "422" }
+// node 422
+edge: { sourcename: "422" targetname: "423" }
+// node 423
+edge: { sourcename: "423" targetname: "424" label: "false" color: red }
+edge: { sourcename: "423" targetname: "432" label: "true" color: darkgreen }
+// node 424
+edge: { sourcename: "424" targetname: "425" label: "false" color: red }
+edge: { sourcename: "424" targetname: "443" label: "true" color: darkgreen }
+// node 425
+edge: { sourcename: "425" targetname: "426" label: "false" color: red }
+edge: { sourcename: "425" targetname: "447" label: "true" color: darkgreen }
+// node 426
+edge: { sourcename: "426" targetname: "427" label: "false" color: red }
+edge: { sourcename: "426" targetname: "446" label: "true" color: darkgreen }
+// node 427
+edge: { sourcename: "427" targetname: "428" }
+// node 428
+edge: { sourcename: "428" targetname: "429" label: "false" color: red }
+edge: { sourcename: "428" targetname: "430" label: "true" color: darkgreen }
+// node 429
+edge: { sourcename: "429" targetname: "430" }
+// node 430
+edge: { sourcename: "430" targetname: "431" label: "false" color: red }
+edge: { sourcename: "430" targetname: "679" label: "true" color: darkgreen }
+// node 431
+// node 432
+edge: { sourcename: "432" targetname: "433" label: "false" color: red }
+edge: { sourcename: "432" targetname: "435" label: "true" color: darkgreen }
+// node 433
+edge: { sourcename: "433" targetname: "434" label: "false" color: red }
+edge: { sourcename: "433" targetname: "437" label: "true" color: darkgreen }
+// node 434
+edge: { sourcename: "434" targetname: "433" label: "true" color: darkgreen }
+edge: { sourcename: "434" targetname: "435" label: "false" color: red }
+// node 435
+edge: { sourcename: "435" targetname: "433" label: "true" color: darkgreen }
+edge: { sourcename: "435" targetname: "436" label: "false" color: red }
+// node 436
+edge: { sourcename: "436" targetname: "437" }
+// node 437
+edge: { sourcename: "437" targetname: "438" }
+// node 438
+edge: { sourcename: "438" targetname: "423" label: "true" color: darkgreen }
+edge: { sourcename: "438" targetname: "439" label: "false" color: red }
+// node 439
+edge: { sourcename: "439" targetname: "427" }
+// node 440
+edge: { sourcename: "440" targetname: "441" label: "false" color: red }
+edge: { sourcename: "440" targetname: "623" label: "true" color: darkgreen }
+// node 441
+edge: { sourcename: "441" targetname: "422" label: "true" color: darkgreen }
+edge: { sourcename: "441" targetname: "442" label: "false" color: red }
+// node 442
+edge: { sourcename: "442" targetname: "428" }
+// node 443
+edge: { sourcename: "443" targetname: "444" }
+// node 444
+edge: { sourcename: "444" targetname: "445" label: "false" color: red }
+edge: { sourcename: "444" targetname: "453" label: "true" color: darkgreen }
+// node 445
+// node 446
+edge: { sourcename: "446" targetname: "438" }
+// node 447
+edge: { sourcename: "447" targetname: "426" label: "true" color: darkgreen }
+edge: { sourcename: "447" targetname: "448" label: "false" color: red }
+// node 448
+edge: { sourcename: "448" targetname: "449" label: "false" color: red }
+edge: { sourcename: "448" targetname: "450" label: "true" color: darkgreen }
+// node 449
+edge: { sourcename: "449" targetname: "450" }
+// node 450
+edge: { sourcename: "450" targetname: "430" label: "true" color: darkgreen }
+edge: { sourcename: "450" targetname: "451" label: "false" color: red }
+// node 451
+edge: { sourcename: "451" targetname: "452" }
+// node 452
+edge: { sourcename: "452" targetname: "430" }
+// node 453
+edge: { sourcename: "453" targetname: "454" label: "false" color: red }
+edge: { sourcename: "453" targetname: "455" label: "true" color: darkgreen }
+// node 454
+edge: { sourcename: "454" targetname: "455" }
+// node 455
+edge: { sourcename: "455" targetname: "456" }
+// node 456
+edge: { sourcename: "456" targetname: "457" label: "false" color: red }
+edge: { sourcename: "456" targetname: "513" label: "true" color: darkgreen }
+// node 457
+edge: { sourcename: "457" targetname: "458" label: "false" color: red }
+edge: { sourcename: "457" targetname: "506" label: "true" color: darkgreen }
+// node 458
+edge: { sourcename: "458" targetname: "459" label: "false" color: red }
+edge: { sourcename: "458" targetname: "540" label: "true" color: darkgreen }
+// node 459
+edge: { sourcename: "459" targetname: "460" label: "false" color: red }
+edge: { sourcename: "459" targetname: "516" label: "true" color: darkgreen }
+// node 460
+edge: { sourcename: "460" targetname: "461" label: "false" color: red }
+edge: { sourcename: "460" targetname: "573" label: "true" color: darkgreen }
+// node 461
+edge: { sourcename: "461" targetname: "462" label: "false" color: red }
+edge: { sourcename: "461" targetname: "568" label: "true" color: darkgreen }
+// node 462
+edge: { sourcename: "462" targetname: "463" label: "false" color: red }
+edge: { sourcename: "462" targetname: "601" label: "true" color: darkgreen }
+// node 463
+edge: { sourcename: "463" targetname: "437" label: "true" color: darkgreen }
+edge: { sourcename: "463" targetname: "464" label: "false" color: red }
+// node 464
+edge: { sourcename: "464" targetname: "465" label: "false" color: red }
+edge: { sourcename: "464" targetname: "650" label: "true" color: darkgreen }
+// node 465
+edge: { sourcename: "465" targetname: "466" label: "false" color: red }
+edge: { sourcename: "465" targetname: "658" label: "true" color: darkgreen }
+// node 466
+edge: { sourcename: "466" targetname: "467" label: "false" color: red }
+edge: { sourcename: "466" targetname: "469" label: "true" color: darkgreen }
+// node 467
+edge: { sourcename: "467" targetname: "465" label: "true" color: darkgreen }
+edge: { sourcename: "467" targetname: "468" label: "false" color: red }
+// node 468
+edge: { sourcename: "468" targetname: "469" }
+// node 469
+edge: { sourcename: "469" targetname: "437" }
+// node 470
+edge: { sourcename: "470" targetname: "444" }
+// node 471
+edge: { sourcename: "471" targetname: "456" }
+// node 472
+edge: { sourcename: "472" targetname: "456" }
+// node 473
+edge: { sourcename: "473" targetname: "430" }
+// node 474
+edge: { sourcename: "474" targetname: "456" }
+// node 475
+edge: { sourcename: "475" targetname: "444" }
+// node 476
+edge: { sourcename: "476" targetname: "456" }
+// node 477
+edge: { sourcename: "477" targetname: "478" label: "false" color: red }
+edge: { sourcename: "477" targetname: "644" label: "true" color: darkgreen }
+// node 478
+edge: { sourcename: "478" targetname: "444" }
+// node 479
+edge: { sourcename: "479" targetname: "438" label: "true" color: darkgreen }
+edge: { sourcename: "479" targetname: "480" label: "false" color: red }
+// node 480
+edge: { sourcename: "480" targetname: "481" label: "false" color: red }
+edge: { sourcename: "480" targetname: "652" label: "true" color: darkgreen }
+// node 481
+edge: { sourcename: "481" targetname: "482" label: "false" color: red }
+edge: { sourcename: "481" targetname: "665" label: "true" color: darkgreen }
+// node 482
+edge: { sourcename: "482" targetname: "483" }
+// node 483
+edge: { sourcename: "483" targetname: "438" }
+// node 484
+edge: { sourcename: "484" targetname: "456" }
+// node 485
+edge: { sourcename: "485" targetname: "456" }
+// node 486
+edge: { sourcename: "486" targetname: "444" }
+// node 487
+edge: { sourcename: "487" targetname: "456" }
+// node 488
+edge: { sourcename: "488" targetname: "444" }
+// node 489
+edge: { sourcename: "489" targetname: "452" label: "true" color: darkgreen }
+edge: { sourcename: "489" targetname: "490" label: "false" color: red }
+// node 490
+edge: { sourcename: "490" targetname: "452" }
+// node 491
+edge: { sourcename: "491" targetname: "492" label: "false" color: red }
+edge: { sourcename: "491" targetname: "643" label: "true" color: darkgreen }
+// node 492
+edge: { sourcename: "492" targetname: "493" }
+// node 493
+edge: { sourcename: "493" targetname: "494" }
+// node 494
+edge: { sourcename: "494" targetname: "495" label: "false" color: red }
+edge: { sourcename: "494" targetname: "494" label: "true" color: darkgreen }
+// node 495
+edge: { sourcename: "495" targetname: "496" label: "false" color: red }
+edge: { sourcename: "495" targetname: "617" label: "true" color: darkgreen }
+// node 496
+edge: { sourcename: "496" targetname: "497" }
+// node 497
+edge: { sourcename: "497" targetname: "498" label: "false" color: red }
+edge: { sourcename: "497" targetname: "645" label: "true" color: darkgreen }
+// node 498
+edge: { sourcename: "498" targetname: "499" label: "false" color: red }
+edge: { sourcename: "498" targetname: "616" label: "true" color: darkgreen }
+// node 499
+edge: { sourcename: "499" targetname: "500" label: "false" color: red }
+edge: { sourcename: "499" targetname: "639" label: "true" color: darkgreen }
+// node 500
+edge: { sourcename: "500" targetname: "501" }
+// node 501
+edge: { sourcename: "501" targetname: "497" }
+// node 502
+edge: { sourcename: "502" targetname: "456" }
+// node 503
+edge: { sourcename: "503" targetname: "456" }
+// node 504
+edge: { sourcename: "504" targetname: "456" }
+// node 505
+edge: { sourcename: "505" targetname: "425" }
+// node 506
+edge: { sourcename: "506" targetname: "458" label: "true" color: darkgreen }
+edge: { sourcename: "506" targetname: "507" label: "false" color: red }
+// node 507
+edge: { sourcename: "507" targetname: "510" }
+// node 508
+edge: { sourcename: "508" targetname: "509" }
+// node 509
+edge: { sourcename: "509" targetname: "510" label: "false" color: red }
+edge: { sourcename: "509" targetname: "515" label: "true" color: darkgreen }
+// node 510
+edge: { sourcename: "510" targetname: "508" label: "true" color: darkgreen }
+edge: { sourcename: "510" targetname: "511" label: "false" color: red }
+// node 511
+edge: { sourcename: "511" targetname: "448" label: "true" color: darkgreen }
+edge: { sourcename: "511" targetname: "512" label: "false" color: red }
+// node 512
+edge: { sourcename: "512" targetname: "509" }
+// node 513
+edge: { sourcename: "513" targetname: "457" label: "true" color: darkgreen }
+edge: { sourcename: "513" targetname: "514" label: "false" color: red }
+// node 514
+edge: { sourcename: "514" targetname: "448" }
+// node 515
+edge: { sourcename: "515" targetname: "458" }
+// node 516
+edge: { sourcename: "516" targetname: "517" }
+// node 517
+edge: { sourcename: "517" targetname: "518" label: "false" color: red }
+edge: { sourcename: "517" targetname: "521" label: "true" color: darkgreen }
+// node 518
+edge: { sourcename: "518" targetname: "519" label: "false" color: red }
+edge: { sourcename: "518" targetname: "522" label: "true" color: darkgreen }
+// node 519
+edge: { sourcename: "519" targetname: "520" label: "false" color: red }
+edge: { sourcename: "519" targetname: "522" label: "true" color: darkgreen }
+// node 520
+// node 521
+edge: { sourcename: "521" targetname: "522" label: "false" color: red }
+edge: { sourcename: "521" targetname: "529" label: "true" color: darkgreen }
+// node 522
+edge: { sourcename: "522" targetname: "523" label: "false" color: red }
+edge: { sourcename: "522" targetname: "527" label: "true" color: darkgreen }
+// node 523
+edge: { sourcename: "523" targetname: "524" label: "false" color: red }
+edge: { sourcename: "523" targetname: "675" label: "true" color: darkgreen }
+// node 524
+edge: { sourcename: "524" targetname: "525" label: "false" color: red }
+edge: { sourcename: "524" targetname: "627" label: "true" color: darkgreen }
+// node 525
+edge: { sourcename: "525" targetname: "526" }
+// node 526
+edge: { sourcename: "526" targetname: "527" }
+// node 527
+edge: { sourcename: "527" targetname: "528" label: "false" color: red }
+edge: { sourcename: "527" targetname: "618" label: "true" color: darkgreen }
+// node 528
+edge: { sourcename: "528" targetname: "437" }
+// node 529
+edge: { sourcename: "529" targetname: "522" label: "true" color: darkgreen }
+edge: { sourcename: "529" targetname: "530" label: "false" color: red }
+// node 530
+edge: { sourcename: "530" targetname: "531" }
+// node 531
+edge: { sourcename: "531" targetname: "532" label: "false" color: red }
+edge: { sourcename: "531" targetname: "584" label: "true" color: darkgreen }
+// node 532
+edge: { sourcename: "532" targetname: "533" }
+// node 533
+edge: { sourcename: "533" targetname: "517" label: "true" color: darkgreen }
+edge: { sourcename: "533" targetname: "534" label: "false" color: red }
+// node 534
+edge: { sourcename: "534" targetname: "522" }
+// node 535
+edge: { sourcename: "535" targetname: "522" label: "true" color: darkgreen }
+edge: { sourcename: "535" targetname: "536" label: "false" color: red }
+// node 536
+edge: { sourcename: "536" targetname: "531" }
+// node 537
+edge: { sourcename: "537" targetname: "531" }
+// node 538
+edge: { sourcename: "538" targetname: "522" label: "true" color: darkgreen }
+edge: { sourcename: "538" targetname: "539" label: "false" color: red }
+// node 539
+edge: { sourcename: "539" targetname: "531" }
+// node 540
+edge: { sourcename: "540" targetname: "541" }
+// node 541
+edge: { sourcename: "541" targetname: "542" label: "false" color: red }
+edge: { sourcename: "541" targetname: "549" label: "true" color: darkgreen }
+// node 542
+// node 543
+edge: { sourcename: "543" targetname: "544" label: "false" color: red }
+edge: { sourcename: "543" targetname: "549" label: "true" color: darkgreen }
+// node 544
+edge: { sourcename: "544" targetname: "545" }
+// node 545
+edge: { sourcename: "545" targetname: "546" label: "false" color: red }
+edge: { sourcename: "545" targetname: "586" label: "true" color: darkgreen }
+// node 546
+edge: { sourcename: "546" targetname: "547" }
+// node 547
+edge: { sourcename: "547" targetname: "541" label: "true" color: darkgreen }
+edge: { sourcename: "547" targetname: "548" label: "false" color: red }
+// node 548
+edge: { sourcename: "548" targetname: "549" }
+// node 549
+edge: { sourcename: "549" targetname: "550" label: "false" color: red }
+edge: { sourcename: "549" targetname: "671" label: "true" color: darkgreen }
+// node 550
+edge: { sourcename: "550" targetname: "551" label: "false" color: red }
+edge: { sourcename: "550" targetname: "622" label: "true" color: darkgreen }
+// node 551
+edge: { sourcename: "551" targetname: "528" label: "true" color: darkgreen }
+edge: { sourcename: "551" targetname: "552" label: "false" color: red }
+// node 552
+edge: { sourcename: "552" targetname: "553" label: "false" color: red }
+edge: { sourcename: "552" targetname: "628" label: "true" color: darkgreen }
+// node 553
+edge: { sourcename: "553" targetname: "554" label: "false" color: red }
+edge: { sourcename: "553" targetname: "634" label: "true" color: darkgreen }
+// node 554
+edge: { sourcename: "554" targetname: "555" }
+// node 555
+edge: { sourcename: "555" targetname: "556" }
+// node 556
+edge: { sourcename: "556" targetname: "528" }
+// node 557
+edge: { sourcename: "557" targetname: "545" }
+// node 558
+edge: { sourcename: "558" targetname: "549" label: "true" color: darkgreen }
+edge: { sourcename: "558" targetname: "559" label: "false" color: red }
+// node 559
+edge: { sourcename: "559" targetname: "549" label: "true" color: darkgreen }
+edge: { sourcename: "559" targetname: "560" label: "false" color: red }
+// node 560
+edge: { sourcename: "560" targetname: "545" }
+// node 561
+edge: { sourcename: "561" targetname: "549" label: "true" color: darkgreen }
+edge: { sourcename: "561" targetname: "562" label: "false" color: red }
+// node 562
+edge: { sourcename: "562" targetname: "545" }
+// node 563
+edge: { sourcename: "563" targetname: "544" label: "true" color: darkgreen }
+edge: { sourcename: "563" targetname: "564" label: "false" color: red }
+// node 564
+edge: { sourcename: "564" targetname: "549" }
+// node 565
+edge: { sourcename: "565" targetname: "566" label: "false" color: red }
+edge: { sourcename: "565" targetname: "567" label: "true" color: darkgreen }
+// node 566
+edge: { sourcename: "566" targetname: "567" }
+// node 567
+edge: { sourcename: "567" targetname: "545" }
+// node 568
+edge: { sourcename: "568" targetname: "569" label: "false" color: red }
+edge: { sourcename: "568" targetname: "611" label: "true" color: darkgreen }
+// node 569
+edge: { sourcename: "569" targetname: "570" label: "false" color: red }
+edge: { sourcename: "569" targetname: "624" label: "true" color: darkgreen }
+// node 570
+edge: { sourcename: "570" targetname: "571" }
+// node 571
+edge: { sourcename: "571" targetname: "448" label: "true" color: darkgreen }
+edge: { sourcename: "571" targetname: "572" label: "false" color: red }
+// node 572
+edge: { sourcename: "572" targetname: "438" }
+// node 573
+edge: { sourcename: "573" targetname: "574" label: "false" color: red }
+edge: { sourcename: "573" targetname: "588" label: "true" color: darkgreen }
+// node 574
+edge: { sourcename: "574" targetname: "427" label: "true" color: darkgreen }
+edge: { sourcename: "574" targetname: "575" label: "false" color: red }
+// node 575
+edge: { sourcename: "575" targetname: "576" label: "false" color: red }
+edge: { sourcename: "575" targetname: "583" label: "true" color: darkgreen }
+// node 576
+edge: { sourcename: "576" targetname: "579" }
+// node 577
+edge: { sourcename: "577" targetname: "578" label: "false" color: red }
+edge: { sourcename: "577" targetname: "582" label: "true" color: darkgreen }
+// node 578
+edge: { sourcename: "578" targetname: "579" label: "false" color: red }
+edge: { sourcename: "578" targetname: "582" label: "true" color: darkgreen }
+// node 579
+edge: { sourcename: "579" targetname: "577" label: "true" color: darkgreen }
+edge: { sourcename: "579" targetname: "580" label: "false" color: red }
+// node 580
+edge: { sourcename: "580" targetname: "577" label: "true" color: darkgreen }
+edge: { sourcename: "580" targetname: "581" label: "false" color: red }
+// node 581
+edge: { sourcename: "581" targetname: "582" }
+// node 582
+edge: { sourcename: "582" targetname: "583" }
+// node 583
+edge: { sourcename: "583" targetname: "438" }
+// node 584
+edge: { sourcename: "584" targetname: "533" label: "true" color: darkgreen }
+edge: { sourcename: "584" targetname: "585" label: "false" color: red }
+// node 585
+edge: { sourcename: "585" targetname: "522" }
+// node 586
+edge: { sourcename: "586" targetname: "547" label: "true" color: darkgreen }
+edge: { sourcename: "586" targetname: "587" label: "false" color: red }
+// node 587
+edge: { sourcename: "587" targetname: "549" }
+// node 588
+edge: { sourcename: "588" targetname: "589" label: "false" color: red }
+edge: { sourcename: "588" targetname: "626" label: "true" color: darkgreen }
+// node 589
+edge: { sourcename: "589" targetname: "590" }
+// node 590
+edge: { sourcename: "590" targetname: "427" label: "true" color: darkgreen }
+edge: { sourcename: "590" targetname: "591" label: "false" color: red }
+// node 591
+edge: { sourcename: "591" targetname: "592" label: "false" color: red }
+edge: { sourcename: "591" targetname: "599" label: "true" color: darkgreen }
+// node 592
+edge: { sourcename: "592" targetname: "595" }
+// node 593
+edge: { sourcename: "593" targetname: "594" label: "false" color: red }
+edge: { sourcename: "593" targetname: "615" label: "true" color: darkgreen }
+// node 594
+edge: { sourcename: "594" targetname: "595" label: "false" color: red }
+edge: { sourcename: "594" targetname: "615" label: "true" color: darkgreen }
+// node 595
+edge: { sourcename: "595" targetname: "593" label: "true" color: darkgreen }
+edge: { sourcename: "595" targetname: "596" label: "false" color: red }
+// node 596
+edge: { sourcename: "596" targetname: "593" label: "true" color: darkgreen }
+edge: { sourcename: "596" targetname: "597" label: "false" color: red }
+// node 597
+edge: { sourcename: "597" targetname: "448" label: "true" color: darkgreen }
+edge: { sourcename: "597" targetname: "598" label: "false" color: red }
+// node 598
+edge: { sourcename: "598" targetname: "599" }
+// node 599
+edge: { sourcename: "599" targetname: "427" label: "true" color: darkgreen }
+edge: { sourcename: "599" targetname: "600" label: "false" color: red }
+// node 600
+edge: { sourcename: "600" targetname: "583" }
+// node 601
+edge: { sourcename: "601" targetname: "602" label: "false" color: red }
+edge: { sourcename: "601" targetname: "625" label: "true" color: darkgreen }
+// node 602
+edge: { sourcename: "602" targetname: "603" }
+// node 603
+edge: { sourcename: "603" targetname: "604" label: "false" color: red }
+edge: { sourcename: "603" targetname: "610" label: "true" color: darkgreen }
+// node 604
+edge: { sourcename: "604" targetname: "605" label: "false" color: red }
+edge: { sourcename: "604" targetname: "651" label: "true" color: darkgreen }
+// node 605
+edge: { sourcename: "605" targetname: "606" }
+// node 606
+edge: { sourcename: "606" targetname: "607" label: "false" color: red }
+edge: { sourcename: "606" targetname: "656" label: "true" color: darkgreen }
+// node 607
+edge: { sourcename: "607" targetname: "608" label: "false" color: red }
+edge: { sourcename: "607" targetname: "609" label: "true" color: darkgreen }
+// node 608
+edge: { sourcename: "608" targetname: "606" label: "true" color: darkgreen }
+edge: { sourcename: "608" targetname: "609" label: "false" color: red }
+// node 609
+edge: { sourcename: "609" targetname: "610" }
+// node 610
+edge: { sourcename: "610" targetname: "438" }
+// node 611
+edge: { sourcename: "611" targetname: "613" }
+// node 612
+edge: { sourcename: "612" targetname: "613" label: "false" color: red }
+edge: { sourcename: "612" targetname: "635" label: "true" color: darkgreen }
+// node 613
+edge: { sourcename: "613" targetname: "612" label: "true" color: darkgreen }
+edge: { sourcename: "613" targetname: "614" label: "false" color: red }
+// node 614
+edge: { sourcename: "614" targetname: "469" }
+// node 615
+edge: { sourcename: "615" targetname: "599" }
+// node 616
+edge: { sourcename: "616" targetname: "617" }
+// node 617
+edge: { sourcename: "617" targetname: "456" }
+// node 618
+edge: { sourcename: "618" targetname: "619" label: "false" color: red }
+edge: { sourcename: "618" targetname: "640" label: "true" color: darkgreen }
+// node 619
+edge: { sourcename: "619" targetname: "620" label: "false" color: red }
+edge: { sourcename: "619" targetname: "660" label: "true" color: darkgreen }
+// node 620
+edge: { sourcename: "620" targetname: "621" }
+// node 621
+edge: { sourcename: "621" targetname: "556" }
+// node 622
+edge: { sourcename: "622" targetname: "551" }
+// node 623
+edge: { sourcename: "623" targetname: "430" }
+// node 624
+edge: { sourcename: "624" targetname: "571" }
+// node 625
+edge: { sourcename: "625" targetname: "603" }
+// node 626
+edge: { sourcename: "626" targetname: "590" }
+// node 627
+edge: { sourcename: "627" targetname: "526" }
+// node 628
+edge: { sourcename: "628" targetname: "629" label: "false" color: red }
+edge: { sourcename: "628" targetname: "637" label: "true" color: darkgreen }
+// node 629
+edge: { sourcename: "629" targetname: "630" label: "false" color: red }
+edge: { sourcename: "629" targetname: "637" label: "true" color: darkgreen }
+// node 630
+edge: { sourcename: "630" targetname: "631" label: "false" color: red }
+edge: { sourcename: "630" targetname: "666" label: "true" color: darkgreen }
+// node 631
+edge: { sourcename: "631" targetname: "632" label: "false" color: red }
+edge: { sourcename: "631" targetname: "673" label: "true" color: darkgreen }
+// node 632
+edge: { sourcename: "632" targetname: "633" }
+// node 633
+edge: { sourcename: "633" targetname: "556" }
+// node 634
+edge: { sourcename: "634" targetname: "555" }
+// node 635
+edge: { sourcename: "635" targetname: "469" label: "true" color: darkgreen }
+edge: { sourcename: "635" targetname: "636" label: "false" color: red }
+// node 636
+edge: { sourcename: "636" targetname: "448" }
+// node 637
+edge: { sourcename: "637" targetname: "634" label: "true" color: darkgreen }
+edge: { sourcename: "637" targetname: "638" label: "false" color: red }
+// node 638
+edge: { sourcename: "638" targetname: "555" }
+// node 639
+edge: { sourcename: "639" targetname: "617" }
+// node 640
+edge: { sourcename: "640" targetname: "641" label: "false" color: red }
+edge: { sourcename: "640" targetname: "661" label: "true" color: darkgreen }
+// node 641
+edge: { sourcename: "641" targetname: "642" }
+// node 642
+edge: { sourcename: "642" targetname: "556" }
+// node 643
+edge: { sourcename: "643" targetname: "493" }
+// node 644
+edge: { sourcename: "644" targetname: "444" }
+// node 645
+edge: { sourcename: "645" targetname: "646" label: "false" color: red }
+edge: { sourcename: "645" targetname: "680" label: "true" color: darkgreen }
+// node 646
+edge: { sourcename: "646" targetname: "647" label: "false" color: red }
+edge: { sourcename: "646" targetname: "680" label: "true" color: darkgreen }
+// node 647
+edge: { sourcename: "647" targetname: "648" }
+// node 648
+edge: { sourcename: "648" targetname: "649" label: "false" color: red }
+edge: { sourcename: "648" targetname: "648" label: "true" color: darkgreen }
+// node 649
+edge: { sourcename: "649" targetname: "497" }
+// node 650
+edge: { sourcename: "650" targetname: "437" }
+// node 651
+edge: { sourcename: "651" targetname: "610" }
+// node 652
+edge: { sourcename: "652" targetname: "653" label: "false" color: red }
+edge: { sourcename: "652" targetname: "662" label: "true" color: darkgreen }
+// node 653
+edge: { sourcename: "653" targetname: "654" label: "false" color: red }
+edge: { sourcename: "653" targetname: "669" label: "true" color: darkgreen }
+// node 654
+edge: { sourcename: "654" targetname: "655" }
+// node 655
+edge: { sourcename: "655" targetname: "438" }
+// node 656
+edge: { sourcename: "656" targetname: "607" label: "true" color: darkgreen }
+edge: { sourcename: "656" targetname: "657" label: "false" color: red }
+// node 657
+edge: { sourcename: "657" targetname: "609" }
+// node 658
+edge: { sourcename: "658" targetname: "466" label: "true" color: darkgreen }
+edge: { sourcename: "658" targetname: "659" label: "false" color: red }
+// node 659
+edge: { sourcename: "659" targetname: "469" }
+// node 660
+edge: { sourcename: "660" targetname: "621" }
+// node 661
+edge: { sourcename: "661" targetname: "642" }
+// node 662
+edge: { sourcename: "662" targetname: "663" label: "false" color: red }
+edge: { sourcename: "662" targetname: "670" label: "true" color: darkgreen }
+// node 663
+edge: { sourcename: "663" targetname: "664" }
+// node 664
+edge: { sourcename: "664" targetname: "438" }
+// node 665
+edge: { sourcename: "665" targetname: "483" }
+// node 666
+edge: { sourcename: "666" targetname: "667" label: "false" color: red }
+edge: { sourcename: "666" targetname: "674" label: "true" color: darkgreen }
+// node 667
+edge: { sourcename: "667" targetname: "668" }
+// node 668
+edge: { sourcename: "668" targetname: "556" }
+// node 669
+edge: { sourcename: "669" targetname: "655" }
+// node 670
+edge: { sourcename: "670" targetname: "664" }
+// node 671
+edge: { sourcename: "671" targetname: "428" label: "true" color: darkgreen }
+edge: { sourcename: "671" targetname: "672" label: "false" color: red }
+// node 672
+edge: { sourcename: "672" targetname: "428" }
+// node 673
+edge: { sourcename: "673" targetname: "633" }
+// node 674
+edge: { sourcename: "674" targetname: "668" }
+// node 675
+edge: { sourcename: "675" targetname: "677" }
+// node 676
+edge: { sourcename: "676" targetname: "677" }
+// node 677
+edge: { sourcename: "677" targetname: "676" label: "true" color: darkgreen }
+edge: { sourcename: "677" targetname: "678" label: "false" color: red }
+// node 678
+edge: { sourcename: "678" targetname: "428" }
+// node 679
+edge: { sourcename: "679" targetname: "680" }
+// node 680
+edge: { sourcename: "680" targetname: "501" }
+}

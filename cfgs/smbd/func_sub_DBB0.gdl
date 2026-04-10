@@ -1,0 +1,900 @@
+graph: {
+title: "Graph of .text:000000000000DBB0...text:000000000000E57C"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_DBB031:
+push    r15
+push    r14
+push    r13
+mov     r13, rdx
+push    r12
+push    rbp
+mov     rbp, rdi
+push    rbx
+mov     ebx, esi
+sub     rsp, 68h
+mov     rax, fs:28h
+mov     [rsp+98h+var_40], rax
+xor     eax, eax
+call    sub_7640
+lea     rdi, [rsp+98h+var_68]
+mov     rsi, rbp
+mov     r14, rax
+call    sub_7CC0
+mov     r15, [rsp+98h+var_68]
+test    bl, bl
+jnz     loc_DC80" vertical_order: 0 }
+node: { title: "1" label: "lea     rdi, [rsp+98h+var_48]
+call    sub_7A00
+cmp     eax, 0FFFFFFFFh
+jz      loc_DE20" }
+node: { title: "2" label: "call    sub_7C10
+mov     r12d, eax
+cmp     eax, 0FFFFFFFFh
+jz      loc_DDF8" }
+node: { title: "3" label: "test    eax, eax
+jz      loc_DCE0" }
+node: { title: "4" label: "mov     edi, [rsp+98h+var_44]
+call    sub_72A0
+mov     edi, [rsp+98h+var_48]
+lea     rsi, [rsp+98h+var_69]
+mov     edx, 1
+call    sub_7A50
+mov     edi, [rsp+98h+var_48]
+mov     rbp, rax
+call    sub_72A0
+xor     edi, edi
+cmp     rbp, 0FFFFFFFFFFFFFFFFh
+jz      loc_DFB0" }
+node: { title: "5" label: "test    rbp, rbp
+jz      loc_DEE8" }
+node: { title: "6" label: "cmp     [rsp+98h+var_69], 0
+jz      loc_DE98" }
+node: { title: "7" label: "call    sub_7B00
+test    eax, eax
+jg      loc_DF50" }
+node: { title: "8" label: "mov     eax, ebx
+jmp     short loc_DCB8" }
+node: { title: "9" label: "mov     ecx, r15d
+mov     rdx, rbp
+mov     rsi, r14
+mov     rdi, rbp
+call    smbd_cleanupd_send
+mov     rdi, rsp
+mov     rsi, rbp
+mov     rbx, rax
+call    sub_7CC0
+mov     rax, [rsp+98h+var_88]
+movdqu  xmm0, [rsp+98h+var_98]
+test    rbx, rbx
+mov     [r13+10h], rax
+setnz   al
+movups  xmmword ptr [r13+0], xmm0" }
+node: { title: "10" label: "mov     rcx, [rsp+98h+var_40]
+xor     rcx, fs:28h
+jnz     loc_E164" }
+node: { title: "11" label: "add     rsp, 68h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+pop     r14
+pop     r15
+retn" }
+node: { title: "12" label: "mov     edi, [rsp+98h+var_48]
+call    sub_72A0
+mov     edx, 1
+mov     rsi, r14
+mov     rdi, rbp
+lea     rcx, aCleanupd; \"cleanupd\"
+call    sub_7B60
+mov     r12d, eax
+test    eax, eax
+jnz     loc_E020" }
+node: { title: "13" label: "mov     ecx, r15d
+mov     rdx, rbp
+mov     rsi, r14
+mov     rdi, rbp
+call    smbd_cleanupd_send
+mov     r12, rax
+test    rax, rax
+jz      loc_E169" }
+node: { title: "14" label: "mov     rdi, rax
+mov     rdx, rbp
+lea     rsi, loc_C940
+call    sub_7F10
+mov     edi, [rsp+98h+var_44]
+lea     rsi, [rsp+98h+var_69]
+mov     edx, 1
+mov     [rsp+98h+var_69], 0
+call    sub_7080
+mov     edi, [rsp+98h+var_44]
+mov     rbx, rax
+call    sub_72A0
+cmp     rbx, 0FFFFFFFFFFFFFFFFh
+jz      loc_E182" }
+node: { title: "15" label: "cmp     rbx, 1
+jnz     loc_E1F2" }
+node: { title: "16" label: "mov     rsi, r14
+mov     rdi, r12
+call    sub_7660
+test    al, al
+jz      short loc_DD90" }
+node: { title: "17" label: "xor     edi, edi
+call    sub_7720
+nop     dword ptr [rax+rax+00000000h]" }
+node: { title: "18" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jle     short loc_DD81" }
+node: { title: "19" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_65; \"../../source3/smbd/server.c:665\"
+call    sub_7800
+test    al, al
+jz      short loc_DD81" }
+node: { title: "20" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      short loc_DD81" }
+node: { title: "21" label: "call    sub_7C40
+mov     edi, [rax]
+call    sub_7920
+lea     rdi, aTeventReqPollR; \"tevent_req_poll returned %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+jmp     short loc_DD81" }
+node: { title: "22" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jg      loc_E0A6" }
+node: { title: "23" label: "mov     edi, [rsp+98h+var_48]
+call    sub_72A0
+mov     edi, [rsp+98h+var_44]
+call    sub_72A0
+mov     eax, ebx
+jmp     loc_DCB8" }
+node: { title: "24" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jle     loc_DC79" }
+node: { title: "25" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_66; \"../../source3/smbd/server.c:586\"
+call    sub_7800
+test    al, al
+jz      loc_DC79" }
+node: { title: "26" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DC79" }
+node: { title: "27" label: "call    sub_7C40
+mov     edi, [rax]
+call    sub_7920
+lea     rdi, aPipeFailedS; \"pipe failed: %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+xor     eax, eax
+jmp     loc_DCB8" }
+node: { title: "28" label: "call    sub_7B00
+cmp     eax, 9
+jg      loc_E051" }
+node: { title: "29" label: "mov     rax, cs:am_parent_ptr
+mov     rdi, [rax]
+test    rdi, rdi
+jz      short loc_DEBD" }
+node: { title: "30" label: "mov     esi, r12d
+call    sub_D530" }
+node: { title: "31" label: "mov     rdi, rsp
+mov     esi, r12d
+call    sub_74A0
+mov     rax, [rsp+98h+var_88]
+movdqu  xmm1, [rsp+98h+var_98]
+mov     [r13+10h], rax
+mov     eax, 1
+movups  xmmword ptr [r13+0], xmm1
+jmp     loc_DCB8" }
+node: { title: "32" label: "call    sub_7B00
+test    eax, eax
+jle     loc_DC79" }
+node: { title: "33" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_67; \"../../source3/smbd/server.c:609\"
+call    sub_7800
+test    al, al
+jz      loc_DC79" }
+node: { title: "34" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DC79" }
+node: { title: "35" label: "lea     rdi, aCleanupdCouldN; \"cleanupd could not start\\n\"
+xor     eax, eax
+call    sub_7B90
+xor     eax, eax
+jmp     loc_DCB8" }
+node: { title: "36" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_68; \"../../source3/smbd/server.c:613\"
+call    sub_7800
+test    al, al
+jz      loc_DC79" }
+node: { title: "37" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DC79" }
+node: { title: "38" label: "movsx   esi, [rsp+98h+var_69]
+lea     rdi, aCleanupdReturn; \"cleanupd returned %d\\n\"
+xor     eax, eax
+call    sub_7B90
+mov     eax, ebx
+jmp     loc_DCB8" }
+node: { title: "39" label: "call    sub_7B00
+test    eax, eax
+jle     loc_DC79" }
+node: { title: "40" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_69; \"../../source3/smbd/server.c:605\"
+call    sub_7800
+test    al, al
+jz      loc_DC79" }
+node: { title: "41" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DC79" }
+node: { title: "42" label: "call    sub_7C40
+mov     edi, [rax]
+call    sub_7920
+lea     rdi, aSysReadFailedS; \"sys_read failed: %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+xor     eax, eax
+jmp     loc_DCB8" }
+node: { title: "43" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jg      loc_E107" }
+node: { title: "44" label: "mov     [rsp+98h+var_69], 1" }
+node: { title: "45" label: "mov     edi, [rsp+98h+var_44]
+lea     rsi, [rsp+98h+var_69]
+mov     edx, 1
+call    sub_7080" }
+node: { title: "46" label: "mov     edi, 1
+call    sub_7720" }
+node: { title: "47" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 0Ah
+lea     rdx, aSource3SmbdSer_70; \"../../source3/smbd/server.c:617\"
+call    sub_7800
+test    al, al
+jz      loc_DEA6" }
+node: { title: "48" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DEA6" }
+node: { title: "49" label: "mov     esi, r12d
+lea     rdi, aStartedCleanup; \"Started cleanupd pid=%d\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_DEA6" }
+node: { title: "50" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_71; \"../../source3/smbd/server.c:592\"
+call    sub_7800
+test    al, al
+jz      loc_DE07" }
+node: { title: "51" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_DE07" }
+node: { title: "52" label: "call    sub_7C40
+mov     edi, [rax]
+call    sub_7920
+lea     rdi, aSForkFailedS+4; \"fork failed: %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+jmp     loc_DE07" }
+node: { title: "53" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_72; \"../../source3/smbd/server.c:631\"
+call    sub_7800
+test    al, al
+jz      loc_E02F" }
+node: { title: "54" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E02F" }
+node: { title: "55" label: "mov     edi, r12d
+call    sub_7630
+lea     rdi, aReinitAfterFor_1; \"reinit_after_fork failed: %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E02F" }
+node: { title: "56" label: "call    sub_7370" }
+node: { title: "57" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jg      loc_E253" }
+node: { title: "58" label: "mov     [rsp+98h+var_69], 2
+jmp     loc_E034" }
+node: { title: "59" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jle     loc_E047" }
+node: { title: "60" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_73; \"../../source3/smbd/server.c:655\"
+call    sub_7800
+test    al, al
+jz      loc_E047" }
+node: { title: "61" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E047" }
+node: { title: "62" label: "call    sub_7C40
+mov     edi, [rax]
+call    sub_7920
+lea     rdi, aSysWriteFailed; \"sys_write failed: %s\\n\"
+mov     rsi, rax
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E047" }
+node: { title: "63" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jle     loc_E047" }
+node: { title: "64" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_74; \"../../source3/smbd/server.c:659\"
+call    sub_7800
+test    al, al
+jz      loc_E047" }
+node: { title: "65" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E047" }
+node: { title: "66" label: "lea     rdi, aSysWriteCouldN; \"sys_write could not write result\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E047" }
+node: { title: "67" label: "xor     esi, esi
+lea     rcx, aCleanupdInit; \"cleanupd_init\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_75; \"../../source3/smbd/server.c:641\"
+call    sub_7800
+test    al, al
+jz      loc_E178" }
+node: { title: "68" label: "xor     eax, eax
+lea     rsi, aCleanupdInit; \"cleanupd_init\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E178" }
+node: { title: "69" label: "lea     rdi, aSmbdCleanupdSe_0; \"smbd_cleanupd_send failed\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E178" }
+node: { title: "70" label: "58sub_E2B031:
+endbr64
+push    r13
+push    r12
+push    rbp
+mov     rbp, rdi
+push    rbx
+sub     rsp, 8
+call    sub_70C0
+lea     rdx, aSource3SmbdSer_112; \"../../source3/smbd/server.c:718\"
+lea     rsi, aStructTeventRe; \"struct tevent_req\"
+mov     rdi, rax
+call    sub_7980
+mov     rdi, rax
+mov     r13, rax
+call    sub_7490
+lea     rdx, aSource3SmbdSer_113; \"../../source3/smbd/server.c:720\"
+lea     rsi, aStructCleanupI; \"struct cleanup_init_state\"
+mov     rdi, rax
+call    sub_7980
+xor     edi, edi
+mov     r12, rax
+call    sub_7B00
+cmp     eax, 2
+jg      loc_E420" }
+node: { title: "71" label: "mov     rdi, rbp
+call    sub_7F80
+mov     ebx, eax
+test    rbp, rbp
+jz      short loc_E32E" }
+node: { title: "72" label: "lea     rsi, aSource3SmbdSer_114; \"../../source3/smbd/server.c:727\"
+mov     rdi, rbp
+call    sub_7280" }
+node: { title: "73" label: "test    bl, bl
+jz      loc_E3E0" }
+node: { title: "74" label: "mov     rdi, [r12+10h]
+mov     rdx, [r12+18h]
+xor     esi, esi
+call    sub_DBB0
+xor     edi, edi
+mov     [r12], al
+test    al, al
+jnz     short loc_E3B8" }
+node: { title: "75" label: "call    sub_7B00
+cmp     eax, 2
+jg      loc_E478" }
+node: { title: "76" label: "xor     esi, esi
+mov     edi, 1
+call    sub_74C0
+mov     rsi, [r12+8]
+mov     rdi, r12
+mov     rcx, rdx
+mov     rdx, rax
+call    sub_7780
+lea     rdx, aSource3SmbdSer_115; \"../../source3/smbd/server.c:744\"
+mov     rsi, r13
+mov     rdi, rax
+mov     rbp, rax
+call    sub_7C70
+test    al, al
+jnz     short loc_E400" }
+node: { title: "77" label: "add     rsp, 8
+mov     rdx, r13
+mov     rdi, rbp
+pop     rbx
+lea     rsi, sub_E2B0
+pop     rbp
+pop     r12
+pop     r13
+jmp     sub_7F10" }
+node: { title: "78" label: "call    sub_7B00
+test    eax, eax
+jg      loc_E4D0" }
+node: { title: "79" label: "add     rsp, 8
+mov     rdi, r13
+lea     rsi, aSource3SmbdSer_116; \"../../source3/smbd/server.c:736\"
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+jmp     sub_73E0" }
+node: { title: "80" label: "add     rsp, 8
+mov     rdi, r13
+mov     esi, 0Ch
+pop     rbx
+lea     rdx, aSource3SmbdSer_117; \"../../source3/smbd/server.c:729\"
+pop     rbp
+pop     r12
+pop     r13
+jmp     sub_7560" }
+node: { title: "81" label: "xor     edi, edi
+call    sub_7B00
+test    eax, eax
+jns     loc_E528" }
+node: { title: "82" label: "add     rsp, 8
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+retn" }
+node: { title: "83" label: "xor     esi, esi
+lea     rcx, aCleanupdInitTr; \"cleanupd_init_trigger\"
+mov     edi, 3
+lea     rdx, aSource3SmbdSer_118; \"../../source3/smbd/server.c:724\"
+call    sub_7800
+test    al, al
+jz      loc_E310" }
+node: { title: "84" label: "xor     eax, eax
+lea     rsi, aCleanupdInitTr; \"cleanupd_init_trigger\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E310" }
+node: { title: "85" label: "lea     rdi, aTriggeringClea; \"Triggering cleanupd startup\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E310" }
+node: { title: "86" label: "xor     esi, esi
+lea     rcx, aCleanupdInitTr; \"cleanupd_init_trigger\"
+mov     edi, 3
+lea     rdx, aSource3SmbdSer_119; \"../../source3/smbd/server.c:740\"
+call    sub_7800
+test    al, al
+jz      loc_E35F" }
+node: { title: "87" label: "xor     eax, eax
+lea     rsi, aCleanupdInitTr; \"cleanupd_init_trigger\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E35F" }
+node: { title: "88" label: "lea     rdi, aCleanupdStartu; \"cleanupd startup failed, rescheduling\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E35F" }
+node: { title: "89" label: "xor     esi, esi
+lea     rcx, aCleanupdInitTr; \"cleanupd_init_trigger\"
+mov     edi, 1
+lea     rdx, aSource3SmbdSer_120; \"../../source3/smbd/server.c:735\"
+call    sub_7800
+test    al, al
+jz      loc_E3C5" }
+node: { title: "90" label: "xor     eax, eax
+lea     rsi, aCleanupdInitTr; \"cleanupd_init_trigger\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E3C5" }
+node: { title: "91" label: "lea     rdi, aCleanupdRestar; \"cleanupd restarted\\n\"
+xor     eax, eax
+call    sub_7B90
+jmp     loc_E3C5" }
+node: { title: "92" label: "xor     esi, esi
+xor     edi, edi
+lea     rcx, aCleanupdInitTr; \"cleanupd_init_trigger\"
+lea     rdx, aSource3SmbdSer_121; \"../../source3/smbd/server.c:745\"
+call    sub_7800
+test    al, al
+jz      loc_E40F" }
+node: { title: "93" label: "xor     eax, eax
+lea     rsi, aCleanupdInitTr; \"cleanupd_init_trigger\"
+lea     rdi, aS; \"%s: \"
+call    sub_7B90
+test    al, al
+jz      loc_E40F" }
+node: { title: "94" label: "add     rsp, 8
+lea     rdi, aSchedulingClea; \"scheduling cleanupd restart failed, giv\"...
+xor     eax, eax
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+jmp     sub_7B90" }
+node: { title: "95" label: "sub_7F10" color: red }
+node: { title: "96" label: "sub_73E0" color: red }
+node: { title: "97" label: "sub_7560" color: red }
+node: { title: "98" label: "sub_7B90" color: red }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "9" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "24" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "22" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "12" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "39" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "32" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "28" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "36" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "10" }
+// node 9
+edge: { sourcename: "9" targetname: "10" }
+// node 10
+edge: { sourcename: "10" targetname: "11" label: "false" color: red }
+edge: { sourcename: "10" targetname: "56" label: "true" color: darkgreen }
+// node 11
+// node 12
+edge: { sourcename: "12" targetname: "13" label: "false" color: red }
+edge: { sourcename: "12" targetname: "43" label: "true" color: darkgreen }
+// node 13
+edge: { sourcename: "13" targetname: "14" label: "false" color: red }
+edge: { sourcename: "13" targetname: "57" label: "true" color: darkgreen }
+// node 14
+edge: { sourcename: "14" targetname: "15" label: "false" color: red }
+edge: { sourcename: "14" targetname: "59" label: "true" color: darkgreen }
+// node 15
+edge: { sourcename: "15" targetname: "16" label: "false" color: red }
+edge: { sourcename: "15" targetname: "63" label: "true" color: darkgreen }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "18" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+edge: { sourcename: "18" targetname: "17" label: "true" color: darkgreen }
+edge: { sourcename: "18" targetname: "19" label: "false" color: red }
+// node 19
+edge: { sourcename: "19" targetname: "17" label: "true" color: darkgreen }
+edge: { sourcename: "19" targetname: "20" label: "false" color: red }
+// node 20
+edge: { sourcename: "20" targetname: "17" label: "true" color: darkgreen }
+edge: { sourcename: "20" targetname: "21" label: "false" color: red }
+// node 21
+edge: { sourcename: "21" targetname: "17" }
+// node 22
+edge: { sourcename: "22" targetname: "23" label: "false" color: red }
+edge: { sourcename: "22" targetname: "50" label: "true" color: darkgreen }
+// node 23
+edge: { sourcename: "23" targetname: "10" }
+// node 24
+edge: { sourcename: "24" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "24" targetname: "25" label: "false" color: red }
+// node 25
+edge: { sourcename: "25" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "25" targetname: "26" label: "false" color: red }
+// node 26
+edge: { sourcename: "26" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "26" targetname: "27" label: "false" color: red }
+// node 27
+edge: { sourcename: "27" targetname: "10" }
+// node 28
+edge: { sourcename: "28" targetname: "29" label: "false" color: red }
+edge: { sourcename: "28" targetname: "47" label: "true" color: darkgreen }
+// node 29
+edge: { sourcename: "29" targetname: "30" label: "false" color: red }
+edge: { sourcename: "29" targetname: "31" label: "true" color: darkgreen }
+// node 30
+edge: { sourcename: "30" targetname: "31" }
+// node 31
+edge: { sourcename: "31" targetname: "10" }
+// node 32
+edge: { sourcename: "32" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "32" targetname: "33" label: "false" color: red }
+// node 33
+edge: { sourcename: "33" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "33" targetname: "34" label: "false" color: red }
+// node 34
+edge: { sourcename: "34" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "34" targetname: "35" label: "false" color: red }
+// node 35
+edge: { sourcename: "35" targetname: "10" }
+// node 36
+edge: { sourcename: "36" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "36" targetname: "37" label: "false" color: red }
+// node 37
+edge: { sourcename: "37" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "37" targetname: "38" label: "false" color: red }
+// node 38
+edge: { sourcename: "38" targetname: "10" }
+// node 39
+edge: { sourcename: "39" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "39" targetname: "40" label: "false" color: red }
+// node 40
+edge: { sourcename: "40" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "40" targetname: "41" label: "false" color: red }
+// node 41
+edge: { sourcename: "41" targetname: "8" label: "true" color: darkgreen }
+edge: { sourcename: "41" targetname: "42" label: "false" color: red }
+// node 42
+edge: { sourcename: "42" targetname: "10" }
+// node 43
+edge: { sourcename: "43" targetname: "44" label: "false" color: red }
+edge: { sourcename: "43" targetname: "53" label: "true" color: darkgreen }
+// node 44
+edge: { sourcename: "44" targetname: "45" }
+// node 45
+edge: { sourcename: "45" targetname: "46" }
+// node 46
+edge: { sourcename: "46" targetname: "47" }
+// node 47
+edge: { sourcename: "47" targetname: "29" label: "true" color: darkgreen }
+edge: { sourcename: "47" targetname: "48" label: "false" color: red }
+// node 48
+edge: { sourcename: "48" targetname: "29" label: "true" color: darkgreen }
+edge: { sourcename: "48" targetname: "49" label: "false" color: red }
+// node 49
+edge: { sourcename: "49" targetname: "29" }
+// node 50
+edge: { sourcename: "50" targetname: "23" label: "true" color: darkgreen }
+edge: { sourcename: "50" targetname: "51" label: "false" color: red }
+// node 51
+edge: { sourcename: "51" targetname: "23" label: "true" color: darkgreen }
+edge: { sourcename: "51" targetname: "52" label: "false" color: red }
+// node 52
+edge: { sourcename: "52" targetname: "23" }
+// node 53
+edge: { sourcename: "53" targetname: "44" label: "true" color: darkgreen }
+edge: { sourcename: "53" targetname: "54" label: "false" color: red }
+// node 54
+edge: { sourcename: "54" targetname: "44" label: "true" color: darkgreen }
+edge: { sourcename: "54" targetname: "55" label: "false" color: red }
+// node 55
+edge: { sourcename: "55" targetname: "44" }
+// node 56
+edge: { sourcename: "56" targetname: "57" }
+// node 57
+edge: { sourcename: "57" targetname: "58" label: "false" color: red }
+edge: { sourcename: "57" targetname: "67" label: "true" color: darkgreen }
+// node 58
+edge: { sourcename: "58" targetname: "45" }
+// node 59
+edge: { sourcename: "59" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "59" targetname: "60" label: "false" color: red }
+// node 60
+edge: { sourcename: "60" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "60" targetname: "61" label: "false" color: red }
+// node 61
+edge: { sourcename: "61" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "61" targetname: "62" label: "false" color: red }
+// node 62
+edge: { sourcename: "62" targetname: "46" }
+// node 63
+edge: { sourcename: "63" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "63" targetname: "64" label: "false" color: red }
+// node 64
+edge: { sourcename: "64" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "64" targetname: "65" label: "false" color: red }
+// node 65
+edge: { sourcename: "65" targetname: "46" label: "true" color: darkgreen }
+edge: { sourcename: "65" targetname: "66" label: "false" color: red }
+// node 66
+edge: { sourcename: "66" targetname: "46" }
+// node 67
+edge: { sourcename: "67" targetname: "58" label: "true" color: darkgreen }
+edge: { sourcename: "67" targetname: "68" label: "false" color: red }
+// node 68
+edge: { sourcename: "68" targetname: "58" label: "true" color: darkgreen }
+edge: { sourcename: "68" targetname: "69" label: "false" color: red }
+// node 69
+edge: { sourcename: "69" targetname: "58" }
+// node 70
+edge: { sourcename: "70" targetname: "71" label: "false" color: red }
+edge: { sourcename: "70" targetname: "83" label: "true" color: darkgreen }
+// node 71
+edge: { sourcename: "71" targetname: "72" label: "false" color: red }
+edge: { sourcename: "71" targetname: "73" label: "true" color: darkgreen }
+// node 72
+edge: { sourcename: "72" targetname: "73" }
+// node 73
+edge: { sourcename: "73" targetname: "74" label: "false" color: red }
+edge: { sourcename: "73" targetname: "80" label: "true" color: darkgreen }
+// node 74
+edge: { sourcename: "74" targetname: "75" label: "false" color: red }
+edge: { sourcename: "74" targetname: "78" label: "true" color: darkgreen }
+// node 75
+edge: { sourcename: "75" targetname: "76" label: "false" color: red }
+edge: { sourcename: "75" targetname: "86" label: "true" color: darkgreen }
+// node 76
+edge: { sourcename: "76" targetname: "77" label: "false" color: red }
+edge: { sourcename: "76" targetname: "81" label: "true" color: darkgreen }
+// node 77
+edge: { sourcename: "77" targetname: "95" }
+// node 78
+edge: { sourcename: "78" targetname: "79" label: "false" color: red }
+edge: { sourcename: "78" targetname: "89" label: "true" color: darkgreen }
+// node 79
+edge: { sourcename: "79" targetname: "96" }
+// node 80
+edge: { sourcename: "80" targetname: "97" }
+// node 81
+edge: { sourcename: "81" targetname: "82" label: "false" color: red }
+edge: { sourcename: "81" targetname: "92" label: "true" color: darkgreen }
+// node 82
+// node 83
+edge: { sourcename: "83" targetname: "71" label: "true" color: darkgreen }
+edge: { sourcename: "83" targetname: "84" label: "false" color: red }
+// node 84
+edge: { sourcename: "84" targetname: "71" label: "true" color: darkgreen }
+edge: { sourcename: "84" targetname: "85" label: "false" color: red }
+// node 85
+edge: { sourcename: "85" targetname: "71" }
+// node 86
+edge: { sourcename: "86" targetname: "76" label: "true" color: darkgreen }
+edge: { sourcename: "86" targetname: "87" label: "false" color: red }
+// node 87
+edge: { sourcename: "87" targetname: "76" label: "true" color: darkgreen }
+edge: { sourcename: "87" targetname: "88" label: "false" color: red }
+// node 88
+edge: { sourcename: "88" targetname: "76" }
+// node 89
+edge: { sourcename: "89" targetname: "79" label: "true" color: darkgreen }
+edge: { sourcename: "89" targetname: "90" label: "false" color: red }
+// node 90
+edge: { sourcename: "90" targetname: "79" label: "true" color: darkgreen }
+edge: { sourcename: "90" targetname: "91" label: "false" color: red }
+// node 91
+edge: { sourcename: "91" targetname: "79" }
+// node 92
+edge: { sourcename: "92" targetname: "82" label: "true" color: darkgreen }
+edge: { sourcename: "92" targetname: "93" label: "false" color: red }
+// node 93
+edge: { sourcename: "93" targetname: "82" label: "true" color: darkgreen }
+edge: { sourcename: "93" targetname: "94" label: "false" color: red }
+// node 94
+edge: { sourcename: "94" targetname: "98" }
+// node 95
+// node 96
+// node 97
+// node 98
+}

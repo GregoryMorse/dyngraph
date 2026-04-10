@@ -1,0 +1,428 @@
+graph: {
+title: "Graph of .text:000000000000CE40...text:000000000000D59C"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_CE4031:
+push    rbp
+mov     rbp, rdi
+push    rbx
+mov     rbx, rsi
+sub     rsp, 8
+mov     rdi, [rsi]
+test    rdi, rdi
+jz      short loc_CE59" vertical_order: 0 }
+node: { title: "1" label: "call    sub_18090" }
+node: { title: "2" label: "mov     rdi, rbp; s
+call    j__strdup
+mov     [rbx], rax
+add     rsp, 8
+pop     rbx
+pop     rbp
+retn" }
+node: { title: "3" label: "58sub_CE7031:
+sub     rsp, 8
+lea     rsi, tunable_secure_chroot_dir
+lea     rdi, aVarRunVsftpdEm; \"/var/run/vsftpd/empty\"
+mov     cs:tunable_anonymous_enable, 1
+mov     cs:tunable_local_enable, 0
+mov     cs:tunable_utf8_filesystem, 0
+mov     cs:tunable_pasv_enable, 1
+mov     cs:tunable_port_enable, 1
+mov     cs:tunable_chroot_local_user, 0
+mov     cs:tunable_write_enable, 0
+mov     cs:tunable_anon_upload_enable, 0
+mov     cs:tunable_anon_mkdir_write_enable, 0
+mov     cs:tunable_anon_other_write_enable, 0
+mov     cs:tunable_chown_uploads, 0
+mov     cs:tunable_connect_from_port_20, 0
+mov     cs:tunable_xferlog_enable, 0
+mov     cs:tunable_dirmessage_enable, 0
+mov     cs:tunable_anon_world_readable_only, 1
+mov     cs:tunable_async_abor_enable, 0
+mov     cs:tunable_ascii_upload_enable, 0
+mov     cs:tunable_ascii_download_enable, 0
+mov     cs:tunable_one_process_model, 0
+mov     cs:tunable_xferlog_std_format, 0
+mov     cs:tunable_pasv_promiscuous, 0
+mov     cs:tunable_deny_email_enable, 0
+mov     cs:tunable_chroot_list_enable, 0
+mov     cs:tunable_setproctitle_enable, 0
+mov     cs:tunable_text_userdb_names, 0
+mov     cs:tunable_ls_recurse_enable, 0
+mov     cs:tunable_log_ftp_protocol, 0
+mov     cs:tunable_guest_enable, 0
+mov     cs:tunable_userlist_enable, 0
+mov     cs:tunable_userlist_deny, 1
+mov     cs:tunable_use_localtime, 0
+mov     cs:tunable_check_shell, 1
+mov     cs:tunable_hide_ids, 0
+mov     cs:tunable_listen, 0
+mov     cs:tunable_port_promiscuous, 0
+mov     cs:tunable_passwd_chroot_enable, 0
+mov     cs:tunable_no_anon_password, 0
+mov     cs:tunable_tcp_wrappers, 0
+mov     cs:tunable_use_sendfile, 1
+mov     cs:tunable_force_dot_files, 0
+mov     cs:tunable_listen_ipv6, 0
+mov     cs:tunable_dual_log_enable, 0
+mov     cs:tunable_syslog_enable, 0
+mov     cs:tunable_background, 0
+mov     cs:tunable_virtual_use_local_privs, 0
+mov     cs:tunable_session_support, 0
+mov     cs:tunable_download_enable, 1
+mov     cs:tunable_dirlist_enable, 1
+mov     cs:tunable_chmod_enable, 1
+mov     cs:tunable_secure_email_list_enable, 0
+mov     cs:tunable_run_as_launching_user, 0
+mov     cs:tunable_no_log_lock, 0
+mov     cs:tunable_ssl_enable, 0
+mov     cs:tunable_allow_anon_ssl, 0
+mov     cs:tunable_force_local_logins_ssl, 1
+mov     cs:tunable_force_local_data_ssl, 1
+mov     cs:tunable_sslv2, 0
+mov     cs:tunable_sslv3, 0
+mov     cs:tunable_tlsv1, 1
+mov     cs:tunable_tilde_user_enable, 0
+mov     cs:tunable_force_anon_logins_ssl, 0
+mov     cs:tunable_force_anon_data_ssl, 0
+mov     cs:tunable_mdtm_write, 1
+mov     cs:tunable_lock_upload_files, 1
+mov     cs:tunable_pasv_addr_resolve, 0
+mov     cs:tunable_debug_ssl, 0
+mov     cs:tunable_require_cert, 0
+mov     cs:tunable_validate_cert, 0
+mov     cs:tunable_strict_ssl_read_eof, 1
+mov     cs:tunable_strict_ssl_write_shutdown, 0
+mov     cs:tunable_ssl_request_cert, 1
+mov     cs:tunable_delete_failed_uploads, 0
+mov     cs:tunable_implicit_ssl, 0
+mov     cs:tunable_ptrace_sandbox, 0
+mov     cs:tunable_require_ssl_reuse, 1
+mov     cs:tunable_isolate, 1
+mov     cs:tunable_isolate_network, 1
+mov     cs:tunable_ftp_enable, 1
+mov     cs:tunable_http_enable, 0
+mov     cs:tunable_seccomp_sandbox, 0
+mov     cs:tunable_allow_writeable_chroot, 0
+mov     cs:tunable_accept_timeout, 3Ch ; '<'
+mov     cs:tunable_connect_timeout, 3Ch ; '<'
+mov     cs:tunable_local_umask, 3Fh ; '?'
+mov     cs:tunable_anon_umask, 3Fh ; '?'
+mov     cs:tunable_ftp_data_port, 14h
+mov     cs:tunable_idle_session_timeout, 12Ch
+mov     cs:tunable_data_connection_timeout, 12Ch
+mov     cs:tunable_pasv_min_port, 1389h
+mov     cs:tunable_pasv_max_port, 0
+mov     cs:tunable_anon_max_rate, 0
+mov     cs:tunable_local_max_rate, 0
+mov     cs:tunable_listen_port, 15h
+mov     cs:tunable_max_clients, 7D0h
+mov     cs:tunable_file_open_mode, 1B6h
+mov     cs:tunable_max_per_ip, 32h ; '2'
+mov     cs:tunable_trans_chunk_size, 0
+mov     cs:tunable_delay_failed_login, 1
+mov     cs:tunable_delay_successful_login, 0
+mov     cs:tunable_max_login_fails, 3
+mov     cs:tunable_chown_upload_mode, 180h
+call    sub_CE40
+lea     rsi, tunable_ftp_username
+lea     rdi, aFtp; \"ftp\"
+call    sub_CE40
+lea     rsi, tunable_chown_username
+lea     rdi, aRoot; \"root\"
+call    sub_CE40
+lea     rsi, tunable_xferlog_file
+lea     rdi, aVarLogXferlog; \"/var/log/xferlog\"
+call    sub_CE40
+lea     rsi, tunable_vsftpd_log_file
+lea     rdi, aVarLogVsftpdLo; \"/var/log/vsftpd.log\"
+call    sub_CE40
+lea     rsi, tunable_message_file
+lea     rdi, aMessage; \".message\"
+call    sub_CE40
+lea     rdi, aNobody; \"nobody\"
+lea     rsi, tunable_nopriv_user
+call    sub_CE40
+mov     rdi, cs:tunable_ftpd_banner
+test    rdi, rdi
+jz      short loc_D2FC" }
+node: { title: "4" label: "call    sub_18090" }
+node: { title: "5" label: "lea     rsi, tunable_banned_email_file
+lea     rdi, aEtcVsftpdBanne; \"/etc/vsftpd.banned_emails\"
+mov     cs:tunable_ftpd_banner, 0
+call    sub_CE40
+lea     rsi, tunable_chroot_list_file
+lea     rdi, aEtcVsftpdChroo; \"/etc/vsftpd.chroot_list\"
+call    sub_CE40
+lea     rsi, tunable_pam_service_name
+lea     rdi, aVsftpd; \"vsftpd\"
+call    sub_CE40
+lea     rsi, tunable_guest_username
+lea     rdi, aFtp; \"ftp\"
+call    sub_CE40
+lea     rdi, aEtcVsftpdUserL; \"/etc/vsftpd.user_list\"
+lea     rsi, tunable_userlist_file
+call    sub_CE40
+mov     rdi, cs:tunable_anon_root
+test    rdi, rdi
+jz      short loc_D377" }
+node: { title: "6" label: "call    sub_18090" }
+node: { title: "7" label: "mov     rdi, cs:tunable_local_root
+mov     cs:tunable_anon_root, 0
+test    rdi, rdi
+jz      short loc_D393" }
+node: { title: "8" label: "call    sub_18090" }
+node: { title: "9" label: "mov     rdi, cs:tunable_banner_file
+mov     cs:tunable_local_root, 0
+test    rdi, rdi
+jz      short loc_D3AF" }
+node: { title: "10" label: "call    sub_18090" }
+node: { title: "11" label: "mov     rdi, cs:tunable_pasv_address
+mov     cs:tunable_banner_file, 0
+test    rdi, rdi
+jz      short loc_D3CB" }
+node: { title: "12" label: "call    sub_18090" }
+node: { title: "13" label: "mov     rdi, cs:tunable_listen_address
+mov     cs:tunable_pasv_address, 0
+test    rdi, rdi
+jz      short loc_D3E7" }
+node: { title: "14" label: "call    sub_18090" }
+node: { title: "15" label: "mov     rdi, cs:tunable_user_config_dir
+mov     cs:tunable_listen_address, 0
+test    rdi, rdi
+jz      short loc_D403" }
+node: { title: "16" label: "call    sub_18090" }
+node: { title: "17" label: "mov     rdi, cs:tunable_listen_address6
+mov     cs:tunable_user_config_dir, 0
+test    rdi, rdi
+jz      short loc_D41F" }
+node: { title: "18" label: "call    sub_18090" }
+node: { title: "19" label: "mov     rdi, cs:tunable_cmds_allowed
+mov     cs:tunable_listen_address6, 0
+test    rdi, rdi
+jz      short loc_D43B" }
+node: { title: "20" label: "call    sub_18090" }
+node: { title: "21" label: "mov     rdi, cs:tunable_cmds_denied
+mov     cs:tunable_cmds_allowed, 0
+test    rdi, rdi
+jz      short loc_D457" }
+node: { title: "22" label: "call    sub_18090" }
+node: { title: "23" label: "mov     rdi, cs:tunable_hide_file
+mov     cs:tunable_cmds_denied, 0
+test    rdi, rdi
+jz      short loc_D473" }
+node: { title: "24" label: "call    sub_18090" }
+node: { title: "25" label: "mov     rdi, cs:tunable_deny_file
+mov     cs:tunable_hide_file, 0
+test    rdi, rdi
+jz      short loc_D48F" }
+node: { title: "26" label: "call    sub_18090" }
+node: { title: "27" label: "mov     rdi, cs:tunable_upload_file
+mov     cs:tunable_deny_file, 0
+test    rdi, rdi
+jz      short loc_D4AB" }
+node: { title: "28" label: "call    sub_18090" }
+node: { title: "29" label: "mov     rdi, cs:tunable_download_file
+mov     cs:tunable_upload_file, 0
+test    rdi, rdi
+jz      short loc_D4C7" }
+node: { title: "30" label: "call    sub_18090" }
+node: { title: "31" label: "mov     rdi, cs:tunable_user_sub_token
+mov     cs:tunable_download_file, 0
+test    rdi, rdi
+jz      short loc_D4E3" }
+node: { title: "32" label: "call    sub_18090" }
+node: { title: "33" label: "lea     rsi, tunable_email_password_file
+lea     rdi, aEtcVsftpdEmail; \"/etc/vsftpd.email_passwords\"
+mov     cs:tunable_user_sub_token, 0
+call    sub_CE40
+lea     rdi, aUsrShareSslCer; \"/usr/share/ssl/certs/vsftpd.pem\"
+lea     rsi, tunable_rsa_cert_file
+call    sub_CE40
+mov     rdi, cs:tunable_dsa_cert_file
+test    rdi, rdi
+jz      short loc_D525" }
+node: { title: "34" label: "call    sub_18090" }
+node: { title: "35" label: "lea     rdi, aEcdheRsaAes256; \"ECDHE-RSA-AES256-GCM-SHA384\"
+lea     rsi, tunable_ssl_ciphers
+mov     cs:tunable_dsa_cert_file, 0
+call    sub_CE40
+mov     rdi, cs:tunable_rsa_private_key_file
+test    rdi, rdi
+jz      short loc_D554" }
+node: { title: "36" label: "call    sub_18090" }
+node: { title: "37" label: "mov     rdi, cs:tunable_dsa_private_key_file
+mov     cs:tunable_rsa_private_key_file, 0
+test    rdi, rdi
+jz      short loc_D570" }
+node: { title: "38" label: "call    sub_18090" }
+node: { title: "39" label: "mov     rdi, cs:tunable_ca_certs_file
+mov     cs:tunable_dsa_private_key_file, 0
+test    rdi, rdi
+jz      short loc_D58C" }
+node: { title: "40" label: "call    sub_18090" }
+node: { title: "41" label: "mov     cs:tunable_ca_certs_file, 0
+add     rsp, 8
+retn" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" }
+// node 2
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "5" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "5" }
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "7" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "7" }
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "9" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "9" }
+// node 9
+edge: { sourcename: "9" targetname: "10" label: "false" color: red }
+edge: { sourcename: "9" targetname: "11" label: "true" color: darkgreen }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "13" label: "true" color: darkgreen }
+// node 12
+edge: { sourcename: "12" targetname: "13" }
+// node 13
+edge: { sourcename: "13" targetname: "14" label: "false" color: red }
+edge: { sourcename: "13" targetname: "15" label: "true" color: darkgreen }
+// node 14
+edge: { sourcename: "14" targetname: "15" }
+// node 15
+edge: { sourcename: "15" targetname: "16" label: "false" color: red }
+edge: { sourcename: "15" targetname: "17" label: "true" color: darkgreen }
+// node 16
+edge: { sourcename: "16" targetname: "17" }
+// node 17
+edge: { sourcename: "17" targetname: "18" label: "false" color: red }
+edge: { sourcename: "17" targetname: "19" label: "true" color: darkgreen }
+// node 18
+edge: { sourcename: "18" targetname: "19" }
+// node 19
+edge: { sourcename: "19" targetname: "20" label: "false" color: red }
+edge: { sourcename: "19" targetname: "21" label: "true" color: darkgreen }
+// node 20
+edge: { sourcename: "20" targetname: "21" }
+// node 21
+edge: { sourcename: "21" targetname: "22" label: "false" color: red }
+edge: { sourcename: "21" targetname: "23" label: "true" color: darkgreen }
+// node 22
+edge: { sourcename: "22" targetname: "23" }
+// node 23
+edge: { sourcename: "23" targetname: "24" label: "false" color: red }
+edge: { sourcename: "23" targetname: "25" label: "true" color: darkgreen }
+// node 24
+edge: { sourcename: "24" targetname: "25" }
+// node 25
+edge: { sourcename: "25" targetname: "26" label: "false" color: red }
+edge: { sourcename: "25" targetname: "27" label: "true" color: darkgreen }
+// node 26
+edge: { sourcename: "26" targetname: "27" }
+// node 27
+edge: { sourcename: "27" targetname: "28" label: "false" color: red }
+edge: { sourcename: "27" targetname: "29" label: "true" color: darkgreen }
+// node 28
+edge: { sourcename: "28" targetname: "29" }
+// node 29
+edge: { sourcename: "29" targetname: "30" label: "false" color: red }
+edge: { sourcename: "29" targetname: "31" label: "true" color: darkgreen }
+// node 30
+edge: { sourcename: "30" targetname: "31" }
+// node 31
+edge: { sourcename: "31" targetname: "32" label: "false" color: red }
+edge: { sourcename: "31" targetname: "33" label: "true" color: darkgreen }
+// node 32
+edge: { sourcename: "32" targetname: "33" }
+// node 33
+edge: { sourcename: "33" targetname: "34" label: "false" color: red }
+edge: { sourcename: "33" targetname: "35" label: "true" color: darkgreen }
+// node 34
+edge: { sourcename: "34" targetname: "35" }
+// node 35
+edge: { sourcename: "35" targetname: "36" label: "false" color: red }
+edge: { sourcename: "35" targetname: "37" label: "true" color: darkgreen }
+// node 36
+edge: { sourcename: "36" targetname: "37" }
+// node 37
+edge: { sourcename: "37" targetname: "38" label: "false" color: red }
+edge: { sourcename: "37" targetname: "39" label: "true" color: darkgreen }
+// node 38
+edge: { sourcename: "38" targetname: "39" }
+// node 39
+edge: { sourcename: "39" targetname: "40" label: "false" color: red }
+edge: { sourcename: "39" targetname: "41" label: "true" color: darkgreen }
+// node 40
+edge: { sourcename: "40" targetname: "41" }
+// node 41
+}

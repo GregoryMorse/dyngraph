@@ -1,0 +1,232 @@
+graph: {
+title: "Graph of .text:000000000001ADF0...text:000000000001B000"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "58sub_1ADF031:
+push    r15
+push    r14
+push    r13
+push    r12
+push    rbp
+push    rbx
+mov     rbx, rdi
+sub     rsp, 58h
+mov     rax, fs:28h
+mov     [rsp+88h+var_40], rax
+xor     eax, eax
+call    _strlen
+mov     r15, rax
+cmp     rax, 0FFFFFFFh
+ja      short loc_1AE68" vertical_order: 0 }
+node: { title: "1" label: "mov     rbp, rsp
+mov     esi, 38h ; '8'
+mov     rdi, rbp
+call    sub_175B0
+cmp     r15d, 7
+ja      short loc_1AE80" }
+node: { title: "2" label: "mov     rdi, rbp; tp
+call    _mktime
+mov     rcx, [rsp+88h+var_40]
+xor     rcx, fs:28h
+jnz     loc_1AF7C" }
+node: { title: "3" label: "add     rsp, 58h
+pop     rbx
+pop     rbp
+pop     r12
+pop     r13
+pop     r14
+pop     r15
+retn" }
+node: { title: "4" label: "lea     rdi, aStringSuspicio; \"string suspiciously long\"
+call    sub_8420" }
+node: { title: "5" label: "jmp     short loc_1AE21" }
+node: { title: "6" label: "lea     r12, [rsp+88h+nptr]
+mov     edx, 5
+mov     rsi, rbx
+mov     rdi, r12
+lea     r14, [rsp+88h+var_4B]
+lea     r13, [rsp+88h+var_48]
+call    sub_176C0
+lea     rsi, [rbx+4]
+mov     edx, 3
+mov     rdi, r14
+call    sub_176C0
+lea     rsi, [rbx+6]
+mov     edx, 3
+mov     rdi, r13
+call    sub_176C0
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r12; nptr
+call    _strtol
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r14; nptr
+sub     eax, 76Ch
+mov     [rsp+88h+var_74], eax
+call    _strtol
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r13; nptr
+sub     eax, 1
+mov     [rsp+88h+var_78], eax
+call    _strtol
+mov     [rsp+88h+var_7C], eax
+cmp     r15d, 0Dh
+jbe     loc_1AE37" }
+node: { title: "7" label: "lea     rsi, [rbx+8]
+mov     edx, 3
+mov     rdi, r14
+call    sub_176C0
+lea     rsi, [rbx+0Ah]
+mov     edx, 3
+mov     rdi, r13
+call    sub_176C0
+lea     rsi, [rbx+0Ch]
+mov     edx, 3
+mov     rdi, r12
+call    sub_176C0
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r14; nptr
+call    _strtol
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r13; nptr
+mov     [rsp+88h+var_80], eax
+call    _strtol
+mov     edx, 0Ah; base
+xor     esi, esi; endptr
+mov     rdi, r12; nptr
+mov     [rsp+88h+var_84], eax
+call    _strtol
+mov     [rsp+88h+var_88], eax
+jmp     loc_1AE37" }
+node: { title: "8" label: "call    ___stack_chk_fail
+nop     word ptr [rax+rax+00000000h]
+nop     dword ptr [rax+00h]" }
+node: { title: "9" label: "58sub_1AF9031:
+push    r12
+mov     r12, rdi
+push    rbp
+push    rbx
+mov     rbx, rsi
+sub     rsp, 20h
+mov     rax, fs:28h
+mov     [rsp+38h+var_20], rax
+xor     eax, eax
+test    edx, edx
+jnz     short loc_1AFB9" }
+node: { title: "10" label: "sub     rbx, cs:qword_2B860" }
+node: { title: "11" label: "mov     rbp, rsp
+mov     esi, 10h
+mov     rdi, rbp
+call    sub_175B0
+mov     rsi, rbp; file_times
+mov     rdi, r12; file
+mov     [rsp+38h+var_38], rbx
+mov     [rsp+38h+var_30], rbx
+call    _utime
+mov     rcx, [rsp+38h+var_20]
+xor     rcx, fs:28h
+jnz     short loc_1AFF6" }
+node: { title: "12" label: "add     rsp, 20h
+pop     rbx
+pop     rbp
+pop     r12
+retn" }
+node: { title: "13" label: "call    ___stack_chk_fail
+nop     dword ptr [rax+rax+00h]" }
+node: { title: "14" label: "sub_1B000" color: red }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "4" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "6" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "8" label: "true" color: darkgreen }
+// node 3
+// node 4
+// node 5
+edge: { sourcename: "5" targetname: "1" }
+// node 6
+edge: { sourcename: "6" targetname: "2" label: "true" color: darkgreen }
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+// node 7
+edge: { sourcename: "7" targetname: "2" }
+// node 8
+edge: { sourcename: "8" targetname: "9" }
+// node 9
+edge: { sourcename: "9" targetname: "10" label: "false" color: red }
+edge: { sourcename: "9" targetname: "11" label: "true" color: darkgreen }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "13" label: "true" color: darkgreen }
+// node 12
+// node 13
+edge: { sourcename: "13" targetname: "14" }
+// node 14
+}
