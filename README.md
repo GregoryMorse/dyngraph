@@ -17,6 +17,11 @@ This repository supports a PhD dissertation and three associated manuscripts:
 | In preparation | **Fully Dynamic Loop Nesting Forest for Reducible and Irreducible CFGs** |
 | Submitted | **Fully Dynamic Strong Connectivity and Reachability in Digraphs** — Gregory Morse; Tamás Kozsik. *Submitted to Proceedings of the ICAI 2026.* |
 
+Conference presentations for the SCC/reachability work:
+
+- Gregory Morse and Tamás Kozsik. **Fully Dynamic Strong Connectivity and Reachability in Digraphs**. 13th Joint Conference on Mathematics and Computer Science (MaCS 2020). October 2nd, 2020, 15:00-15:20. Virtual, Eötvös Loránd University, Budapest, Hungary. https://macs2020.elte.hu/wp-content/uploads/2020/10/friday.pdf
+- Gregory Morse and Tamás Kozsik. **Fully Dynamic Strong Connectivity and Reachability in Digraphs**. The 13th International Conference on Applied Informatics (ICAI 2026). Eszterházy Károly Catholic University, Eger, February 19, 2026, 13:50-14:10. https://icai.uni-eszterhazy.hu/2026/program/
+
 The central application domain is static and dynamic program analysis of binaries, particularly control flow reconstruction when facing self-modifying or obfuscated code. Algorithms are designed to support efficient incremental and decremental edge/node updates without recomputing from scratch.
 
 ## Repository Structure
