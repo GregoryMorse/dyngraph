@@ -22,6 +22,14 @@ Conference presentations for the SCC/reachability work:
 - Gregory Morse and Tamás Kozsik. **Fully Dynamic Strong Connectivity and Reachability in Digraphs**. 13th Joint Conference on Mathematics and Computer Science (MaCS 2020). October 2nd, 2020, 15:00-15:20. Virtual, Eötvös Loránd University, Budapest, Hungary. https://macs2020.elte.hu/wp-content/uploads/2020/10/friday.pdf
 - Gregory Morse and Tamás Kozsik. **Fully Dynamic Strong Connectivity and Reachability in Digraphs**. The 13th International Conference on Applied Informatics (ICAI 2026). Eszterházy Károly Catholic University, Eger, February 19, 2026, 13:50-14:10. https://icai.uni-eszterhazy.hu/2026/program/
 
+Extended abstract for the SCC/reachability work:
+
+- Gregory Morse and Tamás Kozsik. **Fully Dynamic Strong Connectivity and Reachability in Digraphs**. In: 13th Joint Conference on Mathematics and Informatics (Collection of Abstracts), pp. 121-122, 2 p. (2020). https://macs2020.elte.hu/booklet/macs2020abstractBooklet.pdf
+
+Additional conference presentation related to this project:
+
+- Gregory Morse. **Dynamic Graph Algorithms, Refactoring Decompiled Code, and Obfuscation Techniques**. 3in Conference on Software and Artificial Intelligence. November 6th, 2020, 13:20-13:40. Virtual, EFOP-3.6.2-16-2017-00013, Hungary. https://www.inf.elte.hu/invitation-3in-conference-on-software-and-artificial-intelligence
+
 The central application domain is static and dynamic program analysis of binaries, particularly control flow reconstruction when facing self-modifying or obfuscated code. Algorithms are designed to support efficient incremental and decremental edge/node updates without recomputing from scratch.
 
 ## Repository Structure
