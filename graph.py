@@ -869,6 +869,141 @@ def graph_enum(n, func):
   assert len(l) == len({frozenset(x.items()) for x in l})
   print(len(l))
   return len(l)
+def verify_graph_seqs():
+  """Assert every graph-counting function against its known OEIS sequence.
+
+  Serves as both a regression test and inline documentation: each _chk call
+  names the OEIS entry, the function under test, and the expected values so
+  that the code itself doubles as a reference table.
+
+  Counting functions are evaluated at consecutive n values starting from n0.
+  Cross-validation checks additionally call the corresponding enumerator for
+  small n and assert the enumerated count equals the closed-form count.
+  """
+  def _chk(fn, oeis_id, label, expected, n0=0):
+    got = [fn(n0 + i) for i in range(len(expected))]
+    assert got == list(expected), (
+      f"OEIS {oeis_id} ({label}) failed.\n"
+      f"  expected: {expected}\n"
+      f"  got:      {got}")
+    print(f"  PASS  {oeis_id:<18}  {label}")
+
+  # ── closed-form sequences ──────────────────────────────────────────────────
+
+  # A002416  a(n) = 2^(n^2)   Labeled digraphs with n nodes (self-loops allowed)
+  _chk(count_digraphs, 'A002416', 'count_digraphs',
+    [1, 2, 16, 512, 65536, 33554432, 68719476736])
+
+  # A053763  a(n) = 2^(n(n-1))   Simple labeled digraphs (no self-loops)
+  _chk(count_simple_digraphs, 'A053763', 'count_simple_digraphs',
+    [1, 1, 4, 64, 4096, 1048576, 1073741824, 4398046511104])
+
+  # A011266  a(n) = n! * 2^(n(n-1)/2)   Topological-histogram DAGs
+  _chk(count_topo_hist_dag, 'A011266', 'count_topo_hist_dag',
+    [1, 1, 4, 48, 1536, 122880, 23592960, 10569646080])
+
+  # ── recurrence-based sequences ─────────────────────────────────────────────
+
+  # A003024  Labeled DAGs on n nodes
+  _chk(count_dags, 'A003024', 'count_dags',
+    [1, 1, 3, 25, 543, 29281, 3781503, 1138779265, 783702329343])
+
+  # A082402  Weakly connected labeled DAGs
+  # Note: a(0) = 1 in this implementation (empty graph); OEIS defines a(0) = 0.
+  _chk(count_connected_dags, 'A082402', 'count_connected_dags',
+    [1, 2, 18, 446, 26430, 3596762, 1111506858, 774460794326], n0=1)
+
+  # A003025  Labeled DAGs with exactly one source (out-point)
+  # Note: 0-indexed here; count_dags_one_outpoint(n) == A003025(n+1).
+  _chk(count_dags_one_outpoint, 'A003025', 'count_dags_one_outpoint',
+    [1, 2, 15, 316, 16885, 2174586, 654313415, 450179768312])
+
+  # A003027  Weakly connected simple labeled digraphs
+  # Note: a(0) = 1 here (empty graph); OEIS A003027 starts at n = 1.
+  _chk(count_simple_connected_digraphs, 'A003027',
+    'count_simple_connected_digraphs',
+    [1, 3, 54, 3834, 1027080, 1067308488, 4390480193904], n0=1)
+
+  # A062738  Connected labeled digraphs (self-loops allowed)
+  _chk(count_connected_digraphs, 'A062738', 'count_connected_digraphs',
+    [1, 2, 12, 432, 61344, 32866560, 68307743232])
+
+  # A003030  Strongly connected labeled digraphs
+  # Note: s_n(0) = 1 (base case); OEIS A003030 starts at n = 1.
+  _chk(s_n, 'A003030', 's_n (strongly connected)',
+    [1, 1, 18, 1606, 565080, 734774776, 3523091615568], n0=1)
+
+  # A003028  Labeled digraphs with a source node (reaches all others)
+  # Note: i_n(0) = 0 (empty sum); OEIS A003028 starts at n = 1.
+  _chk(i_n, 'A003028', 'i_n (digraphs with source)',
+    [1, 3, 51, 3614, 991930, 1051469032, 4366988803688], n0=1)
+
+  # A049414  Quasi-initially connected (simple digraph, unique source SCC)
+  # Note: count_simple_rooted_connected_digraphs(0) = 0; OEIS starts at n = 1.
+  _chk(count_simple_rooted_connected_digraphs, 'A049414',
+    'count_simple_rooted_connected_digraphs',
+    [1, 3, 54, 3804, 1022320, 1065957628, 4389587378792], n0=1)
+
+  # ── sequences without a direct OEIS entry ──────────────────────────────────
+
+  # itilda(n): initially connected digraphs with a *fixed* source node.
+  # Used as an intermediate in Robinson's derivation of s_n (A003030).
+  # Not found as a standalone sequence in OEIS.
+  _chk(itilda, '(no OEIS)', 'itilda (fixed-source initially connected)',
+    [1, 1, 2, 32, 2432, 745472, 875036672, 3913822502912])
+
+  # i_n_selfloops(n) = i_n(n) * 2^n: i_n extended to allow self-loops.
+  # Values for n = 0..6; derived from A003028, no separate OEIS entry.
+  _chk(i_n_selfloops, '(A003028 * 2^n)', 'i_n_selfloops',
+    [0, 2, 12, 408, 57824, 31741760, 67294018048])
+
+  # ── enumeration cross-validation ───────────────────────────────────────────
+  # For each pair (enumerator, counter), exhaust all graphs up to n = 3 and
+  # assert the enumerated count equals the closed-form value.  n = 3 keeps
+  # the maximum iteration count at 2^9 = 512, so the full suite runs quickly.
+
+  for n in range(4):
+    assert graph_enum(n, enum_digraphs) == count_digraphs(n), \
+      f"enum_digraphs({n}) != count_digraphs({n})"
+  print("  PASS  cross-check         enum_digraphs vs count_digraphs (n=0..3)")
+
+  for n in range(4):
+    assert graph_enum(n, enum_simple_digraphs) == count_simple_digraphs(n), \
+      f"enum_simple_digraphs({n}) != count_simple_digraphs({n})"
+  print("  PASS  cross-check         enum_simple_digraphs vs count_simple_digraphs (n=0..3)")
+
+  for n in range(4):
+    assert graph_enum(n, enum_dags) == count_dags(n), \
+      f"enum_dags({n}) != count_dags({n})"
+  print("  PASS  cross-check         enum_dags vs count_dags (n=0..3)")
+
+  for n in range(1, 4):
+    assert graph_enum(n, lambda y: enum_connected_dags(y, False)) == count_connected_dags(n), \
+      f"enum_connected_dags(rooted=False)({n}) != count_connected_dags({n})"
+  print("  PASS  cross-check         enum_connected_dags(rooted=False) vs count_connected_dags (n=1..3)")
+
+  for n in range(1, 4):
+    assert graph_enum(n, lambda y: enum_connected_dags(y, True)) == count_dags_one_outpoint(n - 1), \
+      f"enum_connected_dags(rooted=True)({n}) != count_dags_one_outpoint({n-1})"
+  print("  PASS  cross-check         enum_connected_dags(rooted=True) vs count_dags_one_outpoint (n=1..3)")
+
+  for n in range(1, 4):
+    assert graph_enum(n, lambda y: enum_connected_digraphs(y, False)) == count_connected_digraphs(n), \
+      f"enum_connected_digraphs(rooted=False)({n}) != count_connected_digraphs({n})"
+  print("  PASS  cross-check         enum_connected_digraphs(rooted=False) vs count_connected_digraphs (n=1..3)")
+
+  for n in range(1, 4):
+    assert graph_enum(n, lambda y: enum_connected_digraphs(y, False, True)) == count_simple_connected_digraphs(n), \
+      f"enum_connected_digraphs(simple=True,rooted=False)({n}) != count_simple_connected_digraphs({n})"
+  print("  PASS  cross-check         enum_connected_digraphs(simple,rooted=False) vs count_simple_connected_digraphs (n=1..3)")
+
+  for n in range(1, 4):
+    assert graph_enum(n, lambda y: enum_connected_digraphs(y, True, True)) == i_n(n), \
+      f"enum_connected_digraphs(simple=True,rooted=True)({n}) != i_n({n})"
+  print("  PASS  cross-check         enum_connected_digraphs(simple,rooted=True) vs i_n/A003028 (n=1..3)")
+
+  print("All graph sequence checks passed.")
+
 def get_real_graph(digraph_dir):
   edges = []
   filePath = os.path.join(digraph_dir, "web-Stanford.txt")

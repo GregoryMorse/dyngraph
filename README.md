@@ -13,9 +13,9 @@ This repository supports a PhD dissertation and three associated manuscripts:
 
 | Status | Description |
 |--------|-------------|
-| In preparation | **Dynamic BFS and Lex-BFS on Digraphs** |
-| In preparation | **Fully Dynamic Loop Nesting Forest for Reducible and Irreducible CFGs** |
-| Submitted | **Fully Dynamic Strong Connectivity and Reachability in Digraphs** — Gregory Morse; Tamás Kozsik. *Submitted to Proceedings of the ICAI 2026.* |
+| Preprint | **Fully Dynamic Breadth First Search and Spanning Trees in Directed Graphs** — Gregory Morse; Tamás Kozsik. *arXiv:2604.12370 [cs.DS], April 2026.* https://arxiv.org/abs/2604.12370 |
+| Preprint | **Fully Dynamic Maintenance of Loop Nesting Forests in Reducible Flow Graphs** — Gregory Morse; Tamás Kozsik. *arXiv:2604.13664 [cs.DS], April 2026.* https://arxiv.org/abs/2604.13664 |
+| Accepted | **Fully Dynamic Strong Connectivity and Reachability in Digraphs** — Gregory Morse; Tamás Kozsik. *Accepted for publication in Annales Mathematicae et Informaticae (selected paper from ICAI 2026).* |
 
 Conference presentations for the SCC/reachability work:
 
@@ -123,11 +123,36 @@ If you use this code or build on this work, please cite:
   title     = {Fully Dynamic Strong Connectivity and Reachability in Digraphs},
   booktitle = {Proceedings of the International Conference on Applied Informatics (ICAI 2026)},
   year      = {2026},
-  note      = {Submitted}
+  journal   = {Annales Mathematicae et Informaticae},
+  note      = {Accepted; selected paper from ICAI 2026}
 }
 ```
 
-Additional manuscripts (BFS and LNF) will be linked here upon arxiv publication.
+arXiv preprints:
+
+```bibtex
+@misc{morse2026bfs,
+  author        = {Gregory Morse and Tam{\'{a}}s Kozsik},
+  title         = {Fully Dynamic Breadth First Search and Spanning Trees in Directed Graphs},
+  year          = {2026},
+  eprint        = {2604.12370},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DS},
+  doi           = {10.48550/arXiv.2604.12370},
+  url           = {https://arxiv.org/abs/2604.12370}
+}
+
+@misc{morse2026lnf,
+  author        = {Gregory Morse and Tam{\'{a}}s Kozsik},
+  title         = {Fully Dynamic Maintenance of Loop Nesting Forests in Reducible Flow Graphs},
+  year          = {2026},
+  eprint        = {2604.13664},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DS},
+  doi           = {10.48550/arXiv.2604.13664},
+  url           = {https://arxiv.org/abs/2604.13664}
+}
+```
 
 ## License
 

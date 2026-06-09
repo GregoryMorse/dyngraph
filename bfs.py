@@ -191,7 +191,7 @@ def do_lex_bfs_opt(virtual_root, succ, pred, test_order=None):
   #print(succ, bfs_int, bfs_revint, is_lex_bfs(bfs_int, bfs_revint, pred))
   return eT, bfs_int, bfs_revint, bfs_level, parts
 
-.get_nodes()def do_bfs(source, succ, test_order=None, test_order_ranked=False): #similar to DFS but no forward edges, and back-cross edges have maximum depth of 1
+def do_bfs(source, succ, test_order=None, test_order_ranked=False): #similar to DFS but no forward edges, and back-cross edges have maximum depth of 1
   eT = graph.Tree(source, use_depth=True)
   bfs_int, bfs_revint, bfs_level = {}, {}, [1]
   thisLevel, t, visited = {source}, 1, {source}
@@ -491,7 +491,7 @@ def do_inc_add_edge_bfs_opt_nolex(succ, bfs_tree, bfs_int, bfs_revint, bfs_level
   start = 1 if x == bfs_tree.virtual_root else bfs_level[lvl-1-1]+1
   end = bfs_level[lvl-1]
   p = end + 1
-  thisLevel = x: {y}
+  thisLevel = {x: {y}}
   nextLevel = dict()
   exclude = {y}
   monitor = set()
