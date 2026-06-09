@@ -1,0 +1,703 @@
+graph: {
+title: "func__InitAnimationData@CTrayAnimationManager@@AAEXXZ"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "69?_InitAnimationData@CTrayAnimationManager@@AAEXXZ31:
+mov     edi, edi
+push    ebp
+mov     ebp, esp
+sub     esp, 68Ch
+push    ebx
+push    esi
+push    edi
+mov     [ebp+var_10], ecx
+mov     ebx, offset aSoftwareMicros_118; \"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVe\"...
+push    3
+mov     edx, offset aTaskbarflashov_0; \"TaskbarFlashOverrideBreatheCount\"
+mov     ecx, ebx
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+lea     esi, ds:1[eax*2]
+call    ds:__imp__GetCaretBlinkTime@0; GetCaretBlinkTime()
+mov     edi, eax
+mov     edx, offset aTaskbarflashov_2; \"TaskbarFlashOverrideBreathTimeMS\"
+lea     ecx, [edi+edi]
+push    ecx
+mov     ecx, ebx
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+push    99h
+mov     edx, offset aTaskbarflashov; \"TaskbarFlashOverrideIndicatorAlphaHigh\"
+mov     [ebp+var_4], eax
+mov     ecx, ebx
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+push    26h
+mov     edx, offset aTaskbarflashov_1; \"TaskbarFlashOverrideIndicatorAlphaLow\"
+mov     [ebp+var_8], eax
+mov     ecx, ebx
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+push    80h
+mov     edx, offset aTaskbarflashov; \"TaskbarFlashOverrideIndicatorAlphaHigh\"
+mov     ecx, offset aSoftwareMicros_118; \"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVe\"...
+mov     ebx, eax
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+imul    esi, [ebp+var_4]
+mov     [ebp+var_C], eax
+add     esi, edi
+call    ?IsAnimationAllowedInSku@@YGHXZ; IsAnimationAllowedInSku(void)
+or      [ebp+var_684], 0FFFFFFFFh
+mov     edx, eax
+and     [ebp+var_680], 0
+xor     eax, eax
+and     [ebp+var_66C], 0
+mov     ecx, 0FFh
+fldz
+test    edx, edx
+mov     [ebp+var_67C], ecx
+setz    al
+mov     [ebp+var_65C], ecx
+or      [ebp+var_660], 0FFFFFFFFh
+inc     eax
+xor     ecx, ecx
+mov     [ebp+var_668], eax
+xor     eax, eax
+mov     [ebp+var_658], ecx
+test    edx, edx
+mov     [ebp+var_648], ecx
+fst     [ebp+var_674]
+setz    al
+mov     [ebp+var_638], ecx
+or      [ebp+var_63C], 0FFFFFFFFh
+inc     eax
+and     [ebp+var_624], 0
+mov     ecx, 0C8h
+fst     [ebp+var_670]
+fst     [ebp+var_650]
+fst     [ebp+var_64C]
+fld     ds:__real@3f000000
+mov     [ebp+var_644], eax
+xor     eax, eax
+inc     eax
+mov     [ebp+var_688], 7Fh
+or      [ebp+var_618], 0FFFFFFFFh
+fst     [ebp+var_62C]
+fst     [ebp+var_628]
+mov     [ebp+var_678], 0A7h
+mov     [ebp+var_664], 7Fh
+mov     [ebp+var_654], 0A7h
+mov     [ebp+var_640], 7Fh
+mov     [ebp+var_634], 3E8h
+mov     [ebp+var_630], ecx
+mov     [ebp+var_620], eax
+mov     [ebp+var_61C], 7Fh
+and     [ebp+var_610], 0
+and     [ebp+var_600], 0
+or      [ebp+var_5F4], 0FFFFFFFFh
+and     [ebp+var_5F0], 0
+mov     [ebp+var_5FC], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_60C], ecx
+fst     [ebp+var_608]
+setz    al
+mov     [ebp+var_558], ecx
+or      [ebp+var_5D0], 0FFFFFFFFh
+inc     eax
+and     [ebp+var_5CC], 0
+mov     [ebp+var_5D8], eax
+mov     eax, 3E8h
+mov     [ebp+var_5C8], eax
+mov     [ebp+var_5C4], eax
+xor     eax, eax
+fst     [ebp+var_604]
+fxch    st(1)
+mov     [ebp+var_614], 3E8h
+fst     [ebp+var_5E4]
+test    edx, edx
+mov     [ebp+var_5F8], 7Fh
+fst     [ebp+var_5E0]
+setz    al
+mov     [ebp+var_5EC], 3E8h
+and     [ebp+var_5A4], 0
+inc     eax
+and     [ebp+var_594], 0
+and     [ebp+var_584], 0
+or      [ebp+var_564], 0FFFFFFFFh
+fst     [ebp+var_5C0]
+fst     [ebp+var_5BC]
+fxch    st(1)
+mov     [ebp+var_5B4], eax
+lea     eax, [ecx+32h]
+mov     [ebp+var_5E8], 1770h
+fst     [ebp+var_59C]
+mov     [ebp+var_5A0], eax
+mov     [ebp+var_57C], eax
+xor     eax, eax
+fst     [ebp+var_598]
+fst     [ebp+var_578]
+test    edx, edx
+mov     [ebp+var_570], eax
+fst     [ebp+var_574]
+mov     [ebp+var_560], eax
+mov     [ebp+var_55C], eax
+mov     [ebp+var_54C], eax
+setz    al
+or      [ebp+var_540], 0FFFFFFFFh
+inc     eax
+and     [ebp+var_53C], 0
+xor     ecx, ecx
+fst     [ebp+var_554]
+fst     [ebp+var_550]
+fxch    st(1)
+mov     [ebp+var_548], eax
+inc     ecx
+mov     [ebp+var_5DC], 2
+fst     [ebp+var_530]
+mov     eax, 3E8h
+mov     [ebp+var_5D4], 7Fh
+fst     [ebp+var_52C]
+mov     [ebp+var_5B8], 2
+mov     [ebp+var_5B0], 7Fh
+mov     [ebp+var_5AC], 7
+mov     [ebp+var_5A8], 3E8h
+mov     [ebp+var_590], 1
+mov     [ebp+var_58C], 7Fh
+mov     [ebp+var_588], 6
+mov     [ebp+var_580], 3E8h
+mov     [ebp+var_56C], 1
+mov     [ebp+var_568], 7Fh
+mov     [ebp+var_544], 7Fh
+mov     [ebp+var_538], eax
+mov     [ebp+var_534], 5DCh
+mov     [ebp+var_528], ecx
+mov     [ebp+var_524], ecx
+fxch    st(1)
+and     [ebp+var_518], 0
+and     [ebp+var_504], 0
+and     [ebp+var_4F0], 0
+and     [ebp+var_4E0], 0
+and     [ebp+var_4D0], 0
+and     [ebp+var_4BC], 0
+and     [ebp+var_4A8], 0
+and     [ebp+var_498], 0
+and     [ebp+var_488], 0
+and     [ebp+var_474], 0
+and     [ebp+var_460], 0
+and     [ebp+var_450], 0
+and     [ebp+var_440], 0
+and     [ebp+var_42C], 0
+and     [ebp+var_41C], 0
+fst     [ebp+var_50C]
+and     [ebp+var_408], 0
+fst     [ebp+var_508]
+fst     [ebp+var_4E8]
+fst     [ebp+var_4E4]
+fst     [ebp+var_4C4]
+fst     [ebp+var_4C0]
+fst     [ebp+var_4A0]
+fst     [ebp+var_49C]
+fst     [ebp+var_47C]
+fst     [ebp+var_478]
+fst     [ebp+var_458]
+mov     [ebp+var_514], eax
+push    64h
+pop     eax
+fst     [ebp+var_454]
+fst     [ebp+var_434]
+mov     [ebp+var_510], eax
+mov     [ebp+var_4EC], eax
+mov     [ebp+var_480], eax
+mov     [ebp+var_45C], eax
+mov     eax, 0FAh
+fst     [ebp+var_430]
+fxch    st(1)
+mov     [ebp+var_500], ecx
+mov     [ebp+var_4DC], ecx
+mov     [ebp+var_4B8], ecx
+mov     [ebp+var_494], ecx
+mov     [ebp+var_470], ecx
+mov     [ebp+var_44C], ecx
+mov     [ebp+var_428], ecx
+lea     ecx, [eax+5]
+fst     [ebp+var_410]
+fst     [ebp+var_40C]
+mov     [ebp+var_520], 7Fh
+mov     [ebp+var_51C], 0Bh
+mov     [ebp+var_4FC], 7Fh
+mov     [ebp+var_4F8], 0Ah
+mov     [ebp+var_4F4], 3E8h
+mov     [ebp+var_4D8], 7Fh
+mov     [ebp+var_4D4], 0Dh
+mov     [ebp+var_4CC], 3E8h
+mov     [ebp+var_4C8], 5
+mov     [ebp+var_4B4], 7Fh
+mov     [ebp+var_4B0], 0Ch
+mov     [ebp+var_4AC], 3E8h
+mov     [ebp+var_4A4], 7Dh
+mov     [ebp+var_490], 7Fh
+mov     [ebp+var_48C], 0Fh
+mov     [ebp+var_484], 3E8h
+mov     [ebp+var_46C], 7Fh
+mov     [ebp+var_468], 0Eh
+mov     [ebp+var_464], 3E8h
+mov     [ebp+var_448], 7Fh
+mov     [ebp+var_444], 13h
+mov     [ebp+var_43C], 3E8h
+mov     [ebp+var_438], eax
+mov     [ebp+var_424], 7Fh
+mov     [ebp+var_420], 12h
+mov     [ebp+var_418], ecx
+mov     [ebp+var_414], 0A7h
+mov     [ebp+var_404], 1
+mov     [ebp+var_400], 7Fh
+mov     [ebp+var_3FC], 11h
+mov     [ebp+var_3F8], ecx
+and     [ebp+var_3F4], 0
+and     [ebp+var_3E4], 0
+and     [ebp+var_3D0], 0
+and     [ebp+var_3C0], 0
+and     [ebp+var_3B0], 0
+and     [ebp+var_39C], 0
+and     [ebp+var_388], 0
+fst     [ebp+var_3EC]
+fst     [ebp+var_3E8]
+fxch    st(1)
+mov     [ebp+var_3CC], eax
+fst     [ebp+var_3C8]
+fst     [ebp+var_3C4]
+mov     [ebp+var_3A8], eax
+fxch    st(1)
+mov     [ebp+var_384], eax
+xor     eax, eax
+fst     [ebp+var_3A4]
+fld1
+test    edx, edx
+mov     [ebp+var_378], eax
+mov     [ebp+var_368], eax
+mov     [ebp+var_354], eax
+setz    al
+and     [ebp+var_340], 0
+inc     eax
+and     [ebp+var_330], 0
+fst     [ebp+var_3A0]
+fxch    st(1)
+mov     [ebp+var_350], eax
+fst     [ebp+var_380]
+push    10h
+fxch    st(1)
+mov     [ebp+var_364], esi
+pop     ecx
+xor     eax, eax
+mov     [ebp+var_360], esi
+fst     [ebp+var_37C]
+fxch    st(1)
+mov     [ebp+var_33C], edi
+test    edx, edx
+mov     [ebp+var_318], edi
+fst     [ebp+var_35C]
+push    7Fh
+pop     esi
+setz    al
+mov     [ebp+var_3F0], 0A7h
+or      [ebp+var_324], 0FFFFFFFFh
+inc     eax
+fst     [ebp+var_358]
+fst     [ebp+var_338]
+fst     [ebp+var_334]
+push    2
+mov     [ebp+var_32C], eax
+xor     eax, eax
+fst     [ebp+var_314]
+pop     edi
+fst     [ebp+var_310]
+mov     [ebp+var_3E0], 1
+mov     [ebp+var_3DC], 7Fh
+mov     [ebp+var_3D8], ecx
+mov     [ebp+var_3D4], 3E8h
+mov     [ebp+var_3BC], 1
+mov     [ebp+var_3B8], 7Fh
+mov     [ebp+var_3B4], 15h
+mov     [ebp+var_3AC], 3E8h
+mov     [ebp+var_398], 1
+mov     [ebp+var_394], 7Fh
+mov     [ebp+var_390], 14h
+mov     [ebp+var_38C], 3E8h
+mov     [ebp+var_374], 1
+mov     [ebp+var_370], 7Fh
+mov     [ebp+var_36C], 17h
+mov     [ebp+var_34C], esi
+mov     [ebp+var_348], 16h
+mov     [ebp+var_344], 3E8h
+mov     [ebp+var_328], esi
+mov     [ebp+var_320], eax
+mov     [ebp+var_31C], eax
+mov     [ebp+var_30C], ecx
+mov     [ebp+var_308], edi
+or      [ebp+var_300], 0FFFFFFFFh
+or      [ebp+var_2DC], 0FFFFFFFFh
+and     [ebp+var_2D0], 0
+or      [ebp+var_2B8], 0FFFFFFFFh
+or      [ebp+var_294], 0FFFFFFFFh
+or      [ebp+var_270], 0FFFFFFFFh
+and     [ebp+var_244], 0
+fst     [ebp+var_2F0]
+fst     [ebp+var_2EC]
+mov     [ebp+var_2FC], eax
+mov     [ebp+var_2F8], eax
+mov     eax, [ebp+var_4]
+fst     [ebp+var_2CC]
+push    10h
+fst     [ebp+var_2C8]
+mov     [ebp+var_2F4], eax
+mov     eax, [ebp+var_C]
+fst     [ebp+var_2A8]
+mov     [ebp+var_304], esi
+mov     [ebp+var_2E0], esi
+pop     esi
+mov     [ebp+var_2B4], eax
+fst     [ebp+var_2A4]
+push    7Fh
+pop     eax
+fst     [ebp+var_284]
+mov     [ebp+var_2E8], ecx
+mov     ecx, [ebp+var_8]
+mov     [ebp+var_2D8], ebx
+xor     ebx, ebx
+mov     [ebp+var_298], eax
+inc     ebx
+mov     [ebp+var_274], eax
+mov     [ebp+var_250], eax
+xor     eax, eax
+fst     [ebp+var_280]
+mov     [ebp+var_2D4], ecx
+mov     [ebp+var_2B0], ecx
+xor     ecx, ecx
+fst     [ebp+var_260]
+test    edx, edx
+mov     [ebp+var_2E4], edi
+fst     [ebp+var_25C]
+setz    al
+mov     [ebp+var_2C4], esi
+and     [ebp+var_224], 0
+inc     eax
+and     [ebp+var_210], 0
+fst     [ebp+var_23C]
+fst     [ebp+var_238]
+push    7Fh
+mov     [ebp+var_2C0], edi
+mov     [ebp+var_2AC], ecx
+mov     [ebp+var_2A0], esi
+mov     [ebp+var_29C], edi
+mov     [ebp+var_290], ecx
+mov     [ebp+var_26C], ecx
+mov     [ebp+var_268], ecx
+mov     ecx, 0FFh
+mov     [ebp+var_258], esi
+mov     esi, 1F4h
+mov     [ebp+var_254], edi
+fst     [ebp+var_218]
+pop     edi
+mov     [ebp+var_230], eax
+xor     eax, eax
+fst     [ebp+var_214]
+mov     [ebp+var_2BC], 7Fh
+mov     [ebp+var_28C], 3E8h
+mov     [ebp+var_288], 5DCh
+mov     [ebp+var_27C], ebx
+mov     [ebp+var_278], ebx
+mov     [ebp+var_264], 64h
+mov     [ebp+var_24C], 1Fh
+mov     [ebp+var_248], ecx
+mov     [ebp+var_240], esi
+mov     [ebp+var_234], 8
+mov     [ebp+var_22C], edi
+mov     [ebp+var_228], 1Eh
+mov     [ebp+var_220], ecx
+mov     [ebp+var_21C], esi
+test    edx, edx
+mov     [ebp+var_208], edi
+fst     [ebp+var_1F4]
+setz    al
+mov     [ebp+var_1FC], ecx
+and     [ebp+var_200], 0
+inc     eax
+and     [ebp+var_1EC], 0
+add     edi, 28h
+mov     [ebp+var_20C], eax
+fxch    st(1)
+xor     eax, eax
+mov     [ebp+var_1DC], ecx
+test    edx, edx
+mov     [ebp+var_194], ebx
+fst     [ebp+var_1F0]
+setz    al
+mov     [ebp+var_16C], ebx
+and     [ebp+var_1D8], 0
+inc     eax
+and     [ebp+var_1C8], 0
+mov     [ebp+var_1E8], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_1F8], edi
+fstp    [ebp+var_1D0]
+setz    al
+mov     [ebp+var_1D4], edi
+or      [ebp+var_1BC], 0FFFFFFFFh
+inc     eax
+and     [ebp+var_1B8], 0
+mov     edi, 3E8h
+and     [ebp+var_1A4], 0
+mov     [ebp+var_1C4], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_204], 21h
+fst     [ebp+var_1CC]
+fld     ds:__real@3dcccccd
+setz    al
+or      [ebp+var_198], 0FFFFFFFFh
+inc     eax
+and     [ebp+var_180], 0
+mov     [ebp+var_1A0], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_1E4], 7Fh
+fstp    [ebp+var_1AC]
+fld     ds:__real@3f666666
+setz    al
+inc     eax
+mov     [ebp+var_1E0], 20h
+mov     [ebp+var_17C], eax
+xor     ebx, ebx
+push    7Fh
+pop     ecx
+xor     eax, eax
+mov     [ebp+var_1C0], ecx
+fstp    [ebp+var_1A8]
+fxch    st(1)
+mov     [ebp+var_19C], ecx
+test    edx, edx
+mov     [ebp+var_1B4], edi
+fst     [ebp+var_188]
+mov     ecx, 12Ch
+mov     [ebp+var_1B0], 190h
+fst     [ebp+var_184]
+setz    al
+mov     [ebp+var_18C], ecx
+fst     [ebp+var_164]
+inc     eax
+mov     [ebp+var_168], ecx
+push    7Fh
+fst     [ebp+var_160]
+mov     [ebp+var_190], edi
+mov     [ebp+var_178], 7Fh
+mov     [ebp+var_174], 23h
+mov     [ebp+var_170], edi
+mov     [ebp+var_15C], ebx
+mov     [ebp+var_158], eax
+pop     ecx
+xor     eax, eax
+mov     [ebp+var_FC], esi
+test    edx, edx
+mov     [ebp+var_14C], ebx
+fxch    st(1)
+mov     [ebp+var_138], ebx
+setz    al
+mov     [ebp+var_124], ebx
+inc     eax
+mov     [ebp+var_114], ebx
+mov     [ebp+var_134], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_104], ebx
+fst     [ebp+var_140]
+setz    al
+mov     [ebp+var_F0], ebx
+or      [ebp+var_108], 0FFFFFFFFh
+inc     eax
+mov     [ebp+var_110], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_E0], ebx
+fst     [ebp+var_13C]
+setz    al
+mov     [ebp+var_CC], ebx
+inc     eax
+mov     [ebp+var_BC], ebx
+mov     [ebp+var_EC], eax
+lea     ebx, [ecx+28h]
+or      esi, 0FFFFFFFFh
+mov     [ebp+var_154], ecx
+xor     eax, eax
+mov     [ebp+var_130], ecx
+fst     [ebp+var_11C]
+test    edx, edx
+mov     [ebp+var_10C], ecx
+fst     [ebp+var_118]
+setz    al
+mov     [ebp+var_E8], ecx
+and     [ebp+var_A8], 0
+fxch    st(1)
+inc     eax
+mov     [ebp+var_C4], ecx
+fst     [ebp+var_F8]
+fst     [ebp+var_F4]
+fxch    st(1)
+mov     [ebp+var_C8], eax
+xor     eax, eax
+mov     [ebp+var_A0], ecx
+fst     [ebp+var_D4]
+test    edx, edx
+mov     [ebp+var_150], 26h
+fst     [ebp+var_D0]
+setz    al
+mov     [ebp+var_148], edi
+and     [ebp+var_98], 0
+inc     eax
+and     [ebp+var_84], 0
+fst     [ebp+var_B0]
+fst     [ebp+var_AC]
+push    53h
+fst     [ebp+var_8C]
+pop     ecx
+mov     [ebp+var_A4], eax
+xor     eax, eax
+fst     [ebp+var_88]
+mov     [ebp+var_144], 5
+mov     [ebp+var_12C], 25h
+mov     [ebp+var_128], edi
+mov     [ebp+var_120], 78h
+mov     [ebp+var_100], edi
+mov     [ebp+var_E4], esi
+mov     [ebp+var_DC], edi
+mov     [ebp+var_D8], 48Fh
+mov     [ebp+var_C0], esi
+mov     [ebp+var_B8], edi
+mov     [ebp+var_B4], ebx
+mov     [ebp+var_9C], esi
+mov     [ebp+var_94], edi
+mov     [ebp+var_90], ecx
+test    edx, edx
+mov     [ebp+var_48], ebx
+fst     [ebp+var_68]
+setz    al
+mov     [ebp+var_70], edi
+and     [ebp+var_74], 0
+inc     eax
+and     [ebp+var_60], 0
+mov     [ebp+var_80], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_4C], edi
+fstp    [ebp+var_64]
+setz    al
+mov     [ebp+var_28], edi
+and     [ebp+var_50], 0
+inc     eax
+mov     edi, [ebp+var_10]
+xor     ebx, ebx
+mov     [ebp+var_5C], eax
+xor     eax, eax
+test    edx, edx
+mov     [ebp+var_78], esi
+fst     [ebp+var_44]
+setz    al
+mov     [ebp+var_54], esi
+inc     eax
+mov     [ebp+var_30], esi
+mov     [ebp+var_38], eax
+lea     esi, [ebp+var_688]
+xor     eax, eax
+mov     [ebp+var_6C], ecx
+test    edx, edx
+mov     [ebp+var_24], ecx
+fst     [ebp+var_40]
+setz    al
+mov     [ebp+var_3C], ebx
+fst     [ebp+var_20]
+inc     eax
+mov     [ebp+var_2C], ebx
+add     edi, 1Ch
+mov     [ebp+var_18], ebx
+mov     ecx, 19Eh
+mov     [ebp+var_7C], 7Fh
+fstp    [ebp+var_1C]
+mov     [ebp+var_58], 7Fh
+mov     [ebp+var_34], 7Fh
+mov     [ebp+var_14], eax
+rep movsd
+pop     edi
+pop     esi
+pop     ebx
+leave
+retn" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "" }
+// node 0
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "4" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+// node 4
+edge: { sourcename: "4" targetname: "3" }
+}

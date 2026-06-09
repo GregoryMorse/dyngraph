@@ -1,0 +1,186 @@
+graph: {
+title: "func_UnloadKeyboardLayout"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "mov     rax, [rbx]
+mov     cs:?pfnLocalAlloc@@3P6APEAXIIPEAX@ZEA, rax; void * (*pfnLocalAlloc)(uint,uint,void *)
+mov     rax, [rbx+8]
+mov     cs:?pfnLocalReAlloc@@3P6APEAXPEAXII0PEAPEAX@ZEA, rax; void * (*pfnLocalReAlloc)(void *,uint,uint,void *,void * *)
+mov     rax, [rbx+10h]
+mov     cs:?pfnLocalLock@@3P6APEAXPEAX0@ZEA, rax; void * (*pfnLocalLock)(void *,void *)
+mov     rax, [rbx+18h]
+mov     cs:?pfnLocalUnlock@@3P6AHPEAX0@ZEA, rax; int (*pfnLocalUnlock)(void *,void *)
+mov     rax, [rbx+20h]
+mov     cs:?pfnLocalSize@@3P6AIPEAX0@ZEA, rax; uint (*pfnLocalSize)(void *,void *)
+mov     rax, [rbx+28h]
+mov     cs:?pfnLocalFree@@3P6APEAXPEAX0@ZEA, rax; void * (*pfnLocalFree)(void *,void *)
+mov     rax, [rbx+30h]
+mov     cs:?pfnGetExpWinVer@@3P6AKPEAX@ZEA, rax; ulong (*pfnGetExpWinVer)(void *)
+mov     rax, [rbx+38h]
+mov     cs:?pfn16GlobalAlloc@@3P6AGIK@ZEA, rax; ushort (*pfn16GlobalAlloc)(uint,ulong)
+mov     rax, [rbx+40h]
+mov     cs:?pfn16GlobalFree@@3P6AXG@ZEA, rax; void (*pfn16GlobalFree)(ushort)
+mov     rax, [rbx+48h]
+mov     cs:?pfnWowEmptyClipBoard@@3P6AXXZEA, rax; void (*pfnWowEmptyClipBoard)(void)
+mov     rax, [rbx+90h]
+mov     cs:?pfnWowEditNextWord@@3P6AHPEADHHHK@ZEA, rax; int (*pfnWowEditNextWord)(char *,int,int,int,ulong)
+mov     rax, [rbx+98h]
+mov     cs:?pfnWowCBStoreHandle@@3P6AXGG@ZEA, rax; void (*pfnWowCBStoreHandle)(ushort,ushort)
+mov     rax, [rbx+50h]
+mov     cs:?pfnFindResourceExA@@3P6APEAXPEAXPEBD1G@ZEA, rax; void * (*pfnFindResourceExA)(void *,char const *,char const *,ushort)
+mov     rax, [rbx+58h]
+mov     cs:?pfnLoadResource@@3P6APEAXPEAX0@ZEA, rax; void * (*pfnLoadResource)(void *,void *)
+mov     rax, [rbx+68h]
+mov     cs:?pfnLockResource@@3P6APEADPEAX0@ZEA, rax; char * (*pfnLockResource)(void *,void *)
+mov     rax, [rbx+70h]
+mov     cs:?pfnUnlockResource@@3P6AHPEAX0@ZEA, rax; int (*pfnUnlockResource)(void *,void *)
+mov     rax, [rbx+60h]
+mov     cs:?pfnFreeResource@@3P6AHPEAX0@ZEA, rax; int (*pfnFreeResource)(void *,void *)
+lea     rax, ?WOWFindResourceExWCover@@YAPEAXPEAXPEBG1G@Z; WOWFindResourceExWCover(void *,ushort const *,ushort const *,ushort)
+mov     cs:?pfnFindResourceExW@@3P6APEAXPEAXPEBG1G@ZEA, rax; void * (*pfnFindResourceExW)(void *,ushort const *,ushort const *,ushort)
+mov     rax, [rbx+88h]
+mov     cs:?pfnWowDlgProcEx@@3P6AHPEAUHWND__@@I_K_JKPEAX@ZEA, rax; int (*pfnWowDlgProcEx)(HWND__ *,uint,unsigned __int64,__int64,ulong,void *)
+mov     rax, [rbx+80h]
+mov     cs:?pfnWowWndProcEx@@3P6AKPEAUHWND__@@I_K_JKPEAX@ZEA, rax; ulong (*pfnWowWndProcEx)(HWND__ *,uint,unsigned __int64,__int64,ulong,void *)
+mov     rax, [rbx+0A0h]
+mov     cs:?pfnWowGetProcModule@@3P6AGK@ZEA, rax; ushort (*pfnWowGetProcModule)(ulong)
+mov     rax, [rbx+0C0h]
+mov     cs:?pfnWowTask16SchedNotify@@3P6AKKK@ZEA, rax; ulong (*pfnWowTask16SchedNotify)(ulong,ulong)
+mov     rax, [rbx+0B8h]
+mov     cs:?pfnWOWTellWOWThehDlg@@3P6AXPEAUHWND__@@@ZEA, rax; void (*pfnWOWTellWOWThehDlg)(HWND__ *)
+mov     rax, [rbx+0A8h]
+mov     cs:?pfnWowMsgBoxIndirectCallback@@3P6AXKPEAUtagHELPINFO@@@ZEA, rax; void (*pfnWowMsgBoxIndirectCallback)(ulong,tagHELPINFO *)
+mov     rax, [rbx+0B0h]
+mov     cs:?pfnWowIlstrcmp@@3P6AHPEBG0@ZEA, rax; int (*pfnWowIlstrcmp)(ushort const *,ushort const *)
+lea     rax, ?_CreateWindowEx@@YAPEAUHWND__@@KPEBG0KHHHHPEAU1@PEAUHMENU__@@PEAX3W4ZBID@@K@Z; _CreateWindowEx(ulong,ushort const *,ushort const *,ulong,int,int,int,int,HWND__ *,HMENU__ *,void *,void *,ZBID,ulong)
+mov     [rdi+8], rax
+lea     rax, ?DirectedYield@@YAXK@Z; DirectedYield(ulong)
+mov     [rdi+10h], rax
+lea     rax, ?FreeDDEData@@YAXPEAXHH@Z; FreeDDEData(void *,int,int)
+mov     [rdi+18h], rax
+lea     rax, GetClassWOWWords
+mov     [rdi+20h], rax
+lea     rax, ?InitTask@@YAHIKKPEBD0KKKKKKK@Z; InitTask(uint,ulong,ulong,char const *,char const *,ulong,ulong,ulong,ulong,ulong,ulong,ulong)
+mov     [rdi+28h], rax
+lea     rax, ?RegisterClassWOWA@@YAGPEAUtagWNDCLASSA@@PEAUtagWOWCLS@@@Z; RegisterClassWOWA(tagWNDCLASSA *,tagWOWCLS *)
+mov     [rdi+30h], rax
+lea     rax, RegisterUserHungAppHandlers
+mov     [rdi+38h], rax
+lea     rax, ?InternalCreateDialog@@YAPEAUHWND__@@PEAXPEAUDLGTEMPLATE@@KPEAU1@P6A_J2I_K_J@Z4I@Z; InternalCreateDialog(void *,DLGTEMPLATE *,ulong,HWND__ *,__int64 (*)(HWND__ *,uint,unsigned __int64,__int64),__int64,uint)
+mov     [rdi+40h], rax
+lea     rax, ?WowServerLoadCreateCursorIcon@@YAPEAUHICON__@@PEAXPEAGKPEBGK01H@Z; WowServerLoadCreateCursorIcon(void *,ushort *,ulong,ushort const *,ulong,void *,ushort *,int)
+mov     [rdi+48h], rax
+lea     rax, WowServerLoadCreateMenu
+mov     [rdi+50h], rax
+lea     rax, ?WOWCleanup@@YAHPEAXK@Z; WOWCleanup(void *,ulong)
+mov     [rdi+58h], rax
+lea     rax, ?WOWModuleUnload@@YAHPEAX@Z; WOWModuleUnload(void *)
+mov     [rdi+60h], rax
+lea     rax, WOWFindWindow
+mov     [rdi+68h], rax
+lea     rax, ?WOWLoadBitmapA@@YAPEAUHBITMAP__@@PEAUHINSTANCE__@@PEBDPEAEK@Z; WOWLoadBitmapA(HINSTANCE__ *,char const *,uchar *,ulong)
+mov     [rdi+70h], rax
+mov     rax, cs:__imp_NtUserWaitForMsgAndEvent
+mov     [rdi+78h], rax
+mov     dword ptr [rdi], 0A000000h
+mov     rax, cs:__imp_NtUserYieldTask
+mov     [rdi+80h], rax
+lea     rax, ?GetFullUserHandle@@YAKG@Z; GetFullUserHandle(ushort)
+mov     [rdi+88h], rax
+mov     rax, cs:__imp_NtUserGetMenuIndex
+mov     [rdi+90h], rax
+lea     rax, ?WowGetDefWindowProcBits@@YAGPEAEG@Z; WowGetDefWindowProcBits(uchar *,ushort)
+mov     [rdi+98h], rax
+mov     rax, cs:__imp_NtUserFillWindow
+mov     [rdi+0A0h], rax
+lea     rax, asc_1800994F0; \"\\a\"
+mov     [rdi+0A8h], rax
+lea     rax, gSharedInfo
+jmp     short loc_180088DC2" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "3" }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "7" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "7" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "8" }
+// node 7
+edge: { sourcename: "7" targetname: "8" }
+// node 8
+}

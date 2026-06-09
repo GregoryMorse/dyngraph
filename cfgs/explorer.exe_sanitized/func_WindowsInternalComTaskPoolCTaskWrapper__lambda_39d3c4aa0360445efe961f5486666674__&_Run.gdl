@@ -1,0 +1,91 @@
+graph: {
+title: "func_WindowsInternalComTaskPoolCTaskWrapper__lambda_39d3c4aa0360445efe961f5486666674__&_Run"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "69?SetMonitor@CSecondaryTray@@UAGXPAUHMONITOR__@@PBG@Z31:
+mov     edi, edi
+push    ebp; HMONITOR
+mov     ebp, esp
+mov     eax, [ebp+hData]
+push    esi; this
+mov     esi, [ebp+this]
+push    eax; hData
+push    offset String; \"TaskbarMonitor\"
+push    dword ptr [esi-0Ch]; hWnd
+mov     [esi+20h], eax
+call    ds:__imp__SetPropW@12; SetPropW(x,x,x)
+push    [ebp+arg_8]; unsigned __int16 *
+lea     ecx, [esi-10h]; this
+call    ?_SetMonitorDeviceID@CSecondaryTray@@AAEXPBG@Z; CSecondaryTray::_SetMonitorDeviceID(ushort const *)
+mov     ecx, [esi+20h]
+call    ?GetDPIForMonitor@TrayDPIHelpers@@YGIPAUHMONITOR__@@@Z; TrayDPIHelpers::GetDPIForMonitor(HMONITOR__ *)
+mov     ecx, [esi+20h]
+xor     edx, edx
+mov     [esi+28h], eax
+call    ?NotifyTraySearchBoxVisibilityChanged@ImmersiveTray@@YGXPAUHMONITOR__@@H@Z; ImmersiveTray::NotifyTraySearchBoxVisibilityChanged(HMONITOR__ *,int)
+pop     esi
+pop     ebp
+retn    0Ch" }
+// node 0
+// node 1
+}

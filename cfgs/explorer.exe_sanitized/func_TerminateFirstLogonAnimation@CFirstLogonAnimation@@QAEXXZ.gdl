@@ -1,0 +1,124 @@
+graph: {
+title: "func_TerminateFirstLogonAnimation@CFirstLogonAnimation@@QAEXXZ"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "" }
+node: { title: "5" label: "69??$GetActivationFactory@UIEducationSettingsStatics@Profile@System@Windows@@@wil@@YG?AV?$com_ptr_t@UIEducationSettingsStatics@Profile@System@Windows@@Uerr_exception_policy@wil@@@0@PBG@Z31:
+push    2Ch
+mov     eax, offset loc_4FA6BA
+call    __EH_prolog3_GS
+mov     edi, ecx
+mov     [ebp+var_30], edi
+mov     [ebp+var_38], edi
+and     [ebp+var_34], 0
+and     dword ptr [edi], 0
+mov     [ebp+var_30], offset ?RuntimeClass_Windows_System_Profile_EducationSettings@@3QBGB; \"Windows.System.Profile.EducationSetting\"...
+push    [ebp+var_38]
+xor     esi, esi
+lea     eax, [ebp+var_30]
+inc     esi
+lea     ecx, [ebp+var_2C]
+push    eax
+mov     [ebp+var_34], esi
+call    ??$?0PAG@HStringReference@Wrappers@WRL@Microsoft@@QAE@ABQAGUDummy@Details@23@@Z; Microsoft::WRL::Wrappers::HStringReference::HStringReference(ushort * const &,Microsoft::WRL::Details::Dummy)
+mov     ebx, eax
+mov     [ebp+var_4], esi
+mov     ecx, [edi]
+and     dword ptr [edi], 0
+test    ecx, ecx
+jz      short loc_64A541" }
+node: { title: "6" label: "" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "mov     ecx, [ebp+4]
+mov     edx, 661h
+push    eax; void *
+push    offset aOnecoreInterna_9; \"onecore\\\\internal\\\\sdk\\\\inc\\\\wil\\\\opens\"...
+call    ?_Throw_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::_Throw_Hr(void *,uint,char const *,long)" }
+node: { title: "9" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "4" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "4" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "4" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+// node 4
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "7" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "7" }
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "9" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "9" }
+// node 9
+}

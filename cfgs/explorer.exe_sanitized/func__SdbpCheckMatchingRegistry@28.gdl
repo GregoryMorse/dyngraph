@@ -1,0 +1,186 @@
+graph: {
+title: "func__SdbpCheckMatchingRegistry@28"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "push    offset aFailedToReadMa_1; \"Failed to read MATCHING_REG entry\"
+push    5CBh" }
+node: { title: "2" label: "push    offset aSdbpcheckmatch_4; \"SdbpCheckMatchingRegistry\"
+push    1
+call    _AslLogCallPrintf
+add     esp, 10h
+jmp     short loc_5E73EB" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "push    offset aFailedToCheckM_0; \"Failed to check MATCHING_REG entry\"
+push    5DCh
+jmp     short loc_5E7398" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "" }
+node: { title: "7" label: "69_SdbpCheckMatchingRegistryEntry@4031:
+mov     edi, edi
+push    ebp
+mov     ebp, esp
+sub     esp, 244h
+mov     eax, ___security_cookie
+xor     eax, ebp
+mov     [ebp+var_4], eax
+mov     eax, [ebp+arg_4]
+push    ebx
+mov     ebx, [ebp+arg_1C]
+push    esi
+push    edi
+push    6
+mov     [ebp+var_220], eax
+lea     edi, [ebp+var_244]
+xor     eax, eax
+mov     [ebp+var_224], edx
+mov     edx, ecx
+mov     [ebp+Dest], ax
+pop     ecx
+rep stosd
+lea     edi, [ebp+var_218]
+xor     esi, esi
+stosd
+push    edx; Args
+push    offset aRegistryMachin_0; \"\\\\REGISTRY\\\\MACHINE\\\\%s\"
+push    104h; int
+stosd
+mov     [ebx], esi
+mov     [ebp+var_22C], esi
+mov     [ebp+var_228], esi
+stosd
+lea     eax, [ebp+Dest]
+push    eax; Dest
+mov     [ebp+var_21C], esi
+call    _RtlStringCchPrintfW
+add     esp, 10h
+test    eax, eax
+jns     short loc_5E748E" }
+node: { title: "8" label: "push    offset aFailedToConstr; \"Failed to construct full key path\"
+push    4E4h
+push    offset aSdbpcheckmatch_3; \"SdbpCheckMatchingRegistryEntry\"
+push    1
+call    _AslLogCallPrintf
+add     esp, 10h
+jmp     loc_5E757B" }
+node: { title: "9" label: "" }
+node: { title: "10" label: "" }
+node: { title: "11" label: "push    eax
+push    offset aFailedToGetPro; \"Failed to get processor architecture [%\"...
+push    507h
+push    offset aSdbpcheckmatch_3; \"SdbpCheckMatchingRegistryEntry\"
+push    edi
+call    _AslLogCallPrintf
+add     esp, 14h
+jmp     short loc_5E757B" }
+node: { title: "12" label: "" }
+node: { title: "13" label: "" }
+node: { title: "14" label: "" }
+node: { title: "15" label: "" }
+node: { title: "16" label: "" }
+node: { title: "17" label: "" }
+node: { title: "18" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "3" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" }
+// node 2
+edge: { sourcename: "2" targetname: "6" }
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "5" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "2" }
+// node 5
+edge: { sourcename: "5" targetname: "6" }
+// node 6
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "9" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "16" }
+// node 9
+edge: { sourcename: "9" targetname: "10" label: "false" color: red }
+edge: { sourcename: "9" targetname: "15" label: "true" color: darkgreen }
+// node 10
+edge: { sourcename: "10" targetname: "11" label: "false" color: red }
+edge: { sourcename: "10" targetname: "12" label: "true" color: darkgreen }
+// node 11
+edge: { sourcename: "11" targetname: "16" }
+// node 12
+edge: { sourcename: "12" targetname: "13" label: "false" color: red }
+edge: { sourcename: "12" targetname: "14" label: "true" color: darkgreen }
+// node 13
+edge: { sourcename: "13" targetname: "16" }
+// node 14
+edge: { sourcename: "14" targetname: "13" label: "true" color: darkgreen }
+edge: { sourcename: "14" targetname: "15" label: "false" color: red }
+// node 15
+edge: { sourcename: "15" targetname: "16" }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "18" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+}

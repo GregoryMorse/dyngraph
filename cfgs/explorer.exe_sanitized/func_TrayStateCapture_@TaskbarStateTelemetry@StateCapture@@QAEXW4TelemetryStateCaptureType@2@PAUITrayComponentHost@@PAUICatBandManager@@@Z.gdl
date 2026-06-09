@@ -1,0 +1,362 @@
+graph: {
+title: "func_TrayStateCapture_@TaskbarStateTelemetry@StateCapture@@QAEXW4TelemetryStateCaptureType@2@PAUITrayComponentHost@@PAUICatBandManager@@@Z"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "lea     eax, [ebp+var_E8]
+mov     [ebp+var_E8], 2000000h
+push    50h; nIndex
+mov     [ebp+var_E4], edi
+mov     [ebp+var_58], eax
+call    ds:__imp__GetSystemMetrics@4; GetSystemMetrics(x)
+mov     [ebp+var_5C], eax
+xor     eax, eax
+cmp     [ebp+var_20], eax
+push    ebx
+setz    al
+mov     [ebp+var_60], eax
+xor     eax, eax
+cmp     [ebp+var_24], eax
+setz    al
+mov     [ebp+var_64], eax
+xor     eax, eax
+cmp     [ebp+var_28], eax
+setz    al
+mov     [ebp+var_68], eax
+xor     eax, eax
+cmp     [ebp+var_2C], eax
+setz    al
+mov     [ebp+var_6C], eax
+xor     eax, eax
+cmp     [ebp+var_30], eax
+setz    al
+mov     [ebp+var_70], eax
+xor     eax, eax
+cmp     [ebp+var_38], eax
+setz    al
+mov     [ebp+var_74], eax
+xor     eax, eax
+cmp     [ebp+var_3C], eax
+setz    al
+mov     [ebp+var_78], eax
+xor     eax, eax
+cmp     [ebp+var_8], eax
+setz    al
+mov     [ebp+var_7C], eax
+mov     eax, [ebx]
+mov     esi, [eax+4Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+push    ebx
+mov     eax, [eax+0E8h]
+movzx   eax, byte ptr [eax+44h]
+mov     [ebp+var_80], eax
+mov     eax, [ebx]
+mov     esi, [eax+4Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+lea     ecx, [eax+40h]; this
+push    ecx; int
+push    3; int
+call    ?_GetItemCountHelper@CTrayItemManager@@ABEHHH@Z; CTrayItemManager::_GetItemCountHelper(int,int)
+mov     [ebp+var_84], eax
+mov     edx, offset aDontusepowersh; \"DontUsePowerShellOnWinX\"
+mov     eax, [ebp+var_14]
+push    edi; unsigned __int16 *
+mov     [ebp+var_88], eax
+call    ?GetRegistryBoolEnabled@StateTelemetryBase@StateCapture@@KG_NPBG0_N@Z; StateCapture::StateTelemetryBase::GetRegistryBoolEnabled(ushort const *,ushort const *,bool)
+movzx   eax, al
+mov     edx, offset stru_41FC4C
+push    1; unsigned __int16 *
+mov     [ebp+var_8C], eax
+call    ?GetRegistryBoolEnabled@StateTelemetryBase@StateCapture@@KG_NPBG0_N@Z; StateCapture::StateTelemetryBase::GetRegistryBoolEnabled(ushort const *,ushort const *,bool)
+xor     ecx, ecx
+test    al, al
+mov     eax, [ebp+var_48]
+mov     [ebp+var_48], eax
+setz    cl
+mov     eax, [ebp+var_44]
+mov     [ebp+var_44], eax
+mov     eax, [ebp+var_50]
+mov     [ebp+var_DC], eax
+mov     eax, [ebp+var_54]
+mov     [ebp+var_90], ecx
+mov     [ebp+var_94], eax
+mov     eax, dword ptr [ebp+var_4C]
+mov     [ebp+var_98], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+4Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+push    edi; bool
+mov     ecx, [eax+0ECh]; this
+call    ?GetEnabledState@CKeyboardButton@@QAE_N_N@Z; CKeyboardButton::GetEnabledState(bool)
+movzx   eax, al
+mov     [ebp+var_9C], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+4Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+push    1; bool
+mov     ecx, [eax+0ECh]; this
+call    ?GetEnabledState@CKeyboardButton@@QAE_N_N@Z; CKeyboardButton::GetEnabledState(bool)
+movzx   eax, al
+mov     [ebp+var_A0], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+0F8h]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+movzx   eax, al
+mov     [ebp+var_A4], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+100h]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+mov     [ebp+var_A8], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+0FCh]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+mov     [ebp+var_AC], eax
+mov     edx, offset aSoftwareMicros_118; \"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVe\"...
+lea     eax, [ebp+var_4C]
+mov     ecx, 80000001h
+push    eax; unsigned __int16 *
+push    offset stru_44496C; HKEY
+call    ?SHRegGetDWORD@@YGJPAUHKEY__@@PBG1PAK@Z; SHRegGetDWORD(HKEY__ *,ushort const *,ushort const *,ulong *)
+test    eax, eax
+js      short loc_5A26B0" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "mov     [ebp+var_B0], edi
+call    ?GetMultiMonTaskbarState@TrayCommon@@YG?AW4MultiMonTaskbarState@1@XZ; TrayCommon::GetMultiMonTaskbarState(void)
+sub     eax, 2
+mov     edx, offset aDisablepreview_0; \"DisablePreviewDesktop\"
+neg     eax
+push    1; unsigned __int16 *
+sbb     eax, eax
+inc     eax
+mov     [ebp+var_B4], eax
+call    ?GetRegistryBoolEnabled@StateTelemetryBase@StateCapture@@KG_NPBG0_N@Z; StateCapture::StateTelemetryBase::GetRegistryBoolEnabled(ushort const *,ushort const *,bool)
+movzx   eax, al
+mov     [ebp+var_B8], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+0ACh]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+neg     eax
+push    ebx
+sbb     eax, eax
+inc     eax
+mov     [ebp+var_BC], eax
+mov     eax, [ebx]
+mov     esi, [eax+0B0h]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+neg     eax
+push    ebx
+sbb     eax, eax
+inc     eax
+mov     [ebp+var_C0], eax
+mov     eax, [ebx]
+mov     esi, [eax+2Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+mov     [ebp+var_C4], eax
+mov     eax, [ebx]
+push    ebx
+mov     esi, [eax+110h]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+neg     eax
+push    ebx
+sbb     eax, eax
+neg     eax
+mov     [ebp+var_C8], eax
+mov     eax, [ebx]
+mov     esi, [eax+10Ch]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+neg     eax
+push    ebx
+sbb     eax, eax
+neg     eax
+mov     [ebp+var_CC], eax
+mov     eax, [ebx]
+mov     esi, [eax+108h]
+mov     ecx, esi; this
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    esi
+mov     [ebp+var_D0], eax
+mov     eax, [ebp+arg_0]
+mov     [ebp+var_D4], eax
+lea     eax, [ebp+var_58]
+push    eax
+lea     eax, [ebp+var_5C]
+push    eax
+lea     eax, [ebp+var_60]
+push    eax
+lea     eax, [ebp+var_64]
+push    eax
+lea     eax, [ebp+var_68]
+push    eax
+lea     eax, [ebp+var_6C]
+push    eax
+lea     eax, [ebp+var_70]
+push    eax
+lea     eax, [ebp+var_74]
+mov     edx, offset byte_438D35
+push    eax
+lea     eax, [ebp+var_78]
+push    eax
+lea     eax, [ebp+var_7C]
+push    eax
+lea     eax, [ebp+var_80]
+push    eax
+lea     eax, [ebp+var_84]
+push    eax
+lea     eax, [ebp+var_88]
+push    eax
+lea     eax, [ebp+var_8C]
+push    eax
+lea     eax, [ebp+var_90]
+push    eax
+lea     eax, [ebp+var_48]
+push    eax
+lea     eax, [ebp+var_44]
+push    eax
+lea     eax, [ebp+var_DC]
+push    eax
+lea     eax, [ebp+var_94]
+push    eax
+lea     eax, [ebp+var_98]
+push    eax
+lea     eax, [ebp+var_9C]
+push    eax
+lea     eax, [ebp+var_A0]
+push    eax
+lea     eax, [ebp+var_A4]
+push    eax
+lea     eax, [ebp+var_A8]
+push    eax
+lea     eax, [ebp+var_AC]
+push    eax
+lea     eax, [ebp+var_B0]
+push    eax
+lea     eax, [ebp+var_B4]
+push    eax
+lea     eax, [ebp+var_B8]
+push    eax
+lea     eax, [ebp+var_BC]
+push    eax
+lea     eax, [ebp+var_C0]
+push    eax
+lea     eax, [ebp+var_C4]
+push    eax
+lea     eax, [ebp+var_C8]
+push    eax
+lea     eax, [ebp+var_CC]
+push    eax
+lea     eax, [ebp+var_D0]
+push    eax
+lea     eax, [ebp+var_D4]
+push    eax
+push    ecx
+push    ecx
+mov     ecx, [ebp+var_D8]
+call    ??$Write@U?$_tlgWrapperByVal@$03@@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U?$_tlgWrapSz@G@@U2@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U1@U?$_tlgWrapperByRef@$07@@@?$_tlgWriteTemplate@$$A6GJPBU_tlgProvider_t@@PBXPBU_GUID@@2IPAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YGJ0122I3@ZPBU2@PBU2@@@SGJPBU_tlgProvider_t@@PBXPBU_GUID@@2ABU?$_tlgWrapperByVal@$03@@33333333333333333ABU?$_tlgWrapSz@G@@433333333333333ABU?$_tlgWrapperByRef@$07@@@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByRef<8>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByRef<8> const &)" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "5" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "5" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "4" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+// node 4
+edge: { sourcename: "4" targetname: "5" }
+// node 5
+// node 6
+}

@@ -1,0 +1,225 @@
+graph: {
+title: "func_1CSecondaryTray@@EAE@XZ"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "" }
+node: { title: "9" label: "" }
+node: { title: "10" label: "" }
+node: { title: "11" label: "" }
+node: { title: "12" label: "" }
+node: { title: "13" label: "" }
+node: { title: "14" label: "" }
+node: { title: "15" label: "" }
+node: { title: "16" label: "" }
+node: { title: "17" label: "" }
+node: { title: "18" label: "" }
+node: { title: "19" label: "" }
+node: { title: "20" label: "" }
+node: { title: "21" label: "69_lambda_39d3c4aa0360445efe961f5486666674___operator__31:
+push    4Ch
+mov     eax, offset loc_4F405E
+call    __EH_prolog3
+mov     esi, ecx
+mov     eax, ds:dword_42DEB0
+lea     ecx, [ebp+var_20]
+mov     [ebp+var_20], eax
+xor     ebx, ebx
+mov     [ebp+var_1C], eax
+mov     eax, [esi+4]
+push    ebx
+mov     edx, [eax+0Ch]
+call    ?ScaleByDPI@TrayDPIHelpers@@YGXPAUtagSIZE@@IW4ScaleModifier@1@@Z; TrayDPIHelpers::ScaleByDPI(tagSIZE *,uint,TrayDPIHelpers::ScaleModifier)
+mov     ecx, [ebp+var_20]
+lea     edi, [ebp+var_50]
+fld     ds:__real@4012000000000000
+xor     eax, eax
+stosd
+xor     edx, edx
+stosd
+stosd
+stosd
+mov     eax, [ebp+var_1C]
+mov     [ebp+var_54], eax
+mov     [ebp+var_4C], eax
+mov     [ebp+var_44], eax
+mov     eax, [esi+4]
+mov     [ebp+var_58], ecx
+mov     [ebp+var_50], ecx
+mov     [ebp+var_48], ecx
+lea     ecx, [ebp+var_18]
+fstp    [ebp+var_28]
+mov     [ebp+var_34], ebx
+mov     [ebp+var_30], ebx
+mov     [ebp+var_2C], ebx
+mov     eax, [eax+0Ch]
+mov     [ebp+var_3C], eax
+mov     [ebp+var_38], 1
+call    ?GetSystemThemeStyle@@YGXPAW4COLORTHEME@@PA_N@Z; GetSystemThemeStyle(COLORTHEME *,bool *)
+cmp     [ebp+var_18], 2
+mov     ecx, [esi+8]
+setz    al
+push    eax
+push    8
+pop     edx
+call    ?GetCurrentThemeForOverrides@ImmersiveContextMenuHelper@@YGPAXPAUHWND__@@W4ImmersiveContextMenuOptions@@_N@Z; ImmersiveContextMenuHelper::GetCurrentThemeForOverrides(HWND__ *,ImmersiveContextMenuOptions,bool)
+mov     [ebp+hTheme], eax
+mov     [ebp+var_4], ebx
+mov     edi, offset aPcshellShellEx_59; \"pcshell\\\\shell\\\\explorer\\\\taskband2\\\\se\"...
+mov     [ebp+pColor], 0FF000000h
+test    eax, eax
+jz      short loc_5C1F46" }
+node: { title: "22" label: "" }
+node: { title: "23" label: "" }
+node: { title: "24" label: "mov     eax, [ebp+pColor]
+lea     edx, [ebp+var_58]
+mov     [ebp+var_40], eax
+mov     ecx, offset aWindowsImmersi_0; \"windows.immersivecontrolpanel_cw5n1h2tx\"...
+mov     eax, [esi+4]
+add     eax, 10h
+push    eax; this
+call    ?LoadImmersiveIconThemeAware@ImmersiveIcons@@YGJPBGABULoadIconParams@1@PAPAUHBITMAP__@@@Z; ImmersiveIcons::LoadImmersiveIconThemeAware(ushort const *,ImmersiveIcons::LoadIconParams const &,HBITMAP__ * *)
+mov     ecx, [ebp+4]
+test    eax, eax
+jns     short loc_5C1F73" }
+node: { title: "25" label: "" }
+node: { title: "26" label: "" }
+node: { title: "27" label: "" }
+node: { title: "28" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "4" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "6" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "6" }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "8" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "8" }
+// node 8
+edge: { sourcename: "8" targetname: "9" label: "false" color: red }
+edge: { sourcename: "8" targetname: "10" label: "true" color: darkgreen }
+// node 9
+edge: { sourcename: "9" targetname: "10" }
+// node 10
+edge: { sourcename: "10" targetname: "11" label: "false" color: red }
+edge: { sourcename: "10" targetname: "12" label: "true" color: darkgreen }
+// node 11
+edge: { sourcename: "11" targetname: "12" }
+// node 12
+edge: { sourcename: "12" targetname: "13" label: "false" color: red }
+edge: { sourcename: "12" targetname: "14" label: "true" color: darkgreen }
+// node 13
+edge: { sourcename: "13" targetname: "14" }
+// node 14
+edge: { sourcename: "14" targetname: "15" label: "false" color: red }
+edge: { sourcename: "14" targetname: "16" label: "true" color: darkgreen }
+// node 15
+edge: { sourcename: "15" targetname: "16" }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "18" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+edge: { sourcename: "18" targetname: "19" label: "false" color: red }
+edge: { sourcename: "18" targetname: "20" label: "true" color: darkgreen }
+// node 19
+edge: { sourcename: "19" targetname: "20" }
+// node 20
+// node 21
+edge: { sourcename: "21" targetname: "22" label: "false" color: red }
+edge: { sourcename: "21" targetname: "24" label: "true" color: darkgreen }
+// node 22
+edge: { sourcename: "22" targetname: "23" label: "false" color: red }
+edge: { sourcename: "22" targetname: "24" label: "true" color: darkgreen }
+// node 23
+edge: { sourcename: "23" targetname: "24" }
+// node 24
+edge: { sourcename: "24" targetname: "25" label: "false" color: red }
+edge: { sourcename: "24" targetname: "26" label: "true" color: darkgreen }
+// node 25
+edge: { sourcename: "25" targetname: "26" }
+// node 26
+edge: { sourcename: "26" targetname: "27" label: "false" color: red }
+edge: { sourcename: "26" targetname: "28" label: "true" color: darkgreen }
+// node 27
+edge: { sourcename: "27" targetname: "28" }
+// node 28
+}

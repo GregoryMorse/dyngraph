@@ -52,7 +52,7 @@ The central application domain is static and dynamic program analysis of binarie
 | `setup.py` | Cython build configuration |
 | `CFGenum.ipynb` | Jupyter notebook: CFG enumeration and analysis |
 | `confflow.ipynb` | Jupyter notebook: control-flow experiments |
-| `cfgs/` | SATLIB benchmark instances (uf20-91 random 3-SAT, 1000 instances); auto-downloaded by `sat.py` |
+| `cfgs/` | IDA Pro **7.0 Freeware** (last freeware release; see comment in `graph.py`) CFGs in GDL format, generated via `gengraphs.idc`. Linux x86-64 ELF binaries (exact package versions unrecorded): `sendmail/` (1 599 functions), `smbd/` (799), `vsftpd/` (705). Windows 10 x64 PE binaries (build ≥ 1803, inferred from WIL `FeatureStateManager` symbols in `explorer.exe`; exact build unrecorded): `explorer.exe/` (11 703 functions), `kernel32.dll/` (2 533), `user32.dll/` (2 651). Windows-derived folders have `*_sanitized/` counterparts (topology + edge labels only, disassembly stripped) for clean public redistribution. Also `web-Stanford.txt` (SNAP Stanford web crawl 2002, 281 903 nodes / 2 312 497 edges). |
 | `results/` | Generated output: Graphviz DOT/SVG/TeX files, timing and paper experiment text outputs |
 
 ## Prerequisites

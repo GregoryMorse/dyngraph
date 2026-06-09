@@ -1,0 +1,224 @@
+graph: {
+title: "func_SwitchingToCloudExperiencePostLogon@LogonTask@LogonFrameworkTelemetry@@QAEXXZ"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "69?ToString@HealthTrackingInfo@details@Health@OOBE@@QAEJPAPAG@Z31:
+mov     edi, edi
+push    ebp
+mov     ebp, esp
+sub     esp, 404h
+mov     eax, ___security_cookie
+xor     eax, ebp
+mov     [ebp+var_4], eax
+push    esi; char *
+push    edi; unsigned int
+push    dword ptr [ecx+30h]
+movzx   eax, byte ptr [ecx+18h]
+push    eax
+push    dword ptr [ecx+0A4h]
+movzx   eax, byte ptr [ecx+1Ch]
+push    eax
+movzx   eax, byte ptr [ecx+1Dh]
+push    eax
+push    dword ptr [ecx+24h]
+movzx   eax, byte ptr [ecx+1Bh]
+push    eax
+movzx   eax, byte ptr [ecx+15h]
+push    eax
+movzx   eax, byte ptr [ecx+14h]
+push    eax
+push    dword ptr [ecx+98h]
+movzx   eax, byte ptr [ecx+1Ah]
+push    dword ptr [ecx+94h]
+mov     edi, [ebp+arg_0]
+push    eax
+push    dword ptr [ecx+0A0h]
+movzx   eax, byte ptr [ecx+11h]
+push    dword ptr [ecx+90h]
+push    eax
+push    dword ptr [ecx+8Ch]
+movzx   eax, byte ptr [ecx+10h]
+push    dword ptr [ecx+88h]
+push    eax
+push    dword ptr [ecx+84h]
+movzx   eax, byte ptr [ecx+0Fh]
+push    dword ptr [ecx+80h]
+push    eax
+push    dword ptr [ecx+7Ch]
+movzx   eax, byte ptr [ecx+0Eh]
+push    dword ptr [ecx+78h]
+push    eax
+push    dword ptr [ecx+2Ch]
+movzx   eax, byte ptr [ecx+17h]
+push    eax
+push    dword ptr [ecx+28h]
+movzx   eax, byte ptr [ecx+16h]
+push    eax
+push    dword ptr [ecx+9Ch]
+movzx   eax, byte ptr [ecx+19h]
+push    eax
+push    dword ptr [ecx+74h]
+movzx   eax, byte ptr [ecx+0Dh]
+push    eax
+push    dword ptr [ecx+6Ch]
+movzx   eax, byte ptr [ecx+13h]
+push    eax
+push    dword ptr [ecx+70h]
+movzx   eax, byte ptr [ecx+12h]
+push    eax
+push    dword ptr [ecx+68h]
+movzx   eax, byte ptr [ecx+0Ch]
+push    dword ptr [ecx+64h]
+push    eax
+push    dword ptr [ecx+60h]
+movzx   eax, byte ptr [ecx+0Bh]
+push    dword ptr [ecx+5Ch]
+push    eax
+push    dword ptr [ecx+58h]
+movzx   eax, byte ptr [ecx+0Ah]
+push    dword ptr [ecx+54h]
+push    eax
+push    dword ptr [ecx+44h]
+movzx   eax, byte ptr [ecx+9]
+push    dword ptr [ecx+40h]
+push    eax
+push    dword ptr [ecx+3Ch]
+movzx   eax, byte ptr [ecx+8]
+push    dword ptr [ecx+38h]
+push    eax
+push    dword ptr [ecx+50h]
+movzx   eax, byte ptr [ecx+7]
+push    eax
+movzx   eax, byte ptr [ecx+6]
+push    eax
+push    dword ptr [ecx+4Ch]
+movzx   eax, byte ptr [ecx+5]
+push    eax
+movzx   eax, byte ptr [ecx+4]
+push    eax
+push    dword ptr [ecx+48h]
+movzx   eax, byte ptr [ecx+3]
+push    eax
+movzx   eax, byte ptr [ecx+2]
+push    eax
+push    dword ptr [ecx+20h]
+movzx   eax, byte ptr [ecx+1]
+push    eax
+push    dword ptr [ecx+34h]
+movzx   eax, byte ptr [ecx]
+push    eax
+push    offset aDDDDDDDDDDDDDD; \"{ %d; %d; %d; %d; %d; %d; %d; %d; %d; %\"...
+lea     eax, [ebp+Dest]
+push    200h; unsigned int
+push    eax; Dest
+call    ?StringCchPrintfW@@YAJPAGIPBGZZ; StringCchPrintfW(ushort *,uint,ushort const *,...)
+mov     esi, eax
+add     esp, 10Ch
+test    esi, esi
+jns     short loc_6314FB" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aOnecoreuapInte_1; \"onecoreuap\\\\internal\\\\shell\\\\inc\\\\OOBEH\"...
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+mov     eax, esi
+jmp     short loc_631531" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "" }
+node: { title: "9" label: "" }
+node: { title: "10" label: "" }
+node: { title: "11" label: "" }
+node: { title: "12" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "3" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "3" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "7" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "6" }
+// node 6
+edge: { sourcename: "6" targetname: "12" }
+// node 7
+edge: { sourcename: "7" targetname: "8" }
+// node 8
+edge: { sourcename: "8" targetname: "9" label: "false" color: red }
+edge: { sourcename: "8" targetname: "8" label: "true" color: darkgreen }
+// node 9
+edge: { sourcename: "9" targetname: "10" label: "false" color: red }
+edge: { sourcename: "9" targetname: "11" label: "true" color: darkgreen }
+// node 10
+edge: { sourcename: "10" targetname: "6" }
+// node 11
+edge: { sourcename: "11" targetname: "12" }
+// node 12
+}

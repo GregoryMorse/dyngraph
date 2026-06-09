@@ -1,0 +1,166 @@
+graph: {
+title: "func_IsPointerDeviceSupportedOnMonitor@@YG_NPAUHMONITOR__@@W4tagPOINTER_DEVICE_TYPE@@@Z"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "69?_HandleCreate@CTaskListWnd@@IAEJXZ31:
+mov     edi, edi
+push    ebx
+mov     ebx, esp
+push    ecx
+push    ecx
+and     esp, 0FFFFFFF8h
+add     esp, 4
+push    ebp
+mov     ebp, [ebx+4]
+mov     [esp+0Ch+var_8], ebp
+mov     ebp, esp
+sub     esp, 38h
+mov     eax, ___security_cookie
+xor     eax, ebp
+mov     [ebp-4], eax
+push    esi; unsigned int
+push    edi; this
+mov     esi, ecx
+call    ?_InitFonts@CTaskListWnd@@IAEXXZ; CTaskListWnd::_InitFonts(void)
+mov     ecx, [esi+158h]
+push    44h
+pop     edx
+call    ?GetDPIMetrics@TrayDPIHelpers@@YGHIH@Z; TrayDPIHelpers::GetDPIMetrics(uint,int)
+mov     ecx, [esi+158h]
+add     eax, eax
+push    45h
+pop     edx
+mov     [esi+138h], eax
+call    ?GetDPIMetrics@TrayDPIHelpers@@YGHIH@Z; TrayDPIHelpers::GetDPIMetrics(uint,int)
+push    0
+push    offset aDisablepreview; \"DisablePreviewWindow\"
+add     eax, eax
+mov     edi, offset aSoftwareMicros_118; \"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVe\"...
+push    edi
+mov     [esi+13Ch], eax
+call    ds:__imp__SHRegGetBoolValueFromHKCUHKLM@12; SHRegGetBoolValueFromHKCUHKLM(x,x,x)
+push    0
+mov     edx, offset aExtendeduihove; \"ExtendedUIHoverTime\"
+mov     [esi+0D8h], eax
+mov     ecx, edi
+call    _SHRegGetUSDWORDW@12; SHRegGetUSDWORDW(x,x,x)
+push    0
+push    offset aLastactiveclic; \"LastActiveClick\"
+push    edi
+mov     [esi+0DCh], eax
+call    ds:__imp__SHRegGetBoolValueFromHKCUHKLM@12; SHRegGetBoolValueFromHKCUHKLM(x,x,x)
+xor     edi, edi
+mov     [esi+140h], eax
+push    edi; lpParam
+push    offset __ImageBase; hInstance
+push    edi; hMenu
+push    dword ptr [esi+4]; hWndParent
+push    edi; nHeight
+push    edi; nWidth
+push    edi; Y
+push    edi; X
+push    80000003h; dwStyle
+push    edi; lpWindowName
+push    offset aTooltipsClass3; \"tooltips_class32\"
+push    20h
+pop     eax
+push    eax; dwExStyle
+call    ds:__imp__CreateWindowExW@48; CreateWindowExW(x,x,x,x,x,x,x,x,x,x,x,x)
+mov     [esi+90h], eax
+test    eax, eax
+jz      short loc_4B01D0" }
+node: { title: "4" label: "" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "" }
+node: { title: "9" label: "loc_5146D8" color: red }
+node: { title: "10" label: "loc_514702" color: red }
+node: { title: "11" label: "loc_514779" color: red }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "9" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "10" label: "true" color: darkgreen }
+// node 2
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "5" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "5" }
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "8" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "11" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "8" }
+// node 8
+// node 9
+// node 10
+// node 11
+}

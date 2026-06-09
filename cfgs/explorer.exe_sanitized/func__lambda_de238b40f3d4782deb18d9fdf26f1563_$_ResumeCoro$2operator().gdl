@@ -1,0 +1,449 @@
+graph: {
+title: "func__lambda_de238b40f3d4782deb18d9fdf26f1563_$_ResumeCoro$2operator()"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "" vertical_order: 0 }
+node: { title: "1" label: "" }
+node: { title: "2" label: "" }
+node: { title: "3" label: "" }
+node: { title: "4" label: "" }
+node: { title: "5" label: "" }
+node: { title: "6" label: "" }
+node: { title: "7" label: "" }
+node: { title: "8" label: "" }
+node: { title: "9" label: "" }
+node: { title: "10" label: "" }
+node: { title: "11" label: "" }
+node: { title: "12" label: "push    10h
+pop     eax
+add     eax, [ebp+arg_0]
+mov     [ebp+var_130], eax
+mov     ecx, [ebp+var_130]
+call    ??$single_threaded_map@Uhstring@winrt@@U12@U?$less@Uhstring@winrt@@@std@@V?$allocator@U?$pair@$$CBUhstring@winrt@@U12@@std@@@4@@winrt@@YG?AU?$IMap@Uhstring@winrt@@U12@@Collections@Foundation@Windows@0@XZ; winrt::single_threaded_map<winrt::hstring,winrt::hstring,std::less<winrt::hstring>,std::allocator<std::pair<winrt::hstring const,winrt::hstring>>>(void)
+mov     [ebp+var_380], eax
+mov     byte ptr [ebp+var_4], 2
+mov     eax, 188h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_134], eax
+mov     eax, [ebp+var_4]
+mov     [ebp+var_138], eax
+mov     eax, [ebp+var_134]
+mov     ecx, [ebp+var_138]
+mov     [eax], ecx
+push    10h
+pop     eax
+add     eax, [ebp+arg_0]
+mov     [ebp+var_13C], eax
+mov     eax, [ebp+var_13C]
+add     eax, 4
+mov     [ebp+var_150], eax
+push    offset a1; \"1\"
+mov     eax, 0FCh
+add     eax, [ebp+arg_0]
+mov     [ebp+var_140], eax
+mov     ecx, [ebp+var_140]; this
+call    ??0hstring@param@winrt@@QAE@QBG@Z; winrt::param::hstring::hstring(ushort const * const)
+push    offset aTsMapver; \"ts_mapver\"
+mov     eax, 114h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_144], eax
+mov     ecx, [ebp+var_144]; this
+call    ??0hstring@param@winrt@@QAE@QBG@Z; winrt::param::hstring::hstring(ushort const * const)
+mov     eax, 0FCh
+add     eax, [ebp+arg_0]
+mov     [ebp+var_148], eax
+push    [ebp+var_148]
+mov     eax, 114h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_14C], eax
+push    [ebp+var_14C]
+mov     ecx, [ebp+var_150]
+call    ?Insert@?$consume_Windows_Foundation_Collections_IMap@U?$IMap@Uhstring@winrt@@U12@@Collections@Foundation@Windows@winrt@@Uhstring@5@U65@@impl@winrt@@QBE_NABUhstring@param@3@0@Z; winrt::impl::consume_Windows_Foundation_Collections_IMap<winrt::Windows::Foundation::Collections::IMap<winrt::hstring,winrt::hstring>,winrt::hstring,winrt::hstring>::Insert(winrt::param::hstring const &,winrt::param::hstring const &)
+push    18h
+pop     eax
+add     eax, [ebp+arg_0]
+mov     [ebp+var_154], eax
+mov     ecx, [ebp+var_154]
+call    ??$Start@$$V@CdmLiteRequestActivity@ProgrammableTaskbarTelemetryProvider@ProgrammableTaskbarTelemetry@@SG?AV012@XZ; ProgrammableTaskbarTelemetry::ProgrammableTaskbarTelemetryProvider::CdmLiteRequestActivity::Start<>(void)
+mov     [ebp+var_384], eax
+mov     byte ptr [ebp+var_4], 3
+mov     eax, 188h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_158], eax
+mov     eax, [ebp+var_4]
+mov     [ebp+var_15C], eax
+mov     eax, [ebp+var_158]
+mov     ecx, [ebp+var_15C]
+mov     [eax], ecx
+mov     ecx, [ebp+arg_0]
+call    std__experimental___Resumable_helper_traits_winrt__Windows__Foundation__IAsyncAction__lambda_de238b40f3d4782deb18d9fdf26f1563__const______Promise_from_frame
+mov     ecx, 170h
+add     ecx, [ebp+arg_0]
+mov     [ebp+var_160], ecx
+mov     [ebp+var_164], eax
+mov     eax, [ebp+var_160]
+mov     ecx, [ebp+var_164]
+mov     [eax], ecx
+mov     eax, [ebp+arg_0]
+mov     eax, [eax+1B4h]
+mov     eax, [eax]
+add     eax, 10h
+mov     ecx, 16Ch
+add     ecx, [ebp+arg_0]
+mov     [ebp+var_168], ecx
+mov     [ebp+var_16C], eax
+mov     eax, [ebp+var_168]
+mov     ecx, [ebp+var_16C]
+mov     [eax], ecx
+push    10h
+pop     eax
+add     eax, [ebp+arg_0]
+mov     [ebp+var_170], eax
+mov     eax, [ebp+var_170]
+add     eax, 4
+mov     [ebp+var_178], eax
+mov     eax, 0E0h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_174], eax
+push    [ebp+var_174]
+mov     eax, 19Ch
+add     eax, [ebp+arg_0]
+mov     [ebp+var_17C], eax
+mov     ecx, [ebp+var_178]
+call    ?GetView@?$consume_Windows_Foundation_Collections_IMap@U?$IMap@Uhstring@winrt@@U12@@Collections@Foundation@Windows@winrt@@Uhstring@5@U65@@impl@winrt@@QBE?AU?$IMapView@Uhstring@winrt@@U12@@Collections@Foundation@Windows@3@XZ; winrt::impl::consume_Windows_Foundation_Collections_IMap<winrt::Windows::Foundation::Collections::IMap<winrt::hstring,winrt::hstring>,winrt::hstring,winrt::hstring>::GetView(void)
+mov     [ebp+var_180], eax
+mov     eax, [ebp+var_17C]
+mov     ecx, [ebp+var_180]
+mov     [eax], ecx
+mov     eax, 19Ch
+add     eax, [ebp+arg_0]
+mov     [ebp+var_184], eax
+mov     eax, [ebp+var_184]
+mov     eax, [eax]
+mov     [ebp+var_188], eax
+mov     eax, [ebp+var_188]
+mov     [ebp+var_194], eax
+mov     byte ptr [ebp+var_4], 4
+mov     eax, 188h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_18C], eax
+mov     eax, [ebp+var_4]
+mov     [ebp+var_190], eax
+mov     eax, [ebp+var_18C]
+mov     ecx, [ebp+var_190]
+mov     [eax], ecx
+mov     eax, 0D8h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_198], eax
+push    [ebp+var_194]
+mov     ecx, [ebp+var_198]
+call    ??0?$async_map_view@Uhstring@winrt@@U12@@param@winrt@@QAE@ABU?$IMapView@Uhstring@winrt@@U12@@Collections@Foundation@Windows@2@@Z; winrt::param::async_map_view<winrt::hstring,winrt::hstring>::async_map_view<winrt::hstring,winrt::hstring>(winrt::Windows::Foundation::Collections::IMapView<winrt::hstring,winrt::hstring> const &)
+mov     byte ptr [ebp+var_4], 5
+mov     eax, 188h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_19C], eax
+mov     eax, [ebp+var_4]
+mov     [ebp+var_1A0], eax
+mov     eax, [ebp+var_19C]
+mov     ecx, [ebp+var_1A0]
+mov     [eax], ecx
+push    offset a88000290; \"88000290\"
+mov     eax, 130h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1A4], eax
+mov     ecx, [ebp+var_1A4]; this
+call    ??0hstring@param@winrt@@QAE@QBG@Z; winrt::param::hstring::hstring(ushort const * const)
+mov     eax, 0D8h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1A8], eax
+mov     eax, 0E4h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1B0], eax
+push    [ebp+var_1A8]
+push    8
+mov     eax, 130h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1AC], eax
+push    [ebp+var_1AC]
+push    [ebp+var_1B0]
+mov     eax, 16Ch
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1B4], eax
+mov     eax, [ebp+var_1B4]
+mov     eax, [eax]
+mov     [ebp+var_1B8], eax
+mov     eax, 1A0h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1BC], eax
+mov     ecx, [ebp+var_1B8]
+call    ?GetCreativeResultsAsync@?$consume_WindowsUdk_Services_Iris_IIrisServiceProvider@UIIrisServiceProvider@Iris@Services@WindowsUdk@winrt@@@impl@winrt@@QBE?AU?$IAsyncOperation@UIrisCreativeResults@Iris@Services@WindowsUdk@winrt@@@Foundation@Windows@3@ABUhstring@param@3@IABU?$async_map_view@Uhstring@winrt@@U12@@83@@Z; winrt::impl::consume_WindowsUdk_Services_Iris_IIrisServiceProvider<winrt::WindowsUdk::Services::Iris::IIrisServiceProvider>::GetCreativeResultsAsync(winrt::param::hstring const &,uint,winrt::param::async_map_view<winrt::hstring,winrt::hstring> const &)
+mov     [ebp+var_1C0], eax
+mov     eax, [ebp+var_1BC]
+mov     ecx, [ebp+var_1C0]
+mov     [eax], ecx
+mov     eax, 1A0h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1C4], eax
+mov     eax, [ebp+var_1C4]
+mov     eax, [eax]
+mov     [ebp+var_1C8], eax
+mov     eax, [ebp+var_1C8]
+mov     [ebp+var_1D4], eax
+mov     byte ptr [ebp+var_4], 6
+mov     eax, 188h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1CC], eax
+mov     eax, [ebp+var_4]
+mov     [ebp+var_1D0], eax
+mov     eax, [ebp+var_1CC]
+mov     ecx, [ebp+var_1D0]
+mov     [eax], ecx
+mov     eax, [ebp+var_1D4]
+mov     [ebp+var_1D8], eax
+push    [ebp+var_1D8]
+mov     eax, 170h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1DC], eax
+mov     eax, [ebp+var_1DC]
+mov     eax, [eax]
+mov     [ebp+var_1E0], eax
+mov     eax, 1A4h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1E4], eax
+mov     ecx, [ebp+var_1E0]
+call    winrt__impl__promise_base_std__experimental__coroutine_traits_winrt__Windows__Foundation__IAsyncAction__lambda_de238b40f3d4782deb18d9fdf26f1563__const_____promise_type_winrt__Windows__Foundation__IAsyncAction_void___await_transform_winrt__Windows__Foundation__IAsyncOperation_winrt__WindowsUdk__Services__Iris__IrisService___
+mov     [ebp+var_1E8], eax
+mov     eax, [ebp+var_1E4]
+mov     ecx, [ebp+var_1E8]
+mov     [eax], ecx
+mov     eax, 1A4h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1EC], eax
+mov     eax, [ebp+var_1EC]
+mov     eax, [eax]
+mov     [ebp+var_1F0], eax
+mov     eax, 148h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1F4], eax
+mov     eax, 1A8h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_1F8], eax
+mov     edx, [ebp+var_1F0]
+mov     ecx, [ebp+var_1F4]
+call    ??$?__LW4HttpStatusCode@Http@Web@Windows@winrt@@@Foundation@Windows@winrt@@YG?AU?$await_adapter@U?$IAsyncOperation@W4HttpStatusCode@Http@Web@Windows@winrt@@@Foundation@Windows@winrt@@@impl@2@ABU?$IAsyncOperation@W4HttpStatusCode@Http@Web@Windows@winrt@@@012@@Z
+mov     [ebp+var_1FC], eax
+mov     eax, [ebp+var_1F8]
+mov     ecx, [ebp+var_1FC]
+mov     [eax], ecx
+mov     eax, 12Ch
+add     eax, [ebp+arg_0]
+mov     [ebp+var_208], eax
+mov     eax, 1A8h
+add     eax, [ebp+arg_0]
+mov     [ebp+var_200], eax
+mov     eax, [ebp+var_200]
+mov     eax, [eax]
+mov     [ebp+var_204], eax
+mov     eax, [ebp+var_204]
+mov     [ebp+var_20C], eax
+mov     eax, [ebp+var_208]
+mov     ecx, [ebp+var_20C]
+mov     [eax], ecx
+mov     eax, 12Ch
+add     eax, [ebp+arg_0]
+mov     [ebp+var_210], eax
+mov     eax, [ebp+var_210]
+mov     eax, [eax]
+mov     [ebp+var_24], eax
+mov     eax, 1ACh
+add     eax, [ebp+arg_0]
+mov     [ebp+var_214], eax
+mov     ecx, [ebp+var_24]
+call    ?await_ready@?$await_adapter@U?$IAsyncOperation@W4HttpStatusCode@Http@Web@Windows@winrt@@@Foundation@Windows@winrt@@@impl@winrt@@QBE_NXZ; winrt::impl::await_adapter<winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Web::Http::HttpStatusCode>>::await_ready(void)
+mov     [ebp+var_15], al
+mov     eax, [ebp+var_214]
+mov     cl, [ebp+var_15]
+mov     [eax], cl
+mov     eax, 1ACh
+add     eax, [ebp+arg_0]
+mov     [ebp+var_218], eax
+mov     eax, [ebp+var_218]
+mov     al, [eax]
+mov     [ebp+var_16], al
+movzx   eax, [ebp+var_16]
+test    eax, eax
+jz      short loc_4E0900" }
+node: { title: "13" label: "" }
+node: { title: "14" label: "" }
+node: { title: "15" label: "" }
+node: { title: "16" label: "" }
+node: { title: "17" label: "" }
+node: { title: "18" label: "" }
+node: { title: "19" label: "" }
+node: { title: "20" label: "" }
+node: { title: "21" label: "" }
+node: { title: "22" label: "" }
+node: { title: "23" label: "" }
+node: { title: "24" label: "" }
+node: { title: "25" label: "" }
+node: { title: "26" label: "" }
+node: { title: "27" label: "" }
+node: { title: "28" label: "" }
+node: { title: "29" label: "" }
+node: { title: "30" label: "" }
+node: { title: "31" label: "" }
+node: { title: "32" label: "" }
+node: { title: "33" label: "" }
+node: { title: "34" label: "" }
+node: { title: "35" label: "" }
+node: { title: "36" label: "" }
+node: { title: "37" label: "" }
+node: { title: "38" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "36" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "3" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+edge: { sourcename: "3" targetname: "4" }
+edge: { sourcename: "3" targetname: "5" }
+edge: { sourcename: "3" targetname: "9" }
+edge: { sourcename: "3" targetname: "10" }
+edge: { sourcename: "3" targetname: "15" }
+edge: { sourcename: "3" targetname: "16" }
+edge: { sourcename: "3" targetname: "28" }
+// node 4
+edge: { sourcename: "4" targetname: "33" }
+// node 5
+edge: { sourcename: "5" targetname: "6" }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "8" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "11" }
+// node 8
+edge: { sourcename: "8" targetname: "37" }
+// node 9
+edge: { sourcename: "9" targetname: "33" }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "18" label: "true" color: darkgreen }
+// node 12
+edge: { sourcename: "12" targetname: "13" label: "false" color: red }
+edge: { sourcename: "12" targetname: "14" label: "true" color: darkgreen }
+// node 13
+edge: { sourcename: "13" targetname: "17" }
+// node 14
+edge: { sourcename: "14" targetname: "37" }
+// node 15
+edge: { sourcename: "15" targetname: "33" }
+// node 16
+edge: { sourcename: "16" targetname: "17" }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+edge: { sourcename: "18" targetname: "24" }
+// node 19
+edge: { sourcename: "19" targetname: "22" }
+// node 20
+// node 21
+// node 22
+edge: { sourcename: "22" targetname: "24" }
+// node 23
+edge: { sourcename: "23" targetname: "24" }
+// node 24
+edge: { sourcename: "24" targetname: "25" label: "false" color: red }
+edge: { sourcename: "24" targetname: "26" label: "true" color: darkgreen }
+// node 25
+edge: { sourcename: "25" targetname: "32" }
+// node 26
+edge: { sourcename: "26" targetname: "27" label: "false" color: red }
+edge: { sourcename: "26" targetname: "30" label: "true" color: darkgreen }
+// node 27
+edge: { sourcename: "27" targetname: "37" }
+// node 28
+edge: { sourcename: "28" targetname: "33" }
+// node 29
+edge: { sourcename: "29" targetname: "31" }
+// node 30
+edge: { sourcename: "30" targetname: "31" }
+// node 31
+edge: { sourcename: "31" targetname: "32" }
+// node 32
+edge: { sourcename: "32" targetname: "33" }
+// node 33
+edge: { sourcename: "33" targetname: "34" label: "false" color: red }
+edge: { sourcename: "33" targetname: "35" label: "true" color: darkgreen }
+// node 34
+edge: { sourcename: "34" targetname: "35" }
+// node 35
+edge: { sourcename: "35" targetname: "37" }
+// node 36
+edge: { sourcename: "36" targetname: "37" }
+// node 37
+// node 38
+}

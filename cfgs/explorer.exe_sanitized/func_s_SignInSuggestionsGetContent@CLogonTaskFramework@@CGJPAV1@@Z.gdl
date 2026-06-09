@@ -1,0 +1,1229 @@
+graph: {
+title: "func_s_SignInSuggestionsGetContent@CLogonTaskFramework@@CGJPAV1@@Z"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 0 0 255
+colorentry 34: 0 0 255
+colorentry 35: 128 128 128
+colorentry 36: 128 128 128
+colorentry 37: 0 0 128
+colorentry 38: 0 0 128
+colorentry 39: 0 0 255
+colorentry 40: 0 0 255
+colorentry 41: 0 0 128
+colorentry 42: 0 128 0
+colorentry 43: 0 255 0
+colorentry 44: 0 128 0
+colorentry 45: 255 128 0
+colorentry 46: 0 128 0
+colorentry 47: 128 128 255
+colorentry 48: 255 0 0
+colorentry 49: 128 128 0
+colorentry 50: 1 1 1
+colorentry 51: 192 192 192
+colorentry 52: 0 0 255
+colorentry 53: 0 0 255
+colorentry 54: 0 0 255
+colorentry 55: 128 128 128
+colorentry 56: 128 128 255
+colorentry 57: 0 128 0
+colorentry 58: 0 0 128
+colorentry 59: 0 0 255
+colorentry 60: 128 0 128
+colorentry 61: 0 128 0
+colorentry 62: 0 128 0
+colorentry 63: 0 128 64
+colorentry 64: 0 0 128
+colorentry 65: 0 0 128
+colorentry 66: 255 0 255
+colorentry 67: 128 128 0
+colorentry 68: 0 0 128
+colorentry 69: 0 0 255
+colorentry 70: 0 0 128
+colorentry 71: 0 0 255
+colorentry 72: 0 0 0
+colorentry 73: 255 255 255
+colorentry 74: 192 187 175
+colorentry 75: 0 255 255
+colorentry 76: 0 0 0
+colorentry 77: 128 0 0
+colorentry 78: 128 128 128
+colorentry 79: 128 128 0
+colorentry 80: 255 0 255
+colorentry 81: 0 0 0
+colorentry 82: 0 0 255
+colorentry 83: 0 0 0
+node: { title: "0" label: "69?s_SignInSuggestionsGetContent@CLogonTaskFramework@@CGJPAV1@@Z31:
+push    4ACh
+mov     eax, offset loc_4F9FD8
+call    __EH_prolog3_GS
+mov     ebx, ecx
+mov     [ebp+var_43C], ebx
+push    ecx; int
+push    offset aSigninsuggesti_3; \"SignInSuggestionsGetContentActivity\"
+lea     ecx, [ebp+var_1A8]; struct wil::details::IFailureCallback *
+call    ??0?$ActivityBase@VShellPlacementLogging@Logging@CreativeFramework@@$00$0EAAAAAAAAAAA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QAE@PBD_N@Z; wil::ActivityBase<CreativeFramework::Logging::ShellPlacementLogging,1,70368744177664,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<CreativeFramework::Logging::ShellPlacementLogging,1,70368744177664,5,0,_TlgReflectorTag_Param0IsProviderType>(char const *,bool)
+lea     ecx, [ebp+var_1A8]; this
+mov     [ebp+var_1A8], offset ??_7SignInSuggestionsGetContentActivity@ShellPlacementTelemetry@Logging@CreativeFramework@@6B@; const CreativeFramework::Logging::ShellPlacementTelemetry::SignInSuggestionsGetContentActivity::`vftable'
+call    ?StartActivity@SignInSuggestionsGetContentActivity@ShellPlacementTelemetry@Logging@CreativeFramework@@QAEXXZ; CreativeFramework::Logging::ShellPlacementTelemetry::SignInSuggestionsGetContentActivity::StartActivity(void)
+xor     ecx, ecx
+mov     [ebp+var_4], ecx
+mov     [ebp+var_448], ebx
+mov     [ebp+var_444], 1
+mov     al, cl
+mov     [ebp+var_3F4], al
+mov     [ebp+var_3F0], al
+push    3Ch; unsigned int
+mov     byte ptr [ebp+var_4], 2
+push    3Dh; unsigned int
+mov     [ebp+var_3DC], ecx
+mov     [ebp+var_A4], ecx
+lea     ecx, [ebp+var_B8]; this
+push    offset ?RuntimeClass_Windows_Services_TargetedContent_TargetedContentSubscription@@3QBGB; \"Windows.Services.TargetedContent.Target\"...
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+lea     eax, [ebp+var_3DC]
+push    eax
+push    offset __GUID_faddfe80_360d_4916_b53c_7ea27090d02a
+push    [ebp+var_A4]
+call    ds:__imp__RoGetActivationFactory@12; RoGetActivationFactory(x,x,x)
+mov     esi, eax
+test    esi, esi
+jns     short loc_634EE8" vertical_order: 0 }
+node: { title: "1" label: "mov     ecx, [ebp+4]
+mov     edx, 0AB9h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636488" }
+node: { title: "2" label: "and     [ebp+var_3FC], 0
+lea     ecx, [ebp+var_70]; this
+and     [ebp+var_5C], 0
+push    4Dh; unsigned int
+push    4Eh; unsigned int
+push    offset ?RuntimeClass_Windows_Services_TargetedContent_Internal_TargetedContentSubscriptionInternal@@3QBGB; \"Windows.Services.TargetedContent.Intern\"...
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+mov     byte ptr [ebp+var_4], 4
+lea     edx, [ebp+var_3FC]
+mov     ecx, [ebp+var_5C]
+call    ??$ActivateInstance@UITargetedContentSubscriptionInternal@Internal@TargetedContent@Services@Windows@@@Foundation@Windows@@YGJPAUHSTRING__@@PAPAUITargetedContentSubscriptionInternal@Internal@TargetedContent@Services@1@@Z; Windows::Foundation::ActivateInstance<Windows::Services::TargetedContent::Internal::ITargetedContentSubscriptionInternal>(HSTRING__ *,Windows::Services::TargetedContent::Internal::ITargetedContentSubscriptionInternal * *)
+mov     esi, eax
+mov     byte ptr [ebp+var_4], 3
+test    esi, esi
+jns     short loc_634F38" }
+node: { title: "3" label: "mov     ecx, [ebp+4]
+mov     edx, 0ABBh
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_63647D" }
+node: { title: "4" label: "push    39h; unsigned int
+push    3Ah; unsigned int
+mov     byte ptr [ebp+var_4], 5
+lea     ecx, [ebp+var_88]; this
+and     [ebp+var_3F8], 0
+and     [ebp+var_74], 0
+push    offset ?RuntimeClass_Windows_Services_TargetedContent_TargetedContentContainer@@3QBGB; \"Windows.Services.TargetedContent.Target\"...
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+lea     eax, [ebp+var_3F8]
+push    eax
+push    offset __GUID_5b47e7fb_2140_4c1f_a736_c59583f227d8
+push    [ebp+var_74]
+call    ds:__imp__RoGetActivationFactory@12; RoGetActivationFactory(x,x,x)
+mov     esi, eax
+test    esi, esi
+jns     short loc_634F8E" }
+node: { title: "5" label: "mov     ecx, [ebp+4]
+mov     edx, 0ABDh
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636472" }
+node: { title: "6" label: "xor     ecx, ecx
+mov     [ebp+var_464], offset aSigimg; \"sigimg\"
+mov     [ebp+var_46C], offset aMsa; \"msa\"
+mov     [ebp+var_3A8], ecx
+mov     esi, [ebp+var_3DC]
+push    10h; unsigned int
+push    11h; unsigned int
+push    offset ?c_minuteZeroOffers@SubscriptionIds@TargetedContent@CreativeFramework@@3QBGB; \"MinuteZeroOffers\"
+mov     eax, [esi]
+mov     [ebp+var_3A8], ecx
+mov     [ebp+var_8C], ecx
+lea     ecx, [ebp+var_A0]; this
+mov     edi, [eax+1Ch]
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+lea     eax, [ebp+var_3A8]
+mov     byte ptr [ebp+var_4], 7
+push    eax
+push    [ebp+var_8C]
+mov     ecx, edi; this
+push    esi
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    edi
+mov     esi, eax
+mov     byte ptr [ebp+var_4], 6
+test    esi, esi
+jns     short loc_635013" }
+node: { title: "7" label: "mov     ecx, [ebp+4]
+mov     edx, 0AC7h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_6351E5" }
+node: { title: "8" label: "" }
+node: { title: "9" label: "" }
+node: { title: "10" label: "and     dword ptr [ebp+var_404], 0
+lea     eax, [ebp+var_404]
+push    eax; unsigned __int16 *
+push    offset stru_4526E0; HKEY
+mov     edx, offset aSoftwareMicros_115; \"SOFTWARE\\\\Microsoft\\\\Windows\\\\Signature\"
+mov     ecx, 80000002h
+call    ?SHRegGetDWORD@@YGJPAUHKEY__@@PBG1PAK@Z; SHRegGetDWORD(HKEY__ *,ushort const *,ushort const *,ulong *)
+test    eax, eax
+js      loc_63510E" }
+node: { title: "11" label: "push    dword ptr [ebp+var_404]
+lea     eax, [ebp+Dest]
+push    offset aU; \"%u\"
+push    22h; unsigned int
+push    eax; Dest
+call    ?StringCchPrintfW@@YAJPAGIPBGZZ; StringCchPrintfW(ushort *,uint,ushort const *,...)
+mov     esi, eax
+add     esp, 10h
+test    esi, esi
+jns     short loc_6350A5" }
+node: { title: "12" label: "" }
+node: { title: "13" label: "" }
+node: { title: "14" label: "" }
+node: { title: "15" label: "" }
+node: { title: "16" label: "" }
+node: { title: "17" label: "" }
+node: { title: "18" label: "" }
+node: { title: "19" label: "" }
+node: { title: "20" label: "mov     esi, [ebp+var_3AC]
+mov     eax, [esi]
+mov     eax, [eax+28h]
+mov     [ebp+var_3E4], eax
+mov     eax, offset a1; \"1\"
+test    cl, cl
+jnz     short loc_635141" }
+node: { title: "21" label: "mov     eax, offset a0; \"0\"" }
+node: { title: "22" label: "" }
+node: { title: "23" label: "" }
+node: { title: "24" label: "" }
+node: { title: "25" label: "" }
+node: { title: "26" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3AC]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)" }
+node: { title: "27" label: "" }
+node: { title: "28" label: "lea     ecx, [ebp+var_3AC]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)
+lea     ecx, [ebp+var_3A8]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)
+xor     ecx, ecx
+mov     [ebp+var_3E0], ecx
+mov     esi, [ebp+var_3DC]
+push    10h; unsigned int
+push    11h; unsigned int
+push    offset ?c_minuteZeroOffers@SubscriptionIds@TargetedContent@CreativeFramework@@3QBGB; \"MinuteZeroOffers\"
+mov     eax, [esi]
+mov     [ebp+var_3E0], ecx
+mov     [ebp+var_BC], ecx
+lea     ecx, [ebp+var_D0]; this
+mov     edi, [eax+18h]
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+lea     eax, [ebp+var_3E0]
+mov     byte ptr [ebp+var_4], 11h
+push    eax
+push    [ebp+var_BC]
+mov     ecx, edi; this
+push    esi
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    edi
+mov     esi, eax
+mov     byte ptr [ebp+var_4], 10h
+test    esi, esi
+jns     short loc_63527C" }
+node: { title: "29" label: "mov     ecx, [ebp+4]
+mov     edx, 0ADDh
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636467" }
+node: { title: "30" label: "" }
+node: { title: "31" label: "" }
+node: { title: "32" label: "mov     ecx, [ebp+4]
+mov     edx, 0ADFh
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_63645C" }
+node: { title: "33" label: "xor     ecx, ecx
+mov     [ebp+var_3E8], ecx
+mov     esi, [ebp+var_3FC]
+push    10h; unsigned int
+push    11h; unsigned int
+push    offset ?c_minuteZeroOffers@SubscriptionIds@TargetedContent@CreativeFramework@@3QBGB; \"MinuteZeroOffers\"
+mov     eax, [esi]
+mov     [ebp+var_3E8], ecx
+mov     [ebp+var_D4], ecx
+lea     ecx, [ebp+var_E8]; this
+mov     edi, [eax+18h]
+call    ?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AAEXPBGII@Z; Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)
+lea     eax, [ebp+var_3E8]
+mov     byte ptr [ebp+var_4], 14h
+push    eax
+push    [ebp+var_D4]
+mov     ecx, edi; this
+push    esi
+call    ds:___guard_check_icall_fptr; CTrayButton::v_OnPointerEnter(void)
+call    edi
+mov     esi, eax
+mov     byte ptr [ebp+var_4], 13h
+test    esi, esi
+jns     short loc_635342" }
+node: { title: "34" label: "mov     ecx, [ebp+4]
+mov     edx, 0AE3h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636451" }
+node: { title: "35" label: "" }
+node: { title: "36" label: "" }
+node: { title: "37" label: "mov     ecx, [ebp+4]
+mov     edx, 0AE5h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636446" }
+node: { title: "38" label: "fldz
+mov     edx, [ebp+var_3EC]
+and     [ebp+var_428], 0
+and     [ebp+var_424], 0
+fstp    [ebp+var_458]
+fld     ds:__real@406f400000000000
+fstp    [ebp+var_460]
+mov     [ebp+var_430], offset aActiontimeout; \"actionTimeout\"
+mov     [ebp+var_3E4], offset aOnopportunity; \"onOpportunity\"
+mov     [ebp+var_3A4], offset aOndocumentload; \"onDocumentLoaded\"
+mov     [ebp+var_408], offset aStopaftertimeo; \"stopAfterTimeout\"
+mov     [ebp+var_414], offset aContentretriev; \"contentRetrievalTimeout\"
+mov     [ebp+var_410], offset aLaunchscoobe; \"launchScoobe\"
+mov     [ebp+var_434], offset aLaunchasync; \"launchAsync\"
+mov     [ebp+var_40C], offset aLaunchcontext; \"launchContext\"
+mov     [ebp+var_42C], edx
+lea     ecx, [ebp+var_494]
+mov     byte ptr [ebp+var_4], 16h
+call    ??$end@PAUHSTRING__@@@Collections@Foundation@Windows@@YG?AVvector_iterator@?$vector_range@U?$IVectorView@PAUHSTRING__@@@Collections@Foundation@Windows@@Uerr_exception_policy@wil@@@wil@@PAU?$IVectorView@PAUHSTRING__@@@012@@Z; Windows::Foundation::Collections::end<HSTRING__ *>(Windows::Foundation::Collections::IVectorView<HSTRING__ *> *)
+mov     byte ptr [ebp+var_4], 17h
+mov     eax, [ebp+var_428]" }
+node: { title: "39" label: "" }
+node: { title: "40" label: "" }
+node: { title: "41" label: "" }
+node: { title: "42" label: "" }
+node: { title: "43" label: "" }
+node: { title: "44" label: "" }
+node: { title: "45" label: "" }
+node: { title: "46" label: "" }
+node: { title: "47" label: "push    0
+push    [ebp+var_398]
+call    ds:__imp__WindowsGetStringRawBuffer@8; WindowsGetStringRawBuffer(x,x)
+push    1
+push    0FFFFFFFFh
+push    offset aSigninsuggesti_1; \"SignInSuggestions\"
+push    0FFFFFFFFh
+push    eax
+call    ds:__imp__CompareStringOrdinal@20; CompareStringOrdinal(x,x,x,x,x)
+cmp     eax, 2
+jnz     loc_6360B8" }
+node: { title: "48" label: "" }
+node: { title: "49" label: "" }
+node: { title: "50" label: "" }
+node: { title: "51" label: "" }
+node: { title: "52" label: "" }
+node: { title: "53" label: "" }
+node: { title: "54" label: "" }
+node: { title: "55" label: "" }
+node: { title: "56" label: "" }
+node: { title: "57" label: "" }
+node: { title: "58" label: "" }
+node: { title: "59" label: "" }
+node: { title: "60" label: "" }
+node: { title: "61" label: "" }
+node: { title: "62" label: "" }
+node: { title: "63" label: "" }
+node: { title: "64" label: "" }
+node: { title: "65" label: "" }
+node: { title: "66" label: "" }
+node: { title: "67" label: "" }
+node: { title: "68" label: "" }
+node: { title: "69" label: "" }
+node: { title: "70" label: "lea     eax, [ebp+var_47C]
+mov     ecx, offset ?impl@?1??GetImpl@?$Feature@U__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon@@@wil@@CGAAV?$FeatureImpl@U__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon@@@details@3@XZ@4V453@A; wil::details::FeatureImpl<__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon> `wil::Feature<__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon>::GetImpl(void)'::`2'::impl
+mov     [ebp+var_480], eax
+mov     eax, [ebp+4]
+and     [ebp+var_4A8], 0
+mov     [ebp+var_4B0], eax
+mov     eax, 0A96h
+mov     [ebp+var_4AC], offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+mov     [ebp+var_4A4], ax
+call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon@@@details@wil@@QAE_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_DecoupleScoobeFromUpgradeOnLogon>::__private_IsEnabled(void)
+test    al, al
+jz      short loc_63587E" }
+node: { title: "71" label: "" }
+node: { title: "72" label: "" }
+node: { title: "73" label: "" }
+node: { title: "74" label: "" }
+node: { title: "75" label: "" }
+node: { title: "76" label: "" }
+node: { title: "77" label: "" }
+node: { title: "78" label: "" }
+node: { title: "79" label: "" }
+node: { title: "80" label: "" }
+node: { title: "81" label: "" }
+node: { title: "82" label: "" }
+node: { title: "83" label: "" }
+node: { title: "84" label: "" }
+node: { title: "85" label: "" }
+node: { title: "86" label: "" }
+node: { title: "87" label: "" }
+node: { title: "88" label: "" }
+node: { title: "89" label: "push    0
+push    [ebp+var_39C]
+add     ebx, 0BCh
+call    ds:__imp__WindowsGetStringRawBuffer@8; WindowsGetStringRawBuffer(x,x)
+push    0
+push    [ebp+var_3A0]
+mov     edi, eax
+call    ds:__imp__WindowsGetStringRawBuffer@8; WindowsGetStringRawBuffer(x,x)
+mov     esi, eax
+mov     eax, [ebp+var_44C]
+push    0
+push    dword ptr [eax]
+call    ds:__imp__WindowsGetStringRawBuffer@8; WindowsGetStringRawBuffer(x,x)
+push    edi
+push    esi
+push    eax
+push    offset aTccontentidWsT; \"?tcContentId=%ws&tcContentPath=%ws&surf\"...
+push    ebx
+call    ?InitializeFormat@?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@Internal@Windows@@QAAJPBGZZ; Windows::Internal::NativeString<Windows::Internal::CoTaskMemPolicy<ushort>>::InitializeFormat(ushort const *,...)
+mov     esi, eax
+add     esp, 14h
+test    esi, esi
+js      loc_63615C" }
+node: { title: "90" label: "" }
+node: { title: "91" label: "" }
+node: { title: "92" label: "" }
+node: { title: "93" label: "" }
+node: { title: "94" label: "" }
+node: { title: "95" label: "" }
+node: { title: "96" label: "" }
+node: { title: "97" label: "" }
+node: { title: "98" label: "" }
+node: { title: "99" label: "" }
+node: { title: "100" label: "" }
+node: { title: "101" label: "" }
+node: { title: "102" label: "" }
+node: { title: "103" label: "" }
+node: { title: "104" label: "" }
+node: { title: "105" label: "" }
+node: { title: "106" label: "" }
+node: { title: "107" label: "" }
+node: { title: "108" label: "" }
+node: { title: "109" label: "" }
+node: { title: "110" label: "" }
+node: { title: "111" label: "" }
+node: { title: "112" label: "" }
+node: { title: "113" label: "" }
+node: { title: "114" label: "" }
+node: { title: "115" label: "" }
+node: { title: "116" label: "" }
+node: { title: "117" label: "" }
+node: { title: "118" label: "" }
+node: { title: "119" label: "" }
+node: { title: "120" label: "" }
+node: { title: "121" label: "" }
+node: { title: "122" label: "" }
+node: { title: "123" label: "" }
+node: { title: "124" label: "" }
+node: { title: "125" label: "" }
+node: { title: "126" label: "" }
+node: { title: "127" label: "" }
+node: { title: "128" label: "" }
+node: { title: "129" label: "" }
+node: { title: "130" label: "" }
+node: { title: "131" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3B8]
+jmp     loc_636248" }
+node: { title: "132" label: "" }
+node: { title: "133" label: "" }
+node: { title: "134" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3BC]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)
+jmp     short loc_636176" }
+node: { title: "135" label: "" }
+node: { title: "136" label: "" }
+node: { title: "137" label: "" }
+node: { title: "138" label: "" }
+node: { title: "139" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "140" label: "" }
+node: { title: "141" label: "mov     ecx, [ebp+4]
+mov     edx, 0B33h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "142" label: "" }
+node: { title: "143" label: "mov     ecx, [ebp+4]
+mov     edx, 0B31h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "144" label: "" }
+node: { title: "145" label: "" }
+node: { title: "146" label: "" }
+node: { title: "147" label: "" }
+node: { title: "148" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "149" label: "" }
+node: { title: "150" label: "" }
+node: { title: "151" label: "" }
+node: { title: "152" label: "" }
+node: { title: "153" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3C4]
+jmp     short loc_636248" }
+node: { title: "154" label: "" }
+node: { title: "155" label: "" }
+node: { title: "156" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3C8]" }
+node: { title: "157" label: "" }
+node: { title: "158" label: "" }
+node: { title: "159" label: "" }
+node: { title: "160" label: "" }
+node: { title: "161" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_3CC]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)
+jmp     short loc_636290" }
+node: { title: "162" label: "mov     ecx, [ebp+4]
+mov     edx, 0B82h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "163" label: "" }
+node: { title: "164" label: "" }
+node: { title: "165" label: "" }
+node: { title: "166" label: "" }
+node: { title: "167" label: "" }
+node: { title: "168" label: "" }
+node: { title: "169" label: "" }
+node: { title: "170" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "171" label: "" }
+node: { title: "172" label: "mov     ecx, [ebp+4]
+mov     edx, 0B0Ah
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "173" label: "" }
+node: { title: "174" label: "" }
+node: { title: "175" label: "" }
+node: { title: "176" label: "mov     ecx, [ebp+4]
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "177" label: "" }
+node: { title: "178" label: "mov     ecx, [ebp+4]
+mov     edx, 0B00h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "179" label: "" }
+node: { title: "180" label: "mov     ecx, [ebp+4]
+mov     edx, 0AFCh
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "181" label: "" }
+node: { title: "182" label: "mov     ecx, [ebp+4]
+mov     edx, 0AF7h
+push    esi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "183" label: "" }
+node: { title: "184" label: "" }
+node: { title: "185" label: "" }
+node: { title: "186" label: "" }
+node: { title: "187" label: "" }
+node: { title: "188" label: "" }
+node: { title: "189" label: "" }
+node: { title: "190" label: "" }
+node: { title: "191" label: "" }
+node: { title: "192" label: "" }
+node: { title: "193" label: "" }
+node: { title: "194" label: "" }
+node: { title: "195" label: "" }
+node: { title: "196" label: "" }
+node: { title: "197" label: "" }
+node: { title: "198" label: "" }
+node: { title: "199" label: "" }
+node: { title: "200" label: "69?s_SignInSuggestionsPerformActions@CLogonTaskFramework@@CGJPAV1@@Z31:
+push    0DCh
+mov     eax, offset loc_4FA037
+call    __EH_prolog3_GS
+mov     ebx, ecx
+mov     [ebp+var_D4], ebx
+push    ecx; int
+push    offset aSigninsuggesti_4; \"SignInSuggestionsPerformActionActivity\"
+lea     ecx, [ebp+var_D0]; struct wil::details::IFailureCallback *
+call    ??0?$ActivityBase@VShellPlacementLogging@Logging@CreativeFramework@@$00$0EAAAAAAAAAAA@$04$0A@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QAE@PBD_N@Z; wil::ActivityBase<CreativeFramework::Logging::ShellPlacementLogging,1,70368744177664,5,0,_TlgReflectorTag_Param0IsProviderType>::ActivityBase<CreativeFramework::Logging::ShellPlacementLogging,1,70368744177664,5,0,_TlgReflectorTag_Param0IsProviderType>(char const *,bool)
+lea     ecx, [ebp+var_D0]; this
+mov     [ebp+var_D0], offset ??_7SignInSuggestionsPerformActionActivity@ShellPlacementTelemetry@Logging@CreativeFramework@@6B@; const CreativeFramework::Logging::ShellPlacementTelemetry::SignInSuggestionsPerformActionActivity::`vftable'
+call    ?StartActivity@SignInSuggestionsPerformActionActivity@ShellPlacementTelemetry@Logging@CreativeFramework@@QAEXXZ; CreativeFramework::Logging::ShellPlacementTelemetry::SignInSuggestionsPerformActionActivity::StartActivity(void)
+xor     ecx, ecx
+mov     [ebp+var_4], ecx
+cmp     [ebx+9Ch], ecx
+jz      loc_636719" }
+node: { title: "201" label: "" }
+node: { title: "202" label: "" }
+node: { title: "203" label: "" }
+node: { title: "204" label: "" }
+node: { title: "205" label: "mov     ecx, [ebp+4]
+push    edi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+jmp     loc_636808" }
+node: { title: "206" label: "" }
+node: { title: "207" label: "" }
+node: { title: "208" label: "" }
+node: { title: "209" label: "" }
+node: { title: "210" label: "" }
+node: { title: "211" label: "" }
+node: { title: "212" label: "" }
+node: { title: "213" label: "" }
+node: { title: "214" label: "" }
+node: { title: "215" label: "" }
+node: { title: "216" label: "" }
+node: { title: "217" label: "" }
+node: { title: "218" label: "" }
+node: { title: "219" label: "" }
+node: { title: "220" label: "" }
+node: { title: "221" label: "" }
+node: { title: "222" label: "mov     ecx, [ebp+4]
+mov     edx, 0BB1h
+push    edi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_D8]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)
+jmp     short loc_6367D6" }
+node: { title: "223" label: "mov     ecx, [ebp+4]
+mov     edx, 0BAFh
+push    edi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)" }
+node: { title: "224" label: "" }
+node: { title: "225" label: "" }
+node: { title: "226" label: "" }
+node: { title: "227" label: "mov     ecx, [ebp+4]
+push    edi; void *
+push    offset aShellLibLogont_1; \"shell\\\\lib\\\\logontasks\\\\logontasks.cpp\"
+call    ?Return_Hr@in1diag3@details@wil@@YGXPAXIPBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+lea     ecx, [ebp+var_D4]
+call    ??1?$com_ptr_t@UIAutoPilotUtil@AutoPilot@Service@EnterpriseDeviceManagement@@Uerr_exception_policy@wil@@@wil@@QAE@XZ; wil::com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>::~com_ptr_t<EnterpriseDeviceManagement::Service::AutoPilot::IAutoPilotUtil,wil::err_exception_policy>(void)" }
+node: { title: "228" label: "" }
+node: { title: "229" label: "" }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "2" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "197" }
+// node 2
+edge: { sourcename: "2" targetname: "3" label: "false" color: red }
+edge: { sourcename: "2" targetname: "4" label: "true" color: darkgreen }
+// node 3
+edge: { sourcename: "3" targetname: "196" }
+// node 4
+edge: { sourcename: "4" targetname: "5" label: "false" color: red }
+edge: { sourcename: "4" targetname: "6" label: "true" color: darkgreen }
+// node 5
+edge: { sourcename: "5" targetname: "195" }
+// node 6
+edge: { sourcename: "6" targetname: "7" label: "false" color: red }
+edge: { sourcename: "6" targetname: "8" label: "true" color: darkgreen }
+// node 7
+edge: { sourcename: "7" targetname: "27" }
+// node 8
+edge: { sourcename: "8" targetname: "9" label: "false" color: red }
+edge: { sourcename: "8" targetname: "10" label: "true" color: darkgreen }
+// node 9
+edge: { sourcename: "9" targetname: "26" }
+// node 10
+edge: { sourcename: "10" targetname: "11" label: "false" color: red }
+edge: { sourcename: "10" targetname: "16" label: "true" color: darkgreen }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "13" label: "true" color: darkgreen }
+// node 12
+edge: { sourcename: "12" targetname: "26" }
+// node 13
+edge: { sourcename: "13" targetname: "14" label: "false" color: red }
+edge: { sourcename: "13" targetname: "15" label: "true" color: darkgreen }
+// node 14
+edge: { sourcename: "14" targetname: "26" }
+// node 15
+edge: { sourcename: "15" targetname: "16" }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "19" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" label: "false" color: red }
+edge: { sourcename: "17" targetname: "19" label: "true" color: darkgreen }
+// node 18
+edge: { sourcename: "18" targetname: "20" }
+// node 19
+edge: { sourcename: "19" targetname: "20" }
+// node 20
+edge: { sourcename: "20" targetname: "21" label: "false" color: red }
+edge: { sourcename: "20" targetname: "22" label: "true" color: darkgreen }
+// node 21
+edge: { sourcename: "21" targetname: "22" }
+// node 22
+edge: { sourcename: "22" targetname: "23" label: "false" color: red }
+edge: { sourcename: "22" targetname: "24" label: "true" color: darkgreen }
+// node 23
+edge: { sourcename: "23" targetname: "26" }
+// node 24
+edge: { sourcename: "24" targetname: "25" label: "false" color: red }
+edge: { sourcename: "24" targetname: "28" label: "true" color: darkgreen }
+// node 25
+edge: { sourcename: "25" targetname: "26" }
+// node 26
+edge: { sourcename: "26" targetname: "27" }
+// node 27
+edge: { sourcename: "27" targetname: "195" }
+// node 28
+edge: { sourcename: "28" targetname: "29" label: "false" color: red }
+edge: { sourcename: "28" targetname: "30" label: "true" color: darkgreen }
+// node 29
+edge: { sourcename: "29" targetname: "194" }
+// node 30
+edge: { sourcename: "30" targetname: "31" label: "false" color: red }
+edge: { sourcename: "30" targetname: "32" label: "true" color: darkgreen }
+// node 31
+edge: { sourcename: "31" targetname: "32" label: "false" color: red }
+edge: { sourcename: "31" targetname: "33" label: "true" color: darkgreen }
+// node 32
+edge: { sourcename: "32" targetname: "193" }
+// node 33
+edge: { sourcename: "33" targetname: "34" label: "false" color: red }
+edge: { sourcename: "33" targetname: "35" label: "true" color: darkgreen }
+// node 34
+edge: { sourcename: "34" targetname: "192" }
+// node 35
+edge: { sourcename: "35" targetname: "36" label: "false" color: red }
+edge: { sourcename: "35" targetname: "37" label: "true" color: darkgreen }
+// node 36
+edge: { sourcename: "36" targetname: "37" label: "false" color: red }
+edge: { sourcename: "36" targetname: "38" label: "true" color: darkgreen }
+// node 37
+edge: { sourcename: "37" targetname: "191" }
+// node 38
+edge: { sourcename: "38" targetname: "39" }
+// node 39
+edge: { sourcename: "39" targetname: "40" label: "false" color: red }
+edge: { sourcename: "39" targetname: "184" label: "true" color: darkgreen }
+// node 40
+edge: { sourcename: "40" targetname: "41" label: "false" color: red }
+edge: { sourcename: "40" targetname: "182" label: "true" color: darkgreen }
+// node 41
+edge: { sourcename: "41" targetname: "42" label: "false" color: red }
+edge: { sourcename: "41" targetname: "128" label: "true" color: darkgreen }
+// node 42
+edge: { sourcename: "42" targetname: "43" label: "false" color: red }
+edge: { sourcename: "42" targetname: "128" label: "true" color: darkgreen }
+// node 43
+edge: { sourcename: "43" targetname: "44" label: "false" color: red }
+edge: { sourcename: "43" targetname: "180" label: "true" color: darkgreen }
+// node 44
+edge: { sourcename: "44" targetname: "45" label: "false" color: red }
+edge: { sourcename: "44" targetname: "128" label: "true" color: darkgreen }
+// node 45
+edge: { sourcename: "45" targetname: "46" label: "false" color: red }
+edge: { sourcename: "45" targetname: "178" label: "true" color: darkgreen }
+// node 46
+edge: { sourcename: "46" targetname: "47" label: "false" color: red }
+edge: { sourcename: "46" targetname: "175" label: "true" color: darkgreen }
+// node 47
+edge: { sourcename: "47" targetname: "48" label: "false" color: red }
+edge: { sourcename: "47" targetname: "127" label: "true" color: darkgreen }
+// node 48
+edge: { sourcename: "48" targetname: "49" label: "false" color: red }
+edge: { sourcename: "48" targetname: "51" label: "true" color: darkgreen }
+// node 49
+edge: { sourcename: "49" targetname: "50" label: "false" color: red }
+edge: { sourcename: "49" targetname: "51" label: "true" color: darkgreen }
+// node 50
+edge: { sourcename: "50" targetname: "52" }
+// node 51
+edge: { sourcename: "51" targetname: "52" }
+// node 52
+edge: { sourcename: "52" targetname: "53" label: "false" color: red }
+edge: { sourcename: "52" targetname: "174" label: "true" color: darkgreen }
+// node 53
+edge: { sourcename: "53" targetname: "54" label: "false" color: red }
+edge: { sourcename: "53" targetname: "172" label: "true" color: darkgreen }
+// node 54
+edge: { sourcename: "54" targetname: "55" }
+// node 55
+edge: { sourcename: "55" targetname: "56" label: "false" color: red }
+edge: { sourcename: "55" targetname: "126" label: "true" color: darkgreen }
+// node 56
+edge: { sourcename: "56" targetname: "57" label: "false" color: red }
+edge: { sourcename: "56" targetname: "169" label: "true" color: darkgreen }
+// node 57
+edge: { sourcename: "57" targetname: "58" label: "false" color: red }
+edge: { sourcename: "57" targetname: "168" label: "true" color: darkgreen }
+// node 58
+edge: { sourcename: "58" targetname: "59" label: "false" color: red }
+edge: { sourcename: "58" targetname: "68" label: "true" color: darkgreen }
+// node 59
+edge: { sourcename: "59" targetname: "60" label: "false" color: red }
+edge: { sourcename: "59" targetname: "130" label: "true" color: darkgreen }
+// node 60
+edge: { sourcename: "60" targetname: "61" label: "false" color: red }
+edge: { sourcename: "60" targetname: "129" label: "true" color: darkgreen }
+// node 61
+edge: { sourcename: "61" targetname: "62" label: "false" color: red }
+edge: { sourcename: "61" targetname: "66" label: "true" color: darkgreen }
+// node 62
+edge: { sourcename: "62" targetname: "63" label: "false" color: red }
+edge: { sourcename: "62" targetname: "64" label: "true" color: darkgreen }
+// node 63
+edge: { sourcename: "63" targetname: "64" }
+// node 64
+edge: { sourcename: "64" targetname: "65" label: "false" color: red }
+edge: { sourcename: "64" targetname: "67" label: "true" color: darkgreen }
+// node 65
+edge: { sourcename: "65" targetname: "67" }
+// node 66
+edge: { sourcename: "66" targetname: "67" }
+// node 67
+edge: { sourcename: "67" targetname: "68" }
+// node 68
+edge: { sourcename: "68" targetname: "69" label: "false" color: red }
+edge: { sourcename: "68" targetname: "98" label: "true" color: darkgreen }
+// node 69
+edge: { sourcename: "69" targetname: "70" label: "false" color: red }
+edge: { sourcename: "69" targetname: "74" label: "true" color: darkgreen }
+// node 70
+edge: { sourcename: "70" targetname: "71" label: "false" color: red }
+edge: { sourcename: "70" targetname: "72" label: "true" color: darkgreen }
+// node 71
+edge: { sourcename: "71" targetname: "73" }
+// node 72
+edge: { sourcename: "72" targetname: "73" }
+// node 73
+edge: { sourcename: "73" targetname: "74" label: "false" color: red }
+edge: { sourcename: "73" targetname: "78" label: "true" color: darkgreen }
+// node 74
+edge: { sourcename: "74" targetname: "75" label: "false" color: red }
+edge: { sourcename: "74" targetname: "78" label: "true" color: darkgreen }
+// node 75
+edge: { sourcename: "75" targetname: "76" label: "false" color: red }
+edge: { sourcename: "75" targetname: "78" label: "true" color: darkgreen }
+// node 76
+edge: { sourcename: "76" targetname: "77" label: "false" color: red }
+edge: { sourcename: "76" targetname: "78" label: "true" color: darkgreen }
+// node 77
+edge: { sourcename: "77" targetname: "78" label: "false" color: red }
+edge: { sourcename: "77" targetname: "79" label: "true" color: darkgreen }
+// node 78
+edge: { sourcename: "78" targetname: "79" label: "false" color: red }
+edge: { sourcename: "78" targetname: "98" label: "true" color: darkgreen }
+// node 79
+edge: { sourcename: "79" targetname: "80" label: "false" color: red }
+edge: { sourcename: "79" targetname: "150" label: "true" color: darkgreen }
+// node 80
+edge: { sourcename: "80" targetname: "81" label: "false" color: red }
+edge: { sourcename: "80" targetname: "98" label: "true" color: darkgreen }
+// node 81
+edge: { sourcename: "81" targetname: "82" label: "false" color: red }
+edge: { sourcename: "81" targetname: "147" label: "true" color: darkgreen }
+// node 82
+edge: { sourcename: "82" targetname: "83" label: "false" color: red }
+edge: { sourcename: "82" targetname: "146" label: "true" color: darkgreen }
+// node 83
+edge: { sourcename: "83" targetname: "84" label: "false" color: red }
+edge: { sourcename: "83" targetname: "97" label: "true" color: darkgreen }
+// node 84
+edge: { sourcename: "84" targetname: "85" label: "false" color: red }
+edge: { sourcename: "84" targetname: "145" label: "true" color: darkgreen }
+// node 85
+edge: { sourcename: "85" targetname: "86" label: "false" color: red }
+edge: { sourcename: "85" targetname: "97" label: "true" color: darkgreen }
+// node 86
+edge: { sourcename: "86" targetname: "87" label: "false" color: red }
+edge: { sourcename: "86" targetname: "143" label: "true" color: darkgreen }
+// node 87
+edge: { sourcename: "87" targetname: "88" label: "false" color: red }
+edge: { sourcename: "87" targetname: "141" label: "true" color: darkgreen }
+// node 88
+edge: { sourcename: "88" targetname: "89" label: "false" color: red }
+edge: { sourcename: "88" targetname: "138" label: "true" color: darkgreen }
+// node 89
+edge: { sourcename: "89" targetname: "90" label: "false" color: red }
+edge: { sourcename: "89" targetname: "137" label: "true" color: darkgreen }
+// node 90
+edge: { sourcename: "90" targetname: "91" label: "false" color: red }
+edge: { sourcename: "90" targetname: "136" label: "true" color: darkgreen }
+// node 91
+edge: { sourcename: "91" targetname: "92" label: "false" color: red }
+edge: { sourcename: "91" targetname: "135" label: "true" color: darkgreen }
+// node 92
+edge: { sourcename: "92" targetname: "93" label: "false" color: red }
+edge: { sourcename: "92" targetname: "96" label: "true" color: darkgreen }
+// node 93
+edge: { sourcename: "93" targetname: "94" label: "false" color: red }
+edge: { sourcename: "93" targetname: "133" label: "true" color: darkgreen }
+// node 94
+edge: { sourcename: "94" targetname: "95" label: "false" color: red }
+edge: { sourcename: "94" targetname: "132" label: "true" color: darkgreen }
+// node 95
+edge: { sourcename: "95" targetname: "96" }
+// node 96
+edge: { sourcename: "96" targetname: "97" }
+// node 97
+edge: { sourcename: "97" targetname: "98" }
+// node 98
+edge: { sourcename: "98" targetname: "99" label: "false" color: red }
+edge: { sourcename: "98" targetname: "167" label: "true" color: darkgreen }
+// node 99
+edge: { sourcename: "99" targetname: "100" label: "false" color: red }
+edge: { sourcename: "99" targetname: "125" label: "true" color: darkgreen }
+// node 100
+edge: { sourcename: "100" targetname: "101" label: "false" color: red }
+edge: { sourcename: "100" targetname: "166" label: "true" color: darkgreen }
+// node 101
+edge: { sourcename: "101" targetname: "102" label: "false" color: red }
+edge: { sourcename: "101" targetname: "109" label: "true" color: darkgreen }
+// node 102
+edge: { sourcename: "102" targetname: "103" label: "false" color: red }
+edge: { sourcename: "102" targetname: "152" label: "true" color: darkgreen }
+// node 103
+edge: { sourcename: "103" targetname: "104" label: "false" color: red }
+edge: { sourcename: "103" targetname: "151" label: "true" color: darkgreen }
+// node 104
+edge: { sourcename: "104" targetname: "105" label: "false" color: red }
+edge: { sourcename: "104" targetname: "107" label: "true" color: darkgreen }
+// node 105
+edge: { sourcename: "105" targetname: "106" label: "false" color: red }
+edge: { sourcename: "105" targetname: "107" label: "true" color: darkgreen }
+// node 106
+edge: { sourcename: "106" targetname: "108" }
+// node 107
+edge: { sourcename: "107" targetname: "108" }
+// node 108
+edge: { sourcename: "108" targetname: "109" }
+// node 109
+edge: { sourcename: "109" targetname: "110" label: "false" color: red }
+edge: { sourcename: "109" targetname: "165" label: "true" color: darkgreen }
+// node 110
+edge: { sourcename: "110" targetname: "111" label: "false" color: red }
+edge: { sourcename: "110" targetname: "112" label: "true" color: darkgreen }
+// node 111
+edge: { sourcename: "111" targetname: "112" }
+// node 112
+edge: { sourcename: "112" targetname: "113" label: "false" color: red }
+edge: { sourcename: "112" targetname: "164" label: "true" color: darkgreen }
+// node 113
+edge: { sourcename: "113" targetname: "114" label: "false" color: red }
+edge: { sourcename: "113" targetname: "119" label: "true" color: darkgreen }
+// node 114
+edge: { sourcename: "114" targetname: "115" label: "false" color: red }
+edge: { sourcename: "114" targetname: "155" label: "true" color: darkgreen }
+// node 115
+edge: { sourcename: "115" targetname: "116" label: "false" color: red }
+edge: { sourcename: "115" targetname: "154" label: "true" color: darkgreen }
+// node 116
+edge: { sourcename: "116" targetname: "117" label: "false" color: red }
+edge: { sourcename: "116" targetname: "118" label: "true" color: darkgreen }
+// node 117
+edge: { sourcename: "117" targetname: "118" }
+// node 118
+edge: { sourcename: "118" targetname: "119" }
+// node 119
+edge: { sourcename: "119" targetname: "120" label: "false" color: red }
+edge: { sourcename: "119" targetname: "162" label: "true" color: darkgreen }
+// node 120
+edge: { sourcename: "120" targetname: "121" label: "false" color: red }
+edge: { sourcename: "120" targetname: "160" label: "true" color: darkgreen }
+// node 121
+edge: { sourcename: "121" targetname: "122" label: "false" color: red }
+edge: { sourcename: "121" targetname: "123" label: "true" color: darkgreen }
+// node 122
+edge: { sourcename: "122" targetname: "123" label: "false" color: red }
+edge: { sourcename: "122" targetname: "158" label: "true" color: darkgreen }
+// node 123
+edge: { sourcename: "123" targetname: "124" label: "false" color: red }
+edge: { sourcename: "123" targetname: "159" label: "true" color: darkgreen }
+// node 124
+edge: { sourcename: "124" targetname: "125" }
+// node 125
+edge: { sourcename: "125" targetname: "55" }
+// node 126
+edge: { sourcename: "126" targetname: "127" }
+// node 127
+edge: { sourcename: "127" targetname: "128" }
+// node 128
+edge: { sourcename: "128" targetname: "39" }
+// node 129
+edge: { sourcename: "129" targetname: "131" }
+// node 130
+edge: { sourcename: "130" targetname: "131" }
+// node 131
+edge: { sourcename: "131" targetname: "157" }
+// node 132
+edge: { sourcename: "132" targetname: "134" }
+// node 133
+edge: { sourcename: "133" targetname: "134" }
+// node 134
+edge: { sourcename: "134" targetname: "140" }
+// node 135
+edge: { sourcename: "135" targetname: "139" }
+// node 136
+edge: { sourcename: "136" targetname: "139" }
+// node 137
+edge: { sourcename: "137" targetname: "139" }
+// node 138
+edge: { sourcename: "138" targetname: "139" }
+// node 139
+edge: { sourcename: "139" targetname: "140" }
+// node 140
+edge: { sourcename: "140" targetname: "142" }
+// node 141
+edge: { sourcename: "141" targetname: "142" }
+// node 142
+edge: { sourcename: "142" targetname: "144" }
+// node 143
+edge: { sourcename: "143" targetname: "144" }
+// node 144
+edge: { sourcename: "144" targetname: "149" }
+// node 145
+edge: { sourcename: "145" targetname: "148" }
+// node 146
+edge: { sourcename: "146" targetname: "148" }
+// node 147
+edge: { sourcename: "147" targetname: "148" }
+// node 148
+edge: { sourcename: "148" targetname: "149" }
+// node 149
+edge: { sourcename: "149" targetname: "157" }
+// node 150
+edge: { sourcename: "150" targetname: "170" }
+// node 151
+edge: { sourcename: "151" targetname: "153" }
+// node 152
+edge: { sourcename: "152" targetname: "153" }
+// node 153
+edge: { sourcename: "153" targetname: "157" }
+// node 154
+edge: { sourcename: "154" targetname: "156" }
+// node 155
+edge: { sourcename: "155" targetname: "156" }
+// node 156
+edge: { sourcename: "156" targetname: "157" }
+// node 157
+edge: { sourcename: "157" targetname: "171" }
+// node 158
+edge: { sourcename: "158" targetname: "161" }
+// node 159
+edge: { sourcename: "159" targetname: "161" }
+// node 160
+edge: { sourcename: "160" targetname: "161" }
+// node 161
+edge: { sourcename: "161" targetname: "163" }
+// node 162
+edge: { sourcename: "162" targetname: "163" }
+// node 163
+edge: { sourcename: "163" targetname: "157" }
+// node 164
+edge: { sourcename: "164" targetname: "170" }
+// node 165
+edge: { sourcename: "165" targetname: "170" }
+// node 166
+edge: { sourcename: "166" targetname: "170" }
+// node 167
+edge: { sourcename: "167" targetname: "170" }
+// node 168
+edge: { sourcename: "168" targetname: "170" }
+// node 169
+edge: { sourcename: "169" targetname: "170" }
+// node 170
+edge: { sourcename: "170" targetname: "171" }
+// node 171
+edge: { sourcename: "171" targetname: "173" }
+// node 172
+edge: { sourcename: "172" targetname: "173" }
+// node 173
+edge: { sourcename: "173" targetname: "177" }
+// node 174
+edge: { sourcename: "174" targetname: "176" }
+// node 175
+edge: { sourcename: "175" targetname: "176" }
+// node 176
+edge: { sourcename: "176" targetname: "177" }
+// node 177
+edge: { sourcename: "177" targetname: "179" }
+// node 178
+edge: { sourcename: "178" targetname: "179" }
+// node 179
+edge: { sourcename: "179" targetname: "181" }
+// node 180
+edge: { sourcename: "180" targetname: "181" }
+// node 181
+edge: { sourcename: "181" targetname: "183" }
+// node 182
+edge: { sourcename: "182" targetname: "183" }
+// node 183
+edge: { sourcename: "183" targetname: "191" }
+// node 184
+edge: { sourcename: "184" targetname: "185" label: "false" color: red }
+edge: { sourcename: "184" targetname: "186" label: "true" color: darkgreen }
+// node 185
+edge: { sourcename: "185" targetname: "186" }
+// node 186
+edge: { sourcename: "186" targetname: "187" label: "false" color: red }
+edge: { sourcename: "186" targetname: "188" label: "true" color: darkgreen }
+// node 187
+edge: { sourcename: "187" targetname: "188" }
+// node 188
+edge: { sourcename: "188" targetname: "189" label: "false" color: red }
+edge: { sourcename: "188" targetname: "190" label: "true" color: darkgreen }
+// node 189
+edge: { sourcename: "189" targetname: "190" }
+// node 190
+edge: { sourcename: "190" targetname: "191" }
+// node 191
+edge: { sourcename: "191" targetname: "192" }
+// node 192
+edge: { sourcename: "192" targetname: "193" }
+// node 193
+edge: { sourcename: "193" targetname: "194" }
+// node 194
+edge: { sourcename: "194" targetname: "195" }
+// node 195
+edge: { sourcename: "195" targetname: "196" }
+// node 196
+edge: { sourcename: "196" targetname: "197" }
+// node 197
+edge: { sourcename: "197" targetname: "198" label: "false" color: red }
+edge: { sourcename: "197" targetname: "199" label: "true" color: darkgreen }
+// node 198
+edge: { sourcename: "198" targetname: "199" }
+// node 199
+// node 200
+edge: { sourcename: "200" targetname: "201" label: "false" color: red }
+edge: { sourcename: "200" targetname: "216" label: "true" color: darkgreen }
+// node 201
+edge: { sourcename: "201" targetname: "202" label: "false" color: red }
+edge: { sourcename: "201" targetname: "203" label: "true" color: darkgreen }
+// node 202
+edge: { sourcename: "202" targetname: "205" }
+// node 203
+edge: { sourcename: "203" targetname: "204" label: "false" color: red }
+edge: { sourcename: "203" targetname: "206" label: "true" color: darkgreen }
+// node 204
+edge: { sourcename: "204" targetname: "205" }
+// node 205
+edge: { sourcename: "205" targetname: "228" }
+// node 206
+edge: { sourcename: "206" targetname: "207" label: "false" color: red }
+edge: { sourcename: "206" targetname: "210" label: "true" color: darkgreen }
+// node 207
+edge: { sourcename: "207" targetname: "208" label: "false" color: red }
+edge: { sourcename: "207" targetname: "223" label: "true" color: darkgreen }
+// node 208
+edge: { sourcename: "208" targetname: "209" label: "false" color: red }
+edge: { sourcename: "208" targetname: "222" label: "true" color: darkgreen }
+// node 209
+edge: { sourcename: "209" targetname: "207" label: "true" color: darkgreen }
+edge: { sourcename: "209" targetname: "210" label: "false" color: red }
+// node 210
+edge: { sourcename: "210" targetname: "211" label: "false" color: red }
+edge: { sourcename: "210" targetname: "214" label: "true" color: darkgreen }
+// node 211
+edge: { sourcename: "211" targetname: "212" label: "false" color: red }
+edge: { sourcename: "211" targetname: "226" label: "true" color: darkgreen }
+// node 212
+edge: { sourcename: "212" targetname: "213" label: "false" color: red }
+edge: { sourcename: "212" targetname: "225" label: "true" color: darkgreen }
+// node 213
+edge: { sourcename: "213" targetname: "211" label: "true" color: darkgreen }
+edge: { sourcename: "213" targetname: "214" label: "false" color: red }
+// node 214
+edge: { sourcename: "214" targetname: "215" label: "false" color: red }
+edge: { sourcename: "214" targetname: "216" label: "true" color: darkgreen }
+// node 215
+edge: { sourcename: "215" targetname: "216" }
+// node 216
+edge: { sourcename: "216" targetname: "217" }
+// node 217
+edge: { sourcename: "217" targetname: "218" label: "false" color: red }
+edge: { sourcename: "217" targetname: "219" label: "true" color: darkgreen }
+// node 218
+edge: { sourcename: "218" targetname: "219" }
+// node 219
+edge: { sourcename: "219" targetname: "220" label: "false" color: red }
+edge: { sourcename: "219" targetname: "221" label: "true" color: darkgreen }
+// node 220
+edge: { sourcename: "220" targetname: "221" }
+// node 221
+// node 222
+edge: { sourcename: "222" targetname: "224" }
+// node 223
+edge: { sourcename: "223" targetname: "224" }
+// node 224
+edge: { sourcename: "224" targetname: "228" }
+// node 225
+edge: { sourcename: "225" targetname: "227" }
+// node 226
+edge: { sourcename: "226" targetname: "227" }
+// node 227
+edge: { sourcename: "227" targetname: "228" }
+// node 228
+edge: { sourcename: "228" targetname: "217" label: "true" color: darkgreen }
+edge: { sourcename: "228" targetname: "229" label: "false" color: red }
+// node 229
+edge: { sourcename: "229" targetname: "217" }
+}

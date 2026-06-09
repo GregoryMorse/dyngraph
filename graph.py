@@ -956,6 +956,57 @@ def get_real_cfgs(cfg_dir):
       if len(edges) != 0: allEdges.append(edges)
   print(len(allEdges))
   return allEdges
+
+#Windows EULA prohibits redistribution of disassembly derived from Windows binaries.
+#sanitize_real_cfgs strips node labels (disassembly text) and the graph title
+#(virtual-address range) from IDA Pro GDL files, writing topology-only copies to
+#<libname>_sanitized/ sibling directories.  Edge structure, true/false branch
+#labels, and layout metadata are preserved, so get_real_cfgs() works identically
+#on the sanitized files.  Pass the three Windows folders to clean them for public
+#redistribution while keeping full fidelity for the open-source binaries.
+def sanitize_real_cfgs(cfg_dir, lib_names):
+  import glob
+  import os
+  import re
+  # [^"] matches any char including newlines (re.DOTALL only affects '.').
+  # Group 1 = everything up to and including the opening quote of the label.
+  # Group 2 = closing quote + optional vertical_order attribute + closing brace.
+  node_re = re.compile(
+    r'(node:\s*\{\s*title:\s*"\d+"\s*label:\s*")[^"]*("(?:\s+vertical_order:\s*\d+)?\s*\})'
+  )
+  title_re = re.compile(r'^(title:\s*)"[^"]*"', re.MULTILINE)
+  for lib_name in lib_names:
+    src_dir = os.path.join(cfg_dir, lib_name)
+    dst_dir = os.path.join(cfg_dir, lib_name + "_sanitized")
+    os.makedirs(dst_dir, exist_ok=True)
+    count = 0
+    for src_path in glob.glob(src_dir + "/*.gdl"):
+      func_name = os.path.splitext(os.path.basename(src_path))[0]
+      # Use extended-length path prefix on Windows to bypass MAX_PATH (260).
+      # Long C++-mangled names in explorer.exe exceed the limit once the
+      # destination directory suffix "_sanitized" is appended.
+      lp = ('\\\\?\\' + os.path.abspath(src_path)) if os.name == 'nt' else src_path
+      with open(lp, encoding='utf-8', errors='replace') as fp:
+        content = fp.read()
+      # Replace VA-range title with just the function name
+      content = title_re.sub(lambda m, fn=func_name: m.group(1) + '"' + fn + '"', content)
+      # Strip disassembly from node labels
+      content = node_re.sub(r'\1\2', content)
+      # Cap the output filename at 200 chars so it stays under Git/fs limits
+      # even when the repo sits deep in a directory tree.  A short hash suffix
+      # prevents collisions among truncated names.
+      out_name = os.path.basename(src_path)
+      if len(out_name) > 200:
+        import hashlib
+        stem = os.path.splitext(out_name)[0]
+        h = hashlib.md5(stem.encode()).hexdigest()[:8]
+        out_name = stem[:187] + '_' + h + '.gdl'
+      dst_path = os.path.join(dst_dir, out_name)
+      lp = ('\\\\?\\' + os.path.abspath(dst_path)) if os.name == 'nt' else dst_path
+      with open(lp, 'w', encoding='utf-8') as fp:
+        fp.write(content)
+      count += 1
+    print(f"Sanitized {count} files: {lib_name} -> {lib_name}_sanitized")
   
 def batch_gen(l, batch_size):
   return [l // batch_size + (1 if z < l % batch_size else 0) for z in range(batch_size)]
